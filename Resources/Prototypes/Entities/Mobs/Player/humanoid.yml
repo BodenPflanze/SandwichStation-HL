@@ -539,10 +539,10 @@
       - NamesMilitaryLast
       nameFormat: name-format-ert
 
-## Colonial Command
+## Central Command
 
 - type: entity
-  name: ColComm official
+  name: CentComm official
   id: RandomHumanoidSpawnerCentcomOfficial
   components:
     - type: Sprite

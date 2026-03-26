@@ -59,7 +59,7 @@
 - type: entity
   id: CloverColcommIDCard
   parent: IDCardStandard
-  name: Clover Petal Enright's ID card (Colonial Superintendent)
+  name: Clover Petal Enright's ID card (CC Superintendent)
   description: '"So... so sleepy..."'
   suffix: Clover, Admin
   components:
@@ -69,7 +69,7 @@
   - type: IdCard
     fullName: Clover Petal Enright
     jobTitle: job-title-colonial-superintendent
-    jobIcon: JobIconColComm
+    jobIcon: JobIconCentComm
   - type: Sprite
     layers:
     - state: centcom
@@ -86,7 +86,7 @@
 - type: entity
   id: CloverColcommDirectorIDCard
   parent: DirectorateIDCard
-  name: Clover Petal Enright's ID card (Colonial Superintendent)
+  name: Clover Petal Enright's ID card (CC Superintendent)
   description: '"So... so sleepy..."'
   suffix: Clover, Admin
   components:

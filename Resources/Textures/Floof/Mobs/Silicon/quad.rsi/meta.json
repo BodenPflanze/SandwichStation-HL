@@ -8,6 +8,9 @@
   "copyright": "Made by Fenndragon discord: 190763499276861440, edits by LucasTheDrgn discord: 97135517740593152 and dakodragon discord: 56038550335922176, SEC edits made by GRESH!! GL1TZ and Danse (RUIN) discord: 1207115437163151460",
   "states": [
     {
+      "name": "green"
+    },
+    {
       "name": "quadsprite",
       "directions": 4
     },

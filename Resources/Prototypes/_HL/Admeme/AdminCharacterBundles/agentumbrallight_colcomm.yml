@@ -40,7 +40,7 @@
 - type: entity
   id: UmbralLightColcommIDCard
   parent: IDCardStandard
-  name: CC Agent Umbral-Light's ID card (Colonial Agent)
+  name: CC Agent Umbral-Light's ID card (CC Agent)
   description: '"And the Mountain was Pleased..."'
   suffix: UmbralLight, Admin
   components:
@@ -50,7 +50,7 @@
   - type: IdCard
     fullName: Agent Umbral-Light
     jobTitle: job-title-colonial-agent
-    jobIcon: JobIconColComm
+    jobIcon: JobIconCentComm
   - type: Sprite
     layers:
     - state: centcom

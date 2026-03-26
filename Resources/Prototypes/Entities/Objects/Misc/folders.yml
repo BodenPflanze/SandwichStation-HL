@@ -153,10 +153,10 @@
 
 - type: entity
   id: BoxFolderColCom
-  name: ColComm folder
+  name: CentComm folder
   parent: BoxFolderBase
   categories: [ DoNotMap ]
-  description: ColComm's miserable little pile of secrets!
+  description: CentComm's miserable little pile of secrets!
   components:
   - type: Sprite
     layers:
@@ -225,8 +225,8 @@
 - type: entity
   id: BoxFolderColComClipboard
   parent: BoxFolderClipboard
-  name: ColComm clipboard
-  description: A luxurious clipboard upholstered with green velvet. Often seen carried by ColComm officials, seldom seen actually used.
+  name: CentComm clipboard
+  description: A luxurious clipboard upholstered with green velvet. Often seen carried by CentComm officials, seldom seen actually used.
   components:
   - type: Sprite
     sprite: Objects/Misc/cc-clipboard.rsi

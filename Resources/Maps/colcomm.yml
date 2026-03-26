@@ -52,7 +52,7 @@ entities:
   - uid: 1668
     components:
     - type: MetaData
-      name: Colonial Command
+      name: Central Command
     - type: Transform
       pos: 1.7854652,-0.9889641
     - type: MapGrid
@@ -23623,28 +23623,28 @@ entities:
     - type: Transform
       pos: -12.5,5.5
       parent: 1668
-- proto: DefaultStationBeaconColComm
+- proto: DefaultStationBeaconCentComm
   entities:
   - uid: 4656
     components:
     - type: Transform
       pos: -0.5,3.5
       parent: 1668
-- proto: DefaultStationBeaconColCommAfterhours
+- proto: DefaultStationBeaconCentCommAfterhours
   entities:
   - uid: 9452
     components:
     - type: Transform
       pos: 22.5,-21.5
       parent: 1668
-- proto: DefaultStationBeaconColCommERT
+- proto: DefaultStationBeaconCentCommERT
   entities:
   - uid: 9480
     components:
     - type: Transform
       pos: -41.5,-7.5
       parent: 1668
-- proto: DefaultStationBeaconColCommThunderdome
+- proto: DefaultStationBeaconCentCommThunderdome
   entities:
   - uid: 9479
     components:
@@ -41774,7 +41774,7 @@ entities:
   - uid: 3239
     components:
     - type: MetaData
-      desc: Bane of Cybersun. Head of ColComm Security.
+      desc: Bane of Cybersun. Head of CentComm Security.
       name: Haunted Security Mannequin
     - type: Transform
       pos: 35.5,7.5
@@ -50639,7 +50639,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: ColComm Waiting Area
+      id: CentComm Waiting Area
 - proto: SurveillanceCameraMedical
   entities:
   - uid: 9441

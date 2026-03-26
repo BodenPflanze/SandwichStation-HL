@@ -241,7 +241,7 @@
 - type: entity
   id: CentcomIDCardVulrik
   parent: IDCardStandard
-  # name: Vulrik Thornepelt's ID card (Colonial Chief Architect)
+  # name: Vulrik Thornepelt's ID card (CC Chief Architect)
   # description:
   suffix: Vulrik, Admin
   components:
@@ -251,7 +251,7 @@
   - type: IdCard
     fullName: Commander Vulrik Thornepelt
     jobTitle: job-title-colonial-chief-architect
-    jobIcon: JobIconColComm
+    jobIcon: JobIconCentComm
   - type: Sprite
     layers:
     - state: centcom

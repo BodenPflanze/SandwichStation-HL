@@ -5,7 +5,7 @@
   playTimeTracker: JobDeathSquad
   setPreference: false
   startingGear: DeathSquadGear
-  icon: "JobIconColComm"
+  icon: "JobIconCentComm"
   supervisors: job-supervisors-centcom
   canBeAntag: false
   accessGroups:

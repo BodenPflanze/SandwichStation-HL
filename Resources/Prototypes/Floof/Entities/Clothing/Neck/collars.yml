@@ -12,9 +12,6 @@
       neck-quadborg:
       - state: equipped-NECK-quadborg
     # HardLight end
-  - type: LeashAnchor
-    offset: 0, 0.22
-    kind: Clothing
   - type: Tag # HardLight
     tags:
     - BorgWearable
@@ -169,7 +166,7 @@
 - type: entity
   parent: ClothingNeckCollarBase
   id: ClothingNeckCollarCC
-  name: ColCom collar
+  name: CentComm collar
   description: All bark with a whole lotta bite.
   components:
   - type: Sprite

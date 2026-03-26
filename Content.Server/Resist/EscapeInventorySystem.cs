@@ -14,7 +14,6 @@ using Content.Shared.Actions; // Frontier
 using Robust.Shared.Prototypes; // Frontier
 using Content.Shared.Movement.Systems; // Frontier
 using Content.Shared.Contests;
-using Content.Shared.FloofStation; // Floofstation
 
 namespace Content.Server.Resist;
 

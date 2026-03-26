@@ -5,7 +5,7 @@
   playTimeTracker: JobColonialNavyman
   setPreference: false
   startingGear: ColonialNavymanGear
-  icon: "JobIconColComm"
+  icon: "JobIconCentComm"
   supervisors: job-supervisors-hos
   canBeAntag: false
   accessGroups:

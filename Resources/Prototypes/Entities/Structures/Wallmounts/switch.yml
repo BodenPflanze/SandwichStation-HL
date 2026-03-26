@@ -504,7 +504,7 @@
 
 - type: entity
   id: LockableButtonColcomm
-  suffix: ColComm
+  suffix: CentComm
   parent: LockableButton
   components:
   - type: AccessReader

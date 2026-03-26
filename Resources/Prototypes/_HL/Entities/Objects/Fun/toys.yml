@@ -3,7 +3,7 @@
   id: PlushieStoneRengault
   parent: BasePlushie
   name: stone rengault plushie
-  description: An adorable stuffed toy that resembles Stone Rengault. Made by ColComm as a token of appreciation for a gentle crewmember. "Arf!"
+  description: An adorable stuffed toy that resembles Stone Rengault. Made by CentComm as a token of appreciation for a gentle crewmember. "Arf!"
   components:
   - type: Sprite
     sprite: _HL/Objects/Fun/toys.rsi
@@ -75,7 +75,7 @@
   id: PlushieNirouJol
   parent: BasePlushie
   name: nirou-jol plushie
-  description: A cute, squishy plushie of a ColComm Xenobiology lab director. Hmm, where's Dex?
+  description: A cute, squishy plushie of a CentComm Xenobiology lab director. Hmm, where's Dex?
   components:
   - type: Sprite
     sprite: _HL/Objects/Fun/toys.rsi
@@ -583,7 +583,7 @@
   parent: BasePlushie
   id: PlushieLizardCCO #Weh!
   name: CC Official plushie
-  description: An adorable stuffed toy that resembles an lizard! Dressed in ColComm colours!
+  description: An adorable stuffed toy that resembles an lizard! Dressed in CentComm colours!
   components:
   - type: Sprite
     sprite: _HL/Objects/Fun/HLtoys.rsi

@@ -15,7 +15,7 @@ namespace Content.IntegrationTests.Tests.Station;
 public sealed class EvacShuttleTest
 {
     /// <summary>
-    /// Ensure that the emergency shuttle can be called, and that it will travel to Colcomm
+    /// Ensure that the emergency shuttle can be called, and that it will travel to CentComm
     /// </summary>
     [Test]
     [Ignore("We don't need emergency shuttles.")] // Frontier

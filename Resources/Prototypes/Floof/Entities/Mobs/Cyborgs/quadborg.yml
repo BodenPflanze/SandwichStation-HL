@@ -89,8 +89,6 @@
     access: [["Security"], ["Command"], ["Research"], ["Mercenary"]]
   - type: SiliconLawProvider
     laws: Qborg
-  - type: LeashAnchor # Floofstation
-    kind: Intrinsic
   - type: InteractionPopup  # Hardlight change
     interactSuccessString: petting-success-generic-cyborg
     interactFailureString: petting-failure-generic-cyborg
@@ -343,7 +341,7 @@
       movement:
         state: quadspriteCC
   - type: SiliconLawProvider
-    laws: ColComm
+    laws: CentComm
   - type: SpriteStateToggle
     spriteLayer: movement
     stateOff: quadspriteCC

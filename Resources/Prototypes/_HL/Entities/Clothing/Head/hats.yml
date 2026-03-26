@@ -2,7 +2,7 @@
   parent: [ ClothingHeadBase, BaseColcommContraband ]
   id: ClothingHeadHatColcomcap
   name: directorate cap
-  description: An extravagant, fancy Colonial Directorate cap.
+  description: An extravagant, fancy CC Directorate cap.
   components:
   - type: Sprite
     sprite: _HL/Clothing/Head/colcap.rsi

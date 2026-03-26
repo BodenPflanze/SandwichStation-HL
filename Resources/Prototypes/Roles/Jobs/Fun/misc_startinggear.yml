@@ -133,6 +133,19 @@
     - trayScanner
     - AccessConfiguratorUniversal
     - Multitool
+    # Sandwichstation - More aghost gear to save having to spawn it in.
+    - LightReplacerAdmeme
+    - LightReplacerLEDAdmeme
+    - AnomalyLocator
+    - OmnimedTool
+    - DoorRemoteAll
+    - PowerDrill
+    - WelderExperimental
+    - JawsOfLife
+    - MedkitCombatFilled
+    - DefibrillatorCompact
+    - BagOfSummoningGarbage
+    - PortableRecharger
 
 #Gladiator with spear
 - type: startingGear

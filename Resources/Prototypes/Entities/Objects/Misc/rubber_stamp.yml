@@ -55,7 +55,7 @@
     state: stamp-cap
 
 - type: entity
-  name: ColComm rubber stamp
+  name: CentComm rubber stamp
   parent: RubberStampBase
   id: RubberStampCentcom
   categories: [ DoNotMap ]

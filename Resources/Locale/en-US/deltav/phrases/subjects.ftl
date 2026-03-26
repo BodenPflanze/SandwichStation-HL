@@ -236,7 +236,4 @@ phrase-lewd-god = god
 phrase-lewd-goddess = goddess
 phrase-lewd-dildo = dildo
 phrase-lewd-vibrator = vibrator
-phrase-lewd-whip = whip
-phrase-lewd-bondage = bondage
 phrase-lewd-lube = lube
-phrase-lewd-spank = spank

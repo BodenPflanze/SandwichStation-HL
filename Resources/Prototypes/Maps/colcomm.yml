@@ -1,5 +1,5 @@
 - type: gameMap
-  id: ColComm
+  id: CentComm
   isGrid: true # Did you know that Colcomm is the only "game map" that isn't actually a map? Send help.
   mapName: 'Colonial Command'
   mapPath: /Maps/colcomm.yml

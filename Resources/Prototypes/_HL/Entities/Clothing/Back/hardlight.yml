@@ -87,8 +87,8 @@
 - type: entity
   parent: [ ClothingMaskGas, BaseColcommContraband ]
   id: ClothingMaskGasCNI
-  name: Colonial Navy gas mask
-  description: A military-grade gas mask used by the Colonial Navy.
+  name: CC Navy gas mask
+  description: A military-grade gas mask used by the Central Command Navy.
   components:
   - type: Sprite
     sprite: _HL/Clothing/Mask/cni.rsi

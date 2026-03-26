@@ -206,7 +206,7 @@
   - CarpetWhite
 
 - type: latheRecipePack
-  id: ClothingColComm
+  id: ClothingCentComm
   recipes:
   - ClothingHeadHatCentcomcap
   - ClothingHeadHatCentcom

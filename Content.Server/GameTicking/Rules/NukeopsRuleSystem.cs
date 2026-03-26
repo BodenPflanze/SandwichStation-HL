@@ -229,7 +229,7 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
             break;
         }
 
-        // If the disk is currently at Colonial Command, the crew wins - just slightly.
+        // If the disk is currently at Central Command, the crew wins - just slightly.
         // This also implies that some nuclear operatives have died.
         SetWinType(ent,
             diskAtColCom

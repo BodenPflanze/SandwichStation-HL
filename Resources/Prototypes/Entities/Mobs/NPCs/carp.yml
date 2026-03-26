@@ -21,7 +21,6 @@
   - type: HTN
     rootTask:
       task: DragonCarpCompound
-  - type: LeashAnchor
   - type: NpcFactionMember
     factions:
     - Dragon
@@ -384,8 +383,6 @@
   - type: HTN
     rootTask:
       task: DragonCarpCompound
-  - type: LeashAnchor # Floofstation - we can't exactly remove this component coming from the parent, so we disable it
-    enabled: false
   - type: Xeno
     actionIds:
     - ActionXenoEvolve
@@ -430,8 +427,6 @@
     damage:
       types:
         Slash: 6
-  - type: LeashAnchor # Floofstation - we can't exactly remove this component coming from the parent, so we disable it
-    enabled: false
 
 - type: entity
   name: sharkminnow

@@ -98,7 +98,7 @@
 - type: entity
   parent: [ClothingHeadset, BaseCentcommContraband]
   id: ClothingHeadsetCentCom
-  name: ColComm headset # HardLight
+  name: CentComm headset # HardLight
   description: A headset used by the upper echelons of the Trans-Solar Federation.
   components:
   # HardLight start: Replaced starting encryption keys with intrinsic radio channels.

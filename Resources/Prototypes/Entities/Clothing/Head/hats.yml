@@ -253,7 +253,7 @@
 - type: entity
   parent: [ ClothingHeadBase, BaseColcommContraband ]
   id: ClothingHeadHatCentcom
-  name: ColComm brand hat
+  name: CentComm brand hat
   description: "It's good to be the emperor."
   components:
   - type: Sprite
@@ -989,8 +989,8 @@
 - type: entity
   parent: [ ClothingHeadBase, BaseColcommContraband ]
   id: ClothingHeadHatCentcomcap
-  name: ColComm cap
-  description: An extravagant, fancy Colonial Commander cap.
+  name: CentComm cap
+  description: An extravagant, fancy Central Commander cap.
   components:
   - type: Sprite
     sprite: Clothing/Head/Hats/comcap.rsi

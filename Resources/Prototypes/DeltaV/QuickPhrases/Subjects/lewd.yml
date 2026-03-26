@@ -150,8 +150,6 @@
 
 #phrase-lewd-dildo = dildo
 #phrase-lewd-vibrator = vibrator
-#phrase-lewd-whip = whip
-#phrase-lewd-bondage = bondage
 #phrase-lewd-lube = lube
 
 - type: quickPhrase
@@ -163,13 +161,3 @@
   id: PhraseVibrator
   parent: BaseLewdSubjectPhrase
   text: phrase-lewd-vibrator
-
-- type: quickPhrase
-  id: PhraseWhip
-  parent: BaseLewdSubjectPhrase
-  text: phrase-lewd-whip
-
-- type: quickPhrase
-  id: PhraseSpank
-  parent: BaseLewdSubjectPhrase
-  text: phrase-lewd-spank

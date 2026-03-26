@@ -51,7 +51,7 @@
   id: JobIconDirectorate
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi # place holder
-    state: ColComm # place holder
+    state: CentComm # place holder
   jobName: job-name-directorate
   allowSelection: false
 
@@ -60,6 +60,6 @@
   id: JobIconNaval
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi # place holder
-    state: ColComm # place holder
+    state: CentComm # place holder
   jobName: job-name-naval
   allowSelection: false

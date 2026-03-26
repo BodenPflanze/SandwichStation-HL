@@ -523,7 +523,7 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
         // Otherwise, create the singleton Colcomm
         if (string.IsNullOrEmpty(component.Map.ToString()))
         {
-            Log.Warning("No ColComm map found, skipping setup.");
+            Log.Warning("No CentComm map found, skipping setup.");
             return;
         }
 

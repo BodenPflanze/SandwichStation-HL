@@ -19,7 +19,7 @@
   lawString: law-colcomm-4
 
 - type: siliconLawset
-  id: ColComm
+  id: CentComm
   laws:
   - colcomm1
   - colcomm2

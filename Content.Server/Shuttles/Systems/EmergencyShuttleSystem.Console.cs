@@ -55,7 +55,7 @@ public sealed partial class EmergencyShuttleSystem
     public float MaximumTransitTime { get; private set; }
 
     /// <summary>
-    /// How long it will take for the emergency shuttle to arrive at ColComm.
+    /// How long it will take for the emergency shuttle to arrive at CentComm.
     /// </summary>
     public float TransitTime;
 

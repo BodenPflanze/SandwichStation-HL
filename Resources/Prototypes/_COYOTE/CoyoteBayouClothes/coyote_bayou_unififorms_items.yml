@@ -741,24 +741,6 @@
 
 - type: entity
   parent: CoolCoyoteClothes
-  id: CoolCoyoteClothesDomina
-  name: domina latex
-  description: |
-  components:
-  - type: Sprite
-    overrideDir: South
-    enableOverrideDir: true
-    sprite: _CS/Clothes/cbuniforms.rsi
-    layers:
-    - state: domina
-  - type: Clothing
-    sprite: _CS/Clothes/cbuniforms.rsi
-    clothingVisuals:
-      jumpsuit:
-      - state: domina
-
-- type: entity
-  parent: CoolCoyoteClothes
   id: CoolCoyoteClothesDougDimmadome
   name: doug suit
   description: |
@@ -3366,21 +3348,3 @@
     clothingVisuals:
       jumpsuit:
       - state: yellowwshort
-
-- type: entity
-  parent: [ClothingNude, CoolCoyoteClothes]
-  id: CoolCoyoteClothesGearHarness
-  name: nudist gear harness
-  description: |
-  components:
-  - type: Sprite
-    overrideDir: South
-    enableOverrideDir: true
-    sprite: _CS/Clothes/cbuniforms.rsi
-    layers:
-    - state: gearharnessicon
-  - type: Clothing
-    sprite: _CS/Clothes/cbuniforms.rsi
-    clothingVisuals:
-      jumpsuit:
-      - state: gearharness
