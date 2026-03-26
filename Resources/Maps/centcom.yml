@@ -235,7 +235,7 @@ entities:
     - type: Fixtures
       fixtures: {}
     - type: BecomesStation
-      id: Colcomm
+      id: Centcom
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
         path: /Audio/Effects/alert.ogg
@@ -7736,7 +7736,7 @@ entities:
     - type: Transform
       pos: -38.5,-8.5
       parent: 1668
-- proto: BoxFolderColCom
+- proto: BoxFolderCentCom
   entities:
   - uid: 2086
     components:
@@ -22595,7 +22595,7 @@ entities:
       parent: 3239
     - type: Physics
       canCollide: False
-- proto: ColcommComputerComms
+- proto: CentcomComputerComms
   entities:
   - uid: 506
     components:
@@ -23623,28 +23623,28 @@ entities:
     - type: Transform
       pos: -12.5,5.5
       parent: 1668
-- proto: DefaultStationBeaconCentComm
+- proto: DefaultStationBeaconCentCom
   entities:
   - uid: 4656
     components:
     - type: Transform
       pos: -0.5,3.5
       parent: 1668
-- proto: DefaultStationBeaconCentCommAfterhours
+- proto: DefaultStationBeaconCentComAfterhours
   entities:
   - uid: 9452
     components:
     - type: Transform
       pos: 22.5,-21.5
       parent: 1668
-- proto: DefaultStationBeaconCentCommERT
+- proto: DefaultStationBeaconCentComERT
   entities:
   - uid: 9480
     components:
     - type: Transform
       pos: -41.5,-7.5
       parent: 1668
-- proto: DefaultStationBeaconCentCommThunderdome
+- proto: DefaultStationBeaconCentComThunderdome
   entities:
   - uid: 9479
     components:
@@ -26090,7 +26090,7 @@ entities:
       pos: -2.5,-2.5
       parent: 1668
     - type: FaxMachine
-      name: Colcomm
+      name: Centcom
 - proto: FenceWoodSmallEnd
   entities:
   - uid: 6159
@@ -41774,7 +41774,7 @@ entities:
   - uid: 3239
     components:
     - type: MetaData
-      desc: Bane of Cybersun. Head of CentComm Security.
+      desc: Bane of Cybersun. Head of CentCom Security.
       name: Haunted Security Mannequin
     - type: Transform
       pos: 35.5,7.5
@@ -45725,7 +45725,7 @@ entities:
     - type: Transform
       pos: -38.5,10.5
       parent: 1668
-- proto: RadioImplanterColcomm
+- proto: RadioImplanterCentcom
   entities:
   - uid: 1385
     components:
@@ -50639,7 +50639,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: CentComm Waiting Area
+      id: CentCom Waiting Area
 - proto: SurveillanceCameraMedical
   entities:
   - uid: 9441

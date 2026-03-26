@@ -30,13 +30,13 @@
 
 - type: entity
   parent: TelecomServer
-  id: TelecomServerFilledCentComm
-  suffix: ColCom
+  id: TelecomServerFilledCentCom
+  suffix: CentCom
   components:
   - type: ContainerFill
     containers:
       key_slots:
-      - EncryptionKeyCentComm
+      - EncryptionKeyCentCom
 
 - type: entity
   parent: TelecomServer

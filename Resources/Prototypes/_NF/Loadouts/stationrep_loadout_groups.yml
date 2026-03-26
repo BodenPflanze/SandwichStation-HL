@@ -47,13 +47,13 @@
   minLimit: 1
   maxLimit: 1
   loadouts:
-  - StationRepClothingHeadsetAltColComCommon
+  - StationRepClothingHeadsetAltCentComCommon
   subgroups:
   - MercenaryEars
   - PilotEars
   - ContractorEars
   fallbacks:
-  - StationRepClothingHeadsetAltColComCommon
+  - StationRepClothingHeadsetAltCentComCommon
 
 - type: loadoutGroup
   id: StationRepGloves

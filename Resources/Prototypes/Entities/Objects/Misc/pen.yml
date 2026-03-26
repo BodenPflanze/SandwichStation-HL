@@ -118,8 +118,8 @@
     heldPrefix: overpriced_pen
 
 - type: entity
-  name: CentComm pen
-  parent: [BaseAdvancedPen, BaseColcommCommandContraband] # Frontier: Added BaseColcommCommandContraband, removed BaseColcommContraband.
+  name: CentCom pen
+  parent: [BaseAdvancedPen, BaseCentcomCommandContraband] # Frontier: Added BaseCentcomCommandContraband, removed BaseCentcomContraband.
   id: PenCentcom
   description: In an attempt to keep up with the "power" of the cybersun bureaucracy, NT made a replica of cyber pen, in their corporate style.
   components:

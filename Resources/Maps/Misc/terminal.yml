@@ -35,7 +35,7 @@ entities:
   - uid: 2
     components:
     - type: MetaData
-      name: CentComm Docks
+      name: CentCom Docks
     - type: Transform
       pos: -97.05884,-97.29649
     - type: MapGrid
@@ -2936,7 +2936,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 99.5,75.5
       parent: 2
-- proto: BoxFolderColComClipboard
+- proto: BoxFolderCentComClipboard
   entities:
   - uid: 4470
     components:
@@ -7557,7 +7557,7 @@ entities:
     - type: Transform
       pos: 79.5,90.5
       parent: 2
-- proto: ColcommComputerComms
+- proto: CentcomComputerComms
   entities:
   - uid: 446
     components:
@@ -9647,7 +9647,7 @@ entities:
         [head=1]Note to Barkeep[/head]
 
 
-        Please request keg refills from the CentComm office.
+        Please request keg refills from the CentCom office.
 
 
         Available Refills:

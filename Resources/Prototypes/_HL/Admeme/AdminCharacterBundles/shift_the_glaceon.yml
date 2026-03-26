@@ -7,7 +7,7 @@
     neck: ClothingNeckCloakCentcom
     # mask:
     eyes: ClothingEyesHudCommand
-    ears: ClothingHeadsetColCom
+    ears: ClothingHeadsetCentCom
     gloves: ClothingHandsGlovesCombat
     shoes: ClothingShoesBootsMagMercenary
     suitstorage: WeaponSubMachineGunDrozdPMC
@@ -194,7 +194,7 @@
         amount: 9
       - id: PowerCellMicroreactor
         amount: 5
-      - id: DeathRattleImplanterColcommDisposable
+      - id: DeathRattleImplanterCentcomDisposable
       - id: MedicalTrackingImplanterDisposable
       - id: MindShieldImplanterDisposable
       - id: StorageImplanterDisposable

@@ -148,7 +148,7 @@
   suffix: Central Command
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/colcomm.rsi
+    sprite: Structures/Doors/Airlocks/Standard/centcom.rsi
 
 - type: entity
   parent: Airlock
@@ -319,7 +319,7 @@
   suffix: Central Command
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/colcomm.rsi
+    sprite: Structures/Doors/Airlocks/Glass/centcom.rsi
 
 - type: entity
   parent: AirlockGlass

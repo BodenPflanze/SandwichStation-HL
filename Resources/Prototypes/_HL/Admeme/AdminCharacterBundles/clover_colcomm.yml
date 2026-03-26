@@ -15,7 +15,7 @@
     jumpsuit: ClothingUniformJumpskirtCentcomFormalDress
     belt: ClothingBeltSheathFilled
     back: ClothingBackpackMessengerHoldingCloverFilled
-    id: CloverColcommPDA
+    id: CloverCentcomPDA
 
 - type: startingGear
   id: CCCloverDirectorBundle
@@ -26,7 +26,7 @@
     neck: ClothingNeckScarfStripedBlack
     mask: ClothingMaskGasCentcom
     eyes: ClothingEyesGlassesNfsd
-    ears: ClothingHeadsetAltColCom
+    ears: ClothingHeadsetAltCentCom
     gloves: ClothingHandsGlovesForensicNF
     shoes: ClothingShoesChameleonNoSlips
     suitstorage: WeaponDisablerSMGRecharging
@@ -34,7 +34,7 @@
     jumpsuit: ClothingUniformJumpskirtCentcomDirector
     belt: ClothingBeltSheathFilled
     back: ClothingBackpackMessengerHoldingCloverFilled
-    id: CloverColcommDirectorPDA
+    id: CloverCentcomDirectorPDA
 
 - type: startingGear
   id: CCCloverWarBundle
@@ -53,11 +53,11 @@
     jumpsuit: ClothingUniformJumpskirtPencilCentcomOfficial
     belt: ClothingBeltSheathFilled
     back: ClothingBackpackMessengerHoldingCloverFilled
-    id: CloverColcommPDA
+    id: CloverCentcomPDA
 
 # ID Card - Normal Clover
 - type: entity
-  id: CloverColcommIDCard
+  id: CloverCentcomIDCard
   parent: IDCardStandard
   name: Clover Petal Enright's ID card (CC Superintendent)
   description: '"So... so sleepy..."'
@@ -68,8 +68,8 @@
     - Admin
   - type: IdCard
     fullName: Clover Petal Enright
-    jobTitle: job-title-colonial-superintendent
-    jobIcon: JobIconCentComm
+    jobTitle: job-title-centcom-superintendent
+    jobIcon: JobIconCentCom
   - type: Sprite
     layers:
     - state: centcom
@@ -84,7 +84,7 @@
 
        # ID Card - Directorate Clover
 - type: entity
-  id: CloverColcommDirectorIDCard
+  id: CloverCentcomDirectorIDCard
   parent: DirectorateIDCard
   name: Clover Petal Enright's ID card (CC Superintendent)
   description: '"So... so sleepy..."'
@@ -95,7 +95,7 @@
     - Admin
   - type: IdCard
     fullName: Clover Petal Enright
-    jobTitle: job-title-colonial-superintendent
+    jobTitle: job-title-centcom-superintendent
     jobIcon: JobIconDirectorate
   - type: Sprite
     layers:
@@ -111,7 +111,7 @@
 
 # pda - Normal Clover
 - type: entity
-  id: CloverColcommPDA
+  id: CloverCentcomPDA
   parent: CentcomPDA
   # name:
   # description:
@@ -121,7 +121,7 @@
     tags:
     - Admin
   - type: Pda
-    id: CloverColcommIDCard # ID Card
+    id: CloverCentcomIDCard # ID Card
     penSlot:
       startingItem: PenCentcom
       whitelist:
@@ -142,7 +142,7 @@
 
 # pda Directorate Clover
 - type: entity
-  id: CloverColcommDirectorPDA
+  id: CloverCentcomDirectorPDA
   parent: DirectoratePDA
   # name:
   # description:
@@ -152,7 +152,7 @@
     tags:
     - Admin
   - type: Pda
-    id: CloverColcommIDCard # ID Card
+    id: CloverCentcomIDCard # ID Card
     penSlot:
       startingItem: PenCentcom
       whitelist:
@@ -195,16 +195,16 @@
       - id: Flash
       - id: BodyBagFolded
       - id: FoodWaterJugBluespace
-      - id: BoxFolderColComClipboardNirou
+      - id: BoxFolderCentComClipboardNirou
       - id: HandheldCrewMonitorMicroreactor
       - id: HandHeldMassScannerMarrik
       - id: BoxDisposableKitClover
       - id: StorageImplanterDisposable
       - id: TrackingImplanterDisposable
       - id: MedicalTrackingImplanterDisposable
-      - id: DeathRattleImplanterColcommDisposable
+      - id: DeathRattleImplanterCentcomDisposable
       - id: MindShieldImplanterDisposable
-      - id: RadioImplanterColcommDisposable
+      - id: RadioImplanterCentcomDisposable
       - id: DeathAcidifierImplanterDisposable
 
 #storage implant box

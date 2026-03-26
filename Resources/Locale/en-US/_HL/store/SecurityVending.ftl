@@ -28,4 +28,4 @@ uplink-security-Weapons-BigL-name = Big Leady
 uplink-security-Weapons-BigL-desc = An old yet faithful design, and a favorite among irregular forces on many worlds.
 
 uplink-security-Weapons-railgun-name = NT-88 Peregrine
-uplink-security-Weapons-railgun-desc = From NanoTrasen Skunkworks, entrusted to CentComm for field testing.
+uplink-security-Weapons-railgun-desc = From NanoTrasen Skunkworks, entrusted to CentCom for field testing.

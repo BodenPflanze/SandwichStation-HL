@@ -1,7 +1,7 @@
 - type: entity
   id: CargoPallet
   name: cargo pallet
-  description: Designates valid items to sell to ColCom.
+  description: Designates valid items to sell to CentCom.
   parent: [BaseStructureDisableToolUse, BaseStructureIndestructible, BaseStructure] # Frontier - BaseStructureDisabledToolsUse,BaseStructureIndestructible
   components:
   - type: InteractionOutline

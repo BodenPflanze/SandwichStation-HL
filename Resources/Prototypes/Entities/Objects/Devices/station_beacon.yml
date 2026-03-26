@@ -728,35 +728,35 @@
       tags:
       - GhostOnlyWarp
 
-# CentComm Beacons
+# CentCom Beacons
 - type: entity
   parent: DefaultStationBeaconGhost
-  id: DefaultStationBeaconCentComm
-  suffix: CentComm
+  id: DefaultStationBeaconCentCom
+  suffix: CentCom
   components:
   - type: NavMapBeacon
-    text: CentComm
+    text: CentCom
 
 - type: entity
   parent: DefaultStationBeaconGhost
-  id: DefaultStationBeaconCentCommAfterhours
-  suffix: CentComm Afterhours
+  id: DefaultStationBeaconCentComAfterhours
+  suffix: CentCom Afterhours
   components:
   - type: NavMapBeacon
     text: Afterhours
 
 - type: entity
   parent: DefaultStationBeaconGhost
-  id: DefaultStationBeaconCentCommThunderdome
-  suffix: CentComm Thunder Dome
+  id: DefaultStationBeaconCentComThunderdome
+  suffix: CentCom Thunder Dome
   components:
   - type: NavMapBeacon
     text: Thunderdome
 
 - type: entity
   parent: DefaultStationBeaconGhost
-  id: DefaultStationBeaconCentCommERT
-  suffix: CentComm ERT
+  id: DefaultStationBeaconCentComERT
+  suffix: CentCom ERT
   components:
   - type: NavMapBeacon
     text: ERT

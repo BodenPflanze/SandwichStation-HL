@@ -157,5 +157,5 @@ holopad-ai-chute = AI - Chute
 holopad-station-bridge = Station - Bridge
 holopad-station-cargo-bay = Station - Cargo Bay
 
-# CentComm
-holopad-Colcomm-evac = CentComm - Evacuation Shuttle
+# CentCom
+holopad-Centcom-evac = CentCom - Evacuation Shuttle

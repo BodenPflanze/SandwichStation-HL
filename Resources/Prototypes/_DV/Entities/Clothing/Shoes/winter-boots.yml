@@ -30,7 +30,7 @@
 
 - type: entity
   parent: ClothingShoesBaseWinterBoots
-  id: ClothingShoesBootsWinterColCom
+  id: ClothingShoesBootsWinterCentCom
   name: centcom winter boots
   components:
   - type: Sprite

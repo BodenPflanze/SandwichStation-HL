@@ -4217,7 +4217,7 @@ entities:
       angularDamping: 0
       linearDamping: 0
       canCollide: False
-- proto: CentCommSectoralConsole
+- proto: CentComSectoralConsole
   entities:
   - uid: 599
     components:
@@ -9972,7 +9972,7 @@ entities:
     components:
     - type: MetaData
       desc: A label on it reads "Property of Cecille"
-      name: CentComm Pen
+      name: CentCom Pen
     - type: Transform
       pos: 0.88720274,-0.028727233
       parent: 1

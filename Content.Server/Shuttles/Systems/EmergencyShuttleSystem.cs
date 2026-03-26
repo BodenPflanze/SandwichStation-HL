@@ -44,7 +44,7 @@ namespace Content.Server.Shuttles.Systems;
 public sealed partial class EmergencyShuttleSystem : EntitySystem
 {
     /*
-     * Handles the escape shuttle + ColCom.
+     * Handles the escape shuttle + CentCom.
      */
 
     [Dependency] private readonly IAdminLogManager _logger = default!;
@@ -77,9 +77,9 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
     [ValidatePrototypeId<TagPrototype>]
     private const string DockTag = "DockEmergency";
 
-    private EntityUid? _singletonColcommMap;
-    private EntityUid? _singletonColcommGrid;
-    private EntityUid? _singletonColcommShuttle;
+    private EntityUid? _singletonCentcomMap;
+    private EntityUid? _singletonCentcomGrid;
+    private EntityUid? _singletonCentcomShuttle;
 
     public override void Initialize()
     {
@@ -90,8 +90,8 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
         SubscribeLocalEvent<RoundStartingEvent>(OnRoundStart);
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundCleanup);
         SubscribeLocalEvent<StationEmergencyShuttleComponent, StationPostInitEvent>(OnStationStartup);
-        SubscribeLocalEvent<StationColcommComponent, ComponentShutdown>(OnColcommShutdown);
-        SubscribeLocalEvent<StationColcommComponent, MapInitEvent>(OnStationInit);
+        SubscribeLocalEvent<StationCentcomComponent, ComponentShutdown>(OnCentcomShutdown);
+        SubscribeLocalEvent<StationCentcomComponent, MapInitEvent>(OnStationInit);
 
         SubscribeLocalEvent<EmergencyShuttleComponent, FTLStartedEvent>(OnEmergencyFTL);
         SubscribeLocalEvent<EmergencyShuttleComponent, FTLCompletedEvent>(OnEmergencyFTLComplete);
@@ -111,12 +111,12 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
         _roundEndCancelToken = null;
     }
 
-    private void OnColcommShutdown(EntityUid uid, StationColcommComponent component, ComponentShutdown args)
+    private void OnCentcomShutdown(EntityUid uid, StationCentcomComponent component, ComponentShutdown args)
     {
-        // ClearColcomm(component); // REMOVE THIS LINE
+        // ClearCentcom(component); // REMOVE THIS LINE
     }
 
-    private void ClearColcomm(StationColcommComponent component)
+    private void ClearCentcom(StationCentcomComponent component)
     {
     // QueueDel(component.Entity);      // REMOVE THIS LINE
     // QueueDel(component.MapEntity);   // REMOVE THIS LINE
@@ -152,11 +152,11 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
 
     private void CleanupEmergencyShuttle()
     {
-        var query = AllEntityQuery<StationColcommComponent>();
+        var query = AllEntityQuery<StationCentcomComponent>();
 
         while (query.MoveNext(out var uid, out _))
         {
-            // RemCompDeferred<StationColcommComponent>(uid); // REMOVE THIS LINE
+            // RemCompDeferred<StationCentcomComponent>(uid); // REMOVE THIS LINE
         }
     }
 
@@ -202,7 +202,7 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
     }
 
     /// <summary>
-    ///     Escape shuttle FTL event handler. The only escape shuttle FTL transit should be from station to Colcomm at round end
+    ///     Escape shuttle FTL event handler. The only escape shuttle FTL transit should be from station to Centcom at round end
     /// </summary>
     private void OnEmergencyFTL(EntityUid uid, EmergencyShuttleComponent component, ref FTLStartedEvent args)
     {
@@ -227,7 +227,7 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
     }
 
     /// <summary>
-    ///     When the escape shuttle finishes FTL (docks at Colcomm), have the timers display the round end countdown
+    ///     When the escape shuttle finishes FTL (docks at Centcom), have the timers display the round end countdown
     /// </summary>
     private void OnEmergencyFTLComplete(EntityUid uid, EmergencyShuttleComponent component, ref FTLCompletedEvent args)
     {
@@ -238,7 +238,7 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
             var payload = new NetworkPayload
             {
                 [ShuttleTimerMasks.ShuttleMap] = shuttle,
-                [ShuttleTimerMasks.SourceMap] = _roundEnd.GetColcomm(),
+                [ShuttleTimerMasks.SourceMap] = _roundEnd.GetCentcom(),
                 [ShuttleTimerMasks.DestMap] = _roundEnd.GetStation(),
                 [ShuttleTimerMasks.ShuttleTime] = countdownTime,
                 [ShuttleTimerMasks.SourceTime] = countdownTime,
@@ -383,7 +383,7 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
             {
                 [ShuttleTimerMasks.ShuttleMap] = shuttle,
                 [ShuttleTimerMasks.SourceMap] = targetXform.MapUid,
-                [ShuttleTimerMasks.DestMap] = _roundEnd.GetColcomm(),
+                [ShuttleTimerMasks.DestMap] = _roundEnd.GetCentcom(),
                 [ShuttleTimerMasks.ShuttleTime] = time,
                 [ShuttleTimerMasks.SourceTime] = time,
                 [ShuttleTimerMasks.DestTime] = time + TimeSpan.FromSeconds(TransitTime),
@@ -402,9 +402,9 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
         _audio.PlayGlobal(audioFile, Filter.Broadcast(), true);
     }
 
-    private void OnStationInit(EntityUid uid, StationColcommComponent component, MapInitEvent args)
+    private void OnStationInit(EntityUid uid, StationCentcomComponent component, MapInitEvent args)
     {
-        // This is handled on map-init, so that Colcomm has finished initializing by the time the StationPostInitEvent
+        // This is handled on map-init, so that Centcom has finished initializing by the time the StationPostInitEvent
         // gets raised
         if (!_emergencyShuttleEnabled)
             return;
@@ -416,7 +416,7 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
             return;
         }
 
-        AddColcomm(uid, component);
+        AddCentcom(uid, component);
     }
 
     private void OnStationStartup(Entity<StationEmergencyShuttleComponent> ent, ref StationPostInitEvent args)
@@ -484,22 +484,22 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
         if (!_emergencyShuttleEnabled)
             return;
 
-        // --- Prevent duplicate Colcomm ---
-        var colcommExists = false;
-        var colcommQuery = AllEntityQuery<StationColcommComponent>();
-        while (colcommQuery.MoveNext(out var uid, out var colcommComp))
+        // --- Prevent duplicate Centcom ---
+        var centcomExists = false;
+        var centcomQuery = AllEntityQuery<StationCentcomComponent>();
+        while (centcomQuery.MoveNext(out var uid, out var centcomComp))
         {
-            // If both entities are valid, consider Colcomm present
-            if (colcommComp.Entity != null && Exists(colcommComp.Entity) &&
-                colcommComp.MapEntity != null && Exists(colcommComp.MapEntity))
+            // If both entities are valid, consider Centcom present
+            if (centcomComp.Entity != null && Exists(centcomComp.Entity) &&
+                centcomComp.MapEntity != null && Exists(centcomComp.MapEntity))
             {
-                colcommExists = true;
+                centcomExists = true;
                 break;
             }
         }
-        if (colcommExists)
+        if (centcomExists)
             return;
-        // --- End Prevent duplicate Colcomm ---
+        // --- End Prevent duplicate Centcom ---
 
         var query = AllEntityQuery<StationEmergencyShuttleComponent>();
 
@@ -509,51 +509,51 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
         }
     }
 
-    private void AddColcomm(EntityUid station, StationColcommComponent component)
+    private void AddCentcom(EntityUid station, StationCentcomComponent component)
     {
         // If the singleton already exists, just point to it
-        if (_singletonColcommMap != null && _singletonColcommGrid != null
-            && Exists(_singletonColcommMap.Value) && Exists(_singletonColcommGrid.Value))
+        if (_singletonCentcomMap != null && _singletonCentcomGrid != null
+            && Exists(_singletonCentcomMap.Value) && Exists(_singletonCentcomGrid.Value))
         {
-            component.MapEntity = _singletonColcommMap;
-            component.Entity = _singletonColcommGrid;
+            component.MapEntity = _singletonCentcomMap;
+            component.Entity = _singletonCentcomGrid;
             return;
         }
 
-        // Otherwise, create the singleton Colcomm
+        // Otherwise, create the singleton Centcom
         if (string.IsNullOrEmpty(component.Map.ToString()))
         {
-            Log.Warning("No CentComm map found, skipping setup.");
+            Log.Warning("No CentCom map found, skipping setup.");
             return;
         }
 
         var map = _mapSystem.CreateMap(out var mapId);
         if (!_loader.TryLoadGrid(mapId, component.Map, out var grid))
         {
-            Log.Error($"Failed to set up Colcomm grid!");
+            Log.Error($"Failed to set up Centcom grid!");
             return;
         }
 
         var xform = Transform(grid.Value);
         if (xform.ParentUid != map || xform.MapUid != map)
         {
-            Log.Error($"Colcomm grid is not parented to its own map?");
+            Log.Error($"Centcom grid is not parented to its own map?");
             return;
         }
 
         component.MapEntity = map;
         component.Entity = grid;
-        _singletonColcommMap = map;
-        _singletonColcommGrid = grid;
-        _metaData.SetEntityName(map, Loc.GetString("map-name-Colcomm"));
+        _singletonCentcomMap = map;
+        _singletonCentcomGrid = grid;
+        _metaData.SetEntityName(map, Loc.GetString("map-name-Centcom"));
         _shuttle.TryAddFTLDestination(mapId, true, out _);
-        Log.Info($"Created Colcomm grid {ToPrettyString(grid)} on map {ToPrettyString(map)} for station {ToPrettyString(station)}");
+        Log.Info($"Created Centcom grid {ToPrettyString(grid)} on map {ToPrettyString(map)} for station {ToPrettyString(station)}");
     }
 
-    public HashSet<EntityUid> GetColcommMaps()
+    public HashSet<EntityUid> GetCentcomMaps()
     {
-        var query = AllEntityQuery<StationColcommComponent>();
-        var maps = new HashSet<EntityUid>(Count<StationColcommComponent>());
+        var query = AllEntityQuery<StationCentcomComponent>();
+        var maps = new HashSet<EntityUid>(Count<StationCentcomComponent>());
 
         while (query.MoveNext(out var comp))
         {
@@ -564,7 +564,7 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
         return maps;
     }
 
-    private void AddEmergencyShuttle(Entity<StationEmergencyShuttleComponent?, StationColcommComponent?> ent)
+    private void AddEmergencyShuttle(Entity<StationEmergencyShuttleComponent?, StationCentcomComponent?> ent)
     {
         if (!Resolve(ent.Owner, ref ent.Comp1, ref ent.Comp2))
             return;
@@ -573,15 +573,15 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
             return;
 
         // Use the singleton shuttle if it exists
-        if (_singletonColcommShuttle != null && Exists(_singletonColcommShuttle.Value))
+        if (_singletonCentcomShuttle != null && Exists(_singletonCentcomShuttle.Value))
         {
-            ent.Comp1.EmergencyShuttle = _singletonColcommShuttle;
+            ent.Comp1.EmergencyShuttle = _singletonCentcomShuttle;
             return;
         }
 
         if (!TryComp(ent.Comp2.MapEntity, out MapComponent? map))
         {
-            Log.Error($"Failed to add emergency shuttle - Colcomm has not been initialized? {ToPrettyString(ent)}");
+            Log.Error($"Failed to add emergency shuttle - Centcom has not been initialized? {ToPrettyString(ent)}");
             return;
         }
 
@@ -598,8 +598,8 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
 
         ent.Comp2.ShuttleIndex += Comp<MapGridComponent>(shuttle.Value).LocalAABB.Width + ShuttleSpawnBuffer;
 
-        // Update indices for all Colcomm comps pointing to same map
-        var query = AllEntityQuery<StationColcommComponent>();
+        // Update indices for all Centcom comps pointing to same map
+        var query = AllEntityQuery<StationCentcomComponent>();
         while (query.MoveNext(out var comp))
         {
             if (comp == ent.Comp2 || comp.MapEntity != ent.Comp2.MapEntity)
@@ -609,12 +609,12 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
         }
 
         ent.Comp1.EmergencyShuttle = shuttle;
-        _singletonColcommShuttle = shuttle; // Store singleton
+        _singletonCentcomShuttle = shuttle; // Store singleton
         EnsureComp<ProtectedGridComponent>(shuttle.Value);
         EnsureComp<PreventPilotComponent>(shuttle.Value);
         EnsureComp<EmergencyShuttleComponent>(shuttle.Value);
 
-        Log.Info($"Added emergency shuttle {ToPrettyString(shuttle)} for station {ToPrettyString(ent)} and Colcomm {ToPrettyString(ent.Comp2.Entity)}");
+        Log.Info($"Added emergency shuttle {ToPrettyString(shuttle)} for station {ToPrettyString(ent)} and Centcom {ToPrettyString(ent.Comp2.Entity)}");
         // EnsureComp<StationEmpImmuneComponent>(shuttle.Value); Enable in the case we want to ensure EMP immune grid
     }
 

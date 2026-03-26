@@ -305,20 +305,20 @@
     - type: Implanter
       implant: MindShieldImplant
 
-# CentComm implanters
+# CentCom implanters
 
 - type: entity
-  id: RadioImplanterColcomm
-  name: CentComm radio implanter
+  id: RadioImplanterCentcom
+  name: CentCom radio implanter
   parent: BaseImplantOnlyImplanter
   components:
   - type: Implanter
-    implant: RadioImplantColcomm
+    implant: RadioImplantCentcom
 
 - type: entity
-  id: DeathRattleImplanterColcomm
-  name: CentComm death rattle implanter
+  id: DeathRattleImplanterCentcom
+  name: CentCom death rattle implanter
   parent: BaseImplantOnlyImplanter
   components:
   - type: Implanter
-    implant: DeathRattleImplantColcomm
+    implant: DeathRattleImplantCentcom

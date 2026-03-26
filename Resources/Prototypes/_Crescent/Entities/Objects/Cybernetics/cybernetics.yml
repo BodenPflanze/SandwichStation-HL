@@ -176,7 +176,7 @@
 - type: entity
   parent: BaseCyberneticEyes
   id: ShinoharaOptics
-  name: ColCom Overseer mk.I smart optics
+  name: CentCom Overseer mk.I smart optics
   description: A pair of cybernetic replacements for the human optics network. Offers protection from welding flare and flashbangs and gives live diagnostic data to the user. Developed by Central Command for their civilian line.
   components:
     - type: Organ

@@ -1,5 +1,5 @@
 - type: loadout
-  id: StationRepClothingHeadsetAltColComCommon
+  id: StationRepClothingHeadsetAltCentComCommon
   price: 0
   equipment:
     ears: ClothingHeadsetAltCommand

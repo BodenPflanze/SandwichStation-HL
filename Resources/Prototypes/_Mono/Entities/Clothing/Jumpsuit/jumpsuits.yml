@@ -1,24 +1,24 @@
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformColonialNavy
+  id: ClothingUniformCentComNavy
   name: Central Command Navy uniform
-  description: A black and blue camo uniform. Signature Battle Dress Uniform of the Colonial Navy.
+  description: A black and blue camo uniform. Signature Battle Dress Uniform of the CentCom Navy.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/Uniforms/Jumpsuit/colonialnavy.rsi
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/centcomnavy.rsi
   - type: Clothing
-    sprite: _Mono/Clothing/Uniforms/Jumpsuit/colonialnavy.rsi
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/centcomnavy.rsi
 
 - type: entity
-  parent: [ ClothingUniformBase, BaseColcommContraband ]
-  id: ClothingUniformColonialNavyOfficer
+  parent: [ ClothingUniformBase, BaseCentcomContraband ]
+  id: ClothingUniformCentComNavyOfficer
   name: Central Command Navy officer uniform
-  description: A set of Naval officer Dress A's. Signature Colonial Navy Officer Dress Uniform.
+  description: A set of Naval officer Dress A's. Signature CentCom Navy Officer Dress Uniform.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/Uniforms/Jumpsuit/colonialnavyofficer.rsi
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/centcomnavyofficer.rsi
   - type: Clothing
-    sprite: _Mono/Clothing/Uniforms/Jumpsuit/colonialnavyofficer.rsi
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/centcomnavyofficer.rsi
 
 - type: entity
   parent: ClothingUniformBase

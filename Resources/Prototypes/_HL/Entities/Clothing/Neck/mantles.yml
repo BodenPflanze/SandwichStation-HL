@@ -125,14 +125,14 @@
   - type: Clothing
     sprite: _HL/Clothing/Neck/mantles/ccdirectoratemantle.rsi
 
-# CentComm Manica
+# CentCom Manica
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckMantleCentComm
-  name: Colcomm's manica
+  id: ClothingNeckMantleCentCom
+  name: Centcom's manica
   description: A segmented arm covering for any central command personel. Almost exactly like the chief engineers, As you've earned the right to wear this!
   components:
   - type: Sprite
-    sprite: _HL/Clothing/Neck/mantles/colcommmantle.rsi
+    sprite: _HL/Clothing/Neck/mantles/centcommantle.rsi
   - type: Clothing
-    sprite: _HL/Clothing/Neck/mantles/colcommmantle.rsi
+    sprite: _HL/Clothing/Neck/mantles/centcommantle.rsi

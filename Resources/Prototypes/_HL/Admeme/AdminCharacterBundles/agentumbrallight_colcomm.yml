@@ -7,7 +7,7 @@
     # neck:
     mask: ClothingMaskGasCentcom
     eyes: ClothingEyesGlassesNfsd
-    ears: ClothingHeadsetAltColCom
+    ears: ClothingHeadsetAltCentCom
     gloves: ClothingHandsGlovesSr
     shoes: ClothingShoesBootsLaceup
     suitstorage: SmallBluespaceAirTank
@@ -15,7 +15,7 @@
     jumpsuit: ClothingUniformJumpsuitCentcomFormal
     belt: ClothingBeltSheathFilled
     back: ClothingBackpackSatchelHoldingNirouFilled
-    id: UmbralLightColcommPDA
+    id: UmbralLightCentcomPDA
 
 - type: startingGear
   id: CCAgentUmbralLightCombat
@@ -26,7 +26,7 @@
     neck: ClothingNeckMantleDirectorate
     mask: ClothingMaskGasCentcom
     eyes: ClothingEyesGlassesNfsd
-    ears: ClothingHeadsetAltColCom
+    ears: ClothingHeadsetAltCentCom
     gloves: ClothingHandsGlovesCombat
     shoes: ClothingShoesBootsSpeedAntiqueProto
     suitstorage: WeaponShotgunBigLeady
@@ -34,11 +34,11 @@
     jumpsuit: ClothingUniformJumpsuitCentcomFormal
     belt: ClothingBeltMilitaryWebbing
     back: BluespaceAirTank
-    id: UmbralLightColcommPDA
+    id: UmbralLightCentcomPDA
 
 # ID Card
 - type: entity
-  id: UmbralLightColcommIDCard
+  id: UmbralLightCentcomIDCard
   parent: IDCardStandard
   name: CC Agent Umbral-Light's ID card (CC Agent)
   description: '"And the Mountain was Pleased..."'
@@ -49,8 +49,8 @@
     - Admin
   - type: IdCard
     fullName: Agent Umbral-Light
-    jobTitle: job-title-colonial-agent
-    jobIcon: JobIconCentComm
+    jobTitle: job-title-centcom-agent
+    jobIcon: JobIconCentCom
   - type: Sprite
     layers:
     - state: centcom
@@ -65,7 +65,7 @@
 
 # pda
 - type: entity
-  id: UmbralLightColcommPDA
+  id: UmbralLightCentcomPDA
   parent: CentcomPDA
   # name:
   # description:
@@ -75,7 +75,7 @@
     tags:
     - Admin
   - type: Pda
-    id: UmbralLightColcommIDCard # ID Card
+    id: UmbralLightCentcomIDCard # ID Card
     penSlot:
       startingItem: PenCentcom
       whitelist:

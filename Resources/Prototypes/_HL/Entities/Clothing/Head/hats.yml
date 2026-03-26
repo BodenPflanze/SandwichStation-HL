@@ -1,22 +1,4 @@
 - type: entity
-  parent: [ ClothingHeadBase, BaseColcommContraband ]
-  id: ClothingHeadHatColcomcap
-  name: directorate cap
-  description: An extravagant, fancy CC Directorate cap.
-  components:
-  - type: Sprite
-    sprite: _HL/Clothing/Head/colcap.rsi
-  - type: Clothing
-    sprite: _HL/Clothing/Head/colcap.rsi
-  - type: Item
-    sprite: _HL/Clothing/Head/colcap.rsi
-  - type: Tag
-    tags:
-    - ClothMade
-    - WhitelistChameleon
-    - HamsterWearable
-
-- type: entity
   parent: FoodPoppy
   id: PoppyChameleon
   suffix: Chameleonable Version

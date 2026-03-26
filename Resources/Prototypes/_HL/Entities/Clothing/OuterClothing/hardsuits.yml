@@ -201,19 +201,19 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndicateNavy
 
-#Colonial Naval Infantry/Marines Hardsuit
+#CentCom Naval Infantry/Marines Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseColcommContraband, ContrabandClothing]
-  id: ClothingOuterHardsuitColonialNavalInfantry
-  name: Colonial Navy M21 infantry hardsuit
-  description: A moderately armored mobile hardsuit used by the Colonial Navy. It features a distinctive pale-blue and black color scheme, and is equipped with a reinforced helmet for enhanced protection.
+  parent: [ClothingOuterHardsuitBase, BaseCentcomContraband, ContrabandClothing]
+  id: ClothingOuterHardsuitCentComNavalInfantry
+  name: CentCom Navy M21 infantry hardsuit
+  description: A moderately armored mobile hardsuit used by the CentCom Navy. It features a distinctive pale-blue and black color scheme, and is equipped with a reinforced helmet for enhanced protection.
   components:
   - type: Sprite
-    sprite: _HL/Clothing/OuterClothing/Hardsuits/colonialnavalinfantryHS.rsi
+    sprite: _HL/Clothing/OuterClothing/Hardsuits/centcomnavalinfantryHS.rsi
   - type: Clothing
-    sprite: _HL/Clothing/OuterClothing/Hardsuits/colonialnavalinfantryHS.rsi
+    sprite: _HL/Clothing/OuterClothing/Hardsuits/centcomnavalinfantryHS.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitColonialNavalInfantry
+    clothingPrototype: ClothingHeadHelmetHardsuitCentComNavalInfantry
   - type: ExplosionResistance
     damageCoefficient: 0.5
   - type: Armor
@@ -232,18 +232,18 @@
 # Faction Hardsuit Helmets
 # All inherit from Blood-red hardsuit helmet (ClothingHeadHelmetHardsuitSyndie) with modifications
 
-#Colonial Naval Infantry/Marines Hardsuit Helmet
+#CentCom Naval Infantry/Marines Hardsuit Helmet
 - type: entity
   parent: NFClothingHeadHardsuitWithLightBaseNfsd
-  id: ClothingHeadHelmetHardsuitColonialNavalInfantry
+  id: ClothingHeadHelmetHardsuitCentComNavalInfantry
   categories: [ HideSpawnMenu ]
-  name: Colonial Navy M21 infantry hardsuit helmet
-  description: A reinforced hardsuit helmet used by the Colonial Navy.
+  name: CentCom Navy M21 infantry hardsuit helmet
+  description: A reinforced hardsuit helmet used by the CentCom Navy.
   components:
   - type: Sprite
-    sprite: _HL/Clothing/OuterClothing/Hardsuits/colonialnavalinfantryHSHelm.rsi
+    sprite: _HL/Clothing/OuterClothing/Hardsuits/centcomnavalinfantryHSHelm.rsi
   - type: Clothing
-    sprite: _HL/Clothing/OuterClothing/Hardsuits/colonialnavalinfantryHSHelm.rsi
+    sprite: _HL/Clothing/OuterClothing/Hardsuits/centcomnavalinfantryHSHelm.rsi
   - type: PointLight
     color: "#5162FF"
   - type: PressureProtection

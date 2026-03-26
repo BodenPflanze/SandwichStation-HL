@@ -7,19 +7,19 @@
     neck: TrinketHeatRes
     # mask:
     eyes: ClothingEyesGlassesNfsd
-    ears: ClothingHeadsetAltColCom
+    ears: ClothingHeadsetAltCentCom
     gloves: ClothingHandsGlovesSr
     shoes: ClothingShoesChameleonNoSlips
     # suitstorage:
     outerClothing: ClothingOuterWinterCCWarden
     jumpsuit: ClothingUniformJumpsuitCentcomFormal
-    belt: ClothingBeltUtilityCentCommCYN182
-    back: ClothingBackpackMessengerCentCommCYN182
-    id: CYN182ColcommPDA
+    belt: ClothingBeltUtilityCentComCYN182
+    back: ClothingBackpackMessengerCentComCYN182
+    id: CYN182CentcomPDA
 
 # ID card
 - type: entity
-  id: CYN182ColcommIDCard
+  id: CYN182CentcomIDCard
   parent: IDCardStandard
   name: CYN-182's ID card (CC Engineer)
   description: '"Do your jobs, be competent, and all will turn out just fine."'
@@ -30,8 +30,8 @@
     - Admin
   - type: IdCard
     fullName: CYN-182
-    jobTitle: job-title-colonial-engineer
-    jobIcon: JobIconCentComm
+    jobTitle: job-title-centcom-engineer
+    jobIcon: JobIconCentCom
   - type: Sprite
     layers:
     - state: centcom
@@ -46,7 +46,7 @@
 
 # pda
 - type: entity
-  id: CYN182ColcommPDA
+  id: CYN182CentcomPDA
   parent: CentcomPDA
   suffix: CYN182, Admin
   components:
@@ -54,7 +54,7 @@
     tags:
     - Admin
   - type: Pda
-    id: CYN182ColcommIDCard # ID card
+    id: CYN182CentcomIDCard # ID card
     penSlot:
       startingItem: PenCentcom
       whitelist:
@@ -75,7 +75,7 @@
 
 # backpack
 - type: entity
-  id: ClothingBackpackMessengerCentCommCYN182
+  id: ClothingBackpackMessengerCentComCYN182
   parent: ClothingBackpackMessengerHolding
   name: CYN's messenger bag of holding
   description: A personally sown satchel with several straps to attach things. Seems a nametag is attached to the side.
@@ -91,10 +91,10 @@
       - id: ClothingShoesBootsMagAdv
       - id: MindShieldImplanterDisposable
       - id: MedicalTrackingImplanterDisposable
-      - id: DeathRattleImplanterColcommDisposable
+      - id: DeathRattleImplanterCentcomDisposable
       - id: DeathAcidifierImplanterDisposable
       - id: ClothingOuterHardsuitERTCentcommEngi
-      - id: BoxFolderColComClipboardNirou
+      - id: BoxFolderCentComClipboardNirou
       - id: RubberStampCentcom
       - id: HoloprojectorNfsdAntiqueProto
       - id: PowerCellAntiqueProto
@@ -103,7 +103,7 @@
 
 # utility belt
 - type: entity
-  id: ClothingBeltUtilityCentCommCYN182
+  id: ClothingBeltUtilityCentComCYN182
   parent: ClothingBeltUtility
   name: Loose utility belt
   description: A worn-out toolbelt with some clearly loose loops to attach your tools too. This really needs to be re-sown soon.
@@ -152,11 +152,11 @@
     - type: Item
       size: Large
 
-# colcomm engi hardsuit
+# centcom engi hardsuit
 - type: entity
   id: ClothingOuterHardsuitERTCentcommEngi
   parent: ClothingOuterHardsuitERTCentcomm
-  name: CentComm engineering hardsuit
+  name: CentCom engineering hardsuit
   description: A central command hardsuit situated for engineering duties. Boasting a robust internally-lined weave to protect the wearer from a veriety of threats common in the field while being easier to stow. At the cost of some speed and low combat effectiveness.
   suffix: CYN182, Admin
   components:

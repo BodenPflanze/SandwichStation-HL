@@ -9,7 +9,7 @@
     intrinsicChannels:
     - Future
     - Binary
-    - ColCom
+    - CentCom
     - Command
     - ColSec
     - Security
@@ -25,7 +25,7 @@
     intrinsicChannels:
     - Future
     - Binary
-    - ColCom
+    - CentCom
     - Command
     - ColSec
     - Security

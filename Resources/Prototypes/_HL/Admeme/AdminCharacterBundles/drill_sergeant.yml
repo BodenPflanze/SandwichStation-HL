@@ -7,7 +7,7 @@
     # neck:
     mask: CigarPlatinum
     eyes: ClothingEyesGlassesSunglassesWinter
-    ears: ClothingHeadsetAltColCom
+    ears: ClothingHeadsetAltCentCom
     # gloves:
     shoes: ClothingShoesBootsNfsdBrownFilled
     # suitstorage:
@@ -26,7 +26,7 @@
     neck: SyndicateWhistle
     # mask:
     eyes: ClothingEyesHudNfsd
-    ears: ClothingHeadsetAltColCom
+    ears: ClothingHeadsetAltCentCom
     # gloves:
     shoes: ClothingShoesBootsLaceup
     # suitstorage:

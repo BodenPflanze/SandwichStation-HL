@@ -1,5 +1,5 @@
 - type: startingGear
-  id: GilmColcomClothesCombat
+  id: GilmCentcomClothesCombat
   equipment:
     pocket1: PocketBluespaceTankGilm
     pocket2: WeaponPistolN1984Gilm
@@ -7,7 +7,7 @@
     neck: ClothingNeckMantleSheriff
     mask: CigarPlatinum
     eyes: ClothingEyesGlassesNfsd
-    ears: ClothingHeadsetAltColCom
+    ears: ClothingHeadsetAltCentCom
     gloves: ClothingHandsGlovesCombat
     shoes: ClothingShoesBootsNfsdBrownFilled
     outerClothing: ClothingOuterArmorBlueShieldGilm
@@ -17,15 +17,15 @@
     id: DeathsquadPDA
 
 - type: startingGear
-  id: GilmColcomClothesCommon
+  id: GilmCentcomClothesCommon
   equipment:
     pocket1: PocketBluespaceTankGilm
     pocket2: WeaponPistolN1984Gilm
-    head: ClothingHeadHatColcomcap
+    head: ClothingHeadHatCentcomcap
     neck: ClothingNeckMantleDirectorate
     mask: CigarPlatinum
     eyes: ClothingEyesGlassesNfsd
-    ears: ClothingHeadsetAltColCom
+    ears: ClothingHeadsetAltCentCom
     gloves: ClothingHandsGlovesCombat
     shoes: ClothingShoesBootsNfsdBrownFilled
     outerClothing: ClothingOuterArmorBlueShieldGilm
@@ -238,7 +238,7 @@
       - id: CigarPlatinumCase
         amount: 4
       - id: MedicalTrackingImplanterDisposable
-      - id: DeathRattleImplanterColcommDisposable
+      - id: DeathRattleImplanterCentcomDisposable
       - id: MedicalTrackingImplanterDisposable
       - id: StorageImplanterDisposable
 

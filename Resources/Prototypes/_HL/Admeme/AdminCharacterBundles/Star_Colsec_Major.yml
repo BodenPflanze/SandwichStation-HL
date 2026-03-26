@@ -1,5 +1,5 @@
 - type: startingGear
-  id: StarColcommUniform
+  id: StarCentcomUniform
   equipment:
     pocket1: PocketBluespaceTankStar
     pocket2: BarberScissors
@@ -202,8 +202,8 @@
         amount: 2
       - id: RubberStampCentcom
       - id: MedicalTrackingImplanterDisposable
-      - id: RadioImplanterColcommDisposable
-      - id: DeathRattleImplanterColcommDisposable
+      - id: RadioImplanterCentcomDisposable
+      - id: DeathRattleImplanterCentcomDisposable
       - id: MindShieldImplanterDisposable
       - id: StorageImplanterDisposable
       - id: CQCManual #Will replace with the dragon defensive form, but we do not have that yet

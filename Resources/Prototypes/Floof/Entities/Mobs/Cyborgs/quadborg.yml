@@ -276,7 +276,7 @@
     preserveExistingChannels: true
     intrinsicChannels:
     - Binary
-    - ColCom
+    - CentCom
     - Command
     - ColSec
     - Security
@@ -289,7 +289,7 @@
   - type: IntrinsicRadioTransmitter
     intrinsicChannels:
     - Binary
-    - ColCom
+    - CentCom
     - Command
     - ColSec
     - Security
@@ -302,7 +302,7 @@
   - type: ActiveRadio
     intrinsicChannels:
     - Binary
-    - ColCom
+    - CentCom
     - Command
     - ColSec
     - Security
@@ -341,7 +341,7 @@
       movement:
         state: quadspriteCC
   - type: SiliconLawProvider
-    laws: CentComm
+    laws: CentCom
   - type: SpriteStateToggle
     spriteLayer: movement
     stateOff: quadspriteCC

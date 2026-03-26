@@ -1,5 +1,5 @@
 - type: startingGear
-  id: VulrikColcomGear
+  id: VulrikCentcomGear
   equipment:
     pocket1: AdminHypoSaline
     pocket2: WeaponPistolMercenaryEchis
@@ -7,7 +7,7 @@
     neck: ClothingNeckCloakCentcom
     # mask:
     eyes: ClothingEyesGlassesSecurity
-    ears: ClothingHeadsetColCom
+    ears: ClothingHeadsetCentCom
     gloves: ClothingHandsGlovesCombat
     shoes: ClothingShoesBootsCowboyWhiteFilled
     # suitstorage:
@@ -179,7 +179,7 @@
       - id: ClothingHandsCCWarmers
       - id: ClothingUnderSocksCC
       - id: ClothingNeckCollarCC
-      - id: ClothingShoesBootsWinterColCom
+      - id: ClothingShoesBootsWinterCentCom
       - id: ClothingOuterWinterCentcom
       - id: RubberStampCentcom
       - id: EmagUnlimited
@@ -202,7 +202,7 @@
       - id: BoxDisposableKitVulrik1
       - id: BoxDisposableKitVulrik2
       - id: BoxDisposableKitVulrik3
-      - id: DeathRattleImplanterColcommDisposable
+      - id: DeathRattleImplanterCentcomDisposable
       - id: MedicalTrackingImplanterDisposable
       - id: MindShieldImplanterDisposable
       - id: StorageImplanterDisposable
@@ -250,8 +250,8 @@
     - Admin
   - type: IdCard
     fullName: Commander Vulrik Thornepelt
-    jobTitle: job-title-colonial-chief-architect
-    jobIcon: JobIconCentComm
+    jobTitle: job-title-centcom-chief-architect
+    jobIcon: JobIconCentCom
   - type: Sprite
     layers:
     - state: centcom

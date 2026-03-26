@@ -874,7 +874,7 @@
     - NFPouches # Frontier
   - type: EmagLatheRecipes
     emagStaticPacks:
-    # - ClothingCentComm # Frontier
+    # - ClothingCentCom # Frontier
     - ClothingSyndie
     # HL Starts
     - ClothingNT

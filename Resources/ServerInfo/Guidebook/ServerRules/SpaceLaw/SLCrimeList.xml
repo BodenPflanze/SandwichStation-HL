@@ -1064,7 +1064,7 @@
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Execution, Prisoner transport to Colcom, Permanent confinement.
+        Execution, Prisoner transport to Centcom, Permanent confinement.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -1124,7 +1124,7 @@
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Execution, Transport to ColCom
+        Execution, Transport to CentCom
       </Box>
     </ColorBox>
     <ColorBox>

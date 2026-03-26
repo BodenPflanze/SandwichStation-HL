@@ -8,8 +8,8 @@
   parent: [ BaseDisposableImplanter, MedicalTrackingImplanter ]
 
 - type: entity
-  id: DeathRattleImplanterColcommDisposable
-  parent: [ BaseDisposableImplanter, DeathRattleImplanterColcomm ]
+  id: DeathRattleImplanterCentcomDisposable
+  parent: [ BaseDisposableImplanter, DeathRattleImplanterCentcom ]
 
 - type: entity
   id: MindShieldImplanterDisposable
@@ -20,8 +20,8 @@
   parent: [ BaseDisposableImplanter, DeathAcidifierImplanter ]
 
 - type: entity
-  id: RadioImplanterColcommDisposable
-  parent: [ BaseDisposableImplanter, RadioImplanterColcomm ]
+  id: RadioImplanterCentcomDisposable
+  parent: [ BaseDisposableImplanter, RadioImplanterCentcom ]
 
 - type: entity
   id: StorageImplanterDisposable

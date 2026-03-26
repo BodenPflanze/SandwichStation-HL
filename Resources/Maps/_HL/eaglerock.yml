@@ -113818,7 +113818,7 @@ entities:
   - uid: 15040
     components:
     - type: MetaData
-      desc: A sleek, modern coffee machine, fit for any spacefaring species to enjoy. CentComm can't afford to provide mugs, bring your own.
+      desc: A sleek, modern coffee machine, fit for any spacefaring species to enjoy. CentCom can't afford to provide mugs, bring your own.
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -24.5,0.5

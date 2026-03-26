@@ -95,10 +95,10 @@
           # # - VGRoid # Frontier
 
 # - type: entity
-  # id: BaseStationColcomm
+  # id: BaseStationCentcom
   # abstract: true
   # components:
-    # - type: StationColcomm
+    # - type: StationCentcom
 
 # - type: entity
   # id: BaseStationEvacuation

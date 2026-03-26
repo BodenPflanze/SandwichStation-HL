@@ -2077,7 +2077,7 @@
   parent: [BaseStructureDisableAnchoring, VendingMachine] # Frontier
   id: VendingMachineCentDrobe
   name: CentDrobe
-  description: A one-of-a-kind vending machine for all your Colcomm aesthetic needs!
+  description: A one-of-a-kind vending machine for all your Centcom aesthetic needs!
   components:
   - type: VendingMachine
     pack: CentDrobeInventory
