@@ -4,8 +4,8 @@ meta:
   engineVersion: 267.3.0
   forkId: ""
   forkVersion: ""
-  time: 03/25/2026 23:42:26
-  entityCount: 14637
+  time: 03/31/2026 17:29:41
+  entityCount: 14640
 maps:
 - 473
 grids:
@@ -91270,6 +91270,13 @@ entities:
     - type: Transform
       pos: 5.5,6.5
       parent: 4812
+- proto: VendingMachineAmmo
+  entities:
+  - uid: 14640
+    components:
+    - type: Transform
+      pos: -1.5,-13.5
+      parent: 4812
 - proto: VendingMachineAtmosDrobe
   entities:
   - uid: 13486
@@ -91621,6 +91628,13 @@ entities:
     - type: Transform
       pos: -19.5,-21.5
       parent: 4812
+- proto: VendingMachineMercVend
+  entities:
+  - uid: 14638
+    components:
+    - type: Transform
+      pos: -3.5,-13.5
+      parent: 4812
 - proto: VendingMachineNutri
   entities:
   - uid: 1092
@@ -91632,6 +91646,13 @@ entities:
     components:
     - type: Transform
       pos: 25.5,-32.5
+      parent: 4812
+- proto: VendingMachinePickNPack
+  entities:
+  - uid: 14639
+    components:
+    - type: Transform
+      pos: -2.5,-13.5
       parent: 4812
 - proto: VendingMachineRoboDrobe
   entities:
@@ -101227,7 +101248,7 @@ entities:
       deviceLists:
       - 14631
     - type: Battery
-      startingCharge: 1283.8416
+      startingCharge: 202.68982
     - type: ApcPowerReceiverBattery
       enabled: True
   - uid: 12269
@@ -101239,7 +101260,7 @@ entities:
       deviceLists:
       - 14631
     - type: Battery
-      startingCharge: 1274.8438
+      startingCharge: 193.68954
     - type: ApcPowerReceiverBattery
       enabled: True
   - uid: 12270
@@ -101251,7 +101272,7 @@ entities:
       deviceLists:
       - 14631
     - type: Battery
-      startingCharge: 1278.1763
+      startingCharge: 197.02298
     - type: ApcPowerReceiverBattery
       enabled: True
   - uid: 12271
@@ -101263,7 +101284,7 @@ entities:
       deviceLists:
       - 14631
     - type: Battery
-      startingCharge: 1281.1755
+      startingCharge: 200.02307
     - type: ApcPowerReceiverBattery
       enabled: True
   - uid: 14629
@@ -101275,7 +101296,7 @@ entities:
       deviceLists:
       - 14631
     - type: Battery
-      startingCharge: 1365.3217
+      startingCharge: 284.18973
     - type: ApcPowerReceiverBattery
       enabled: True
   - uid: 14630
@@ -101287,7 +101308,7 @@ entities:
       deviceLists:
       - 14631
     - type: Battery
-      startingCharge: 1420.8081
+      startingCharge: 339.68634
     - type: ApcPowerReceiverBattery
       enabled: True
 - proto: WeaponEnergyTurretAIControlPanel
