@@ -4,6 +4,7 @@ using Content.Shared.Interaction.Events;
 using Content.Shared.InteractionVerbs.Events;
 using Content.Shared.Item;
 using Content.Shared.Popups;
+using Robust.Shared.Maths;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared.Ghost
@@ -100,6 +101,18 @@ namespace Content.Shared.Ghost
                 return;
 
             entity.Comp.CanGhostInteract = value;
+            Dirty(entity);
+        }
+
+        public void SetColor(Entity<GhostComponent?> entity, Color value)
+        {
+            if (!Resolve(entity, ref entity.Comp))
+                return;
+
+            if (entity.Comp.Color == value)
+                return;
+
+            entity.Comp.Color = value;
             Dirty(entity);
         }
 
