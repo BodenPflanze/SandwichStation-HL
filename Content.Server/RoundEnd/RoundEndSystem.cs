@@ -364,7 +364,8 @@ namespace Content.Server.RoundEnd
             {
                 if (!_shuttle.EmergencyShuttleArrived && ExpectedCountdownEnd is null)
                 {
-                    RequestRoundEnd(null, false, "round-end-system-shuttle-auto-called-announcement");
+                    var autoEvacMinutes = _cfg.GetCVar(SandwichCCVars.EvacAutoCallCountdownMinutes);
+                    RequestRoundEnd(TimeSpan.FromMinutes(autoEvacMinutes), null, false, "round-end-system-shuttle-auto-called-announcement");
                     StartAutoEvacRecallVote();
                     _autoCalledBefore = true;
                 }
