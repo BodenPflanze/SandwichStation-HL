@@ -6,6 +6,13 @@ namespace Content.Shared._Sandwich.CCVar;
 public sealed partial class SandwichCCVars
 {
     /// <summary>
+    /// Automatically starts a recall vote when the emergency shuttle is auto-called.
+    /// Requires auto voting to be enabled.
+    /// </summary>
+    public static readonly CVarDef<bool> EvacAutoVoteEnabled =
+        CVarDef.Create("sandwich.vote.evac_autovote_enabled", false, CVar.SERVERONLY);
+
+    /// <summary>
     /// Client-side jukebox volume multiplier.
     /// </summary>
     public static readonly CVarDef<float> JukeboxVolume =

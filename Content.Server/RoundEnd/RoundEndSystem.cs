@@ -22,6 +22,9 @@ using Robust.Shared.Timing;
 using Content.Shared.DeviceNetwork.Components;
 using Timer = Robust.Shared.Timing.Timer;
 using Content.Server._NF.SectorServices; // Frontier
+using Content.Server.Voting;
+using Content.Server.Voting.Managers;
+using Content.Shared._Sandwich.CCVar;
 
 namespace Content.Server.RoundEnd
 {
@@ -43,6 +46,7 @@ namespace Content.Server.RoundEnd
         [Dependency] private readonly SharedAudioSystem _audio = default!;
         [Dependency] private readonly StationSystem _stationSystem = default!;
         [Dependency] private readonly SectorServiceSystem _sectorService = default!; // Frontier: sector-wide alerts
+        [Dependency] private readonly IVoteManager _voteManager = default!;
 
         public TimeSpan DefaultCooldownDuration { get; set; } = TimeSpan.FromSeconds(30);
 
@@ -361,12 +365,48 @@ namespace Content.Server.RoundEnd
                 if (!_shuttle.EmergencyShuttleArrived && ExpectedCountdownEnd is null)
                 {
                     RequestRoundEnd(null, false, "round-end-system-shuttle-auto-called-announcement");
+                    StartAutoEvacRecallVote();
                     _autoCalledBefore = true;
                 }
 
                 // Always reset auto-call in case of a recall.
                 SetAutoCallTime();
             }
+        }
+
+        private void StartAutoEvacRecallVote()
+        {
+            if (!_cfg.GetCVar(CCVars.AutoVoteEnabled) || !_cfg.GetCVar(SandwichCCVars.EvacAutoVoteEnabled))
+                return;
+
+            var options = new VoteOptions
+            {
+                Title = Loc.GetString("ui-vote-evac-recall-title"),
+                Duration = TimeSpan.FromSeconds(_cfg.GetCVar(CCVars.VoteTimerRestart)),
+                Options =
+                {
+                    (Loc.GetString("ui-vote-evac-recall-yes"), "yes"),
+                    (Loc.GetString("ui-vote-evac-recall-no"), "no")
+                }
+            };
+
+            options.SetInitiatorOrServer(null);
+
+            var vote = _voteManager.CreateVote(options);
+            vote.OnFinished += (_, _) =>
+            {
+                var votesYes = vote.VotesPerOption["yes"];
+                var votesNo = vote.VotesPerOption["no"];
+
+                if (votesYes > votesNo && IsRoundEndRequested() && !_shuttle.EmergencyShuttleArrived)
+                {
+                    CancelRoundEndCountdown(checkCooldown: false);
+                    _chatManager.DispatchServerAnnouncement(Loc.GetString("ui-vote-evac-recall-succeeded"));
+                    return;
+                }
+
+                _chatManager.DispatchServerAnnouncement(Loc.GetString("ui-vote-evac-recall-failed"));
+            };
         }
     }
 
