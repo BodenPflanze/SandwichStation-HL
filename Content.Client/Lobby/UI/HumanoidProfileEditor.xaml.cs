@@ -173,7 +173,7 @@ namespace Content.Client.Lobby.UI
             NameEdit.OnTextChanged += args => { SetName(args.Text); };
             CustomSpeciesEdit.OnTextChanged += args => { SetCustomSpecies(args.Text); };
             NameRandomize.OnPressed += args => RandomizeName();
-            RandomizeEverythingButton.OnPressed += args => { RandomizeEverything(); };
+            RandomizeEverythingButton.OnPressed += _ => ShowRandomizeConfirmation();
             WarningLabel.SetMarkup($"[color=red]{Loc.GetString("humanoid-profile-editor-naming-rules-warning")}[/color]");
 
             #endregion Name
@@ -2147,6 +2147,13 @@ namespace Content.Client.Lobby.UI
             Profile = HumanoidCharacterProfile.Random().WithBankBalance(oldBank); // Frontier: add WithBankBalance(oldBank)
             SetProfile(Profile, CharacterSlot);
             SetDirty();
+        }
+
+        private void ShowRandomizeConfirmation()
+        {
+            var confirmation = new RandomizeProfileConfirmationWindow();
+            confirmation.OnConfirmed += RandomizeEverything;
+            confirmation.OpenCentered();
         }
 
         private void RandomizeName()
