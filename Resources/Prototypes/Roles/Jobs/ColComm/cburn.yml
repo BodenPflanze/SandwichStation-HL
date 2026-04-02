@@ -5,7 +5,7 @@
   playTimeTracker: JobCBURN
   setPreference: false
   startingGear: CBURNGear
-  icon: "JobIconColComm"
+  icon: "JobIconCentCom"
   supervisors: job-supervisors-centcom
   canBeAntag: false
   accessGroups:
@@ -14,7 +14,7 @@
   - CentralCommand
   special:
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant, DeathRattleImplantColcomm ]
+    implants: [ MindShieldImplant, DeathRattleImplantCentcom ]
 
 - type: startingGear
   id: CBURNGear
@@ -23,7 +23,7 @@
     back: ClothingBackpackDuffelCBURN
     mask: ClothingMaskGasERT
     eyes: ClothingEyesGlassesSecurity
-    ears: ClothingHeadsetAltColCom
+    ears: ClothingHeadsetAltCentCom
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitCBURN
     shoes: ClothingShoesBootsCombatFilled

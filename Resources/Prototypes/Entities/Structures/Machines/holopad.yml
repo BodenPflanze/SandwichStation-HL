@@ -1022,12 +1022,12 @@
 
 - type: entity
   parent: HolopadLongRange
-  id: HolopadColCommEvacShuttle
+  id: HolopadCentComEvacShuttle
   categories: [ ] # Frontier
   suffix: Evac Shuttle
   components:
   - type: Label
-    currentLabel: holopad-Colcomm-evac
+    currentLabel: holopad-Centcom-evac
 
 
 # Map Specific

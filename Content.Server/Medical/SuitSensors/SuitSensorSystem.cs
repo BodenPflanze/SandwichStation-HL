@@ -29,7 +29,6 @@ using Content.Shared.Emp;
 // Frontier start
 using Content.Server.Salvage.Expeditions;
 using Content.Server._NF.Medical.SuitSensors;
-using Content.Shared.FloofStation;
 // Frontier end
 
 namespace Content.Server.Medical.SuitSensors;

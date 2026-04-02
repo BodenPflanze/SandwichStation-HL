@@ -28,6 +28,3 @@
   - type: DeviceLinkSink
     ports:
     - Trigger
-  - type: LeashAnchor # Floofstation
-    offset: 0, 0.22
-    kind: Clothing

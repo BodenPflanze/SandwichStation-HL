@@ -81,7 +81,7 @@ shipyard-console-engine-Uranium = Uranium
 shipyard-console-engine-Bananium = Bananium
 
 ## Error Messages
-shipyard-console-checksum-failure = WARNING: Vessel manifest corrupted! Loading aborted. Contact Colonial Command immediately.
+shipyard-console-checksum-failure = WARNING: Vessel manifest corrupted! Loading aborted. Contact Central Command immediately.
 shipyard-console-load-ship-no-id = Insert an ID card to load saved ships.
 shipyard-console-load-failed = Failed to load ship.
 shipyard-console-insufficient-funds = Insufficient funds to load ship. Cost: {$cost} spesos. Your balance: {$balance} spesos.

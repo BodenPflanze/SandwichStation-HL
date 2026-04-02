@@ -359,15 +359,6 @@
     jumpsuit: CoolCoyoteClothesDivineRobe
 
 - type: loadout
-  id: LoadoutCoolCoyoteClothesDomina
-  price: 600
-#  effects:
-#  - !type:GroupLoadoutEffect
-#    proto: ContractorT1
-  equipment:
-    jumpsuit: CoolCoyoteClothesDomina
-
-- type: loadout
   id: LoadoutCoolCoyoteClothesDougDimmadome
   price: 600
 #  effects:

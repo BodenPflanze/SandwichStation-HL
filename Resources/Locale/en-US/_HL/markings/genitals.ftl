@@ -8,18 +8,6 @@ marking-Genital-Balls-Single2 = Balls, Single 2
 marking-Genital-Balls-Single2Alt-testicles_single_2_1_FRONT = Color
 marking-Genital-Balls-Single2Alt = Balls, Single 2 Alternate
 
-marking-Genital-Balls-Single4-testicles_single_4_0_FRONT = Color
-marking-Genital-Balls-Single4 = Balls, Single 4
-
-marking-Genital-Balls-Single4Alt-testicles_single_4_1_FRONT = Color
-marking-Genital-Balls-Single4Alt = Balls, Single 4 Alternate
-
-marking-Genital-Balls-Single5-testicles_single_5_0_FRONT = Color
-marking-Genital-Balls-Single5 = Balls, Single 5
-
-marking-Genital-Balls-Single5Alt-testicles_single_5_1_FRONT = Color
-marking-Genital-Balls-Single5Alt = Balls, Single 5 Alternate
-
 # Small single balls
 marking-Genital-Balls-Small1-testicles_single_1-s_0_FRONT = Color
 marking-Genital-Balls-Small1 = Balls, Small Single 1
@@ -48,18 +36,6 @@ marking-Genital-Balls-Sheath3 = Balls, Sheath 3
 
 marking-Genital-Balls-Sheath3Alt-testicles_sheath_3_1_FRONT = Color
 marking-Genital-Balls-Sheath3Alt = Balls, Sheath 3 Alternate
-
-marking-Genital-Balls-Sheath4-testicles_sheath_4_0_FRONT = Color
-marking-Genital-Balls-Sheath4 = Balls, Sheath 4
-
-marking-Genital-Balls-Sheath4Alt-testicles_sheath_4_1_FRONT = Color
-marking-Genital-Balls-Sheath4Alt = Balls, Sheath 4 Alternate
-
-marking-Genital-Balls-Sheath5-testicles_sheath_5_0_FRONT = Color
-marking-Genital-Balls-Sheath5 = Balls, Sheath 5
-
-marking-Genital-Balls-Sheath5Alt-testicles_sheath_5_1_FRONT = Color
-marking-Genital-Balls-Sheath5Alt = Balls, Sheath 5 Alternate
 
 # Human vaginas
 marking-GenitalVaginaHuman-vagina_human_1_0_FRONT = Color
@@ -182,8 +158,6 @@ marking-GenitalBreastsUddersC-breasts_udders_c_0_FRONT = Color
 marking-GenitalBreastsUddersC = C-Cup Breasts, Udders
 
 # Penis/Cock
-marking-Genital-Penis-Amputated-amputated_FRONT = Color
-marking-Genital-Penis-Amputated = Penis, Amputated
 
 marking-Genital-Penis-Nondescript-1-0-penis_nondescript_1_0_FRONT = Color
 marking-Genital-Penis-Nondescript-1-0 = Penis, Nondescript, 1
@@ -203,18 +177,6 @@ marking-Genital-Penis-Nondescript-3-0 = Penis, Nondescript, 3
 marking-Genital-Penis-Nondescript-3-1-penis_nondescript_3_1_FRONT = Color
 marking-Genital-Penis-Nondescript-3-1 = Penis, Nondescript, 3, Alternate
 
-marking-Genital-Penis-Nondescript-4-0-penis_nondescript_4_0_FRONT = Color
-marking-Genital-Penis-Nondescript-4-0 = Penis, Nondescript, 4
-
-marking-Genital-Penis-Nondescript-4-1-penis_nondescript_4_1_FRONT = Color
-marking-Genital-Penis-Nondescript-4-1 = Penis, Nondescript, 4, Alternate
-
-marking-Genital-Penis-Nondescript-5-0-penis_nondescript_5_0_FRONT = Color
-marking-Genital-Penis-Nondescript-5-0 = Penis, Nondescript, 5
-
-marking-Genital-Penis-Nondescript-5-1-penis_nondescript_5_1_FRONT = Color
-marking-Genital-Penis-Nondescript-5-1 = Penis, Nondescript, 5, Alternate
-
 marking-Genital-Penis-Human-1-0-penis_human_1_0_FRONT = Color
 marking-Genital-Penis-Human-1-0 = Penis, Human, 1
 
@@ -232,18 +194,6 @@ marking-Genital-Penis-Human-3-0 = Penis, Human, 3
 
 marking-Genital-Penis-Human-3-1-penis_human_3_1_FRONT = Color
 marking-Genital-Penis-Human-3-1 = Penis, Human, 3, Alternate
-
-marking-Genital-Penis-Human-4-0-penis_human_4_0_FRONT = Color
-marking-Genital-Penis-Human-4-0 = Penis, Human, 4
-
-marking-Genital-Penis-Human-4-1-penis_human_4_1_FRONT = Color
-marking-Genital-Penis-Human-4-1 = Penis, Human, 4, Alternate
-
-marking-Genital-Penis-Human-5-0-penis_human_5_0_FRONT = Color
-marking-Genital-Penis-Human-5-0 = Penis, Human, 5
-
-marking-Genital-Penis-Human-5-1-penis_human_5_1_FRONT = Color
-marking-Genital-Penis-Human-5-1 = Penis, Human, 5, Alternate
 
 marking-Genital-Penis-Knotted-1-0-penis_knotted_1_0_FRONT = Color
 marking-Genital-Penis-Knotted-1-0 = Penis, Knotted, 1
@@ -263,18 +213,6 @@ marking-Genital-Penis-Knotted-3-0 = Penis, Knotted, 3
 marking-Genital-Penis-Knotted-3-1-penis_knotted_3_1_FRONT = Color
 marking-Genital-Penis-Knotted-3-1 = Penis, Knotted, 3, Alternate
 
-marking-Genital-Penis-Knotted-4-0-penis_knotted_4_0_FRONT = Color
-marking-Genital-Penis-Knotted-4-0 = Penis, Knotted, 4
-
-marking-Genital-Penis-Knotted-4-1-penis_knotted_4_1_FRONT = Color
-marking-Genital-Penis-Knotted-4-1 = Penis, Knotted, 4, Alternate
-
-marking-Genital-Penis-Knotted-5-0-penis_knotted_5_0_FRONT = Color
-marking-Genital-Penis-Knotted-5-0 = Penis, Knotted, 5
-
-marking-Genital-Penis-Knotted-5-1-penis_knotted_5_1_FRONT = Color
-marking-Genital-Penis-Knotted-5-1 = Penis, Knotted, 5, Alternate
-
 marking-Genital-Penis-Flared-1-0-penis_flared_1_0_FRONT = Color
 marking-Genital-Penis-Flared-1-0 = Penis, Flared, 1
 
@@ -293,18 +231,6 @@ marking-Genital-Penis-Flared-3-0 = Penis, Flared, 3
 marking-Genital-Penis-Flared-3-1-penis_flared_3_1_FRONT = Color
 marking-Genital-Penis-Flared-3-1 = Penis, Flared, 3, Alternate
 
-marking-Genital-Penis-Flared-4-0-penis_flared_4_0_FRONT = Color
-marking-Genital-Penis-Flared-4-0 = Penis, Flared, 4
-
-marking-Genital-Penis-Flared-4-1-penis_flared_4_1_FRONT = Color
-marking-Genital-Penis-Flared-4-1 = Penis, Flared, 4, Alternate
-
-marking-Genital-Penis-Flared-5-0-penis_flared_5_0_FRONT = Color
-marking-Genital-Penis-Flared-5-0 = Penis, Flared, 5
-
-marking-Genital-Penis-Flared-5-1-penis_flared_5_1_FRONT = Color
-marking-Genital-Penis-Flared-5-1 = Penis, Flared, 5, Alternate
-
 marking-Genital-Penis-Barbknot-1-0-penis_barbknot_1_0_FRONT = Color
 marking-Genital-Penis-Barbknot-1-0 = Penis, Barbknot, 1
 
@@ -318,22 +244,10 @@ marking-Genital-Penis-Barbknot-2-1-penis_barbknot_2_1_FRONT = Color
 marking-Genital-Penis-Barbknot-2-1 = Penis, Barbknot, 2, Alternate
 
 marking-Genital-Penis-Barbknot-3-0-penis_barbknot_3_0_FRONT = Color
-marking-Genital-Penis-Barbknot-3-0 = Penis, Barbknot, 2
+marking-Genital-Penis-Barbknot-3-0 = Penis, Barbknot, 3
 
 marking-Genital-Penis-Barbknot-3-1-penis_barbknot_3_1_FRONT = Color
 marking-Genital-Penis-Barbknot-3-1 = Penis, Barbknot, 3, Alternate
-
-marking-Genital-Penis-Barbknot-4-0-penis_barbknot_4_0_FRONT = Color
-marking-Genital-Penis-Barbknot-4-0 = Penis, Barbknot, 4
-
-marking-Genital-Penis-Barbknot-4-1-penis_barbknot_4_1_FRONT = Color
-marking-Genital-Penis-Barbknot-4-1 = Penis, Barbknot, 4, Alternate
-
-marking-Genital-Penis-Barbknot-5-0-penis_barbknot_5_0_FRONT = Color
-marking-Genital-Penis-Barbknot-5-0 = Penis, Barbknot, 5
-
-marking-Genital-Penis-Barbknot-5-1-penis_barbknot_5_1_FRONT = Color
-marking-Genital-Penis-Barbknot-5-1 = Penis, Barbknot, 5, Alternate
 
 marking-Genital-Penis-Tentacle-1-0-penis_tentacle_1_0_FRONT = Color
 marking-Genital-Penis-Tentacle-1-0 = Penis, Tentacle, 1

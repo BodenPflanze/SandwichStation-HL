@@ -11,7 +11,7 @@
   id: Bottle
   parent: BaseVessel
   name: JDB Bottle
-  description: Custom-made for ColComm and licensed through the Jell Design Bureau, this fast and low-cost atmospheric harvester is frequently repurposed by mercenaries on a budget.
+  description: Custom-made for CentCom and licensed through the Jell Design Bureau, this fast and low-cost atmospheric harvester is frequently repurposed by mercenaries on a budget.
   price: 42500 # ~37000 on mapinit + roughly 15% markup
   category: Small
   group: Expedition

@@ -70,8 +70,8 @@ public sealed class ShipyardGridSaveSystem : EntitySystem
     // Implants that should not persist when found inside implanters during ship save.
     private static readonly HashSet<string> BlockedContainedImplantPrototypes = new(StringComparer.Ordinal)
     {
-        "DeathRattleImplantColcomm",
-        "RadioImplantColcomm",
+        "DeathRattleImplantCentcom",
+        "RadioImplantCentcom",
         "UplinkImplant",
     };
     // HardLight end

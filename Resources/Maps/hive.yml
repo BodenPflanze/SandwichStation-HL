@@ -129656,7 +129656,7 @@ entities:
         In order to transport resources to the supply distribution center consult the logistics officer to set up a portal between stations. They have been given a handheld teleportation device.
 
 
-        -CentComm Logistics Administration
+        -CentCom Logistics Administration
   - uid: 25574
     components:
     - type: Transform
@@ -129671,7 +129671,7 @@ entities:
         In order to transport resources to the supply distribution center consult the logistics officer to set up a portal between stations. They have been given a handheld teleportation device.
 
 
-        -CentComm Logistics Administration
+        -CentCom Logistics Administration
   - uid: 25758
     components:
     - type: Transform

@@ -55,7 +55,7 @@ public sealed partial class EmergencyShuttleSystem
     public float MaximumTransitTime { get; private set; }
 
     /// <summary>
-    /// How long it will take for the emergency shuttle to arrive at ColComm.
+    /// How long it will take for the emergency shuttle to arrive at CentCom.
     /// </summary>
     public float TransitTime;
 
@@ -71,12 +71,12 @@ public sealed partial class EmergencyShuttleSystem
     private static readonly Color DangerColor = Color.Red;
 
     /// <summary>
-    /// Have the emergency shuttles been authorised to launch at ColCom?
+    /// Have the emergency shuttles been authorised to launch at CentCom?
     /// </summary>
     private bool _launchedShuttles;
 
     /// <summary>
-    /// Have the emergency shuttles left for ColCom?
+    /// Have the emergency shuttles left for CentCom?
     /// </summary>
     public bool ShuttlesLeft;
 
@@ -166,23 +166,23 @@ public sealed partial class EmergencyShuttleSystem
             while (dataQuery.MoveNext(out var stationUid, out var comp))
             {
                 if (!TryComp<ShuttleComponent>(comp.EmergencyShuttle, out var shuttle) ||
-                    !TryComp<StationColcommComponent>(stationUid, out var Colcomm))
+                    !TryComp<StationCentcomComponent>(stationUid, out var Centcom))
                 {
                     continue;
                 }
 
-                if (!Deleted(Colcomm.Entity))
+                if (!Deleted(Centcom.Entity))
                 {
                     _shuttle.FTLToDock(comp.EmergencyShuttle.Value, shuttle,
-                        Colcomm.Entity.Value, _consoleAccumulator, TransitTime);
+                        Centcom.Entity.Value, _consoleAccumulator, TransitTime);
                     continue;
                 }
 
-                if (!Deleted(Colcomm.MapEntity))
+                if (!Deleted(Centcom.MapEntity))
                 {
                     // TODO: Need to get non-overlapping positions.
                     _shuttle.FTLToCoordinates(comp.EmergencyShuttle.Value, shuttle,
-                        new EntityCoordinates(Colcomm.MapEntity.Value,
+                        new EntityCoordinates(Centcom.MapEntity.Value,
                             _random.NextVector2(1000f)), _consoleAccumulator, TransitTime);
                 }
             }
@@ -202,8 +202,8 @@ public sealed partial class EmergencyShuttleSystem
         {
             var stationUid = _station.GetOwningStation(uid);
 
-            if (!TryComp<StationColcommComponent>(stationUid, out var Colcomm) ||
-                Deleted(Colcomm.Entity) ||
+            if (!TryComp<StationCentcomComponent>(stationUid, out var Centcom) ||
+                Deleted(Centcom.Entity) ||
                 pod.LaunchTime == null ||
                 pod.LaunchTime > _timing.CurTime)
             {
@@ -211,7 +211,7 @@ public sealed partial class EmergencyShuttleSystem
             }
 
             // Don't dock them. If you do end up doing this then stagger launch.
-            _shuttle.FTLToDock(uid, shuttle, Colcomm.Entity.Value, hyperspaceTime: TransitTime);
+            _shuttle.FTLToDock(uid, shuttle, Centcom.Entity.Value, hyperspaceTime: TransitTime);
             RemCompDeferred<EscapePodComponent>(uid);
         }
 
@@ -227,17 +227,17 @@ public sealed partial class EmergencyShuttleSystem
         // All the others.
         if (_consoleAccumulator < minTime)
         {
-            var query = AllEntityQuery<StationColcommComponent, TransformComponent>();
+            var query = AllEntityQuery<StationCentcomComponent, TransformComponent>();
 
             // Guarantees that emergency shuttle arrives first before anyone else can FTL.
-            while (query.MoveNext(out var comp, out var ColcommXform))
+            while (query.MoveNext(out var comp, out var CentcomXform))
             {
                 if (Deleted(comp.Entity))
                     continue;
 
-                if (_shuttle.TryAddFTLDestination(ColcommXform.MapID, true, out var ftlComp))
+                if (_shuttle.TryAddFTLDestination(CentcomXform.MapID, true, out var ftlComp))
                 {
-                    _shuttle.SetFTLWhitelist((ColcommXform.MapUid!.Value, ftlComp), null);
+                    _shuttle.SetFTLWhitelist((CentcomXform.MapUid!.Value, ftlComp), null);
                 }
             }
         }
@@ -388,7 +388,7 @@ public sealed partial class EmergencyShuttleSystem
             {
                 [ShuttleTimerMasks.ShuttleMap] = shuttle,
                 [ShuttleTimerMasks.SourceMap] = _roundEnd.GetStation(),
-                [ShuttleTimerMasks.DestMap] = _roundEnd.GetColcomm(),
+                [ShuttleTimerMasks.DestMap] = _roundEnd.GetCentcom(),
                 [ShuttleTimerMasks.ShuttleTime] = time,
                 [ShuttleTimerMasks.SourceTime] = time,
                 [ShuttleTimerMasks.DestTime] = time + TimeSpan.FromSeconds(TransitTime),

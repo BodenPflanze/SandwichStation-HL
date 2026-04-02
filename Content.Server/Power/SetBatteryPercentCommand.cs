@@ -7,7 +7,7 @@ using Robust.Shared.Console;
 namespace Content.Server.Power
 {
     [AdminCommand(AdminFlags.Debug)]
-    public sealed class SetBatteryPerColcommand : IConsoleCommand
+    public sealed class SetBatteryPerCentcomand : IConsoleCommand
     {
         [Dependency] private readonly IEntityManager _entManager = default!;
 

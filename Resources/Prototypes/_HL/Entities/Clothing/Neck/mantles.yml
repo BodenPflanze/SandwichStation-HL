@@ -118,21 +118,21 @@
   parent: ClothingNeckBase
   id: ClothingNeckMantleDirectorate
   name: directorate's mantle
-  description: Worn by the acting and previous directors of the Colonial Command.
+  description: Worn by the acting and previous directors of the Central Command.
   components:
   - type: Sprite
     sprite: _HL/Clothing/Neck/mantles/ccdirectoratemantle.rsi
   - type: Clothing
     sprite: _HL/Clothing/Neck/mantles/ccdirectoratemantle.rsi
 
-# ColComm Manica
+# CentCom Manica
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckMantleColComm
-  name: Colcomm's manica
-  description: A segmented arm covering for any colonial command personel. Almost exactly like the chief engineers, As you've earned the right to wear this!
+  id: ClothingNeckMantleCentCom
+  name: Centcom's manica
+  description: A segmented arm covering for any central command personel. Almost exactly like the chief engineers, As you've earned the right to wear this!
   components:
   - type: Sprite
-    sprite: _HL/Clothing/Neck/mantles/colcommmantle.rsi
+    sprite: _HL/Clothing/Neck/mantles/centcommantle.rsi
   - type: Clothing
-    sprite: _HL/Clothing/Neck/mantles/colcommmantle.rsi
+    sprite: _HL/Clothing/Neck/mantles/centcommantle.rsi

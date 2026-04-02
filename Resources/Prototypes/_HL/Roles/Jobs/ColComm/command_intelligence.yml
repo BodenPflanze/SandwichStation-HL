@@ -1,11 +1,11 @@
 - type: job
-  id: ColonialNavyman
+  id: CentComNavyman
   name: job-name-naval
   description: job-description-naval
-  playTimeTracker: JobColonialNavyman
+  playTimeTracker: JobCentComNavyman
   setPreference: false
-  startingGear: ColonialNavymanGear
-  icon: "JobIconColComm"
+  startingGear: CentComNavymanGear
+  icon: "JobIconCentCom"
   supervisors: job-supervisors-hos
   canBeAntag: false
   accessGroups:
@@ -15,17 +15,17 @@
   - Naval
   special:
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant, DeathRattleImplantColcomm ]
+    implants: [ MindShieldImplant, DeathRattleImplantCentcom ]
 
 - type: startingGear
-  id: ColonialNavymanGear
+  id: CentComNavymanGear
   equipment:
-    jumpsuit: ClothingUniformColonialNavy
+    jumpsuit: ClothingUniformCentComNavy
     shoes: ClothingShoesBootsCombatFilled
     eyes: ClothingEyesGlassesSunglasses
     belt: ClothingBeltAssault
     gloves: ClothingHandsGlovesCombat
     id: NavalPDA
-    ears: ClothingHeadsetAltColCom
+    ears: ClothingHeadsetAltCentCom
     pocket1: WeaponPistolMk58
     pocket2: Magazine45_ACPPistolHighCapacityFMJ

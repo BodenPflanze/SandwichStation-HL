@@ -7,7 +7,7 @@
     # neck:
     mask: ClothingMaskGasERT
     eyes: ClothingEyesHudMedicalDiagnostic
-    ears: ClothingHeadsetAltColCom
+    ears: ClothingHeadsetAltCentCom
     gloves: ClothingHandsGlovesNitrile
     shoes: ClothingShoesBootsMagAdv
     suitstorage: JetpackBlueFilled
@@ -253,7 +253,7 @@
       - id: Screwdriver
       - id: Wrench
       - id: FoodWaterJugBluespace
-      - id: DeathRattleImplanterColcommDisposable
+      - id: DeathRattleImplanterCentcomDisposable
       - id: MedicalTrackingImplanterDisposable
       - id: MindShieldImplanterDisposable
       - id: TrackingImplanterDisposable

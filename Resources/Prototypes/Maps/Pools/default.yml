@@ -1,20 +1,24 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
+  # - Atlast  # Atlas is missing in HL
   - Amber
-  - Bagel
-  - Box
-  - Convex
-  #- Core
+  # - Bagel   # Disabled due to lowpop on Sandwich
+  # - Box     # Disabled due to lowpop on Sandwich
+  # - Cluster # Cluster is missing in HL
+  # - Convex  # Disabled due to lowpop on Sandwich
+  # - Core
   - Elkridge
-  - Fland
-  #- Gate
-  - Loop
+  # - Fland   # Disabled due to lowpop on Sandwich
+  # - Gate
+  # - Loop    # Disabled due to Error occuring when creating
   - Marathon
-  - Meta
-  - Oasis
-  - Omega
-  - Packed
-  - Plasma
+  # - Meta    # Disabled due to Error occuring when creating
+  # - Oasis   # Disabled due to lowpop on Sandwich
+  - Omega   
+  # - Packed  # Did HL even change this map at all???
+  # - Plasma  # Disabled due to lowpop on Sandwich
   - Reach
   #- Train
+
+# Appearently this file is not getting used, pool is in Ressources/Prototypes/_NF/Maps/Pools/frontier.yml

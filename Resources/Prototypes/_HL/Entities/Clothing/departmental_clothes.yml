@@ -830,12 +830,12 @@
     price: 80 # Frontier
 
 #Misc Outfits
-#Colonial Command
+#Central Command
 - type: entity
   parent: ClothingHandsBase
   id: ClothingHandsCCWarmers
   name: CC arm-warmers
-  description: A pair of rather nice arm-warmers, styled for Colonial Command roles.
+  description: A pair of rather nice arm-warmers, styled for Central Command roles.
   components:
   - type: Sprite
     sprite: _HL/Clothing/Departmental/Misc/CCwarmer.rsi
@@ -852,7 +852,7 @@
   parent: [ ClothingShoesBase, ClothingShoesMilitaryBase ]
   id: ClothingUnderSocksCC
   name: CC thigh-high socks
-  description: A pair of thigh-high socks, styled for Colonial Command roles.
+  description: A pair of thigh-high socks, styled for Central Command roles.
   components:
   - type: Sprite
     sprite: _HL/Clothing/Departmental/Misc/CCsocks.rsi

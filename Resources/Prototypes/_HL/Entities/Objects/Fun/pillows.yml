@@ -846,7 +846,7 @@
   id: PillowBodyNebula
   parent: [BaseC3ExpeditionContraband, PillowBodyBase]
   name: Nebula body pillow
-  description: A pillow depicting Colonial Domestic Division member Nebula Silverfeather in a salacious pose. How scandalous.
+  description: A pillow depicting CentCom Domestic Division member Nebula Silverfeather in a salacious pose. How scandalous.
   components:
   - type: Item
     heldPrefix: whitepillow

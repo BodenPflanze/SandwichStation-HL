@@ -157,6 +157,6 @@
 #  categories: [ HideSpawnMenu ]
 
 - type: entity
-  parent: [ClothingHeadsetCommon, ClothingHeadsetAltColCom]
-  id: ClothingHeadsetAltColComCommon
+  parent: [ClothingHeadsetCommon, ClothingHeadsetAltCentCom]
+  id: ClothingHeadsetAltCentComCommon
 #  categories: [ HideSpawnMenu ]

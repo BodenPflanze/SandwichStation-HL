@@ -1,4 +1,4 @@
-﻿- files: ["water_spray.ogg"]
+- files: ["water_spray.ogg"]
   license: "CC0-1.0"
   copyright: "Watering by elittle13. Converted to .OGG and MONO by EmoGarbage404 (github)"
   source: "https://freesound.org/people/elittle13/sounds/568558"
@@ -16,7 +16,7 @@
 - files: ["atreides.ogg", "c-20r.ogg", "flaregun.ogg", "mateba.ogg", "minigun.ogg", "mk58.ogg"]
   license: "CC-BY-SA-3.0"
   copyright: "Taken from CM-SS13"
-  source: "https://gitlab.com/cmdevs/colonial-warfare/-/tree/32cb5892413243cc74bb2d11df8e3085f8ef1164/sound/weapons"
+  source: "https://gitlab.com/cmdevs/centcom-warfare/-/tree/32cb5892413243cc74bb2d11df8e3085f8ef1164/sound/weapons"
 
 - files: ["rocket-launcher.ogg", "taser2.ogg"]
   license: "CC-BY-SA-3.0"

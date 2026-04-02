@@ -251,9 +251,9 @@
   - type: IngestionBlocker
 
 - type: entity
-  parent: [ ClothingHeadBase, BaseColcommContraband ]
+  parent: [ ClothingHeadBase, BaseCentcomContraband ]
   id: ClothingHeadHatCentcom
-  name: ColComm brand hat
+  name: CentCom brand hat
   description: "It's good to be the emperor."
   components:
   - type: Sprite
@@ -987,10 +987,10 @@
   - type: BlockMovement
 
 - type: entity
-  parent: [ ClothingHeadBase, BaseColcommContraband ]
+  parent: [ ClothingHeadBase, BaseCentcomContraband ]
   id: ClothingHeadHatCentcomcap
-  name: ColComm cap
-  description: An extravagant, fancy Colonial Commander cap.
+  name: CentCom cap
+  description: An extravagant, fancy Central Commander cap.
   components:
   - type: Sprite
     sprite: Clothing/Head/Hats/comcap.rsi

@@ -145,10 +145,10 @@
 - type: entity
   parent: AirlockCommand # if you get centcom door somehow it counts as command, also inherit panel
   id: AirlockCentralCommand
-  suffix: Colonial Command
+  suffix: Central Command
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/colcomm.rsi
+    sprite: Structures/Doors/Airlocks/Standard/centcom.rsi
 
 - type: entity
   parent: Airlock
@@ -316,10 +316,10 @@
 - type: entity
   parent: AirlockCommandGlass # see standard
   id: AirlockCentralCommandGlass
-  suffix: Colonial Command
+  suffix: Central Command
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/colcomm.rsi
+    sprite: Structures/Doors/Airlocks/Glass/centcom.rsi
 
 - type: entity
   parent: AirlockGlass

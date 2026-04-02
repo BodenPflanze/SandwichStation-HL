@@ -63,15 +63,20 @@
             #silicon (3)
             StationAi: [ 1, 1 ]
             Borg: [ 2, 2 ]
-            Contractor: [ -1, -1 ]
-            Pilot: [ 5, 5 ]
-            Mercenary: [ 5, 5 ]
-            MedicalQuadBorg: [ 3, 3 ]
-            ServiceQuadBorg: [ 3, 3 ]
-            SalvageQuadBorg: [ 3, 3 ]
-            SecurityQuadBorg: [ 3, 3 ]
-            EngineeringQuadBorg: [ 3, 3 ]
+            # frontier
+            #Contractor: [ -1, -1 ]
+            #Pilot: [ 5, 5 ]
+            Mercenary: [ 0, 40 ]
+            MedicalQuadBorg: [ 1, 1 ]
+            ServiceQuadBorg: [ 1, 1 ]
+            SalvageQuadBorg: [ 1, 1 ]
+            SecurityQuadBorg: [ 1, 1 ]
+            EngineeringQuadBorg: [ 1, 1 ]
             Valet: [ 1, 1 ]
             MailCarrier: [ 1, 1 ]
             Prisoner: [ 3, 3 ]
             ForensicMantis: [ 1, 1 ]
+        - type: StationDeadDrop
+          maxDeadDrops: 2 # medium station
+        - type: StationDeadDropReporting
+          messageSet: Nfsd
