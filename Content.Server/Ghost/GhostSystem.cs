@@ -692,6 +692,29 @@ namespace Content.Server.Ghost
             args.Handled = true;
         }
         // End Frontier
+
+        private TimeSpan _nextRainbowUpdate = TimeSpan.Zero;
+
+        public override void Update(float frameTime)
+        {
+            base.Update(frameTime);
+
+            if (_gameTiming.CurTime < _nextRainbowUpdate)
+                return;
+
+            _nextRainbowUpdate = _gameTiming.CurTime + TimeSpan.FromSeconds(1);
+
+            var query = EntityQueryEnumerator<GhostComponent>();
+            while (query.MoveNext(out var uid, out var ghost))
+            {
+                if (!ghost.RainbowCycle)
+                    continue;
+
+                var hue = (float)(_gameTiming.CurTime.TotalSeconds % 6.0 / 6.0);
+                var color = Color.FromHsv(new System.Numerics.Vector4(hue, 1f, 1f, 1f));
+                SetColor((uid, ghost), color);
+            }
+        }
     }
 
     public sealed class GhostAttemptHandleEvent(MindComponent mind, bool canReturnGlobal) : HandledEntityEventArgs

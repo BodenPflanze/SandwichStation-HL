@@ -116,6 +116,18 @@ namespace Content.Shared.Ghost
             Dirty(entity);
         }
 
+        public void SetRainbowCycle(Entity<GhostComponent?> entity, bool value)
+        {
+            if (!Resolve(entity, ref entity.Comp))
+                return;
+
+            if (entity.Comp.RainbowCycle == value)
+                return;
+
+            entity.Comp.RainbowCycle = value;
+            Dirty(entity);
+        }
+
         // Frontier: uncryo status (mirroring CanReturnToBody)
         public void SetCanReturnFromCryo(EntityUid uid, bool value, GhostComponent? component = null)
         {
