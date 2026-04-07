@@ -109,19 +109,27 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
     {
         _roundEndCancelToken?.Cancel();
         _roundEndCancelToken = null;
+
+        // Clean up the Centcom map (and everything on it: grid, shuttle, players).
+        if (_singletonCentcomMap != null && Exists(_singletonCentcomMap.Value))
+        {
+            QueueDel(_singletonCentcomMap.Value);
+        }
+
+        _singletonCentcomMap = null;
+        _singletonCentcomGrid = null;
+        _singletonCentcomShuttle = null;
     }
 
     private void OnCentcomShutdown(EntityUid uid, StationCentcomComponent component, ComponentShutdown args)
     {
-        // ClearCentcom(component); // REMOVE THIS LINE
+        ClearCentcom(component);
     }
 
     private void ClearCentcom(StationCentcomComponent component)
     {
-    // QueueDel(component.Entity);      // REMOVE THIS LINE
-    // QueueDel(component.MapEntity);   // REMOVE THIS LINE
-    // component.Entity = null;         // REMOVE THIS LINE
-    // component.MapEntity = null;      // REMOVE THIS LINE
+        component.Entity = null;
+        component.MapEntity = null;
     }
 
     /// <summary>
