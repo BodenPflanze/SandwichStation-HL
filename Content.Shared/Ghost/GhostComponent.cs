@@ -94,6 +94,12 @@ public sealed partial class GhostComponent : Component
     [DataField, AutoNetworkedField]
     public Color Color = Color.White;
 
+    /// <summary>
+    /// If true, the ghost color cycles through the RGB spectrum every second.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool RainbowCycle;
+
     // Frontier: cryo functions
     /// <summary>
     /// Internal field value for CanReturnFromCryo.

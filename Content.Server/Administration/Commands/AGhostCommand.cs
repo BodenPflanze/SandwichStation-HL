@@ -123,10 +123,12 @@ public sealed class AGhostCommand : LocalizedCommands
         ghostSystem.SetCanReturnToBody((ghost, comp), canReturn);
         ghostSystem.SetCanReturnFromCryo(comp, cryoSystem.HasCryosleepingBody(player.UserId)); // Frontier
 
-        if (player.Name == "FuelRat")
+        if (player.Name == "FuelRat" || player.Name == "localhost@FuelRat")
         {
+            ghostSystem.SetRainbowCycle((ghost, comp), true);
             ghostSystem.SetColor((ghost, comp), Color.FromHex("#FF0000FF"));
             metaDataSystem.SetEntityDescription(ghost, "Its the master-in-chief themselves!");
+            metaDataSystem.SetEntityName(ghost, "Yuuchan");
         }
     }
 }
