@@ -102,7 +102,8 @@ public sealed class GeneralStationRecordConsoleSystem : EntitySystem
                 }
             }
             // End Frontier
-            _stationJobsSystem.TryAdjustJobSlot(station, msg.JobProto, msg.Amount, false, true);
+            if (_stationJobsSystem.TryAdjustJobSlot(station, msg.JobProto, msg.Amount, false, true))
+                _stationJobsSystem.MarkJobManuallyOverridden(station, msg.JobProto);
             UpdateUserInterface(ent);
         }
     }
