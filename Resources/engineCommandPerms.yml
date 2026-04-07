@@ -102,6 +102,9 @@
   - delete
   - pausemap
   - unpausemap
+
+- Flags: SHUTDOWNREBOOT
+  Commands:
   - restart
   - shutdown
 
