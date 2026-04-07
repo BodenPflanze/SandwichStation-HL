@@ -8,6 +8,7 @@ public sealed partial class CCVars
 {
     /// <summary>
     ///     Delay for auto-orientation. Used for people arriving via arrivals.
+    ///     Set to a negative value (e.g., -1) to disable auto-orientation entirely.
     /// </summary>
     public static readonly CVarDef<double> AutoOrientDelay =
         CVarDef.Create("shuttle.auto_orient_delay", 2.0, CVar.SERVER | CVar.REPLICATED);
