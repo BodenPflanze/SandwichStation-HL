@@ -18,6 +18,8 @@ using Content.Server._NF.Salvage.Expeditions.Structure; // Frontier
 using Content.Server._NF.Salvage.Expeditions;
 using Content.Shared.Salvage; // Frontier
 using Robust.Shared.GameObjects; // HARDLIGHT: For SpawnTimer extension method
+using Content.Shared.Ghost; // Sandwich: For ghost check during map cleanup
+using Robust.Shared.Timing; // Sandwich: For Timer.Spawn
 
 namespace Content.Server.Salvage;
 
@@ -206,7 +208,8 @@ public sealed partial class SalvageSystem
         {
             // HARDLIGHT: Clean up console state before deleting expedition
             CleanupExpeditionConsoleState(ev.FromMapUid.Value);
-            QueueDel(ev.FromMapUid.Value);
+            // Sandwich: Don't delete the map until all non-ghost players have left.
+            TryDeleteExpeditionWhenEmpty(ev.FromMapUid.Value);
         }
     }
 
@@ -314,18 +317,17 @@ public sealed partial class SalvageSystem
                 }
             }
 
-            if (remaining < TimeSpan.Zero)
+            if (remaining < TimeSpan.Zero && !comp.DeletionScheduled)
             {
+                comp.DeletionScheduled = true;
+
                 // HARDLIGHT: Mission ended; FTL all shuttles out immediately before cleanup.
                 FTLAllShuttlesHome(uid, comp, 10f); // 10s travel time on forced end
 
                 // Clean up console state; map deletion scheduled after shuttles depart.
                 CleanupExpeditionConsoleState(uid);
-                uid.SpawnTimer(TimeSpan.FromSeconds(15f), () =>
-                {
-                    if (Exists(uid))
-                        QueueDel(uid);
-                });
+                var capturedUid = uid;
+                Timer.Spawn(TimeSpan.FromSeconds(15), () => TryDeleteExpeditionWhenEmpty(capturedUid));
             }
         }
 
@@ -391,6 +393,36 @@ public sealed partial class SalvageSystem
             }
         }
         // End Frontier: mission-specific logic
+    }
+
+    // Sandwich: Check if any non-ghost players remain on the given map entity.
+    private bool HasNonGhostPlayersOnMap(EntityUid mapUid)
+    {
+        var playerQuery = EntityQueryEnumerator<ActorComponent, TransformComponent>();
+        while (playerQuery.MoveNext(out var playerUid, out _, out var playerXform))
+        {
+            if (HasComp<GhostComponent>(playerUid))
+                continue;
+
+            if (playerXform.MapUid == mapUid)
+                return true;
+        }
+        return false;
+    }
+
+    // Sandwich: Safely delete an expedition map only after all non-ghost players have left.
+    private void TryDeleteExpeditionWhenEmpty(EntityUid uid)
+    {
+        if (!Exists(uid))
+            return;
+
+        if (HasNonGhostPlayersOnMap(uid))
+        {
+            Timer.Spawn(TimeSpan.FromSeconds(1), () => TryDeleteExpeditionWhenEmpty(uid));
+            return;
+        }
+
+        QueueDel(uid);
     }
 
     // HARDLIGHT: Clean up console state when expedition ends
