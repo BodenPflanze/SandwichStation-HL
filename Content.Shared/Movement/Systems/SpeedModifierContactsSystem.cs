@@ -156,16 +156,10 @@ public sealed class SpeedModifierContactsSystem : EntitySystem
     {
         var otherUid = args.OtherEntity;
         _toUpdate.Add(otherUid);
-        _speedModifierSystem.RefreshMovementSpeedModifiers(otherUid);
     }
 
     private void OnEntityEnter(EntityUid uid, SpeedModifierContactsComponent component, ref StartCollideEvent args)
     {
-        // imp edit - added StepTrigger check
-        if (HasComp<StepTriggerComponent>(uid))
-            return;
-        // Imp End
-
         AddModifiedEntity(args.OtherEntity);
     }
 
@@ -180,7 +174,6 @@ public sealed class SpeedModifierContactsSystem : EntitySystem
 
         EnsureComp<SpeedModifiedByContactComponent>(uid);
         _toUpdate.Add(uid);
-        _speedModifierSystem.RefreshMovementSpeedModifiers(uid);
     }
 
     // imp edit - copied from StepTriggerSystem, but converting that into a separate method is its own headache
