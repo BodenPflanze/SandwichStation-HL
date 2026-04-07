@@ -8,6 +8,7 @@ using Content.Shared.Mind;
 using Robust.Server.GameObjects;
 using Robust.Server.Player;
 using Robust.Shared.Console;
+using Robust.Shared.Maths;
 using Robust.Shared.Player;
 using Content.Server._NF.CryoSleep; // Frontier
 
@@ -121,5 +122,11 @@ public sealed class AGhostCommand : LocalizedCommands
         var comp = _entities.GetComponent<GhostComponent>(ghost);
         ghostSystem.SetCanReturnToBody((ghost, comp), canReturn);
         ghostSystem.SetCanReturnFromCryo(comp, cryoSystem.HasCryosleepingBody(player.UserId)); // Frontier
+
+        if (player.Name == "FuelRat")
+        {
+            ghostSystem.SetColor((ghost, comp), Color.FromHex("#FF0000FF"));
+            metaDataSystem.SetEntityDescription(ghost, "Its the master-in-chief themselves!");
+        }
     }
 }
