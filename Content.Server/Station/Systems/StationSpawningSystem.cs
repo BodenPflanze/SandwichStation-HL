@@ -270,11 +270,6 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
                 }
             }
 
-            // Frontier: do not re-equip roleLoadout, make sure we equip job startingGear,
-            // and deduct loadout costs from a bank account if we have one.
-            if (prototype?.StartingGear is not null)
-                EquipStartingGear(entity.Value, prototype.StartingGear, raiseEvent: false);
-
             var bankComp = EnsureComp<BankAccountComponent>(entity.Value);
 
             if (hasBalance)
@@ -283,6 +278,11 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
             }
             /// End Frontier: overwriting EquipRoleLoadout
         }
+
+        // Frontier: always equip job startingGear, even if no loadout prototype exists.
+        // This must be outside the loadout block so players always get base job equipment (uniform, PDA, ID card, etc.).
+        if (prototype?.StartingGear is not null)
+            EquipStartingGear(entity.Value, prototype.StartingGear, raiseEvent: false);
 
         var gearEquippedEv = new StartingGearEquippedEvent(entity.Value);
         RaiseLocalEvent(entity.Value, ref gearEquippedEv);
