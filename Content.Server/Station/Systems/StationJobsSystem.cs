@@ -602,5 +602,28 @@ public sealed partial class StationJobsSystem : EntitySystem
         UpdateJobsAvailable();
     }
 
+    /// <summary>
+    /// Marks a job as manually overridden on the given station.
+    /// Automated systems should check <see cref="IsJobManuallyOverridden"/> and skip these jobs.
+    /// </summary>
+    public void MarkJobManuallyOverridden(EntityUid station, string jobPrototypeId, StationJobsComponent? stationJobs = null)
+    {
+        if (!Resolve(station, ref stationJobs, false))
+            return;
+
+        stationJobs.ManualJobOverrides.Add(jobPrototypeId);
+    }
+
+    /// <summary>
+    /// Returns whether a job has been manually overridden on the given station.
+    /// </summary>
+    public bool IsJobManuallyOverridden(EntityUid station, string jobPrototypeId, StationJobsComponent? stationJobs = null)
+    {
+        if (!Resolve(station, ref stationJobs, false))
+            return false;
+
+        return stationJobs.ManualJobOverrides.Contains(jobPrototypeId);
+    }
+
     #endregion
 }

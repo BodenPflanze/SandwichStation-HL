@@ -158,6 +158,10 @@ public sealed class DynamicJobAllocationRule : StationEventSystem<DynamicJobAllo
 
         foreach (var (stationUid, counts) in stations)
         {
+            // Skip stations where the mercenary job has been manually overridden via the Station Records Interface.
+            if (_stationJobs.IsJobManuallyOverridden(stationUid, component.MercenaryJob))
+                continue;
+
             var desiredTotalSlots = Math.Min(counts.staffedNonMercenary, component.MercenaryCap);
             var availableSlots = Math.Max(0, desiredTotalSlots - counts.filledMercenary);
 
