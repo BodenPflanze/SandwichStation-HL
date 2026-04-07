@@ -2,9 +2,6 @@ using System.Numerics;
 using Content.Server.Cargo.Systems;
 using Robust.Server.GameObjects;
 using Robust.Shared.Map;
-using Robust.Shared.Timing;
-using Robust.Shared.Player;
-using Content.Shared.Ghost;
 using Content.Server.Shuttles.Components;
 using Content.Server.Shuttles.Systems;
 using Content.Server.StationEvents.Components;
@@ -271,33 +268,7 @@ public sealed class BluespaceErrorRule : StationEventSystem<BluespaceErrorRuleCo
             }
         }
 
-        var mapsToDelete = new HashSet<MapId>(component.MapsUid);
-        if (mapsToDelete.Count == 0)
-            return;
-
-        TryDeleteMapsWhenEmpty(mapsToDelete);
-    }
-
-    private void TryDeleteMapsWhenEmpty(HashSet<MapId> mapsToDelete)
-    {
-        mapsToDelete.RemoveWhere(mapId => !_map.MapExists(mapId));
-        if (mapsToDelete.Count == 0)
-            return;
-
-        var playerQuery = EntityQueryEnumerator<ActorComponent, TransformComponent>();
-        while (playerQuery.MoveNext(out var playerUid, out _, out var playerXform))
-        {
-            if (HasComp<GhostComponent>(playerUid))
-                continue;
-
-            if (mapsToDelete.Contains(playerXform.MapID))
-            {
-                Timer.Spawn(TimeSpan.FromSeconds(1), () => TryDeleteMapsWhenEmpty(mapsToDelete));
-                return;
-            }
-        }
-
-        foreach (var mapId in mapsToDelete)
+        foreach (MapId mapId in component.MapsUid)
         {
             if (_map.MapExists(mapId))
                 _map.DeleteMap(mapId);
