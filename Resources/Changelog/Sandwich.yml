@@ -187,3 +187,15 @@ Entries:
       message: Fixed spawning without gear or with wrong gear
   id: 19
   time: '2026-04-07T18:17:29.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Fix
+      message: Fixed water walking rubberbanding
+    - type: Fix
+      message: Fixed Station jobs not applying
+    - type: Fix
+      message: Vinyl and Advertisement crates now contain 5 records (as advertised)
+    - type: Fix
+      message: 'All maps (that we use) now start with freelancer slots   '
+  id: 20
+  time: '2026-04-07T21:17:36.0000000+00:00'
