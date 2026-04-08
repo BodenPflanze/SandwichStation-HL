@@ -107,3 +107,9 @@ Entries:
       message: Amber Map security decal color and LV wirering beneath bridge.
   id: 12
   time: '2026-03-24T13:13:39.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Add
+      message: Added volume slider to "Options Menu" and Jukebox for jukebox music
+  id: 13
+  time: '2026-03-27T16:59:51.0000000+00:00'
