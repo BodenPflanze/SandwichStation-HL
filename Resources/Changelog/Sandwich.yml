@@ -77,3 +77,9 @@ Entries:
       message: Fixed power on roundstart!
   id: 8
   time: '2026-03-22T11:28:16.0000000+00:00'
+- author: lever1209
+  changes:
+    - type: Fix
+      message: Fixed instruments allowing them to be used outside of hand slots.
+  id: 9
+  time: '2026-03-22T16:59:25.0000000+00:00'
