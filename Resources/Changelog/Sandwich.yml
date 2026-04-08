@@ -177,3 +177,13 @@ Entries:
       message: Neuralyzer
   id: 18
   time: '2026-04-02T14:39:46.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Fix
+      message: Fixed round endings (sometimes got stuck)
+    - type: Fix
+      message: Fixed ATAG's getting deleted
+    - type: Fix
+      message: Fixed spawning without gear or with wrong gear
+  id: 19
+  time: '2026-04-07T18:17:29.0000000+00:00'
