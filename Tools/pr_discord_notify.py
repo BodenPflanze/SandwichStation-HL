@@ -47,12 +47,18 @@ def main():
 
     content = "".join(lines)
     response = requests.post(DISCORD_WEBHOOK_URL, json={
+    response = requests.post(DISCORD_WEBHOOK_URL + "?wait=true", json={
         "content": content,
         "allowed_mentions": {"parse": []},
         "flags": 1 << 2,
     })
     response.raise_for_status()
+    message_id = response.json()["id"]
     print(f"Posted changelog for PR #{PR_NUMBER} (entry #{target_id}) to Discord")
+
+    crosspost = requests.post(f"{DISCORD_WEBHOOK_URL}/messages/{message_id}/crosspost")
+    crosspost.raise_for_status()
+    print(f"Published message {message_id} to announcement channel followers")
 
 
 if __name__ == "__main__":
