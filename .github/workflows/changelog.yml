@@ -12,7 +12,6 @@ on:
 
 env:
   GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
-  CHANGELOG_DIR: ${{ vars.CHANGELOG_DIR }}
   PR_NUMBER: ${{ github.event.inputs.pr_number || github.event.number }}
 
 jobs:
