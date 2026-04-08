@@ -113,3 +113,11 @@ Entries:
       message: Added volume slider to "Options Menu" and Jukebox for jukebox music
   id: 13
   time: '2026-03-27T16:59:51.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Tweak
+      message: Jukebox songs are now sorted again (and better)!
+    - type: Fix
+      message: Fixed Jukebox songs!
+  id: 14
+  time: '2026-03-25T15:20:31.0000000+00:00'
