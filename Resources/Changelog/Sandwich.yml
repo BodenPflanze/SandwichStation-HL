@@ -1,5 +1,5 @@
-Order: -1 # Sandwich: us first since its our codebase
 Name: SandwichChangelog
+Order: -2
 Entries:
 - author: SandwichStation
   changes:
@@ -7,3 +7,9 @@ Entries:
       type: Add
   id: 1
   time: '2026-04-08T18:00:00.000000'
+- author: B3CKDOOR
+  changes:
+    - type: Add
+      message: SandwichStation changelog added.
+  id: 2
+  time: '2026-03-03T10:36:42.0000000+00:00'
