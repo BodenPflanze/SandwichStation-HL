@@ -121,3 +121,11 @@ Entries:
       message: Fixed Jukebox songs!
   id: 14
   time: '2026-03-25T15:20:31.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Tweak
+      message: Moved CCVar's
+    - type: Tweak
+      message: Made asteroids limit no longer hardcoded
+  id: 15
+  time: '2026-03-23T11:51:12.0000000+00:00'
