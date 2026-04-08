@@ -27,3 +27,15 @@ Entries:
       message: Fixed missing pirate logo texture.
   id: 3
   time: '2026-03-16T11:23:10.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Add
+      message: Security system against cheating shuttle players!
+    - type: Tweak
+      message: >-
+        Bluespace Stashes are now more restrictive (no longer nukedisks for the
+        next shift in your ship)
+    - type: Fix
+      message: Fixed bluespace WALL locker bug
+  id: 4
+  time: '2026-03-17T18:04:48.0000000+00:00'
