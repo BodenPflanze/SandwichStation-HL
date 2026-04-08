@@ -97,3 +97,13 @@ Entries:
         atmos piping, and disposal tubes between docked grids.
   id: 11
   time: '2026-03-24T13:25:25.0000000+00:00'
+- author: BodenPflanze
+  changes:
+    - type: Add
+      message: Added CE Handheld Power Console!
+    - type: Remove
+      message: Removed thongs and Libidozenithizine.
+    - type: Fix
+      message: Amber Map security decal color and LV wirering beneath bridge.
+  id: 12
+  time: '2026-03-24T13:13:39.0000000+00:00'
