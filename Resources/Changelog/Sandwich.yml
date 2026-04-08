@@ -13,3 +13,17 @@ Entries:
       message: SandwichStation changelog added.
   id: 2
   time: '2026-03-03T10:36:42.0000000+00:00'
+- author: QEU-B-458
+  changes:
+    - type: Add
+      message: >-
+        Station AI can now remotely control borgs with a B.O.R.I.S. module
+        installed.
+    - type: Fix
+      message: Cryogenic sleep units no longer crash on map load when rotated.
+    - type: Fix
+      message: Borg chassis no longer show surgery UI when interacted with.
+    - type: Fix
+      message: Fixed missing pirate logo texture.
+  id: 3
+  time: '2026-03-16T11:23:10.0000000+00:00'
