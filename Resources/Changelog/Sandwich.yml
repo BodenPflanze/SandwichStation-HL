@@ -83,3 +83,9 @@ Entries:
       message: Fixed instruments allowing them to be used outside of hand slots.
   id: 9
   time: '2026-03-22T16:59:25.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Add
+      message: Added ship rulebook
+  id: 10
+  time: '2026-03-22T21:55:39.0000000+00:00'
