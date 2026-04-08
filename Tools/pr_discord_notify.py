@@ -1,6 +1,6 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 
-"""Post a specific changelog entry to Discord for a merged PR."""
+"Post a specific changelog entry to Discord for a merged PR."
 
 import os
 import sys
@@ -13,6 +13,8 @@ DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 CHANGELOG_ID = os.environ.get("CHANGELOG_ID")
 PR_NUMBER = os.environ.get("PR_NUMBER", "?")
 GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY", "")
+
+CHANGELOG_ROLE_ID = "1491506525192061150"
 
 TYPES_TO_EMOJI = {"Fix": "🐛", "Add": "🆕", "Remove": "❌", "Tweak": "⚒️"}
 
@@ -39,17 +41,16 @@ def main():
     changes = entry.get("changes", [])
     pr_url = f"https://github.com/{GITHUB_REPOSITORY}/pull/{PR_NUMBER}"
 
-    lines = [f"**{author}** updated:\n"]
+    lines = [f"<@&{CHANGELOG_ROLE_ID}>\n", f"**{author}** updated:\n"]
     for change in changes:
         emoji = TYPES_TO_EMOJI.get(change.get("type", ""), "❓")
         lines.append(f"{emoji} - {change['message']}\n")
     lines.append(f"[PR #{PR_NUMBER}]({pr_url})\n")
 
     content = "".join(lines)
-    response = requests.post(DISCORD_WEBHOOK_URL, json={
     response = requests.post(DISCORD_WEBHOOK_URL + "?wait=true", json={
         "content": content,
-        "allowed_mentions": {"parse": []},
+        "allowed_mentions": {"roles": [CHANGELOG_ROLE_ID]},
         "flags": 1 << 2,
     })
     response.raise_for_status()
