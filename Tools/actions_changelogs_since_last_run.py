@@ -43,6 +43,9 @@ def main():
         # it will get the old changelog from the GitHub API
         last_changelog_stream = get_last_changelog()
 
+    if last_changelog_stream is None:
+        return
+
     last_changelog = yaml.safe_load(last_changelog_stream)
     with open(CHANGELOG_FILE, "r") as f:
         cur_changelog = yaml.safe_load(f)
@@ -63,6 +66,8 @@ def get_most_recent_workflow(
             continue
 
         return run
+
+    return None
 
 
 def get_current_run(
@@ -85,7 +90,7 @@ def get_past_runs(sess: requests.Session, current_run: Any) -> Any:
     return resp.json()
 
 
-def get_last_changelog() -> str:
+def get_last_changelog() -> str | None:
     github_repository = os.environ["GITHUB_REPOSITORY"]
     github_run = os.environ["GITHUB_RUN_ID"]
     github_token = os.environ["GITHUB_TOKEN"]
@@ -96,6 +101,10 @@ def get_last_changelog() -> str:
     session.headers["X-GitHub-Api-Version"] = "2022-11-28"
 
     most_recent = get_most_recent_workflow(session, github_repository, github_run)
+    if most_recent is None:
+        print("No previous successful workflow run found, skipping changelog diff")
+        return None
+
     last_sha = most_recent["head_commit"]["id"]
     print(f"Last successful publish job was {most_recent['id']}: {last_sha}")
     last_changelog_stream = get_last_changelog_by_sha(
