@@ -1,0 +1,9 @@
+Order: -1 # Sandwich: us first since its our codebase
+Name: SandwichChangelog
+Entries:
+- author: SandwichStation
+  changes:
+    - message: SandwichStation changelog added.
+      type: Add
+  id: 1
+  time: '2026-04-08T18:00:00.000000'
