@@ -62,6 +62,11 @@ async function main() {
     // Write changelogs
     writeChangelog(entry);
 
+    // Output entry ID so downstream workflow steps can reference it
+    if (process.env.GITHUB_OUTPUT) {
+        fs.appendFileSync(process.env.GITHUB_OUTPUT, `new_changelog_id=${entry.id}\n`);
+    }
+
     console.log(`Changelog updated with changes from PR #${process.env.PR_NUMBER}`);
 }
 
