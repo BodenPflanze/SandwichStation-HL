@@ -39,12 +39,6 @@
   nameDataset: NFNamesBorg # Frontier: use NF variant
   canCustomizeName: true
 
-# Security
-- type: roleLoadout
-  id: JobSecurityQuadBorg
-  nameDataset: NFNamesBorg # Frontier: use NF variant
-  canCustomizeName: true
-
 # Medical
 - type: roleLoadout
   id: JobMedicalQuadBorg

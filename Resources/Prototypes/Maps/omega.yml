@@ -70,7 +70,6 @@
             MedicalQuadBorg: [ 1, 1 ]
             ServiceQuadBorg: [ 1, 1 ]
             SalvageQuadBorg: [ 1, 1 ]
-            SecurityQuadBorg: [ 1, 1 ]
             EngineeringQuadBorg: [ 1, 1 ]
             Valet: [ 1, 1 ]
             MailCarrier: [ 1, 1 ]

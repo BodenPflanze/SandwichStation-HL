@@ -13,8 +13,6 @@
   - MiningDrill
   - WeaponGrapplingGun # Frontier
   - MineralScannerEmpty
-  #- BorgModuleMining # HL
-  - BorgModuleGrapplingGun
   - OreProcessorIndustrialMachineCircuitboard
   - ClothingMaskWeldingGas
   - ClothingShoesBootsJump
@@ -192,7 +190,6 @@
     - JawsOfLife
     - UtilityBeltChiefEngineer
     - BorgModuleAdvancedTool
-    - BorgModuleRCD
     - Fulton # Frontier
     - FultonBeacon # Frontier
     - NFBlueprintPowerDrill # Frontier
@@ -275,7 +272,6 @@
   - NFBlueprintClothingBackpackSatchelHolding # Frontier
   - NFBlueprintClothingBackpackDuffelHolding # Frontier
   - NFBlueprintClothingBackpackMessengerHolding # Frontier
-  - BorgModuleStorage # HardLight
 
 - type: technology
   id: PortableFission

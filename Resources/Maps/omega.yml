@@ -87094,13 +87094,6 @@ entities:
     - type: Transform
       pos: -38.5,11.5
       parent: 4812
-- proto: SpawnPointSecurityQuadborg
-  entities:
-  - uid: 14604
-    components:
-    - type: Transform
-      pos: 6.5,-27.5
-      parent: 4812
 - proto: SpawnPointServiceQuadborg
   entities:
   - uid: 14601
