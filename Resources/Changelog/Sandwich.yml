@@ -153,3 +153,27 @@ Entries:
       message: Captains+ can now reboot server without Yuuchan's intervention
   id: 17
   time: '2026-04-07T15:42:42.0000000+00:00'
+- author: BodenPflanze
+  changes:
+    - type: Add
+      message: Omega Station
+    - type: Remove
+      message: bondage gear
+    - type: Remove
+      message: leashes
+    - type: Remove
+      message: Overproportional genitals
+    - type: Tweak
+      message: various aghost improvements
+    - type: Tweak
+      message: Comms Console now uses Command access
+    - type: Tweak
+      message: Alert levels are now for the Station, not the entire Sector
+    - type: Tweak
+      message: Colonial Command is now Central Command
+    - type: Fix
+      message: rusted wall textures
+    - type: Fix
+      message: Neuralyzer
+  id: 18
+  time: '2026-04-02T14:39:46.0000000+00:00'
