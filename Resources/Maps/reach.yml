@@ -16405,14 +16405,6 @@ entities:
     - type: Transform
       pos: 17.5,-3.5
       parent: 2
-- proto: SpawnPointSecurityQuadborg
-  entities:
-  - uid: 2391
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -5.5,9.5
-      parent: 2
 - proto: SpawnPointServiceQuadborg
   entities:
   - uid: 2392

@@ -144493,13 +144493,6 @@ entities:
     - type: Transform
       pos: -7.5,33.5
       parent: 2
-- proto: SpawnPointSecurityQuadborg
-  entities:
-  - uid: 19775
-    components:
-    - type: Transform
-      pos: 65.5,-23.5
-      parent: 2
 - proto: SpawnPointServiceQuadborg
   entities:
   - uid: 19776

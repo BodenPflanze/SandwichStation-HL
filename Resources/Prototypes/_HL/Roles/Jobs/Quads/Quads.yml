@@ -53,23 +53,6 @@
   jobEntity: PlayerBorgQuadsalv
 
 - type: job
-  id: SecurityQuadBorg
-  name: job-name-security-quadborg
-  description: job-description-security-quadborg
-  playTimeTracker: JobSecurityQuadBorg
-  requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 21600 #6 hrs floof
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 3600 #1 hrs floof
-  canBeAntag: false
-  startingGear: SecurityQuadBorgGear
-  icon: JobIconSecurityBorg
-  supervisors: job-supervisors-hos
-  jobEntity: PlayerBorgQuad
-
-- type: job
   id: EngineeringQuadBorg
   name: job-name-engineering-quadborg
   description: job-description-engineering-quadborg
@@ -100,11 +83,6 @@
   id: SalvageQuadBorgGear
   equipment:
     id: SalvagePDA
-
-- type: startingGear
-  id: SecurityQuadBorgGear
-  equipment:
-    id: SecurityPDA
 
 - type: startingGear
   id: EngineeringQuadBorgGear

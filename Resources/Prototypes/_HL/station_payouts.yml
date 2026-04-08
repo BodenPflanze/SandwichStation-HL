@@ -32,11 +32,6 @@
   job: EngineeringQuadBorg
 
 - type: stationPay
-  id: SecurityQuadBorgPay
-  payPerHour: 26000 # Danger
-  job: SecurityQuadBorg
-
-- type: stationPay
   id: SalvageQuadBorgPay
   payPerHour: 20000 # New Minimum
   job: SalvageQuadBorg

@@ -110572,13 +110572,6 @@ entities:
     - type: Transform
       pos: -0.5,-32.5
       parent: 2
-- proto: SpawnPointSecurityQuadborg
-  entities:
-  - uid: 15166
-    components:
-    - type: Transform
-      pos: -2.5,-25.5
-      parent: 2
   - uid: 15167
     components:
     - type: Transform
