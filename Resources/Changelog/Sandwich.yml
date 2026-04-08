@@ -135,3 +135,21 @@ Entries:
       message: New station, Taco
   id: 16
   time: '2026-03-27T20:33:48.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Fix
+      message: Shuttles no longer get deleted on timer-run-out expeditions
+    - type: Add
+      message: Re-add of songs by Kazyu
+    - type: Add
+      message: Character randomizer now has a confirmation window
+    - type: Add
+      message: >-
+        New feature to disable auto rotation (server side, client will come
+        later)
+    - type: Tweak
+      message: Resized the "Portable Charger" (admin fix)
+    - type: Tweak
+      message: Captains+ can now reboot server without Yuuchan's intervention
+  id: 17
+  time: '2026-04-07T15:42:42.0000000+00:00'
