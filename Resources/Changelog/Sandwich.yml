@@ -71,3 +71,9 @@ Entries:
       message: Removed HL Tiles
   id: 7
   time: '2026-03-17T18:10:32.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Fix
+      message: Fixed power on roundstart!
+  id: 8
+  time: '2026-03-22T11:28:16.0000000+00:00'
