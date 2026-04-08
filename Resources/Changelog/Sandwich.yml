@@ -39,3 +39,19 @@ Entries:
       message: Fixed bluespace WALL locker bug
   id: 4
   time: '2026-03-17T18:04:48.0000000+00:00'
+- author: BodenPflanze
+  changes:
+    - type: Add
+      message: Lizard legs are back!
+    - type: Tweak
+      message: The item size of collars has been reduced.
+    - type: Remove
+      message: Security no longer works for BluCorp.
+    - type: Remove
+      message: Security thongs.
+    - type: Fix
+      message: >-
+        Hotfix for most sprite gaps between limbs, there might still be some
+        issues for other species.
+  id: 5
+  time: '2026-03-19T20:34:29.0000000+00:00'
