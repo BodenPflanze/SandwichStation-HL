@@ -55,3 +55,11 @@ Entries:
         issues for other species.
   id: 5
   time: '2026-03-19T20:34:29.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Tweak
+      message: >-
+        Shipyards no longer charge more then 50.000 bucks for loading a stored
+        ship
+  id: 6
+  time: '2026-03-19T18:39:42.0000000+00:00'
