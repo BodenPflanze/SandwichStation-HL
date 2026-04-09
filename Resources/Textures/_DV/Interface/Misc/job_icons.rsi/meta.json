@@ -26,9 +26,6 @@
             "name": "nyanoMantis"
         },
         {
-            "name": "MedicalBorg"
-        },
-        {
             "name": "ChiefJustice"
         },
         {
@@ -39,9 +36,6 @@
         },
         {
             "name": "Lawyer"
-        },
-		{
-			"name": "SecurityBorg"
         }
     ]
 }

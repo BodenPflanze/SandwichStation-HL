@@ -86790,13 +86790,6 @@ entities:
     - type: Transform
       pos: 20.5,-16.5
       parent: 4812
-- proto: SpawnPointEngineeringQuadborg
-  entities:
-  - uid: 14603
-    components:
-    - type: Transform
-      pos: 6.5,-26.5
-      parent: 4812
 - proto: SpawnPointGeneticist
   entities:
   - uid: 8433
@@ -86925,13 +86918,6 @@ entities:
     - type: Transform
       pos: -9.5,-22.5
       parent: 4812
-- proto: SpawnPointMedicalQuadborg
-  entities:
-  - uid: 14600
-    components:
-    - type: Transform
-      pos: 3.5,-25.5
-      parent: 4812
 - proto: SpawnPointMercenary
   entities:
   - uid: 14605
@@ -87024,13 +87010,6 @@ entities:
     - type: Transform
       pos: 27.5,-18.5
       parent: 4812
-- proto: SpawnPointSalvageQuadborg
-  entities:
-  - uid: 14602
-    components:
-    - type: Transform
-      pos: 3.5,-27.5
-      parent: 4812
 - proto: SpawnPointSalvageSpecialist
   entities:
   - uid: 4472
@@ -87093,13 +87072,6 @@ entities:
     components:
     - type: Transform
       pos: -38.5,11.5
-      parent: 4812
-- proto: SpawnPointServiceQuadborg
-  entities:
-  - uid: 14601
-    components:
-    - type: Transform
-      pos: 3.5,-26.5
       parent: 4812
 - proto: SpawnPointServiceWorker
   entities:
