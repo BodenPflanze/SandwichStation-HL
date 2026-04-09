@@ -4,8 +4,8 @@ meta:
   engineVersion: 267.3.0
   forkId: ""
   forkVersion: ""
-  time: 03/06/2026 20:12:45
-  entityCount: 24685
+  time: 04/09/2026 10:12:21
+  entityCount: 24681
 maps:
 - 1
 grids:
@@ -15876,7 +15876,7 @@ entities:
       pos: -18.5,-45.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -60619.195
+      secondsUntilStateChange: -60637.07
       state: Opening
     - type: DeviceLinkSink
       invokeCounter: 1
@@ -16728,7 +16728,7 @@ entities:
       pos: -41.5,-28.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -59882.594
+      secondsUntilStateChange: -59900.47
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -17598,7 +17598,7 @@ entities:
       pos: -20.5,-6.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -273164.53
+      secondsUntilStateChange: -273182.4
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -17732,7 +17732,7 @@ entities:
       pos: -42.5,-9.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -60994.297
+      secondsUntilStateChange: -61012.17
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -143934,7 +143934,7 @@ entities:
       pos: -46.5,-9.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -623.5995
+      secondsUntilStateChange: -641.47406
       state: Opening
 - proto: SophicScribe
   entities:
@@ -144410,6 +144410,18 @@ entities:
     components:
     - type: Transform
       pos: -0.5,51.5
+      parent: 2
+- proto: SpawnPointQuadborg
+  entities:
+  - uid: 19739
+    components:
+    - type: Transform
+      pos: 65.5,-23.5
+      parent: 2
+  - uid: 19753
+    components:
+    - type: Transform
+      pos: 65.5,-24.5
       parent: 2
 - proto: SpawnPointQuartermaster
   entities:
