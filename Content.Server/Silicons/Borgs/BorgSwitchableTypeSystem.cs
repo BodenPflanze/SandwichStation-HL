@@ -31,9 +31,16 @@ public sealed class BorgSwitchableTypeSystem : SharedBorgSwitchableTypeSystem
         // Borg transponder for the robotics console
         if (TryComp(ent, out BorgTransponderComponent? transponder))
         {
+            // Floof Quad Changes start
+            // We check the ChassisFamily. If Quad, then Custom-Pfad, else Vanilla.
+            var rsiPath = ent.Comp.ChassisFamily == "quad" 
+                ? "Floof/Mobs/Silicon/quad.rsi" 
+                : "Mobs/Silicon/chassis.rsi";
+
             _borgSystem.SetTransponderSprite(
                 (ent.Owner, transponder),
-                new SpriteSpecifier.Rsi(new ResPath("Mobs/Silicon/chassis.rsi"), prototype.SpriteBodyState));
+                new SpriteSpecifier.Rsi(new ResPath(rsiPath), prototype.SpriteBodyState));
+            // Floof Quad Changes end
 
             _borgSystem.SetTransponderName(
                 (ent.Owner, transponder),
