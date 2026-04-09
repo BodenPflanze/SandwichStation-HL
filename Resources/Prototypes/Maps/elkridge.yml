@@ -65,11 +65,11 @@
             Musician: [ 1, 1 ]
             #silicon (3)
             StationAi: [ 1, 1 ]
-            Borg: [ -1, -1 ]
+            Borg: [ 4, 4 ]
             # hardlight
             #Contractor: [ -1, -1 ]
             #Pilot: [ 5, 5 ]
-            QuadBorg: [-1, -1]
+            QuadBorg: [ 4, 4 ]
             Mercenary: [ 5, 40 ]
             StationTrafficController: [ 1, 1 ]
             MailCarrier: [ 1, 1 ]

@@ -4,8 +4,8 @@ meta:
   engineVersion: 267.3.0
   forkId: ""
   forkVersion: ""
-  time: 03/20/2026 19:00:54
-  entityCount: 23865
+  time: 04/09/2026 10:14:36
+  entityCount: 23862
 maps:
 - 1
 grids:
@@ -139058,6 +139058,18 @@ entities:
     components:
     - type: Transform
       pos: -37.5,-52.5
+      parent: 2
+- proto: SpawnPointQuadborg
+  entities:
+  - uid: 3353
+    components:
+    - type: Transform
+      pos: 34.5,-26.5
+      parent: 2
+  - uid: 19584
+    components:
+    - type: Transform
+      pos: 34.5,-25.5
       parent: 2
 - proto: SpawnPointQuartermaster
   entities:
