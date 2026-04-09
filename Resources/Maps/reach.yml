@@ -16298,14 +16298,6 @@ entities:
     - type: Transform
       pos: 8.5,0.5
       parent: 2
-- proto: SpawnPointEngineeringQuadborg
-  entities:
-  - uid: 2375
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -6.5,8.5
-      parent: 2
 - proto: SpawnPointHeadOfSecurity
   entities:
   - uid: 2376
@@ -16332,14 +16324,6 @@ entities:
     - type: Transform
       pos: 4.5,-2.5
       parent: 2
-- proto: SpawnPointMedicalQuadborg
-  entities:
-  - uid: 2380
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -4.5,9.5
-      parent: 2
 - proto: SpawnPointMusician
   entities:
   - uid: 2381
@@ -16365,14 +16349,6 @@ entities:
     components:
     - type: Transform
       pos: 8.5,15.5
-      parent: 2
-- proto: SpawnPointSalvageQuadborg
-  entities:
-  - uid: 2385
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -6.5,9.5
       parent: 2
 - proto: SpawnPointSalvageSpecialist
   entities:
@@ -16404,14 +16380,6 @@ entities:
     components:
     - type: Transform
       pos: 17.5,-3.5
-      parent: 2
-- proto: SpawnPointServiceQuadborg
-  entities:
-  - uid: 2392
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -4.5,8.5
       parent: 2
 - proto: SpawnPointStationEngineer
   entities:

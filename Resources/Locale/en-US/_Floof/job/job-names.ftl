@@ -2,7 +2,3 @@ job-name-anomaly = Anomaly
 job-title-surgeon-general = General Surgeon
 job-name-invspec = Inventory Specialist
 job-name-quadborg = Quadborg
-job-name-medical-quadborg = Medical Quadborg
-job-name-service-quadborg = Service Quadborg
-job-name-salvage-quadborg = Salvage Quadborg
-job-name-engineering-quadborg = Engineering Quadborg
