@@ -4,9 +4,9 @@
   description: job-description-quadborg
   playTimeTracker: JobBorgQuad
   setPreference: true
-  #requirements:
-  #  - !type:OverallPlaytimeRequirement
-  #    time: 43200 # 12 hrs # Frontier: 10<12 hrs
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 43200 # 12 hrs # Frontier: 10<12 hrs
   canBeAntag: false
   accessGroups:
   - AllAccess
