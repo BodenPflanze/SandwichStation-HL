@@ -568,26 +568,6 @@ namespace Content.Server.GameTicking
             }
             // --- End Corrected Centcom logic ---
 
-            // Aggressively delete the default map after a 30 second delay
-            var defaultMapEntityUid = _mapManager.GetMapEntityId(DefaultMap);
-            if (DefaultMap != null)
-            {
-                Timer.Spawn(TimeSpan.FromSeconds(30), () =>
-                {
-                    // Send all players on the default map to the lobby before deleting the map
-                    foreach (var session in _playerManager.Sessions)
-                    {
-                        var attachedEntity = session.AttachedEntity;
-                        if (attachedEntity != null && Transform(attachedEntity.Value).MapID == DefaultMap)
-                        {
-                            PlayerJoinLobby(session);
-                        }
-                    }
-
-                    QueueDel(defaultMapEntityUid);
-                });
-            }
-
             try
             {
                 ShowRoundEndScoreboard(text);
