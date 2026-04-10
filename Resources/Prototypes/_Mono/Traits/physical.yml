@@ -311,7 +311,7 @@
   description: trait-dermal-armor-desc
   category: Physical
   cost: 6
-  mutuallyExclusiveTraits:
+  mutuallyExclusiveTraits: []
   components:
   - type: DamageProtectionBuff
     modifiers:
@@ -375,3 +375,4 @@
     intervalSeconds: 1
     healPerSecond: .3
     critMultiplier: .25
+
