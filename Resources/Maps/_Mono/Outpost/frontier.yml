@@ -69,7 +69,7 @@ entities:
   - uid: 3
     components:
     - type: MetaData
-      name: Colonial Outpost
+      name: Central Command Outpost
     - type: Transform
       pos: 12,-25
       parent: 1

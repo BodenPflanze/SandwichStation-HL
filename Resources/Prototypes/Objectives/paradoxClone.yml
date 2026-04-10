@@ -22,7 +22,7 @@
 - type: entity
   parent: [BaseParadoxCloneObjective, BaseLivingObjective]
   id: ParadoxCloneLivingObjective
-  name: Escape to Colcomm alive and unrestrained.
+  name: Escape to Centcom alive and unrestrained.
   description: Return to your old life.
   components:
   - type: Objective

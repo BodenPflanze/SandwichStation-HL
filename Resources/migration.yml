@@ -425,7 +425,7 @@ SalvageShuttleCircuitboardStealObjective: null
 
 # 2024-08-28
 ClothingBackpackDuffelSyndicateCostumeCentcom: null
-ClothingHeadsetAltColComFake: null
+ClothingHeadsetAltCentComFake: null
 CentcomPDAFake: null
 CentcomIDCardSyndie: null
 
@@ -595,7 +595,7 @@ MailRageCageSpam: MailSpamLetter
 MailVoyageAdvertisementSpam: MailSpamLetter
 MailScienceSpiderClanSpam: MailSpamLetter
 MailAllAccessSpam: MailSpamLetter
-MailColcommRetributionSpam: MailSpamLetter
+MailCentcomRetributionSpam: MailSpamLetter
 MailEvilLizardSpam: MailSpamLetter
 MailParentsNeedMoneySpam: MailSpamLetter
 

@@ -21,6 +21,12 @@ ui-vote-map-win = { $winner } won the map vote!
 ui-vote-map-notlobby = Voting for maps is only valid in the pre-round lobby!
 ui-vote-map-notlobby-time = Voting for maps is only valid in the pre-round lobby with { $time } remaining!
 
+ui-vote-evac-recall-title = Recall emergency shuttle?
+ui-vote-evac-recall-yes = Recall? YES!
+ui-vote-evac-recall-no = No
+ui-vote-evac-recall-succeeded = Recall vote passed. Recalling emergency shuttle.
+ui-vote-evac-recall-failed = Recall vote failed. Emergency shuttle will remain en route.
+
 
 # Votekick votes
 ui-vote-votekick-unknown-initiator = A player

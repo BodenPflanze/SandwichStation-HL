@@ -1,0 +1,19 @@
+- type: gameMap
+  id: CentCom
+  isGrid: true # Did you know that Centcom is the only "game map" that isn't actually a map? Send help.
+  mapName: 'Central Command'
+  mapPath: /Maps/centcom.yml
+  minPlayers: 1
+  stations:
+    Centcom:
+      stationProto: RecordsFrontierOutpost
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Central Command {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'TG'
+        - type: ExtraStationInformation
+          lobbySortOrder: 3
+        - type: StationDeadDrop
+          maxDeadDrops: 0

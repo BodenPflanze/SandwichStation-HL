@@ -1,5 +1,5 @@
 - type: startingGear
-  id: BaiheColcomGear
+  id: BaiheCentcomGear
   equipment:
     pocket1: PowerCellAntiqueProto
     pocket2: DoorRemoteAll
@@ -7,7 +7,7 @@
     neck: ClothingNeckCloakCCponcho
     # mask:
     eyes: ClothingEyesGlassesNfsd
-    ears: ClothingHeadsetAltColCom
+    ears: ClothingHeadsetAltCentCom
     # gloves:
     shoes: ClothingShoesBootsCombat
     # suitstorage:

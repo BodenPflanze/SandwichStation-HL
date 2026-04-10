@@ -116,10 +116,10 @@
       sprite: Clothing/Uniforms/Jumpsuit/chaplain.rsi
 
 - type: entity
-  parent: [ ClothingUniformBase, BaseColcommContraband ]
+  parent: [ ClothingUniformBase, BaseCentcomContraband ]
   id: ClothingUniformJumpsuitCentcomAgent
-  name: ColComm agent's jumpsuit
-  description: A suit worn by ColComm's legal team. Smells of burnt coffee.
+  name: CentCom agent's jumpsuit
+  description: A suit worn by CentCom's legal team. Smells of burnt coffee.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/centcom_agent.rsi
@@ -127,10 +127,10 @@
     sprite: Clothing/Uniforms/Jumpsuit/centcom_agent.rsi
 
 - type: entity
-  parent: [ ClothingUniformBase, BaseColcommContraband ]
+  parent: [ ClothingUniformBase, BaseCentcomContraband ]
   id: ClothingUniformJumpsuitCentcomOfficial
-  name: ColComm official's jumpsuit
-  description: It's a jumpsuit worn by ColComm's officials.
+  name: CentCom official's jumpsuit
+  description: It's a jumpsuit worn by CentCom's officials.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/centcom_official.rsi
@@ -138,10 +138,10 @@
     sprite: Clothing/Uniforms/Jumpsuit/centcom_official.rsi
 
 - type: entity
-  parent: [ ClothingUniformBase, BaseColcommContraband ]
+  parent: [ ClothingUniformBase, BaseCentcomContraband ]
   id: ClothingUniformJumpsuitCentcomOfficer
-  name: ColComm officer's jumpsuit
-  description: It's a jumpsuit worn by ColComm Officers.
+  name: CentCom officer's jumpsuit
+  description: It's a jumpsuit worn by CentCom Officers.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/centcom_officer.rsi
@@ -795,7 +795,7 @@
 - type: entity
   parent: [ClothingUniformBase, BaseC2ContrabandUnredeemable] # Frontier: added BaseC2ContrabandUnredeemable
   id: ClothingUniformJumpsuitCentcomFormal
-  name: Colonial Command formal suit
+  name: Central Command formal suit
   description: A suit for special occasions.
   components:
   - type: Sprite
@@ -958,10 +958,10 @@
     sprite: Clothing/Uniforms/Jumpsuit/musician.rsi
 
 - type: entity
-  parent: [ BaseColcommContraband, ClothingUniformBase ]
+  parent: [ BaseCentcomContraband, ClothingUniformBase ]
   id: ClothingUniformJumpsuitERTChaplain
   name: ERT chaplain uniform
-  description: A special suit made for Colonial Command's elite chaplain corps.
+  description: A special suit made for Central Command's elite chaplain corps.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/ert_chaplain.rsi
@@ -969,10 +969,10 @@
     sprite: Clothing/Uniforms/Jumpsuit/ert_chaplain.rsi
 
 - type: entity
-  parent: [ BaseColcommContraband, ClothingUniformBase ]
+  parent: [ BaseCentcomContraband, ClothingUniformBase ]
   id: ClothingUniformJumpsuitERTEngineer
   name: ERT engineering uniform
-  description: A special suit made for the elite engineers under ColComm.
+  description: A special suit made for the elite engineers under CentCom.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/ert_engineer.rsi
@@ -980,10 +980,10 @@
     sprite: Clothing/Uniforms/Jumpsuit/ert_engineer.rsi
 
 - type: entity
-  parent: [ BaseColcommContraband, ClothingUniformBase ]
+  parent: [ BaseCentcomContraband, ClothingUniformBase ]
   id: ClothingUniformJumpsuitERTJanitor
   name: ERT janitorial uniform
-  description: A special suit made for the elite janitors under ColComm.
+  description: A special suit made for the elite janitors under CentCom.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/ert_janitor.rsi
@@ -991,10 +991,10 @@
     sprite: Clothing/Uniforms/Jumpsuit/ert_janitor.rsi
 
 - type: entity
-  parent: [ BaseColcommContraband, ClothingUniformBase ]
+  parent: [ BaseCentcomContraband, ClothingUniformBase ]
   id: ClothingUniformJumpsuitERTLeader
   name: ERT leader uniform
-  description: A special suit made for the best of the elites under ColComm.
+  description: A special suit made for the best of the elites under CentCom.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/ert_leader.rsi
@@ -1002,10 +1002,10 @@
     sprite: Clothing/Uniforms/Jumpsuit/ert_leader.rsi
 
 - type: entity
-  parent: [ BaseColcommContraband, ClothingUniformBase ]
+  parent: [ BaseCentcomContraband, ClothingUniformBase ]
   id: ClothingUniformJumpsuitERTMedic
   name: ERT medical uniform
-  description: A special suit made for the elite medics under ColComm.
+  description: A special suit made for the elite medics under CentCom.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/ert_medic.rsi
@@ -1013,10 +1013,10 @@
     sprite: Clothing/Uniforms/Jumpsuit/ert_medic.rsi
 
 - type: entity
-  parent: [ BaseColcommContraband, ClothingUniformBase ]
+  parent: [ BaseCentcomContraband, ClothingUniformBase ]
   id: ClothingUniformJumpsuitERTSecurity
   name: ERT security uniform
-  description: A special suit made for the elite security under ColComm.
+  description: A special suit made for the elite security under CentCom.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/ert_security.rsi

@@ -1,14 +1,14 @@
 job-name-station-captain = Station Captain
 job-name-mantis = Mantis
 job-name-directorate = Directorate
-job-name-naval = Colonial Navyman
+job-name-naval = CentCom Navyman
 
 # Job titles
 job-title-bounty-hunter = Bounty Hunter
-job-title-colonial-chief-architect = Colonial Chief Architect
-job-title-colonial-superintendent = Colonial Superintendent
-job-title-colonial-agent = Colonial Agent
-job-title-colonial-engineer = Colonial Engineer
+job-title-centcom-chief-architect = CentCom Chief Architect
+job-title-centcom-superintendent = CentCom Superintendent
+job-title-centcom-agent = CentCom Agent
+job-title-centcom-engineer = CentCom Engineer
 
 # Role timers
 JobForensicMantis = Mantis

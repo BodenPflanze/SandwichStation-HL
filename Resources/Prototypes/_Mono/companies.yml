@@ -23,7 +23,7 @@
 - type: company
   id: CC
   form: Protagonist
-  name: Colonial Command
+  name: Central Command
   color: "#2E9935"
   disabled: true
   #admins only here !!! or your PR will be CLOSED!!!! also serves as a example for ur whitelisted factions
@@ -34,7 +34,7 @@
 - type: company
   id: ColSec
   form: Protagonist
-  name: Colonial Security
+  name: Central Security
   color: "#00FFFB"
   disabled: true #Applies to Security. HoS has this instead of Station Command.
 

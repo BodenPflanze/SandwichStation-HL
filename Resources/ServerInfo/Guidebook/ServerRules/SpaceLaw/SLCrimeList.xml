@@ -829,7 +829,7 @@
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To knowingly commit an act which is in direct opposition to the interests of Colonial Command, Or to directly assist a known enemy of the Government.
+        To knowingly commit an act which is in direct opposition to the interests of Central Command, Or to directly assist a known enemy of the Government.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -1064,7 +1064,7 @@
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Execution, Prisoner transport to Colcom, Permanent confinement.
+        Execution, Prisoner transport to Centcom, Permanent confinement.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -1079,7 +1079,7 @@
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Permanent confinement or transportation to Colonial Command for Interrogation.
+        Permanent confinement or transportation to Central Command for Interrogation.
       </Box>
     </ColorBox>
     <ColorBox>
@@ -1124,7 +1124,7 @@
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Execution, Transport to ColCom
+        Execution, Transport to CentCom
       </Box>
     </ColorBox>
     <ColorBox>

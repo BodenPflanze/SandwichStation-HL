@@ -139,7 +139,7 @@
   name: Naval ID Card
   components:
   - type: PresetIdCard
-    job: ColonialNavyman
+    job: CentComNavyman
   - type: Access
     groups:
     - AllAccess

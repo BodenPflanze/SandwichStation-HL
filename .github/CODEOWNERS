@@ -3,7 +3,7 @@
 # code changes will send PR to following users
 * @SandwichStation/pr-reviewers
 
-# Only allow CentComm Admirals to edit these files/folders:
+# Only allow CentCom Admirals to edit these files/folders:
 /LICENSES/* @SandwichStation/centcomm-admiral # We dont want legal trouble because a missing license
 /RobustToolbox/* @SandwichStation/centcomm-admiral # We dont want random bugs due to version updates
 /.github/* @SandwichStation/centcomm-admiral # important folder

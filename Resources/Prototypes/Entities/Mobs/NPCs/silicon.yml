@@ -97,8 +97,6 @@
   - type: ProtectedFromStepTriggers
   - type: NoSlip
   - type: Insulated
-  - type: LeashAnchor # Floofstation
-    kind: Intrinsic
 
 - type: entity
   parent: MobSiliconBase

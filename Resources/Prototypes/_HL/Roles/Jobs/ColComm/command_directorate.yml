@@ -5,7 +5,7 @@
   playTimeTracker: JobCentralCommandDirectorate
   setPreference: false
   startingGear: CentcomGear
-  icon: "JobIconColComm"
+  icon: "JobIconCentCom"
   supervisors: job-supervisors-hos
   canBeAntag: false
   accessGroups:
@@ -16,18 +16,18 @@
   - Naval
   special:
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant, DeathRattleImplantColcomm ]
+    implants: [ MindShieldImplant, DeathRattleImplantCentcom ]
 
 - type: startingGear
   id: CentralCommandDirectorateGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitCentcomDirector
     shoes: ClothingShoesBootsCombatFilled
-    head: ClothingHeadHatColcomcap
+    head: ClothingHeadHatCentcomcap
     eyes: ClothingEyesGlassesSunglasses
     gloves: ClothingHandsGlovesColorBlack
     neck: ClothingNeckMantleDirectorate
     id: DirectoratePDA
-    ears: ClothingHeadsetAltColCom
+    ears: ClothingHeadsetAltCentCom
     pocket1: BoxFolderBlack
     pocket2: PenCentcom

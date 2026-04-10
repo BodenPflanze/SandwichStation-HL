@@ -63,6 +63,7 @@
   parent: [BaseStructureComputerTabletop, ComputerIFF]
   id: ComputerTabletopIFF
   components:
+  - type: Anchorable
   - type: Sprite
     drawdepth: SmallObjects
     layers:

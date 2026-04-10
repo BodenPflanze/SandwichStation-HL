@@ -226,7 +226,7 @@
   parent: PosterBase
   id: PosterContrabandTools
   name: "Tools"
-  description: "This poster looks like an advertisement for tools, but is in fact a subliminal jab at the tools at ColComm."
+  description: "This poster looks like an advertisement for tools, but is in fact a subliminal jab at the tools at CentCom."
   components:
   - type: Construction # HardLight
     graph: Poster
@@ -310,7 +310,7 @@
   parent: PosterBase
   id: PosterContrabandKosmicheskayaStantsiya
   name: "Kosmicheskaya Stantsiya 13 Does Not Exist"
-  description: "A poster mocking ColComm's denial of the existence of the derelict station near Space Station 13."
+  description: "A poster mocking CentCom's denial of the existence of the derelict station near Space Station 13."
   components:
   - type: Construction # HardLight
     graph: Poster
@@ -454,7 +454,7 @@
   parent: PosterBase
   id: PosterContrabandFreeDrone
   name: "Free Drone"
-  description: "This poster commemorates the bravery of the rogue drone; once exiled, and then ultimately destroyed by ColComm."
+  description: "This poster commemorates the bravery of the rogue drone; once exiled, and then ultimately destroyed by CentCom."
   components:
   - type: Construction # HardLight
     graph: Poster
@@ -610,7 +610,7 @@
   parent: PosterBase
   id: PosterContrabandTheBigGasTruth
   name: "The Big Gas Giant Truth"
-  description: "Don't believe everything you see on a poster, patriots. All the lizards at Colonial Command don't want to answer this SIMPLE QUESTION: WHERE IS THE GAS MINER MINING FROM, Colcomm?"
+  description: "Don't believe everything you see on a poster, patriots. All the lizards at Central Command don't want to answer this SIMPLE QUESTION: WHERE IS THE GAS MINER MINING FROM, Centcomm?"
   components:
   - type: Construction # HardLight
     graph: Poster
@@ -1229,7 +1229,7 @@
   parent: PosterBase
   id: PosterLegitThereIsNoGasGiant
   name: "There Is No Gas Giant"
-  description: "To remind colonial civilians that rumours of gas giants existing in the rogue are false. Is this... TSF approved?"
+  description: "To remind NT civilians that rumours of gas giants existing in the rogue are false. Is this... TSF approved?"
   components:
   - type: Construction # HardLight
     graph: Poster

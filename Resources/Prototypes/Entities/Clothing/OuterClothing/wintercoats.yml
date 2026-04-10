@@ -168,9 +168,9 @@
     clothingPrototype: ClothingHeadHatHoodWinterCE
 
 - type: entity
-  parent: [ ClothingOuterWinterCoatToggleable, BaseColcommContraband ]
+  parent: [ ClothingOuterWinterCoatToggleable, BaseCentcomContraband ]
   id: ClothingOuterWinterCentcom
-  name: ColComm winter coat
+  name: CentCom winter coat
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/WinterCoats/coat.rsi

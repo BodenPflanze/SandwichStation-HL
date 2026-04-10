@@ -1,0 +1,13 @@
+- type: gameMapPool
+  id: SandwichMapPool
+  maps:
+  - HardCore
+  - Reach
+  #- Amber
+  - Bagel
+  - Box
+  - Eaglerock
+  - Convex
+  - Elkridge
+  - Fland
+  - HardlightSilica

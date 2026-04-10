@@ -34,9 +34,6 @@
   - type: DeviceLinkSink
     ports:
     - Trigger
-  - type: LeashAnchor
-    offset: 0, 0.22
-    kind: Clothing
 
 - type: entity
   parent: ClothingNeckInjectorCollar

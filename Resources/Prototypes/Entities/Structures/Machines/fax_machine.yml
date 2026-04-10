@@ -82,8 +82,8 @@
 - type: entity
   parent: FaxMachineBase
   id: FaxMachineCentcom
-  name: ColComm long range fax machine
-  suffix: ColCom
+  name: CentCom long range fax machine
+  suffix: CentCom
   components:
   - type: Sprite
     layers:
@@ -91,7 +91,7 @@
         map: [ "base" ]
         color: "#bfe3ff"
   - type: FaxMachine
-    name: "Colonial Command"
+    name: "Central Command"
     notifyAdmins: true
 
 - type: entity

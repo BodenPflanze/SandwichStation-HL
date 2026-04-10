@@ -1,5 +1,5 @@
 - type: startingGear
-  id: JosephBlackwallColComGear
+  id: JosephBlackwallCentComGear
   equipment:
     pocket1: DoubleEmergencyOxygenTankFilled
     pocket2: FlashlightNfsdLite
@@ -7,7 +7,7 @@
     # neck:
     mask: ClothingMaskGasERT
     eyes: ClothingEyesGlassesSunglasses
-    ears: ClothingHeadsetAltColCom
+    ears: ClothingHeadsetAltCentCom
     gloves: ClothingHandsGlovesCombat
     shoes: ClothingShoesBootsCombat
     suitstorage: WeaponRifleVulcan
@@ -186,8 +186,8 @@
       - id: ClothingWalletLeatherBlack
       - id: MedicalTrackingImplanterDisposable
       - id: MindShieldImplanterDisposable
-      - id: DeathRattleImplanterColcommDisposable
-      - id: RadioImplanterColcommDisposable
+      - id: DeathRattleImplanterCentcomDisposable
+      - id: RadioImplanterCentcomDisposable
       - id: PaintSoapDisposable
       - id: SprayPaintGreenDisposable
 

@@ -47,7 +47,7 @@
   - type: Implanter
     implant: MimePowersImplant
 
-# Colcomm implanters
+# Centcom implanters
 
 - type: entity
   id: RadioImplanterFreelance

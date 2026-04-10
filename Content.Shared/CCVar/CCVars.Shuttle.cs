@@ -8,6 +8,7 @@ public sealed partial class CCVars
 {
     /// <summary>
     ///     Delay for auto-orientation. Used for people arriving via arrivals.
+    ///     Set to a negative value (e.g., -1) to disable auto-orientation entirely.
     /// </summary>
     public static readonly CVarDef<double> AutoOrientDelay =
         CVarDef.Create("shuttle.auto_orient_delay", 2.0, CVar.SERVER | CVar.REPLICATED);
@@ -144,14 +145,14 @@ public sealed partial class CCVars
         CVarDef.Create("shuttle.emergency_authorize_time", 10f, CVar.SERVERONLY);
 
     /// <summary>
-    ///     The minimum time for the emergency shuttle to arrive at Colcomm.
+    ///     The minimum time for the emergency shuttle to arrive at Centcom.
     ///     Actual minimum travel time cannot be less than <see cref="ShuttleSystem.DefaultArrivalTime"/>
     /// </summary>
     public static readonly CVarDef<float> EmergencyShuttleMinTransitTime =
         CVarDef.Create("shuttle.emergency_transit_time_min", 60f, CVar.SERVERONLY); // Frontier: 60f<300f
 
     /// <summary>
-    ///     The maximum time for the emergency shuttle to arrive at Colcomm.
+    ///     The maximum time for the emergency shuttle to arrive at Centcom.
     /// </summary>
     public static readonly CVarDef<float> EmergencyShuttleMaxTransitTime =
         CVarDef.Create("shuttle.emergency_transit_time_max", 180f, CVar.SERVERONLY); // Frontier: 180f<600f

@@ -40,30 +40,6 @@
       "directions": 4
     },
     {
-      "name": "testicles_single_4_0_FRONT",
-      "directions": 4
-    },
-    {
-      "name": "testicles_single_4_1_FRONT",
-      "directions": 4
-    },
-    {
-      "name": "testicles_single_4_0_BEHIND",
-      "directions": 4
-    },
-    {
-      "name": "testicles_single_5_0_FRONT",
-      "directions": 4
-    },
-    {
-      "name": "testicles_single_5_1_FRONT",
-      "directions": 4
-    },
-    {
-      "name": "testicles_single_5_0_BEHIND",
-      "directions": 4
-    },
-    {
       "name": "testicles_sheath_1_0_FRONT",
       "directions": 4
     },
@@ -93,30 +69,6 @@
     },
     {
       "name": "testicles_sheath_3_0_BEHIND",
-      "directions": 4
-    },
-    {
-      "name": "testicles_sheath_4_0_FRONT",
-      "directions": 4
-    },
-    {
-      "name": "testicles_sheath_4_1_FRONT",
-      "directions": 4
-    },
-    {
-      "name": "testicles_sheath_4_0_BEHIND",
-      "directions": 4
-    },
-    {
-      "name": "testicles_sheath_5_0_FRONT",
-      "directions": 4
-    },
-    {
-      "name": "testicles_sheath_5_1_FRONT",
-      "directions": 4
-    },
-    {
-      "name": "testicles_sheath_5_0_BEHIND",
       "directions": 4
     },
     {

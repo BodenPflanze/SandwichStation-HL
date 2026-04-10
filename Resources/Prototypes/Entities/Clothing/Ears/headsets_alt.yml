@@ -24,8 +24,8 @@
 
 - type: entity
   parent: [ClothingHeadsetCentCom] # HardLight: Parented to base headset.
-  id: ClothingHeadsetAltColCom # HardLight
-  name: ColComm over-ear headset # HardLight
+  id: ClothingHeadsetAltCentCom # HardLight
+  name: CentCom over-ear headset # HardLight
   components:
   - type: Sprite
     sprite: Clothing/Ears/Headsets/centcom.rsi

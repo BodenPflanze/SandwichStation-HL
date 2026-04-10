@@ -491,7 +491,7 @@
 - type: entity
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtCentcomFormalDress
-  name: Colonial Command formal dress
+  name: Central Command formal dress
   description: A dress for special occasions.
   components:
   - type: Sprite

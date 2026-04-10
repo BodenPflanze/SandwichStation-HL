@@ -18,7 +18,7 @@
     - Freelance
     - Binary
     #- Handheld # HardLight: Redundancy; we don't support Handheld channel encryption keys.
-    - ColCom # HardLight
+    - CentCom # HardLight
     - Future
     - Syndicate
   - type: Sprite

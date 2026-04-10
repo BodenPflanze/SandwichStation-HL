@@ -64,10 +64,10 @@
 
 - type: jobIcon
   parent: JobIcon
-  id: JobIconColComm
+  id: JobIconCentCom
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
-    state: ColComm
+    state: CentCom
   jobName: job-name-centcomoff
   allowSelection: false # Frontier
 
