@@ -135,10 +135,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Roslyn", "Roslyn", "{7844DA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robust.Xaml", "RobustToolbox\Robust.Xaml\Robust.Xaml.csproj", "{5C05B9B4-6AFE-4884-AA6A-5A26C0FFF2F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content.Goobstation.Common", "Content.Goobstation.Common\Content.Goobstation.Common.csproj", "{A0D48D1A-5D84-452B-A3BA-FB894ED5C3FB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content.ModuleManager", "Content.ModuleManager\Content.ModuleManager.csproj", "{35591F41-C0B8-4093-9F74-AF87A432CF22}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -458,22 +454,6 @@ Global
 		{5C05B9B4-6AFE-4884-AA6A-5A26C0FFF2F6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5C05B9B4-6AFE-4884-AA6A-5A26C0FFF2F6}.Tools|Any CPU.ActiveCfg = Release|Any CPU
 		{5C05B9B4-6AFE-4884-AA6A-5A26C0FFF2F6}.Tools|Any CPU.Build.0 = Release|Any CPU
-		{A0D48D1A-5D84-452B-A3BA-FB894ED5C3FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A0D48D1A-5D84-452B-A3BA-FB894ED5C3FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A0D48D1A-5D84-452B-A3BA-FB894ED5C3FB}.DebugOpt|Any CPU.ActiveCfg = DebugOpt|Any CPU
-		{A0D48D1A-5D84-452B-A3BA-FB894ED5C3FB}.DebugOpt|Any CPU.Build.0 = DebugOpt|Any CPU
-		{A0D48D1A-5D84-452B-A3BA-FB894ED5C3FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A0D48D1A-5D84-452B-A3BA-FB894ED5C3FB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A0D48D1A-5D84-452B-A3BA-FB894ED5C3FB}.Tools|Any CPU.ActiveCfg = Tools|Any CPU
-		{A0D48D1A-5D84-452B-A3BA-FB894ED5C3FB}.Tools|Any CPU.Build.0 = Tools|Any CPU
-		{35591F41-C0B8-4093-9F74-AF87A432CF22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{35591F41-C0B8-4093-9F74-AF87A432CF22}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{35591F41-C0B8-4093-9F74-AF87A432CF22}.DebugOpt|Any CPU.ActiveCfg = Debug|Any CPU
-		{35591F41-C0B8-4093-9F74-AF87A432CF22}.DebugOpt|Any CPU.Build.0 = Debug|Any CPU
-		{35591F41-C0B8-4093-9F74-AF87A432CF22}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{35591F41-C0B8-4093-9F74-AF87A432CF22}.Release|Any CPU.Build.0 = Release|Any CPU
-		{35591F41-C0B8-4093-9F74-AF87A432CF22}.Tools|Any CPU.ActiveCfg = Debug|Any CPU
-		{35591F41-C0B8-4093-9F74-AF87A432CF22}.Tools|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
