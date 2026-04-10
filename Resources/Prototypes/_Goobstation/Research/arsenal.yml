@@ -21,8 +21,12 @@
   - GygaxPeripheralsElectronics
   - GygaxTargetingElectronics
   - WeaponMechCombatUltraRifle
+  # Goobstation R&D Console rework start
   technologyPrerequisites:
-  - Ripley2
+  - ExplosiveTechnology
+  position: 3,-1
+  # Goobstation R&D Console rework end
+
 
 # Tier 2
 
@@ -62,5 +66,8 @@
   - DurandTargetingElectronics
   - WeaponMechCombatShotgun
   - WeaponMechCombatShotgunIncendiary
+  # Goobstation R&D Console rework start
   technologyPrerequisites:
   - Gygax
+  position: 4,-1
+  # Goobstation R&D Console rework end
