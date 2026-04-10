@@ -241,3 +241,13 @@ Entries:
       message: Renamed Inoculated to The Chosen One
   id: 21
   time: '2026-04-10T17:05:25.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Fix
+      message: Fixed a memory issue with the automated tests
+    - type: Tweak
+      message: >-
+        Recalling shuttle now restricted on updates (I dont have all day to wait
+        for an update...)
+  id: 22
+  time: '2026-04-10T21:51:16.0000000+00:00'
