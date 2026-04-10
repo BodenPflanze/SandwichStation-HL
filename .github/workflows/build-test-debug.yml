@@ -42,13 +42,26 @@ jobs:
       run: dotnet build --configuration DebugOpt --no-restore /p:WarningsAsErrors=nullable /m
 
     - name: Run Content.Tests
-      run: dotnet test --no-build --configuration DebugOpt Content.Tests/Content.Tests.csproj -- NUnit.ConsoleOut=0
+      shell: bash
+      run: |
+        (while true; do echo "Alive Check, OK!"; sleep 300; done) &
+        keepalive_pid=$!
+        dotnet test --no-build --configuration DebugOpt Content.Tests/Content.Tests.csproj -- NUnit.ConsoleOut=0
+        exit_code=$?
+        kill "$keepalive_pid" || true
+        wait "$keepalive_pid" 2>/dev/null || true
+        exit "$exit_code"
 
     - name: Run Content.IntegrationTests
-      shell: pwsh
+      shell: bash
       run: |
-        $env:DOTNET_gcServer=1
-        dotnet test --no-build --configuration DebugOpt Content.IntegrationTests/Content.IntegrationTests.csproj --filter "FullyQualifiedName!~ShipyardTest" -- NUnit.ConsoleOut=0 NUnit.MapWarningTo=Failed
+        (while true; do echo "Alive Check, OK!"; sleep 300; done) &
+        keepalive_pid=$!
+        DOTNET_gcServer=1 dotnet test --no-build --configuration DebugOpt Content.IntegrationTests/Content.IntegrationTests.csproj --filter "FullyQualifiedName!~ShipyardTest" -- NUnit.ConsoleOut=0 NUnit.MapWarningTo=Failed
+        exit_code=$?
+        kill "$keepalive_pid" || true
+        wait "$keepalive_pid" 2>/dev/null || true
+        exit "$exit_code"
   ci-success:
     name: Build & Test Debug
     needs:
