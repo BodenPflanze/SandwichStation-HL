@@ -27,5 +27,10 @@
   recipeUnlocks:
   - MechEquipmentHonkerBananaMortar
   - MechEquipmentHonkerMousetrapMortar
+    # Goobstation R&D Console rework start
+  technologyPrerequisites:
+  - HONKMech
+  position: 0,6
+  # Goobstation R&D Console rework end
 
 # Tier 3
