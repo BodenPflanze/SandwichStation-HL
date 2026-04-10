@@ -273,7 +273,7 @@
   # Goobstation R&D Console rework start
   position: 3,0
   technologyPrerequisites:
-  - SalvageWeaponsS
+  - SalvageWeapons
   # Goobstation R&D Console rework end
 
 

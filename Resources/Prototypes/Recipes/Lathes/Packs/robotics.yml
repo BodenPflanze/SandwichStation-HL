@@ -22,13 +22,13 @@
   recipes:
   - BorgModuleAdvancedSurgery
   # Hardlight change start
-  - BorgModuleClowning
-  - BorgModuleMusique
+  #- BorgModuleClowning            #Doesnt exist, someone figure out why
+  #- BorgModuleMusique             #Doesnt exist, someone figure out why
   - BorgModuleTreatment
   - BorgModuleadvancedmeasures
-  - BorgModuleAdvancedTreatment
-  - BorgModuleGrapplingGun
-  - BorgModuleLightReplacer
+  - BorgModuleAdvancedTreatment 
+  #- BorgModuleGrapplingGun        #Doesnt exist, someone figure out why
+  #- BorgModuleLightReplacer       #Doesnt exist, someone figure out why
   - BorgModuleAdvancedParamedic
 
 - type: latheRecipePack
