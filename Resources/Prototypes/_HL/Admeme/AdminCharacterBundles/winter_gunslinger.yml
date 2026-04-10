@@ -294,8 +294,6 @@
       fleshlight:
         maxVol: 300
         reagents:
-          - ReagentId: Cum
-            Quantity: 300
 
 
 # hand duffel

@@ -326,7 +326,6 @@
   loadouts:
   - SalvageSpecialistClothingJumpsuit
   subgroups:
-  - CargoJumpsuit
   - MercenaryJumpsuit
   - PilotJumpsuit
   - ContractorJumpsuit
@@ -538,7 +537,6 @@
   id: MedicalJumpsuit
   name: loadout-group-contractor-jumpsuit
   loadouts:
-  - MedicalClothingJumpsuitThong
   subgroups:
   - ContractorJumpsuit
 

@@ -274,7 +274,6 @@
   - BartenderJumpskirt
   - BartenderJumpsuitPurple
   subgroups:
-  - ServiceJumpsuit # HL - Add departmental NF-style loadouts
   - ContractorJumpsuit # HL - Add departmental NF-style loadouts
 
 - type: loadoutGroup
@@ -703,7 +702,6 @@
   - QuartermasterTurtleneckSkirt
   - QuartermasterFormalSuit
   subgroups:
-  - CargoJumpsuit # HL - Add departmental NF-style loadouts
   - ContractorJumpsuit # HL - Add departmental NF-style loadouts
 
 - type: loadoutGroup
@@ -837,7 +835,6 @@
   - ChiefEngineerTurtleneck
   - ChiefEngineerTurtleneckSkirt
   subgroups:
-  - EngineeringJumpsuit # HL - Add departmental NF-style loadouts
   - ContractorJumpsuit # HL - Add departmental NF-style loadouts
 
 - type: loadoutGroup
@@ -1013,7 +1010,6 @@
   - ResearchDirectorJumpsuit
   - ResearchDirectorJumpskirt
   subgroups:
-  - ScienceJumpsuit # HL - Add departmental NF-style loadouts
   - ContractorJumpsuit # HL - Add departmental NF-style loadouts
 
 - type: loadoutGroup
