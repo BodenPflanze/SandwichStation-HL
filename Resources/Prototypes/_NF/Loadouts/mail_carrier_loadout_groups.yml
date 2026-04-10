@@ -5,7 +5,7 @@
   - MailCarrierClothingUniformJumpsuitMailCarrier
   - MailCarrierClothingUniformJumpskirtMailCarrier
   - MailCarrierClothingUniformJumpsuitMilitaryMailCarrier
-  subgroups:
+  subgroups: []
   fallbacks:
   - MailCarrierClothingUniformJumpsuitMailCarrier
   - MailCarrierClothingUniformJumpskirtMailCarrier
@@ -38,3 +38,4 @@
   - MailCarrierClothingWalletLeatherMail
   fallbacks:
   - MailCarrierClothingWalletLeatherMail
+
