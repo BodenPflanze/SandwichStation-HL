@@ -692,49 +692,6 @@ namespace Content.Server.Ghost
             args.Handled = true;
         }
         // End Frontier
-
-        private TimeSpan _nextRainbowUpdate = TimeSpan.Zero;
-
-        private static readonly Color[] RainbowColors =
-        {
-            new(1f, 0f, 0f, 1f),       // Red
-            new(1f, 0.5f, 0f, 1f),      // Orange
-            new(1f, 1f, 0f, 1f),        // Yellow
-            new(0f, 1f, 0f, 1f),        // Green
-            new(0f, 0f, 1f, 1f),        // Blue
-            new(0.29f, 0f, 0.51f, 1f),  // Indigo
-            new(0.58f, 0f, 0.83f, 1f),  // Violet
-        };
-
-        public override void Update(float frameTime)
-        {
-            base.Update(frameTime);
-
-            if (_gameTiming.CurTime < _nextRainbowUpdate)
-                return;
-
-            _nextRainbowUpdate = _gameTiming.CurTime + TimeSpan.FromMilliseconds(50);
-
-            var query = EntityQueryEnumerator<GhostComponent>();
-            while (query.MoveNext(out var uid, out var ghost))
-            {
-                if (!ghost.RainbowCycle)
-                    continue;
-
-                var t = (float)(_gameTiming.CurTime.TotalSeconds % 20.0 / 20.0);
-                var scaled = t * RainbowColors.Length;
-                var idx = (int) scaled;
-                var frac = scaled - idx;
-                var c1 = RainbowColors[idx % RainbowColors.Length];
-                var c2 = RainbowColors[(idx + 1) % RainbowColors.Length];
-                var color = new Color(
-                    c1.R + (c2.R - c1.R) * frac,
-                    c1.G + (c2.G - c1.G) * frac,
-                    c1.B + (c2.B - c1.B) * frac,
-                    1f);
-                SetColor((uid, ghost), color);
-            }
-        }
     }
 
     public sealed class GhostAttemptHandleEvent(MindComponent mind, bool canReturnGlobal) : HandledEntityEventArgs
