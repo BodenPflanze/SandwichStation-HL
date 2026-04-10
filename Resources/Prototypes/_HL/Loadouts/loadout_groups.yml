@@ -536,7 +536,7 @@
 - type: loadoutGroup
   id: MedicalJumpsuit
   name: loadout-group-contractor-jumpsuit
-  loadouts:
+  loadouts: []
   subgroups:
   - ContractorJumpsuit
 

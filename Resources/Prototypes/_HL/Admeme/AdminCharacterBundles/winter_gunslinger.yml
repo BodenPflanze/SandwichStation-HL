@@ -293,8 +293,7 @@
     solutions:
       fleshlight:
         maxVol: 300
-        reagents:
-
+        reagents: []
 
 # hand duffel
 - type: entity
@@ -318,3 +317,4 @@
       - id: DiphenhydramineVialBluespace
       - id: Syringe
       - id: LewdFleshlightRedWinter
+
