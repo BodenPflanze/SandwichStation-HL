@@ -808,7 +808,6 @@
   groups:
 # HL start - Add departmental NF-style loadouts
   - ServiceForcedOuterClothing
-  - ServiceJumpsuit
   - CommonBackpack
   - ContractorOuterClothing
   - ContractorForcedOuterClothing
