@@ -1,6 +1,7 @@
 #nullable enable
 using System.IO;
 using System.Linq;
+using System.Runtime;
 using Content.Server.GameTicking;
 using Content.Server.Preferences.Managers;
 using Content.Shared.CCVar;
@@ -21,12 +22,21 @@ public sealed partial class TestPair : IAsyncDisposable
 {
     public PairState State { get; private set; } = PairState.Ready;
 
+    private static void ForceMemoryCleanup()
+    {
+        GCSettings.LargeObjectHeapCompactionMode = GCLargeObjectHeapCompactionMode.CompactOnce;
+        GC.Collect(GC.MaxGeneration, GCCollectionMode.Forced, blocking: true, compacting: true);
+        GC.WaitForPendingFinalizers();
+        GC.Collect(GC.MaxGeneration, GCCollectionMode.Forced, blocking: true, compacting: true);
+    }
+
     private async Task OnDirtyDispose()
     {
         var usageTime = Watch.Elapsed;
         Watch.Restart();
         await _testOut.WriteLineAsync($"{nameof(DisposeAsync)}: Test gave back pair {Id} in {usageTime.TotalMilliseconds} ms");
         Kill();
+        ForceMemoryCleanup();
         var disposeTime = Watch.Elapsed;
         await _testOut.WriteLineAsync($"{nameof(DisposeAsync)}: Disposed pair {Id} in {disposeTime.TotalMilliseconds} ms");
         // Test pairs should only dirty dispose if they are failing. If they are not failing, this probably happened
@@ -70,6 +80,7 @@ public sealed partial class TestPair : IAsyncDisposable
         if (Settings.MustNotBeReused)
         {
             Kill();
+            ForceMemoryCleanup();
             await ReallyBeIdle();
             await _testOut.WriteLineAsync($"{nameof(CleanReturnAsync)}: Clean disposed in {Watch.Elapsed.TotalMilliseconds} ms");
             return;
