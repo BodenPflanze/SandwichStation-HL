@@ -1,0 +1,31 @@
+- type: construction
+  id: CraftBluespaceCabinetStandard
+  graph: CraftBluespaceCabinetStandard
+  startNode: start
+  targetNode: icon
+  category: construction-category-storage
+  objectType: Item
+
+- type: construction
+  id: CraftBluespaceCabinetMedical
+  graph: CraftBluespaceCabinetMedical
+  startNode: start
+  targetNode: icon
+  category: construction-category-storage
+  objectType: Item
+
+- type: construction
+  id: CraftBluespaceCabinetYellow
+  graph: CraftBluespaceCabinetYellow
+  startNode: start
+  targetNode: icon
+  category: construction-category-storage
+  objectType: Item
+
+- type: construction
+  id: CraftBluespaceCabinetGreen
+  graph: CraftBluespaceCabinetGreen
+  startNode: start
+  targetNode: icon
+  category: construction-category-storage
+  objectType: Item

@@ -1,0 +1,58 @@
+- type: entity
+  abstract: true
+  id: BaseBluespaceStorage
+  components:
+  - type: Storage
+    grid:
+    - 0,0,23,9                # <-- 23x9 -- fits 4 bluespace containers
+    maxItemSize: Colossal
+    blacklist:
+      tags:
+      - Admin
+      - Backpack               # <-- blocks all backpacks
+      - BluespaceBackpack      # <-- Additional tag for bluespace backpacks because they dont have the backpack tag
+      - UniqueCommandItem      # <-- blocks Unique Head of Staff Items
+      - Bedsheet               # <-- to prevent smuggling bedsheets hence they might be thieving targets
+      - WeaponAntiqueLaser
+      - HighRiskItem           # <-- nuke disc and so on
+      components:
+      - StorageFill
+      - PresetIdCard
+      - IdCard
+      - Access
+      - Store
+      - Cash
+      - Headset
+      - DnaSequenceInjector
+      - Contraband # SandwichStation: Contraband is blacklisted!
+
+# Unfortunately we have to always copy the blacklist over here too because of BluespaceStashCabinet Tag
+
+- type: entity
+  abstract: true
+  id: BaseCabinetsStorage
+  components:
+  - type: Storage
+    grid:
+    - 0,0,19,9                # <-- 19x9 -- Sandwich Storage
+    maxItemSize: Ginormous
+    blacklist:
+      tags:
+      - BluespaceStashCabinet # THIS ALWAYS HAS TO STAY HERE
+      - Admin
+      - Backpack               
+      - BluespaceBackpack   
+      - UniqueCommandItem      
+      - Bedsheet
+      - WeaponAntiqueLaser
+      - HighRiskItem
+      components:
+      - StorageFill
+      - PresetIdCard
+      - IdCard
+      - Access
+      - Store
+      - Cash
+      - Headset
+      - DnaSequenceInjector
+      - Contraband # SandwichStation: Contraband is blacklisted!

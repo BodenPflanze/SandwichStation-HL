@@ -45,3 +45,11 @@
   name: item-component-size-Ginormous
   defaultShape:
   - 0,0,5,5
+
+# Special for bluespace Stash -- Sandwich HL addition
+- type: itemSize
+  id: Colossal
+  weight: 38
+  name: item-component-size-Colossal
+  defaultShape:
+  - 0,0,6,6

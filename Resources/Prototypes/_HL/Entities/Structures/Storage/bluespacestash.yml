@@ -1,6 +1,8 @@
 - type: entity
   id: bluespacestash
-  parent: BaseStructureDynamic
+  parent: 
+  - BaseStructureDynamic
+  - BaseBluespaceStorage
   name: bluespace stash
   description: A storage unit utilizing bluespace technology to maximize capacity. Items inside of this will not be seized by dockyard technicians when a ship is stored.
   components:
@@ -28,23 +30,6 @@
     interfaces:
       enum.StorageUiKey.Key:
         type: StorageBoundUserInterface
-  - type: Storage
-    grid:
-    - 0,0,19,9 #Sandwich: Limit size from 0,0,25,20
-    maxItemSize: Ginormous
-    blacklist:
-      tags:
-      - Admin
-      components:
-      - StorageFill
-      - PresetIdCard
-      - IdCard
-      - Access
-      - Store
-      - Cash
-      - Headset
-      - DnaSequenceInjector
-      - Contraband # SandwichStation: Contraband is blacklisted!
   - type: HLPersistOnShipSave
   - type: ShipyardSellCondition # Sandwich: Not sure why this didnt exsist here but did on wall locker? (Teleport to shipyard console on sale)
     preserveOnSale: true

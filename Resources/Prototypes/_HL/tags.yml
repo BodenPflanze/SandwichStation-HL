@@ -361,4 +361,12 @@
 - type: Tag
   id: ForgedRifleMagazine
 
+# Additional tags for blacklisting items for the bluespace stash
+- type: Tag
+  id: BluespaceBackpack
 
+- type: Tag
+  id: UniqueCommandItem
+
+- type: Tag
+  id: BluespaceStashCabinet

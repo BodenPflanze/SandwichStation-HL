@@ -261,6 +261,7 @@
   - type: Tag
     tags:
     - ScurretWearable
+    - BluespaceBackpack
 
 - type: entity
   parent: [ NFClothingDuffel, BaseCentcomContraband ] # Frontier: ClothingBackpackDuffel<NFClothingDuffel

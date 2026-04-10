@@ -375,6 +375,9 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitCap
+  - type: Tag
+    tags:
+    - UniqueCommandItem
 
 #Chief Engineer's Hardsuit
 - type: entity
@@ -412,6 +415,9 @@
   - type: ClothingGrantComponent
     component:
     - type: SupermatterImmune
+  - type: Tag
+    tags:
+    - UniqueCommandItem
 
 #Chief Medical Officer's Hardsuit
 - type: entity
@@ -437,6 +443,9 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitMedical
+  - type: Tag
+    tags:
+    - UniqueCommandItem
 
 #Research Director's Hardsuit
 - type: entity
@@ -475,6 +484,7 @@
     tags:
     - WhitelistChameleon
     - HighRiskItem
+    - UniqueCommandItem
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitRd
   - type: StaticPrice
@@ -515,6 +525,9 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSecurityRed
+  - type: Tag
+    tags:
+    - UniqueCommandItem
 
 #Luxury Mining Hardsuit
 - type: entity

@@ -18,6 +18,9 @@
     - type: PowerMonitoringConsole
     - type: PowerMonitoringCableNetworks
     - type: NodeContainer
+    - type: Tag
+      tags:
+      - UniqueCommandItem
     - type: UserInterface
       interfaces:
         enum.PowerMonitoringConsoleUiKey.Key:

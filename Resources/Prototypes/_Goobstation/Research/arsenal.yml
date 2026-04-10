@@ -41,8 +41,11 @@
   cost: 12000
   recipeUnlocks:
   - WeaponMechCombatMissileRack8
+  # Goobstation R&D Console rework start
   technologyPrerequisites:
-  - ExplosiveTechnology
+  - Gygax
+  position: 4,-2
+  # Goobstation R&D Console rework end
 
 - type: technology
   id: Durand

@@ -1,0 +1,67 @@
+- type: constructionGraph
+  id: CraftBluespaceCabinetStandard
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: icon
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 1
+            - material: Cable
+              amount: 5
+              doAfter: 5
+    - node: icon
+      entity: BluespaceCabinetStandard
+
+- type: constructionGraph
+  id: CraftBluespaceCabinetMedical
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: icon
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 1
+            - material: Cable
+              amount: 5
+              doAfter: 5
+    - node: icon
+      entity: BluespaceCabinetMedical
+
+- type: constructionGraph
+  id: CraftBluespaceCabinetYellow
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: icon
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 1
+            - material: Cable
+              amount: 5
+              doAfter: 5
+    - node: icon
+      entity: BluespaceCabinetYellow
+
+- type: constructionGraph
+  id: CraftBluespaceCabinetGreen
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: icon
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 1
+            - material: Cable
+              amount: 5
+              doAfter: 5
+    - node: icon
+      entity: BluespaceCabinetGreen
