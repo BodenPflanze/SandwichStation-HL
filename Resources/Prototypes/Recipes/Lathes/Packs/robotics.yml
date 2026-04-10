@@ -25,7 +25,7 @@
   #- BorgModuleClowning            #Doesnt exist, someone figure out why
   #- BorgModuleMusique             #Doesnt exist, someone figure out why
   - BorgModuleTreatment
-  - BorgModuleadvancedmeasures
+  #- BorgModuleadvancedmeasures    #Doesnt exist, someone figure out why
   - BorgModuleAdvancedTreatment 
   #- BorgModuleGrapplingGun        #Doesnt exist, someone figure out why
   #- BorgModuleLightReplacer       #Doesnt exist, someone figure out why
