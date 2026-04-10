@@ -1,20 +1,20 @@
 lead-footed-name = Lead-Footed
 lead-footed-text = You are immune to being knocked down by FTL travel.
 
-inoculated-name = Inoculated
-inoculated-text = You are immune to the zombie virus.
+chosen-one-name = The Chosen One
+chosen-one-text = You are immune to the zombie virus.
 
 insulated-name = Insulated
 insulated-text = You are insulated against electrical shocks.
 
 heat-resistant-name = Heat Resistant
-heat-resistant-text = Your body is highly resistant to heat and fire damage.
+heat-resistant-text = Your body is resistant to heat and fire damage, reducing it by 50%.
 
 radproof-name = Rad-Proof
-radproof-text = Your body is highly resistant to radiation damage.
+radproof-text = Your body is resistant to radiation damage, reducing it by 50%.
 
 snake-eater-name = Snake Eater
-snake-eater-text = Your body is highly resistant to poison damage.
+snake-eater-text = Your body is resistant to poison damage, reducing it by 50%.
 
 cryo-resistant-name = Cryo Resistant
 cryo-resistant-text = Your body is highly resistant to cold damage.
@@ -24,12 +24,3 @@ natural-regen-text = Your body passively heals from minor injuries over time.
 
 unnatural-regen-name = Unnatural Regeneration
 unnatural-regen-text = Your body passively heals from injuries even while in critical condition.
-
-pooltoy-name = Pool Toy
-pooltoy-text = Your body is made of durable vinyl, insulating you from shocks but making you vulnerable to slashing damage.
-
-hl-trait-robot-voice-name = Robotic Voice
-hl-trait-robot-voice-desc = You speak with a synthetic robotic voice.
-
-hl-trait-borg-voice-name = Borg Voice
-hl-trait-borg-voice-desc = You speak with a borg-like synthetic voice.
