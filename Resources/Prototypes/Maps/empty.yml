@@ -1,0 +1,11 @@
+- type: gameMap
+  id: Empty
+  mapName: 'Empty'
+  mapPath: /Maps/Test/empty.yml
+  minPlayers: 0
+  stations:
+    Empty:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Empty'
