@@ -4,7 +4,7 @@
   components:
   - type: Storage
     grid:
-    - 0,0,23,9                # <-- 23x9 -- fits 4 bluespace containers
+    - 0,0,19,9                # <-- Has to stay at 19x9 so data doesnt get deleted.
     maxItemSize: Colossal
     blacklist:
       tags:

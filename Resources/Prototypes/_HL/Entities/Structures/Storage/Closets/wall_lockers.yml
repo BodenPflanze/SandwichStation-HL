@@ -1,6 +1,8 @@
 - type: entity
   id: LockerWallBluespace
-  parent: NFBaseLockerGridInvWallColor
+  parent: 
+  - NFBaseLockerGridInvWallColor
+  - BaseBluespaceStorage
   name: Bluespace wall locker
   suffix: null
   description: Wall locker infused with bluespace tech. Items inside of this will not be seized by dockyard technicians when a ship is stored.
@@ -27,19 +29,6 @@
     maxItemSize: Huge
     grid:
     - 0,0,9,4 #Sandwich: Limit size from 0,0,19,9
-    blacklist:
-      tags:
-      - Admin
-      components:
-      - StorageFill
-      - PresetIdCard
-      - IdCard
-      - Access
-      - Store
-      - Cash
-      - Headset
-      - DnaSequenceInjector
-      - Contraband # SandwichStation: Contraband is blacklisted!
   - type: Construction
     graph: LockerWallBluespace
     node: done
