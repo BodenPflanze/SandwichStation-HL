@@ -5,12 +5,6 @@ _SandwichStation_ originally was a fork of _ShibaStation_<sup>†</sup> since th
 This codebase is based on _HardLight_ <br>
 However, this fork is mainly customized to our own standards and balances.
 
-[![YAML Linter](https://github.com/SandwichStation/SandwichStation-HL/actions/workflows/yaml-linter.yml/badge.svg)](https://github.com/SandwichStation/SandwichStation-HL/actions/workflows/yaml-linter.yml)
-[![Test Packaging](https://github.com/SandwichStation/SandwichStation-HL/actions/workflows/test-packaging.yml/badge.svg)](https://github.com/SandwichStation/SandwichStation-HL/actions/workflows/test-packaging.yml)
-[![RGA schema validator](https://github.com/SandwichStation/SandwichStation-HL/actions/workflows/validate-rgas.yml/badge.svg)](https://github.com/SandwichStation/SandwichStation-HL/actions/workflows/validate-rgas.yml)
-[![Build & Test Map Renderer](https://github.com/SandwichStation/SandwichStation-HL/actions/workflows/build-map-renderer.yml/badge.svg)](https://github.com/SandwichStation/SandwichStation-HL/actions/workflows/build-map-renderer.yml)
-[![Build & Test Debug](https://github.com/SandwichStation/SandwichStation-HL/actions/workflows/build-test-debug.yml/badge.svg)](https://github.com/SandwichStation/SandwichStation-HL/actions/workflows/build-test-debug.yml)
-
 ## Licenses
 
 [You can find more information about the multiple licenses here](https://github.com/SandwichStation/SandwichStation-HL?tab=License-1-ov-file)
