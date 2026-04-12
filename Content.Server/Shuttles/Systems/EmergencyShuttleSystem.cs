@@ -109,6 +109,9 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
     {
         _roundEndCancelToken?.Cancel();
         _roundEndCancelToken = null;
+        _singletonCentcomMap = null;
+        _singletonCentcomGrid = null;
+        _singletonCentcomShuttle = null;
     }
 
     private void OnCentcomShutdown(EntityUid uid, StationCentcomComponent component, ComponentShutdown args)
@@ -452,6 +455,12 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
         {
             if (DockSingleEmergencyShuttle(uid, comp) is { } dockResult)
                 dockResults.Add(dockResult);
+        }
+
+        if (dockResults.Count == 0)
+        {
+            _commsConsole.UpdateCommsConsoleInterface();
+            return;
         }
 
         // Make the shuttle wait longer if it couldn't dock in the normal spot.

@@ -24,6 +24,7 @@ using Timer = Robust.Shared.Timing.Timer;
 using Content.Server._NF.SectorServices; // Frontier
 using Content.Server.Voting;
 using Content.Server.Voting.Managers;
+using Content.Server._Sandwich.Shipyard.Systems;
 using Content.Shared._Sandwich.CCVar;
 
 namespace Content.Server.RoundEnd
@@ -47,6 +48,7 @@ namespace Content.Server.RoundEnd
         [Dependency] private readonly StationSystem _stationSystem = default!;
         [Dependency] private readonly SectorServiceSystem _sectorService = default!; // Frontier: sector-wide alerts
         [Dependency] private readonly IVoteManager _voteManager = default!;
+        [Dependency] private readonly ShiftUpdateAnnouncementSystem _shiftUpdateAnnouncement = default!;
 
         public TimeSpan DefaultCooldownDuration { get; set; } = TimeSpan.FromSeconds(30);
 
@@ -364,7 +366,8 @@ namespace Content.Server.RoundEnd
             {
                 if (!_shuttle.EmergencyShuttleArrived && ExpectedCountdownEnd is null)
                 {
-                    RequestRoundEnd(null, false, "round-end-system-shuttle-auto-called-announcement");
+                    var autoEvacMinutes = _cfg.GetCVar(SandwichCCVars.EvacAutoCallCountdownMinutes);
+                    RequestRoundEnd(TimeSpan.FromMinutes(autoEvacMinutes), null, false, "round-end-system-shuttle-auto-called-announcement");
                     StartAutoEvacRecallVote();
                     _autoCalledBefore = true;
                 }
@@ -378,6 +381,13 @@ namespace Content.Server.RoundEnd
         {
             if (!_cfg.GetCVar(CCVars.AutoVoteEnabled) || !_cfg.GetCVar(SandwichCCVars.EvacAutoVoteEnabled))
                 return;
+
+            if (_shiftUpdateAnnouncement.IsActive)
+            {
+                _chatManager.DispatchServerAnnouncement("NT is NOT turning this EVAC around due to maintenance");
+                _audio.PlayGlobal("/Audio/_Goobstation/Effects/ding.ogg", Filter.Broadcast(), true);
+                return;
+            }
 
             var options = new VoteOptions
             {
