@@ -359,6 +359,9 @@
   - type: InteractionPopup
     interactSuccessSound:
       path: /Audio/Ambience/Objects/periodic_beep.ogg
+  - type: SurgeryTarget # SandwichStation - ability to do surgery, until mocho refactors and we don't need this anymore.
+  - type: Targeting     # SandwichStation - ability to target limbs, useful for a variety of reasons.
+  - type: Sanitized     # SandwichStation - so borgs don't murder people with poison.
 
 - type: entity
   id: BaseBorgChassisSyndicate

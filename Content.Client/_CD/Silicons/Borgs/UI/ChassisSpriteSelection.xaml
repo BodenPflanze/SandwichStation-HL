@@ -3,22 +3,24 @@
     <BoxContainer Name="MainContainer"
                   Orientation="Vertical"
                   SeparationOverride="4"
-                  Visible="False">
+                  Visible="False"
+                  MinWidth="300"> 
         <controls:StripeBack>
             <Label Text="{Loc 'cd-borg-select-subtype-flavour-text'}"
                    StyleClasses="LabelSubText"
                    HorizontalAlignment="Center"
-                   Margin="0 12"/>
+                   ClipText="True"
+                   Margin="0 4"/>
         </controls:StripeBack>
+
         <ScrollContainer Name="OptionsScrollContainer"
                          HScrollEnabled="True"
                          VScrollEnabled="False"
-                         MinHeight="96">
+                         MinHeight="145"> 
             <BoxContainer Name="OptionsContainer"
                           Orientation="Horizontal"
                           SeparationOverride="4"
-                          MinHeight="86"/> <!-- -10 from scroll -->
+                          VerticalAlignment="Bottom"/> 
         </ScrollContainer>
-
     </BoxContainer>
 </Control>

@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
 using Content.Shared._CD.Silicons;
@@ -9,8 +11,7 @@ using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Serialization.TypeSerializers.Implementations;
-using Robust.Shared.Utility;
+using Robust.Shared.IoC;
 
 namespace Content.Client._CD.Silicons.Borgs.UI;
 
@@ -34,18 +35,12 @@ public sealed partial class ChassisSpriteSelection : Control
     public void Update(BorgTypePrototype borgTypePrototype)
     {
         MainContainer.Visible = true;
-
         OptionsContainer.RemoveAllChildren();
-        // Hardlight start - code simplification
+
         var buttonGroup = new ButtonGroup();
         List<Button> buttons = new()
         {
-            CreateSubtypeButton(
-                buttonGroup,
-                borgTypePrototype.DummyPrototype,
-                "Default",
-                null
-            )
+            CreateSubtypeButton(buttonGroup, borgTypePrototype.DummyPrototype, "Default", null)
         };
 
         foreach (var subtypePrototype in _proto.EnumeratePrototypes<BorgSubtypePrototype>())
@@ -60,14 +55,13 @@ public sealed partial class ChassisSpriteSelection : Control
                 subtypePrototype
             ));
         }
-        // Hardlight end
+
         foreach (var button in buttons)
         {
             OptionsContainer.AddChild(button);
         }
     }
 
-    // Hardlight start - Code optimization.
     private Button CreateSubtypeButton(
         ButtonGroup group,
         EntProtoId dummyPrototype,
@@ -78,7 +72,9 @@ public sealed partial class ChassisSpriteSelection : Control
         var button = new Button
         {
             Group = group,
-            MinHeight = 32,
+            VerticalAlignment = VAlignment.Bottom,
+            MinHeight = 0,
+            MinWidth = 0
         };
 
         button.OnPressed += _ =>
@@ -90,18 +86,38 @@ public sealed partial class ChassisSpriteSelection : Control
         var buttonContent = new BoxContainer
         {
             Orientation = BoxContainer.LayoutOrientation.Vertical,
-            HorizontalExpand = true,
-            VerticalExpand = true
+            HorizontalAlignment = HAlignment.Center,
+            Margin = new Thickness(4, 4, 4, 4)
         };
 
-        buttonContent.AddChild(CreateEntityPrototypeView(dummyPrototype));
-        buttonContent.AddChild(new Label { Text = labelText });
+        var prototypeView = CreateEntityPrototypeView(dummyPrototype);
+
+        var imageViewport = new LayoutContainer
+        {
+            RectClipContent = true,
+            MinHeight = 64,        
+            MaxHeight = 100,
+            MinWidth = 64
+        };
+
+
+        LayoutContainer.SetAnchorBottom(prototypeView, 1f);
+        LayoutContainer.SetAnchorTop(prototypeView, 1f);
+        LayoutContainer.SetAnchorLeft(prototypeView, 0.5f);
+        LayoutContainer.SetAnchorRight(prototypeView, 0.5f);
+
+        LayoutContainer.SetGrowVertical(prototypeView, LayoutContainer.GrowDirection.Begin);
+        LayoutContainer.SetGrowHorizontal(prototypeView, LayoutContainer.GrowDirection.Both);
+
+        imageViewport.AddChild(prototypeView);
+        buttonContent.AddChild(imageViewport);
+
+        buttonContent.AddChild(new Label { Text = labelText, HorizontalAlignment = HAlignment.Center });
 
         button.AddChild(buttonContent);
 
         return button;
     }
-    // Hardlight end
 
     private EntityPrototypeView CreateEntityPrototypeView(EntProtoId entProtoId)
     {
@@ -109,6 +125,7 @@ public sealed partial class ChassisSpriteSelection : Control
 
         entPrototypeView.SetPrototype(entProtoId);
         entPrototypeView.Scale *= PrototypeViewSize;
+        
 
         return entPrototypeView;
     }
