@@ -17,10 +17,10 @@
   - BorgModuleFireExtinguisher
   - BorgModuleRadiationDetection
   # Hardlight change start
-  - BorgModuleGrapplingGun
-  - BorgModuleLightReplacer
-  - BorgModuleClowning
-  - BorgModuleMusique
+  #- BorgModuleGrapplingGun             # No Content.Shared.Research.Prototypes.LatheRecipePrototype found with id BorgModuleGrapplingGun - deactivate for now, not sure if needed
+  #- BorgModuleLightReplacer            # "
+  #- BorgModuleClowning                 # "
+  #- BorgModuleMusique                  # "
 
 - type: latheRecipePack
   id: BorgModulesDynamic
