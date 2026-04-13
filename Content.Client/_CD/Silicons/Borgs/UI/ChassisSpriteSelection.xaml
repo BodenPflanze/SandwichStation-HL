@@ -9,7 +9,6 @@
             <Label Text="{Loc 'cd-borg-select-subtype-flavour-text'}"
                    StyleClasses="LabelSubText"
                    HorizontalAlignment="Center"
-                   ClipText="True"
                    Margin="0 4"/>
         </controls:StripeBack>
 
