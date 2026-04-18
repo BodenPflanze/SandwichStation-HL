@@ -173,9 +173,9 @@
   description: Be gender be fluid. # Frontier: consistent grammar
   components:
   - type: Sprite
-    state: fluid
+    state: genderfluid
   - type: Clothing
-    equippedPrefix: fluid
+    equippedPrefix: genderfluid
 
 - type: entity
   parent: ClothingNeckPinBase
