@@ -5,18 +5,18 @@
   description: A plush of the reigning NT Blockgame champion! A perfect travel companion anywhere from the bridge to the trash compactor!
   components:
   - type: Sprite
-    sprite: _ShibaStation/Objects/Fun/ShibPlush/cass.rsi
+    sprite: _Sandwich/Objects/Fun/ShibPlush/cass.rsi
     state: icon
     scale: 0.75, 0.75
   - type: EmitSoundOnUse
     sound:
-      path: /Audio/_ShibaStation/Voice/Reptilian/reptilian_trill1.ogg
+      path: /Audio/_Sandwich/Voice/Reptilian/reptilian_trill1.ogg
   - type: EmitSoundOnActivate
     sound:
-      path: /Audio/_ShibaStation/Voice/Reptilian/reptilian_trill1.ogg
+      path: /Audio/_Sandwich/Voice/Reptilian/reptilian_trill1.ogg
   - type: EmitSoundOnTrigger
     sound:
-      path: /Audio/_ShibaStation/Voice/Reptilian/reptilian_trill1.ogg
+      path: /Audio/_Sandwich/Voice/Reptilian/reptilian_trill1.ogg
   - type: EmitSoundOnLand
     sound:
       path: /Audio/Animals/lizard_happy.ogg

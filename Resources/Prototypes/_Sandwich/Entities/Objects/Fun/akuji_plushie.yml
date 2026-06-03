@@ -5,7 +5,7 @@
   description: A marketable plushie of Shiba Sector's most notorious Chief Central Commander. Smells like Black Russian.
   components:
   - type: Sprite
-    sprite: _ShibaStation/Objects/Fun/akujiplush.rsi
+    sprite: _Sandwich/Objects/Fun/akujiplush.rsi
     state: akuji
   - type: EmitSoundOnUse
     sound:
@@ -48,5 +48,5 @@
   description: A limited edition marketable plushie of Shiba Sector's most notorious Chief Central Commander. Not machine washable.
   components:
   - type: Sprite
-    sprite: _ShibaStation/Objects/Fun/akujiplush.rsi
+    sprite: _Sandwich/Objects/Fun/akujiplush.rsi
     state: akuji-cc

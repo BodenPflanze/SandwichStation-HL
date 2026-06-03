@@ -5,7 +5,7 @@
   description: Contrary to popular belief, this is, in fact, a bird! Theres a tag reading 'DO NOT EAT', but it smells strongly of waffles..."
   components:
   - type: Sprite
-    sprite: _ShibaStation/Objects/Fun/ShibPlush/shuukei.rsi
+    sprite: _Sandwich/Objects/Fun/ShibPlush/shuukei.rsi
     state: icon
     scale: 0.6, 0.6
   - type: EmitSoundOnUse

@@ -5,7 +5,7 @@
   description: A marketable plushie of Shiba Sector's most handsome fluffy boy. Smells like mint.
   components:
   - type: Sprite
-    sprite: _ShibaStation/Objects/Fun/miccauplush.rsi
+    sprite: _Sandwich/Objects/Fun/miccauplush.rsi
     state: miccau
   - type: EmitSoundOnUse
     sound:

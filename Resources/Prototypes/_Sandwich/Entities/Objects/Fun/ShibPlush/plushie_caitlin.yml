@@ -5,7 +5,7 @@
   description: The right man in the wrong place can make all the difference in the world... no, literally. She probably stole AA again to help out the crew.
   components:
   - type: Sprite
-    sprite: _ShibaStation/Objects/Fun/ShibPlush/caitlin.rsi
+    sprite: _Sandwich/Objects/Fun/ShibPlush/caitlin.rsi
     state: icon
   - type: EmitSoundOnUse
     sound:
@@ -23,7 +23,7 @@
     delay: 2.0
   - type: EmitSoundOnTrigger
     sound:
-      path: /Audio/_ShibaStation/Effects/sfx/hellothere.ogg
+      path: /Audio/_Sandwich/Effects/sfx/hellothere.ogg
       params:
         volume: -4
         maxDistance: 10

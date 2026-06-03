@@ -6,7 +6,7 @@
     cry. A little soggy too...
   components:
   - type: Sprite
-    sprite: _ShibaStation/Objects/Fun/ShibPlush/lucy.rsi
+    sprite: _Sandwich/Objects/Fun/ShibPlush/lucy.rsi
     state: icon
     scale: 0.5, 0.5
   - type: EmitSoundOnUse

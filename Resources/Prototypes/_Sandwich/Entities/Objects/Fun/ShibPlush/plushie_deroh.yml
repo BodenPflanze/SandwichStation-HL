@@ -5,7 +5,7 @@
   description: A real lady killer! Runs on Moonshine and PGGBs.
   components:
   - type: Sprite
-    sprite: _ShibaStation/Objects/Fun/ShibPlush/deroh.rsi
+    sprite: _Sandwich/Objects/Fun/ShibPlush/deroh.rsi
     state: icon
   - type: EmitSoundOnUse
     sound:
@@ -18,4 +18,4 @@
       path: /Audio/Items/Toys/weh.ogg
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/_ShibaStation/Voice/Reptilian/reptilian_hiss2.ogg
+      path: /Audio/_Sandwich/Voice/Reptilian/reptilian_hiss2.ogg

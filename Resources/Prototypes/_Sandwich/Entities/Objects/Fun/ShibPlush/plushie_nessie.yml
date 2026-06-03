@@ -10,7 +10,7 @@
   description: Lizard and fish at the same time? Must be the work of wizards!
   components:
   - type: Sprite
-    sprite: _ShibaStation/Objects/Fun/ShibPlush/nessie.rsi
+    sprite: _Sandwich/Objects/Fun/ShibPlush/nessie.rsi
     state: icon
   - type: EmitSoundOnUse
     sound:
