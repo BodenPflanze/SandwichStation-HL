@@ -1,5 +1,5 @@
 - type: entity
-  parent: [BaseSubfloorAnchorStorage, ClothingBackpack]
+  parent: ClothingBackpack
   id: NFClothingBackpack
   components:
   - type: Storage
@@ -13,7 +13,7 @@
     - 0,0,7,5
 
 - type: entity
-  parent: [BaseSubfloorAnchorStorage, ClothingBackpackDuffel]
+  parent: ClothingBackpackDuffel
   id: NFClothingDuffel
   components:
   - type: Storage
