@@ -1227,10 +1227,10 @@
   - type: EmitSoundOnCollide
     sound:
       path: /Audio/Voice/Human/femalescream_4.ogg
-  - type: Edible
-    requiresSpecialDigestion: true
-    useSound:
-      path: /Audio/Voice/Human/cry_female_2.ogg
+  #- type: Edible
+  #  requiresSpecialDigestion: true
+  #  useSound:
+  #    path: /Audio/Voice/Human/cry_female_2.ogg
   - type: MeleeWeapon
     wideAnimationRotation: 180
     soundHit:
