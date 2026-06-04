@@ -311,3 +311,13 @@ Entries:
       message: Unselected cyborg entity name
   id: 27
   time: '2026-04-16T09:48:34.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Tweak
+      message: Bags are no longer anchorable
+    - type: Remove
+      message: Removed legacy / broken items
+    - type: Add
+      message: Added missing genderfluid pin
+  id: 28
+  time: '2026-06-04T17:40:15.0000000+00:00'
