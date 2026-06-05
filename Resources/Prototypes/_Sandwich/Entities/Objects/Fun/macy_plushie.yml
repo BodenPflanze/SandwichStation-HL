@@ -5,9 +5,8 @@
   description: Smells like medicine.
   components:
   - type: Sprite
-    sprite: _Sandwich/Objects/Fun/macy_cross.rsi
-    state: icon
-    scale: 0.6, 0.6
+    sprite: _Sandwich/Objects/Fun/macy_cross_plush.rsi
+    state: macycross
   - type: EmitSoundOnUse
     sound:
       path: /Audio/Animals/cat_meow.ogg
