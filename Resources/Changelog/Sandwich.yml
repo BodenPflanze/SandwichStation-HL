@@ -321,3 +321,9 @@ Entries:
       message: Added missing genderfluid pin
   id: 28
   time: '2026-06-04T17:40:15.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Add
+      message: Added Niaresa Plushie and Body Pillow.
+  id: 29
+  time: '2026-06-05T16:01:47.0000000+00:00'
