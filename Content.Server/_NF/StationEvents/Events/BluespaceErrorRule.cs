@@ -245,20 +245,12 @@ public sealed class BluespaceErrorRule : StationEventSystem<BluespaceErrorRuleCo
                 }
 
                 var playerMobs = _linkedLifecycleGrid.GetEntitiesToReparent(gridUid);
-                foreach (var mob in playerMobs)
-                {
-                    _transform.DetachEntity(mob.Entity.Owner, mob.Entity.Comp);
-                }
-
                 var gridValue = _pricing.AppraiseGrid(gridUid, null);
 
                 // Deletion has to happen before grid traversal re-parents players.
                 Del(gridUid);
 
-                foreach (var mob in playerMobs)
-                {
-                    _transform.SetCoordinates(mob.Entity.Owner, new EntityCoordinates(mob.MapUid, mob.MapPosition));
-                }
+                _linkedLifecycleGrid.UnparentPlayersFromGrid(gridUid, deleteGrid: true, ignoreLifeStage: true);
 
                 foreach (var (account, rewardCoeff) in component.RewardAccounts)
                 {
