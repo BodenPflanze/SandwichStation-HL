@@ -1,0 +1,52 @@
+- type: entity
+  parent: BasePlushie
+  id: PlushieFoxChan
+  name: Fox-Chan plushie
+  description: A marketable plushie of Sandwich Station's most famous Chief Engineer. Smells like freshly melted cheese.
+  components:
+  - type: Sprite
+    sprite: _Sandwich/Objects/Fun/foxchan_plush.rsi
+    state: foxchan
+  - type: EmitSoundOnUse
+    sound:
+      collection: VulpkaninBarks
+      params:
+        variation: 0.03
+  - type: EmitSoundOnActivate
+    sound:
+      collection: VulpkaninGrowls
+      params:
+        variation: 0.03
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: VulpkaninWhines
+      params:
+        variation: 0.03
+  - type: EmitSoundOnCollide
+    sound:
+      collection: VulpkaninWhines
+      params:
+        variation: 0.03
+  - type: EmitSoundOnPickup
+    sound:
+      collection: VulpkaninBarks
+      params:
+        variation: 0.03
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      collection: VulpkaninBarks
+    damage:
+      types:
+        Blunt: 0
+
+- type: entity
+  parent: PlushieFoxChan
+  id: PlushieFoxChanCC
+  name: Fox-Chan plushie
+  suffix: CentComm
+  description: A limited edition marketable plushie of SandwichStation's most silly CentCom Admiral. Not edible.
+  components:
+  - type: Sprite
+    sprite: _Sandwich/Objects/Fun/foxchan_plush.rsi
+    state: foxchancap
