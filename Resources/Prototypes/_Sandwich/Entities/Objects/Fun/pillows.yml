@@ -7,7 +7,7 @@
   - type: Item
     heldPrefix: whitepillow
   - type: Sprite
-    sprite: _HL/Objects/Fun/pillows_body.rsi
+    sprite: _Sandwich/Objects/Fun/pillows_body.rsi
     layers:
     - state: pillow_body_niaresa_front
       map: ["base"]
