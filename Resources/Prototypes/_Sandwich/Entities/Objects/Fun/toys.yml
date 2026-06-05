@@ -53,6 +53,6 @@
     equippedPrefix: niaresa
     slots:
     - HEAD
-  - type: FoodSequenceElement
-    entries:
-      CottonBurger: NiaresaPlushie
+  #- type: FoodSequenceElement
+  #  entries:
+  #    CottonBurger: NiaresaPlushie
