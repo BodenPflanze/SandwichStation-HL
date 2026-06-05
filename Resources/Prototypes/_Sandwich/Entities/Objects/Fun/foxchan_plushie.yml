@@ -2,7 +2,7 @@
   parent: BasePlushie
   id: PlushieFoxChan
   name: Fox-Chan plushie
-  description: A marketable plushie of Sandwich Station's most famous Chief Engineer. Smells like freshly melted cheese.
+  description: A marketable plushie of Sandwich Station's silliest Fox. Smells like freshly melted cheese.
   components:
   - type: Sprite
     sprite: _Sandwich/Objects/Fun/foxchan_plush.rsi
