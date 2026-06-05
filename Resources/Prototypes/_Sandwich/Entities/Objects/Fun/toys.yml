@@ -5,7 +5,7 @@
   description: A plushie of a Cyan Shadowkin wearing the "Uniform" of the Chief Medical Officer. Shouldn't a doctor be wearing more clothes, not less?
   components:
   - type: Sprite
-    sprite: _Sandwich/Objects/Fun/niaresa.rsi
+    sprite: _Sandwich/Objects/Fun/niaresa_plush.rsi
     state: niaresa
   - type: Item
     inhandVisuals:
@@ -49,7 +49,7 @@
       - state: niaresa-equipped-HELMET
         shader: shaded
     quickEquip: false
-    sprite: _Sandwich/Objects/Fun/niaresa.rsi
+    sprite: _Sandwich/Objects/Fun/niaresa_plush.rsi
     equippedPrefix: niaresa
     slots:
     - HEAD
