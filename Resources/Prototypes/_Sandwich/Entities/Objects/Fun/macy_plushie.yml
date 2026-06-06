@@ -1,0 +1,23 @@
+- type: entity
+  parent: BasePlushie
+  id: PlushieMacy
+  name: Macy Plushie
+  description: Smells like Medicine or Genetics? Maybe both. We'll never know.
+  components:
+  - type: Sprite
+    sprite: _Sandwich/Objects/Fun/macy_cross_plush.rsi
+    state: macycross
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Animals/cat_meow.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Animals/cat_meow2.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Animals/cat_meow.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Animals/cat_hiss.ogg
+  - type: UseDelay
+    delay: .5
