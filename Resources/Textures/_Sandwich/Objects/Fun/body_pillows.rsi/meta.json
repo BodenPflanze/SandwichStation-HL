@@ -1,11 +1,11 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "SandwichStation",
-  "size": {
-    "x": 32,
-    "y": 32
-  },
+    "version": 1,
+    "license": "CC0-1.0",
+    "copyright": "Made by Speegey (fhkj on discord)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
     "states": [
         { "name": "pillow_body_niaresa_back" },
         { "name": "pillow_body_niaresa_front" }

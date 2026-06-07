@@ -341,3 +341,9 @@ Entries:
       message: Added Macy Cross plushie
   id: 31
   time: '2026-06-05T17:04:04.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Add
+      message: Added Serenity plush
+  id: 32
+  time: '2026-06-07T10:08:10.0000000+00:00'
