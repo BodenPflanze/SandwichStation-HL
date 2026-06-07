@@ -5,7 +5,6 @@
     PlushieHampter: 3
     PlushieLizard: 3
     PlushieSpaceLizard: 3
-    NFPlushieSharkMinnow: 3
     PlushieVox: 3
     PlushieCuddlyIPC: 3
     PlushieFluffyVulpkanin: 3
@@ -25,49 +24,35 @@
     PlushieCarp: 3
     PlushieAtmosian: 3
     PlushieXeno: 3
-    PlasticBanana: 3
-    BeachBall: 3
-    Basketball: 3
-    Football: 3
-    ToyHammer: 3
-    WhoopieCushion: 3
-    MrChips: 1
-    MrDips: 1
-    PetRockCarrier: 1
-    NFRevolverCapGun: 2 # Frontier: RevolverCapGun<NFRevolverCapGun
-    VehicleUnicycleFolded: 2
-    ClothingHeadHatMagician: 2
-    ClownRecorder: 1
-    PonderingOrb: 1
-    CrayonBox: 10
-    CrayonRainbow: 5
-    WeaponWaterPistol: 8
-    WeaponWaterBlaster: 4
-    TargetDartsFlatpack: 1
-    BoxDarts: 2
-    ChessBoard: 2
-    BackgammonBoard: 2
-    ParchisBoard: 1
-    CheckerBoard: 1
-    ShipBattlemap: 1
-    SnowBattlemap: 1
-    SandBattlemap: 1
-    MoonBattlemap: 1
-    GrassBattlemap: 1
-    DiceBag: 6
-    PrizeBall: 10
-    MysterySpaceBladeBox: 10
-  contrabandInventory:
-    PlushieLamp: 3
-    CrazyGlue: 1
-  emaggedInventory:
     PlushieJester: 3
     PlushieJanitor: 3
     PlushieMailVulp: 3
     PlushieYarrMoth: 3
-    PlushieNuke: 3
     PlushieRGBee: 3
-    BalloonCorgi: 2
+    #_NF Plushies
     NFPlushieBotanist: 3
     NFPlushieCmo: 3    
     NFPlushieEngineer: 3
+    NFPlushieSharkMinnow: 3
+    #Sandwich Plushies
+    PlushieFoxChan: 3
+    PlushieSerenity: 3
+    PlushieNiaresa: 3
+    PlushieMacy: 3
+    PlushieAchto: 3
+    PlushieCaitlin: 3
+    PlushieCass: 3
+    PlushieDave: 3
+    PlushieDeroh: 3
+    PlushieLucy: 3
+    PlushieLexai: 3
+    LizardShark: 3
+    PlushieSevan: 3
+    PlushieShuukei: 3
+    PlushieTwiggy: 3
+  contrabandInventory:
+    PlushieLamp: 3
+    CrazyGlue: 1
+  emaggedInventory:
+    PlushieNuke: 3
+
