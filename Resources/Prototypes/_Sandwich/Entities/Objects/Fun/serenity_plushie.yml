@@ -1,0 +1,36 @@
+- type: entity
+  parent: BasePlushie
+  id: PlushieSerenity
+  name: Serenity Plushie
+  description: Smells like blue raspberry, very squishy and soft.
+  components:
+  - type: Sprite
+    sprite: _Sandwich/Objects/Fun/serenity_plush.rsi
+    state: serenity
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Nyanotrasen/Voice/Felinid/cat_mew2.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Voice/Slime/slime_squish.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Nyanotrasen/Voice/Felinid/cat_meow2.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Nyanotrasen/Voice/Felinid/cat_mew2.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/Voice/Slime/slime_squish.ogg
+  - type: Edible
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/Nyanotrasen/Voice/Felinid/cat_scream2.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      path: /Audio/Nyanotrasen/Voice/Felinid/cat_hiss2.ogg
+  - type: Tag
+    tags:
+    - ClothMade
+    - Payload
