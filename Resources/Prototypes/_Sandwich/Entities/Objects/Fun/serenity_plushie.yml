@@ -22,10 +22,10 @@
   - type: EmitSoundOnCollide
     sound:
       path: /Audio/Voice/Slime/slime_squish.ogg
-  - type: Edible
-    requiresSpecialDigestion: true
-    useSound:
-      path: /Audio/Nyanotrasen/Voice/Felinid/cat_scream2.ogg
+  #- type: Edible
+  #  requiresSpecialDigestion: true
+  #  useSound:
+  #    path: /Audio/Nyanotrasen/Voice/Felinid/cat_scream2.ogg
   - type: MeleeWeapon
     wideAnimationRotation: 180
     soundHit:
