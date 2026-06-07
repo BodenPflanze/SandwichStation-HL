@@ -10,13 +10,13 @@
     scale: 0.75, 0.75
   - type: EmitSoundOnUse
     sound:
-      path: /Audio/_Floofstation/Voice/Reptilian/reptilian_trill1.ogg
+      path: /Audio/_Sandwich/Voice/Reptilian/reptilian_trill1.ogg
   - type: EmitSoundOnActivate
     sound:
-      path: /Audio/_Floofstation/Voice/Reptilian/reptilian_trill1.ogg
+      path: /Audio/_Sandwich/Voice/Reptilian/reptilian_trill1.ogg
   - type: EmitSoundOnTrigger
     sound:
-      path: /Audio/_Floofstation/Voice/Reptilian/reptilian_trill1.ogg
+      path: /Audio/_Sandwich/Voice/Reptilian/reptilian_trill1.ogg
   - type: EmitSoundOnLand
     sound:
       path: /Audio/Animals/lizard_happy.ogg
