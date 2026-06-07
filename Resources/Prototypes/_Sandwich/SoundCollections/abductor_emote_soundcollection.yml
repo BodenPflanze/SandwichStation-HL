@@ -1,0 +1,9 @@
+- type: soundCollection
+  id: AbductorLaugh
+  files:
+    - /Audio/_Sandwich/Voice/Abductor/laugh.ogg
+
+- type: soundCollection
+  id: AbductorScream
+  files:
+    - /Audio/_Sandwich/Voice/Abductor/scream.ogg

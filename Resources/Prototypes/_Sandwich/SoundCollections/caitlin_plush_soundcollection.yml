@@ -1,0 +1,23 @@
+- type: soundCollection
+  id: CaitlinPlushUse
+  files:
+    - /Audio/_Sandwich/Effects/sfx/asexpected.ogg
+    - /Audio/_Sandwich/Effects/sfx/greetings.ogg
+    - /Audio/_Sandwich/Effects/sfx/heal5.ogg
+    - /Audio/_Sandwich/Effects/sfx/hellothere.ogg
+    - /Audio/_Sandwich/Effects/sfx/ridiculous.ogg
+- type: soundCollection
+  id: CaitlinPlushThrow
+  files:
+    - /Audio/_Sandwich/Effects/sfx/fear3.ogg
+    - /Audio/_Sandwich/Effects/sfx/pain4.ogg
+- type: soundCollection
+  id: CaitlinPlushLand
+  files:
+    - /Audio/_Sandwich/Effects/sfx/pain3.ogg
+    - /Audio/_Sandwich/Effects/sfx/pain5.ogg
+- type: soundCollection
+  id: CaitlinPlushHit
+  files:
+    - /Audio/_Sandwich/Effects/sfx/cbar_hit1.ogg
+    - /Audio/_Sandwich/Effects/sfx/cbar_hit2.ogg
