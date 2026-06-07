@@ -2,3 +2,16 @@
   license: "CC-BY-3.0"
   copyright: "Original sound added by https://github.com/NopemanMcHalt"
   source: "https://github.com/SPLURT-Station/S.P.L.U.R.T-Station-13/blob/master/modular_splurt/sound/voice/yip.ogg"
+
+- files: ["reptilian_trill1.ogg"]
+  license: "CC0-1.0"
+  copyright: "JhennaSide"
+  source: "https://freesound.org/people/JhennaSide/sounds/455906/"
+
+- files: ["reptilian_trill2.ogg"]
+  license: "CC0-1.0"
+  copyright: "JhennaSide"
+  source: "https://freesound.org/people/JhennaSide/sounds/455906/"
+
+# Other files in this folder are unknown author; _ShibaStation didnt add attributions.
+# If these sounds are made by you, please contact us!
