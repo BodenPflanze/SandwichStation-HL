@@ -18,4 +18,4 @@
       path: /Audio/Items/Toys/weh.ogg
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/_Sandwich/Voice/Reptilian/reptilian_hiss2.ogg
+      path: /Audio/_Floofstation/Voice/Reptilian/reptilian_hiss2.ogg
