@@ -12,9 +12,7 @@
     grid:
     - 0,0,3,1
   - type: Item
-    size: Normal # Frontier: Large<Normal
-    shape: # Frontier
-    - 0,0,3,1 # Frontier
+    size: Large
     sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi # Frontier: _NF prefix
     heldPrefix: firstaid
   - type: PhysicalComposition
