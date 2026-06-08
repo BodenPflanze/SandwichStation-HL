@@ -2,7 +2,7 @@
   parent: BasePlushie
   id: PlushieLegion
   name: Lost Legion Unit 12 plushie
-  description: Smells of gunpoweder and maple. Despite being made of a metallic alloy it is quite comfortable.
+  description: Smells of gunpowder and maple. Despite being made of a metallic alloy it is quite comfortable.
   components:
   - type: Sprite
     layers:
