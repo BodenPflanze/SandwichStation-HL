@@ -1066,17 +1066,17 @@
     - DoorBumpOpener
 
 
-- type: entity
-  parent: CentcomPDA
-  id: DeathsquadPDA
-  suffix: Death Squad
-  components:
-  - type: Pda
-    id: CentcomIDCardDeathsquad
-  - type: Tag #  Ignore Chameleon tags
-    tags:
-    - Admin
-    - DoorBumpOpener
+# - type: entity           # Deathsquad PDA in goob files
+#   parent: CentcomPDA
+#   id: DeathsquadPDA
+#   suffix: Death Squad
+#   components:
+#   - type: Pda
+#     id: CentcomIDCardDeathsquad
+#   - type: Tag #  Ignore Chameleon tags
+#     tags:
+#     - Admin
+#     - DoorBumpOpener
 
 - type: entity
   parent: BasePDA

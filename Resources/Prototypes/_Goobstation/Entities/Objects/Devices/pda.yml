@@ -1,4 +1,125 @@
 - type: entity
+  parent: AdminPDA
+  id: ChronoPDA
+  name: futuristic PDA
+  description: A powerful quantum computer disguised as a regular pda for disguise.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Devices/pda.rsi
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-chrono
+  - type: Pda
+    id: ChronoIDCard
+    penSlot:
+      startingItem: PenFuture
+      whitelist:
+        tags:
+        - Write
+  - type: PdaBorderColor
+    borderColor: "#dee4e7"
+    accentVColor: "#59bcee"
+  - type: Icon
+    sprite: _Goobstation/Objects/Devices/pda.rsi
+    state: pda-chrono
+
+- type: entity
+  parent: SalvagePDA
+  id: HelldiverPDA
+  name: salvage diver PDA
+  description: Smells like corpses of insects and androids.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Devices/pda.rsi
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-heccd
+  - type: Pda
+    id: HelldiverIDCard
+  - type: PdaBorderColor
+    borderColor: "#272727"
+    borderColor: "#272727"
+    accentVColor: "#cec100"
+  - type: Icon
+    sprite: _Goobstation/Objects/Devices/pda.rsi
+    state: pda-heccd
+  - type: Tag # Ignore Chameleon tags, this is too cool 4 u
+    tags:
+    - DoorBumpOpener
+
+- type: entity
+  parent: CentcomPDA
+  id: HecuPDA
+  name: HECU PDA
+  description: Smells of gunpowder.
+  components:
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-centcom
+  - type: Pda
+    id: HecuIDCard
+    penSlot:
+      startingItem: PenCentcom
+      whitelist:
+        tags:
+        - Write
+  - type: PdaBorderColor
+    borderColor: "#00842e"
+
+- type: entity
+  parent: BaseMedicalPDA
+  id: BlueshieldPDA
+  name: blueshield officer PDA
+  description: The silver shield of the Blueshield is engraved on the front.
+  components:
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-blueshield
+  - type: Pda
+    id: BlueshieldIDCard
+  - type: Icon
+    sprite: _Goobstation/Objects/Devices/pda.rsi
+    state: pda-blueshield
+  - type: Sprite
+    sprite: _Goobstation/Objects/Devices/pda.rsi
+    state: pda-blueshield
+  - type: PdaBorderColor
+    borderColor: "#3c94c5"
+
+- type: entity
+  parent: CentcomPDA
+  id: DeathsquadPDA
+  name: deathsquad PDA
+  description: Rip and tear until it is done.
+  components:
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-deathsquad
+  - type: Pda
+    id: CentcomIDCardDeathsquad
+  - type: Icon
+    sprite: _Goobstation/Objects/Devices/pda.rsi
+    state: pda-deathsquad
+  - type: Sprite
+    sprite: _Goobstation/Objects/Devices/pda.rsi
+    state: pda-deathsquad
+  - type: Tag
+    tags: [] # ignore "WhitelistChameleon" tag
+  - type: PdaBorderColor
+    borderColor: "#04040a"
+    accentVColor: "#16bab5"
+
+- type: entity
   parent: BasePDA
   id: RadioHostPDA
   name: radio host PDA
