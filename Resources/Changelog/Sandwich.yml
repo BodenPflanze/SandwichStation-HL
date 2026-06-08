@@ -357,3 +357,9 @@ Entries:
       message: Plushies from shibastation
   id: 33
   time: '2026-06-07T10:27:45.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Add
+      message: Added legion plushie
+  id: 34
+  time: '2026-06-08T05:22:51.0000000+00:00'
