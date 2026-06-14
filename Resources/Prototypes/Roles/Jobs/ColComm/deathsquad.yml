@@ -24,9 +24,9 @@
     mask: ClothingMaskGasDeathSquad
     eyes: ClothingEyesHudSecurity
     ears: ClothingHeadsetAltCentCom
-    gloves: ClothingHandsGlovesCombat
+    gloves: ClothingHandsGlovesDeathsquadUnremovable # Rip and TEAR
     outerClothing: ClothingOuterHardsuitDeathsquad
-    shoes: ClothingShoesBootsMagAdv
+    shoes: ClothingShoesBootsMagDeathsquad # These boots are cooler.
     id: DeathsquadPDA # New PDA!
     pocket1: EnergySword
     pocket2: EnergyShield
