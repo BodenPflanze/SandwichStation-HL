@@ -1,3 +1,100 @@
+# Chrono Legioneers
+- type: entity
+  parent: IDCardStandard
+  id: ChronoIDCard
+  name: futuristic ID card
+  description: The card that originally accessed everything in this universe
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Misc/id_cards.rsi
+    layers:
+    - state: future
+    - state: idchrono
+  - type: Item
+    heldPrefix: blue
+  - type: IdCard
+    jobTitle: job-name-futureagent
+    jobIcon: JobIconFuture
+  - type: Access
+    groups:
+    - AllAccess
+    tags:
+    - CentralCommand
+    # - NanotrasenRepresentative        # We don't have that one
+    # - BlueshieldOfficer
+    - Wizard
+    - NuclearOperative
+    - SyndicateAgent
+
+# Helldiver
+- type: entity
+  parent: SalvageIDCard
+  id: HelldiverIDCard
+  name: salvage diver ID card
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Misc/id_cards.rsi
+    layers:
+    - state: idhelldiver
+  - type: IdCard
+    jobTitle: job-name-salvagediver
+    jobIcon: JobIconShaftMiner
+
+# HECU
+- type: entity
+  parent: IDCardStandard
+  id: HecuIDCard
+  name: HECU ID card
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/id_cards.rsi
+    layers:
+    - state: ert_security
+  - type: IdCard
+    jobTitle: job-name-hecu
+    jobIcon: JobIconNanotrasen
+  - type: Access
+    groups:
+    - AllAccess
+    tags:
+    - CentralCommand
+    # - NanotrasenRepresentative        # We don't have that one
+    # - BlueshieldOfficer
+
+# Executive Access
+- type: entity
+  parent: [IDCardStandard, BaseCentcomContraband]
+  id: ExecutiveIDCard
+  name: executive access card
+  description: Nanotrasen employees are legally obligated to listen to someone with one of these. It's also capable of overriding access locks on most devices.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Misc/executive.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Goobstation/Objects/Misc/executive.rsi
+    quickEquip: true
+    slots:
+    - neck
+    - idcard
+  - type: Item
+    heldPrefix:
+    sprite: _Goobstation/Objects/Misc/executive.rsi
+  - type: IdCard
+    jobTitle: job-name-exec
+    jobIcon: JobIconNanotrasen
+  - type: Emag
+    emagType: Access
+    emagSound: /Audio/_Goobstation/Items/card_swipe.ogg
+    successText: executive-card-success
+  - type: Access
+    groups:
+    - AllAccess
+    tags:
+    - CentralCommand
+    # - NanotrasenRepresentative        # We don't have that one
+    # - BlueshieldOfficer
+
 # Crew
 - type: entity
   parent: IDCardStandard
