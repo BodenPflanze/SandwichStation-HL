@@ -67,6 +67,10 @@
     allowedDepartments: [ CentralCommand ]
 
 - type: entity
+  parent: BaseCentcomContraband
+  id: BaseCentcommContraband          # Goob names it Centcomm
+
+- type: entity
   id: BaseCommandContraband
   parent: BaseC2ContrabandUnredeemable # Frontier: BaseRestrictedContraband<BaseC2ContrabandUnredeemable
   abstract: true

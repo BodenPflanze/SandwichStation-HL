@@ -58,6 +58,9 @@
   id: DurandRLeg
 
 - type: Tag
+  id: FitsInCharger
+
+- type: Tag
   id: GygaxArmor
 
 - type: Tag
@@ -144,6 +147,9 @@
 
 - type: Tag
   id: StasisCage
+
+- type: Tag
+  id: Stunbaton
 
 - type: Tag
 

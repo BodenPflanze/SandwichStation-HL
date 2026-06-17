@@ -1,0 +1,13 @@
+- type: entity
+  parent: [ ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseCentcomContraband ]
+  id: ClothingBeltDeathsquadWebbing
+  suffix: DO NOT MAP
+  name: deathsquad operative chestrig
+  description: A robust and durable chestrig, containing everything you need to keep you in the fight. You probably won't need to use it.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Belt/deathsquadwebbing.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Belt/deathsquadwebbing.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.01

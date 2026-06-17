@@ -224,7 +224,7 @@
     damageCoefficient: 0.85
 
 - type: entity
-  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing, BaseCentcommContraband]
+  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing, BaseCentcomContraband]
   id: ClothingOuterVestWebEliteCentcomm
   name: central command web vest
   description: A synthetic armor vest redesignated for use by the Corporate Consortium, webbing and heat resistant fibers included.
@@ -252,7 +252,7 @@
     reduction: 0.85
     
 - type: entity
-  parent: [ClothingOuterArmorBase, BaseCentcommContraband]
+  parent: [ClothingOuterArmorBase, BaseCentcomContraband]
   id: ClothingOuterVestNTCC
   name: nt cc consortium officer's vest
   description: Much better than a standard type-1 security vest. Don't lose it, you will NOT get a replacement.

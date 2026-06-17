@@ -1,0 +1,66 @@
+- type: entity
+  name: centcomm advanced stimulant
+  parent: [ChemicalMedipen, BaseCentcomContraband]
+  id: CentcomStimpack
+  suffix: DO NOT MAP
+  description: According to a Nanotrasen funded study, it has zero addictive properties.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: ntstimpen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 50
+        reagents:
+        - ReagentId: Stimulants
+          Quantity: 25
+        - ReagentId: Ichor
+          Quantity: 10
+        - ReagentId: Dylovene
+          Quantity: 15
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: ntstimpen_empty
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 50
+    onlyAffectsMobs: false
+    injectOnly: true
+  - type: StaticPrice
+    price: 500
+
+- type: entity                            # Sandwich-HL: moved this from medkits.yml to here
+  name: advanced combat medipen
+  parent: ChemicalMedipen
+  id: AdvancedCombatMedipen
+  description: A single-use advanced medipen containing chemicals extracted from eldritch beasts. # ethically sourced space dragon blood
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: advcombatpen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: advcombatpen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 40
+        reagents:
+        - ReagentId: Ichor
+          Quantity: 35
+        - ReagentId: TranexamicAcid
+          Quantity: 5
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 40
+    onlyAffectsMobs: false
+    injectOnly: true
+  - type: StaticPrice
+    price: 500

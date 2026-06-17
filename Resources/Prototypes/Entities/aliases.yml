@@ -7,8 +7,3 @@
   id: BaseRestrictedContraband
   parent: BaseC2ContrabandUnredeemable
   abstract: true
-
-- type: entity
-  id: BaseCentcommContraband
-  parent: BaseC2ContrabandUnredeemable # or another appropriate parent
-  abstract: true

@@ -618,6 +618,9 @@
 - type: Tag
   id: GuideEmbeded
 
+- type: Tag                # Sandwich-HL edit- tag was missing, caused debug to crash when shooting mateba
+  id: GunCanAimShooter
+
 - type: Tag
   id: GunUpgradeDamage
 
