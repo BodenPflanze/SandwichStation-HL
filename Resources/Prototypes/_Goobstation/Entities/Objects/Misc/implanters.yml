@@ -36,3 +36,35 @@
   components:
   - type: Implanter
     implant: BluespaceLifelineImplant
+
+- type: entity
+  id: CentcommNutrimentImplanter
+  suffix: Nutriment Pump
+  parent: BaseImplantOnlyImplanterCentcomm
+  components:
+  - type: Implanter
+    implant: NutrimentPumpImplant
+
+- type: entity
+  id: CentcommStypticStimulatorImplanter
+  suffix: Styptic Stimulator
+  parent: BaseImplantOnlyImplanterCentcomm
+  components:
+  - type: Implanter
+    implant: StypticStimulatorImplant
+
+- type: entity
+  id: NutrimentImplanter
+  suffix: Nutriment Pump
+  parent: BaseImplantOnlyImplanterSyndi
+  components:
+  - type: Implanter
+    implant: NutrimentPumpImplant
+
+- type: entity
+  id: StypticStimulatorImplanter
+  suffix: Styptic Stimulator
+  parent: BaseImplantOnlyImplanterSyndi
+  components:
+  - type: Implanter
+    implant: StypticStimulatorImplant

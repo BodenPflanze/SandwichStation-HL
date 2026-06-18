@@ -36,7 +36,8 @@ public partial class SharedMartialArtsSystem
             component.LastAttacks.Clear();
         }
 
-        if (args.Weapon != uid)
+        //if (args.Weapon != uid)
+        if (args.Weapon != uid && !HasComp<MartialArtsWeaponComponent>(args.Weapon)) // Sandwich-HL
         {
             component.LastAttacks.Clear();
             return;

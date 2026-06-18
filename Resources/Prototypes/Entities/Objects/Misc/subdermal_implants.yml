@@ -361,7 +361,7 @@
 
 - type: entity
   parent: DeathRattleImplant
-  id: DeathRattleImplantCentcom
+  id: DeathRattleImplantCentcomm
   name: Centcom death rattle implant
   description: This implant will inform the Centcom radio channel should the user fall into critical condition or die.
   categories: [ HideSpawnMenu ]

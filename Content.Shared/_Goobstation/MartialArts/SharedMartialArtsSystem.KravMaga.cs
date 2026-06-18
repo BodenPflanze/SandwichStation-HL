@@ -18,7 +18,18 @@ public abstract partial class SharedMartialArtsSystem
         SubscribeLocalEvent<KravMagaComponent, KravMagaActionEvent>(OnKravMagaAction);
         SubscribeLocalEvent<KravMagaComponent, MeleeHitEvent>(OnMeleeHitEvent);
         SubscribeLocalEvent<KravMagaComponent, ComponentShutdown>(OnKravMagaShutdown);
+        SubscribeLocalEvent<MartialArtsWeaponComponent, MeleeHitEvent>(OnMartialArtsWeaponHitKravMaga); // Sandwich-HL
     }
+    //Sandwich-HL start
+    private void OnMartialArtsWeaponHitKravMaga(Entity<MartialArtsWeaponComponent> ent, ref MeleeHitEvent args)
+    {
+        if (TryComp<KravMagaComponent>(args.User, out var kravMaga))
+        {
+            var kravEnt = new Entity<KravMagaComponent>(args.User, kravMaga);
+            OnMeleeHitEvent(kravEnt, ref args);
+        }
+    }
+    //Sandwich-HL end
 
     private void OnMeleeHitEvent(Entity<KravMagaComponent> ent, ref MeleeHitEvent args)
     {
@@ -46,8 +57,11 @@ public abstract partial class SharedMartialArtsSystem
         {
             case KravMagaMoves.LegSweep:
                 if(_netManager.IsClient)
-                    return;
-                _stun.TryKnockdown(hitEntity, TimeSpan.FromSeconds(4), true);
+                // Sandwich-HL start
+                {
+                    _stun.TryKnockdown(hitEntity, TimeSpan.FromSeconds(4), true);
+                }
+                // Sandwich-HL end
                 break;
             case KravMagaMoves.NeckChop:
                 var comp = EnsureComp<KravMagaSilencedComponent>(hitEntity);
@@ -79,9 +93,11 @@ public abstract partial class SharedMartialArtsSystem
         if (!TryComp<KravMagaActionComponent>(actionEnt, out var kravActionComp))
             return;
 
-        _popupSystem.PopupClient(Loc.GetString("krav-maga-ready", ("action", kravActionComp.Name)), ent, ent);
+        _popupSystem.PopupEntity(Loc.GetString("krav-maga-ready", ("action", kravActionComp.Name)), ent, ent); // Sandwich-HL (changed PopupClient to PopupEntity)
         ent.Comp.SelectedMove = kravActionComp.Configuration;
         ent.Comp.SelectedMoveComp = kravActionComp;
+
+        args.Handled = true; // Sandwich-HL
     }
 
     private void OnMapInit(Entity<KravMagaComponent> ent, ref MapInitEvent args)

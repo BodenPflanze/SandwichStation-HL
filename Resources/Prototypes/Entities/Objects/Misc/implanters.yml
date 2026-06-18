@@ -47,6 +47,9 @@
       - FakeMindShieldImplant
       - RadioImplant
       - RadioImplantFreelance # Frontier
+      # Goob implants start
+      - NutrimentPumpImplant
+      # Goob implants end
       deimplantFailureDamage:
         types:
           Cellular: 50
@@ -321,4 +324,4 @@
   parent: BaseImplantOnlyImplanter
   components:
   - type: Implanter
-    implant: DeathRattleImplantCentcom
+    implant: DeathRattleImplantCentcomm

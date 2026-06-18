@@ -22,7 +22,7 @@
   components:
   - type: AutoImplant
     implants:
-    - DeathRattleImplantCentcom
+    - DeathRattleImplantCentcomm
 
 ## Death Squad
 
@@ -46,6 +46,9 @@
   id: DeathSquad
   parent: EventHumanoidCentcom
   components:
+    - type: AutoImplant
+      implants: [ FreedomImplant, BluespaceLifelineImplant, RadioImplantCentcomm, NutrimentPumpImplant, StypticStimulatorImplant, DeathRattleImplantCentcomm] # Goobstation
+    - type: DeathSquadMember # Goobstation
     - type: GhostRole
       name: ghost-role-information-Death-Squad-name
       description: ghost-role-information-Death-Squad-description

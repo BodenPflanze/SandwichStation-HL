@@ -15,7 +15,7 @@
   - CentralCommand
   special:
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant, DeathRattleImplantCentcom ]
+    implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
   whitelisted: true # Frontier
 
 - type: startingGear
@@ -110,7 +110,7 @@
     components:
     - type: BibleUser #Lets them heal with bibles
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant, DeathRattleImplantCentcom ]
+    implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
   whitelisted: true # Frontier
 
 - type: startingGear
@@ -192,7 +192,7 @@
   - CentralCommand
   special:
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant, DeathRattleImplantCentcom ]
+    implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
   whitelisted: true # Frontier
 
 - type: startingGear
@@ -268,7 +268,7 @@
   - CentralCommand
   special:
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant, DeathRattleImplantCentcom ]
+    implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
   whitelisted: true # Frontier
 
 - type: startingGear
@@ -362,7 +362,7 @@
   - CentralCommand
   special:
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant, DeathRattleImplantCentcom ]
+    implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
   whitelisted: true # Frontier
 
 - type: startingGear
@@ -430,7 +430,7 @@
   - CentralCommand
   special:
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant, DeathRattleImplantCentcom ]
+    implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
   whitelisted: true # Frontier
 
 - type: startingGear

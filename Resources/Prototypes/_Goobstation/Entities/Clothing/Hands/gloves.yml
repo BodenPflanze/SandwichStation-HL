@@ -25,6 +25,7 @@
   name: mk-3 "redactor" power gloves
   description: A pair of highly-advanced gauntlets capable of ripping open doors. Its retractable claws are laced with a potent neurotoxin.
   components:
+  - type: MartialArtsWeapon # Sandwich-HL: Allows the use of Martial Arts (Because someone added it to the DS glasses but forgot the gloves block it)
   - type: Sprite
     sprite: _Goobstation/Clothing/Hands/Gloves/deathsquad.rsi
   - type: Clothing
