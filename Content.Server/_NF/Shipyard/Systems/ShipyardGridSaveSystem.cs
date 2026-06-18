@@ -71,7 +71,7 @@ public sealed class ShipyardGridSaveSystem : EntitySystem
     private static readonly HashSet<string> BlockedContainedImplantPrototypes = new(StringComparer.Ordinal)
     {
         "DeathRattleImplantCentcom",
-        "RadioImplantCentcom",
+        "RadioImplantCentcomm",
         "UplinkImplant",
     };
     // HardLight end

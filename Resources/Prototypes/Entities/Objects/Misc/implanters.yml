@@ -310,10 +310,10 @@
 - type: entity
   id: RadioImplanterCentcom
   name: CentCom radio implanter
-  parent: BaseImplantOnlyImplanter
+  parent: BaseImplantOnlyImplanterCentcomm # Goobstation
   components:
   - type: Implanter
-    implant: RadioImplantCentcom
+    implant: RadioImplantCentcomm
 
 - type: entity
   id: DeathRattleImplanterCentcom
