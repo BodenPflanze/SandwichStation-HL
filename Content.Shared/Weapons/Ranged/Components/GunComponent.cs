@@ -296,6 +296,12 @@ public sealed partial class GunComponent : Component
     /// </summary>
     [DataField("energyJouleRating")]
     public int? EnergyJouleRating = null;
+
+    /// <summary>
+    /// Sandwich-HL: Custom energy projectile type suffix
+    /// </summary>
+    [DataField("energyProjectileType")]
+    public LocId EnergyProjectileType = "gun-examine-joules-default-type";
 }
 
 [Flags]

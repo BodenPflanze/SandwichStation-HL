@@ -52,8 +52,6 @@
     NFWeaponLauncherMail: 4294967295
     NFWeaponLauncherGrenadeNfsd: 4294967295
   # Energy Pistols
-    NFWeaponEnergyPistolLaserSvalinn: 4294967295
-    NFWeaponEnergyPistolLaserMakeshift: 4294967295
     NFWeaponEnergyPistolLaserAntique: 4294967295
     NFWeaponEnergyPistolLaserX01Multiphase: 4294967295
     NFWeaponEnergyPistolLaserAdvanced: 4294967295
@@ -66,9 +64,7 @@
     NFWeaponEnergySubMachineGunDeltaV: 4294967295
     NFWeaponEnergySubMachineGunDisabler: 4294967295
   # Energy Rifles
-    NFWeaponEnergyRifleCarbine: 4294967295
     WeaponEmpEmitter: 4294967295
-    NFWeaponEnergyRifleCarbinePractice: 4294967295
     NFWeaponEnergyRifleTemperature: 4294967295
   # Energy Assault Rifles
     NFWeaponEnergyRifleAssaultPulseCarbine: 4294967295

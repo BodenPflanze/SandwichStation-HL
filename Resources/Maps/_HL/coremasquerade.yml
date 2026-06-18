@@ -169241,7 +169241,7 @@ entities:
     - type: Transform
       pos: -8.615959,31.617424
       parent: 2
-- proto: NFWeaponEnergyRifleCarbine
+- proto: WeaponLaserCarbine
   entities:
   - uid: 24994
     components:

@@ -1890,7 +1890,7 @@
     belt: ClothingBeltMercenaryWebbing # Frontier: Merc<Mercenary
     ears: ClothingHeadsetGrey
     outerClothing: ClothingOuterVestWebMercenary # Frontier: Merc<Mercenary
-    pocket1: NFWeaponEnergyPistolLaserSvalinn # Frontier: WeaponLaserSvalinn<NFWeaponEnergyPistolLaserSvalinn
+    pocket1: WeaponLaserSvalinn
     pocket2: RadioHandheld
 
 - type: startingGear

@@ -495,12 +495,8 @@ MagazineBoxRifleUranium: NFAmmunitionBoxRifle20Uranium
 #WeaponEnergyGun: NFWeaponEnergySubMachineGunDeltaV
 #WeaponEnergyGunMultiphase: NFWeaponEnergyPistolLaserX01Multiphase
 #WeaponEnergyShotgun: null
-#WeaponLaserCannon: NFWeaponEnergyRifleSniperCannon
-#WeaponLaserCarbine: NFWeaponEnergyRifleCarbine
-#WeaponLaserCarbinePractice: NFWeaponEnergyRifleCarbinePractice
 #WeaponLaserGun: NFWeaponEnergyPistolLaser
 #WeaponLaserPistolNF: NFWeaponEnergyPistolLaser
-#WeaponLaserSvalinn: NFWeaponEnergyPistolLaserSvalinn
 #WeaponLaserTurboNF: NFWeaponEnergyLightMachineGunTurbo
 #WeaponLauncherChinaLake: NFWeaponLauncherChinaLake
 #WeaponLauncherChinaLakeEmp: NFWeaponLauncherChinaLakeEmp
@@ -512,7 +508,6 @@ MagazineBoxRifleUranium: NFAmmunitionBoxRifle20Uranium
 #WeaponLightMachineGunL6: NFWeaponLightMachineGunL6
 #WeaponLightMachineGunL6C: NFWeaponLightMachineGunL6C
 #WeaponMailLake: NFWeaponLauncherMail
-#WeaponMakeshiftLaser: NFWeaponEnergyPistolLaserMakeshift
 #WeaponMinigun: null
 #WeaponNFLaserPistol: NFWeaponEnergyPistolLaser
 #WeaponParticleDecelerator: null

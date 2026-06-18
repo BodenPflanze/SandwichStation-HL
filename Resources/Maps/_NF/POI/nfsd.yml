@@ -23431,7 +23431,7 @@ entities:
     - type: Transform
       pos: 4.9859314,25.770258
       parent: 1
-- proto: NFWeaponEnergyRifleCarbinePractice
+- proto: WeaponLaserCarbinePractice
   entities:
   - uid: 871
     components:

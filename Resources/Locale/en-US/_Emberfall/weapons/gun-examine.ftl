@@ -1,7 +1,10 @@
 gun-examinable-verb-text = Examine statistics
 gun-examinable-verb-message = Detailed statistics
 gun-examine = Gun specifications:
-gun-examine-joules = It fires [color={$color}]{$joules}-Joules[/color] of Energy.
+gun-examine-joules-default-type = It fires [color={$color}]{$joules}-Joules[/color] of energy.
+gun-examine-joules-pulses = It fires [color={$color}]{$joules}-Joule[/color] energy pulses.
+gun-examine-joules-beams = It fires [color={$color}]{$joules}-Joule[/color] energy beams.
+gun-examine-joules-bolts = It fires [color={$color}]{$joules}-Joule[/color] energy bolts.
 gun-examine-recoil = - [color={$color}]Recoil[/color]: [color=lightblue]{$value}°[/color] per shot
 gun-examine-stability = - [color={$color}]Stability[/color]: [color=lightblue]{$value}°[/color] per second
 gun-examine-max-angle = - [color={$color}]Maximum spread[/color]: [color=lightblue]{$value}°[/color]

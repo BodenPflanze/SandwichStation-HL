@@ -98,17 +98,17 @@
         orGroup: Guns
       - id: WeaponLightMachineGunL6 # Frontier: WeaponLightMachineGunL6<WeaponLightMachineGunL6
         orGroup: Guns
-      - id: NFWeaponEnergyPistolLaserSvalinn # Frontier: WeaponLaserSvalinn<WeaponEnergyPistolLaserSvalinn
+      - id: WeaponLaserSvalinn
         orGroup: Guns
       - id: NFWeaponEnergyPistolLaser # Frontier: WeaponLaserGun<WeaponEnergyPistolLaser
         orGroup: Guns # Frontier
-      - id: NFWeaponEnergyPistolLaserMakeshift # WeaponMakeshiftLaser<WeaponEnergyPistolLaserMakeshift
+      - id: WeaponMakeshiftLaser
         orGroup: Guns
       # - id: WeaponTeslaGun # Frontier
       #   orGroup: Guns # Frontier
-      - id: NFWeaponEnergyRifleCarbinePractice # Frontier: WeaponLaserCarbinePractice<WeaponEnergyRifleCarbinePractice
+      - id: WeaponLaserCarbinePractice
         orGroup: Guns
-      - id: NFWeaponEnergyRifleCarbine # Frontier: WeaponLaserCarbine<WeaponEnergyRifleCarbine
+      - id: WeaponLaserCarbine
         orGroup: Guns
       # - id: WeaponPulsePistol # Frontier
       #   orGroup: Guns # Frontier

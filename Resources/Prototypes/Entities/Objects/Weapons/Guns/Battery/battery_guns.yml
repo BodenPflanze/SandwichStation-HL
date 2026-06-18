@@ -26,11 +26,13 @@
     startingCharge: 1000
   - type: StaticPrice
     price: 500
-  - type: Cautery # Shitmed
+  # shitmed start
+  - type: Cautery
     speed: 0.9
-  - type: SurgeryTool # Shitmed
+  - type: SurgeryTool
     endSound:
       path: /Audio/Weapons/Guns/Gunshots/laser.ogg
+  # shitmed end
 
 - type: entity
   id: BaseWeaponPowerCell
@@ -70,11 +72,13 @@
 #  - type: ContainerContainer
 #    containers:
 #      gun_magazine: !type:ContainerSlot
-  - type: Cautery # Shitmed
+  # shitmed start
+  - type: Cautery
     speed: 0.9
-  - type: SurgeryTool # Shitmed
+  - type: SurgeryTool
     endSound:
       path: /Audio/Weapons/Guns/Gunshots/laser.ogg
+  # shitmed end
 
 - type: entity
   id: BaseWeaponBatterySmall
@@ -114,7 +118,7 @@
 
 - type: entity
   name: svalinn laser pistol
-  parent: [ BaseWeaponPowerCellSmall, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
+  parent: [ BaseWeaponPowerCellSmall, BaseC1Contraband, EnergyPistol ] # Frontier
   id: WeaponLaserSvalinn
   description: A cheap and widely used laser pistol.
   components:
@@ -137,6 +141,8 @@
     selectedMode: FullAuto
     availableModes:
     - FullAuto
+    energyJouleRating: 315 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-beams # Sandwich-HL
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser.ogg
       params:
@@ -148,10 +154,12 @@
   - type: Appearance
   - type: StaticPrice
     price: 500
+  - type: NFWeaponDetails # Sandwich-HL
+    class: weapon-details-manufacturer-nanotrasen-munitions  # Sandwich-HL
 
 - type: entity
   name: retro laser blaster
-  parent: [ BaseWeaponBatterySmall, BaseC1Contraband ] # Frontier: BaseMajorContraband<BaseC1Contraband
+  parent: [ BaseWeaponBatterySmall, BaseC1Contraband ] # Frontier: BaseC1Contraband
   id: WeaponLaserGun
   description: A civilian grade weapon using light amplified by the stimulated emission of radiation.
   components:
@@ -163,6 +171,9 @@
     - state: mag-unshaded-4
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
+  - type: Gun
+    energyJouleRating: 630 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-beams # Sandwich-HL
   - type: HitscanBatteryAmmoProvider
     proto: RedLaser
     fireCost: 50
@@ -175,6 +186,8 @@
   - type: Appearance
   - type: StaticPrice
     price: 190
+  - type: NFWeaponDetails # Sandwich-HL
+    class: weapon-details-manufacturer-nanotrasen-munitions  # Sandwich-HL
 
 - type: entity
   name: makeshift laser pistol
@@ -190,6 +203,13 @@
     - state: mag-unshaded-4
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
+  - type: Gun
+    minAngle: 4 # Sandwich-HL
+    maxAngle: 8 # Sandwich-HL
+    angleIncrease: 0.35 # Sandwich-HL
+    angleDecay: 1 # Sandwich-HL 
+    energyJouleRating: 315 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-beams # Sandwich-HL
   - type: MagazineVisuals
     magState: mag
     steps: 5
@@ -203,6 +223,8 @@
   - type: Battery
     maxCharge: 500
     startingCharge: 500
+  - type: NFWeaponDetails # Sandwich-HL
+    class: weapon-details-manufacturer-frontier-gunsmith-consortium # Sandwich-HL
 
 - type: entity
   name: tesla gun
@@ -220,6 +242,8 @@
       shader: unshaded
   - type: Gun
     projectileSpeed: 10
+    energyJouleRating: 3000 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-default-type # Sandwich-HL
     soundGunshot:
       path: /Audio/Effects/Lightning/lightningshock.ogg
       params:
@@ -232,10 +256,12 @@
     steps: 5
     zeroVisible: true
   - type: Appearance
+  - type: NFWeaponDetails # Sandwich-HL
+    class: weapon-details-manufacturer-frontier-gunsmith-consortium # Sandwich-HL
 
 - type: entity
   name: practice laser rifle
-  parent: [BaseWeaponBattery, BaseGunWieldable]
+  parent: [BaseWeaponBattery, LaserBaseRequiersWieldable]
   id: WeaponLaserCarbinePractice
   description: This modified laser rifle fires nearly harmless beams in the 40-watt range, for target practice.
   components:
@@ -258,26 +284,32 @@
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
+    energyJouleRating: 40 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-beams # Sandwich-HL
   - type: HitscanBatteryAmmoProvider
-    proto: RedLaserPractice # Frontier
+    proto: RedLaserPractice
     fireCost: 62.5
   - type: StaticPrice
     price: 300
+  - type: NFWeaponDetails # Sandwich-HL
+    class: weapon-details-manufacturer-nanotrasen-munitions  # Sandwich-HL
 
 - type: entity
-  name: laser rifle
-  parent: [WeaponLaserCarbinePractice, BaseGunWieldable, BaseC1Contraband] # Frontier: BaseSecurityContraband<BaseC1Contraband
+  name: laser carbine
+  parent: [WeaponLaserCarbinePractice, LaserBaseRequiersWieldable, BaseC2Contraband]
   id: WeaponLaserCarbine
-  description: A simple civilian grade laser carbine, the workhorse of many private security organizations. # Frontier: description
+  description: Favoured by Nanotrasen Security for being cheap and easy to use.
   components:
+  - type: Gun
+    energyJouleRating: 630 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-beams # Sandwich-HL
   - type: StaticPrice
     price: 420
   - type: HitscanBatteryAmmoProvider
-    proto: RedLaser # Frontier
+    proto: RedLaser
     fireCost: 62.5
 
 - type: entity
-  categories: [ HideSpawnMenu ] # Frontier
   name: pulse pistol
   parent: [BaseWeaponBatterySmall, BaseC2ContrabandUnredeemable] # Frontier: added BaseC2ContrabandUnredeemable
   id: WeaponPulsePistol
@@ -350,7 +382,7 @@
 
 - type: entity
   name: pulse rifle
-  parent: [BaseWeaponBattery, BaseRequiersWieldable, BaseCentcomContraband ] # Sandwich-HL: changed BaseRequiersWieldable 
+  parent: [BaseWeaponBattery, LaserBaseRequiersWieldable, BaseCentcomContraband ] # Sandwich-HL: changed LaserBaseRequiersWieldable 
   id: WeaponPulseRifle
   description: A weapon that is almost as infamous as its users. On the handle is a label that says 'for authorized use only.'
   components:
@@ -371,13 +403,12 @@
     sprite: Objects/Weapons/Guns/Battery/pulse_rifle.rsi
   - type: Gun
     fireRate: 1.5
-    minAngle: 1.7 # Sandwich-HL
-    maxAngle: 3.2 # Sandwich-HL
-    energyJouleRating: 1400 # Sandwich-HL
+    energyJouleRating: 1600 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-pulses # Sandwich-HL
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
   - type: HitscanBatteryAmmoProvider
-    proto: Pulse # Frontier
+    proto: Pulse
     fireCost: 100
   - type: Battery
     maxCharge: 40000
@@ -386,12 +417,15 @@
     manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
 
 - type: entity
-  categories: [ HideSpawnMenu ] # Frontier
   name: laser cannon
-  parent: [BaseWeaponPowerCell, BaseGunWieldable, BaseC2ContrabandUnredeemable] # Frontier: BaseRestrictedContraband<BaseC2ContrabandUnredeemable
+  parent: [BaseWeaponBattery, LaserBaseRequiersWieldable, BaseSecurityContraband] # Sandwich-HL: changed LaserBaseRequiersWieldable
   id: WeaponLaserCannon
   description: A heavy duty, high powered laser weapon. On the handle is a label that says 'for authorized use only.' # Frontier: added label sentence
   components:
+  - type: Item
+    size: Huge
+    shape:
+    - 0,0,4,1
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/laser_cannon.rsi
     layers:
@@ -409,11 +443,15 @@
     sprite: Objects/Weapons/Guns/Battery/laser_cannon.rsi
   - type: Gun
     fireRate: 1.5
+    energyJouleRating: 1280 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-beams # Sandwich-HL
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: HitscanBatteryAmmoProvider
-    proto: RedHeavyLaser # Frontier
+    proto: RedHeavyLaser
     fireCost: 100
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
   - type: Tag
     tags:
     - TurretCompatibleWeapon

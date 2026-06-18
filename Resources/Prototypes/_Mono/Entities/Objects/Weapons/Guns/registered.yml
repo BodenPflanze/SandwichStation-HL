@@ -97,7 +97,7 @@
 - type: entity # Laser Carbine
   parent:
   - WeaponLaserCarbine
-  name: PMC Laser Carbine
+  name: PMC laser carbine
   id: WeaponLaserCarbinePMC
   description: A laser carbine that has been properly registered for private security and mercenary use.
   components:

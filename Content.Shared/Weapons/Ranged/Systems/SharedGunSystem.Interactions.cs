@@ -18,7 +18,7 @@ public abstract partial class SharedGunSystem
         {
             if (component.EnergyJouleRating != null)
             {
-                args.PushMarkup(Loc.GetString("gun-examine-joules",
+                args.PushMarkup(Loc.GetString(component.EnergyProjectileType,
                     ("color", FireRateExamineColor),
                     ("joules", component.EnergyJouleRating.Value)));
             }

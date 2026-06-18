@@ -2,22 +2,6 @@
 # WizDen
 #region Laser
 - type: entity
-  id: NFWeaponEnergyRifleCannon
-  parent: [ BaseC2ContrabandUnredeemable, NFBaseWeaponEnergyRifleCannonHitScan, NFBaseWeaponFrameEnergyRifleSniperNanotrasen ]
-  name: laser cannon
-  suffix: Frontier
-  description: |-
-    A heavy duty, high powered laser sniper rifle. On the handle is a label that says 'for authorized use only.'
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Battery/laser_cannon.rsi
-  - type: Clothing
-    sprite: Objects/Weapons/Guns/Battery/laser_cannon.rsi
-  - type: Tag #Hardlight change
-    tags:
-    - TurretCompatibleWeapon
-
-- type: entity
   id: NFWeaponEnergyRifleSniperCannon
   parent: [ BaseC3ContrabandUnredeemable, NFBaseWeaponEnergyRifleSniperHitScan, NFBaseWeaponFrameEnergyRifleSniperNanotrasen ]
   name: Beam Rifle

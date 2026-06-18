@@ -373,7 +373,7 @@
   tier: 3
   cost: 15000
   recipeUnlocks:
-  - NFWeaponEnergyPistolLaserSvalinn
+  - WeaponLaserSvalinn
 #  - NFBlueprintWeaponLaserSvalinn # Frontier
   # Goobstation R&D Console rework start
   technologyPrerequisites:

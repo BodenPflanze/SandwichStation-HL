@@ -331,10 +331,11 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier3
+  - WornEnergyPistol # Sandwich-HL (funnies)
   - WeaponLaserSvalinn
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponEnergyPistolLaserSvalinnExpedition
-  name: worn Svalinn
+  name: worn Svalinn laser pistol
 
 # region Tier 4
 ## Shotguns
@@ -375,9 +376,11 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier4
-  - NFWeaponEnergyRifleCarbine
+  - WornLaserBaseRequiersWieldable
+  - WeaponLaserCarbine
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponEnergyRifleCarbineExpedition
+  name: worn laser carbine
 
 - type: entity
   parent:

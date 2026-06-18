@@ -1,31 +1,4 @@
 # WizDen
-#region Laser
-- type: entity
-  id: NFWeaponEnergyRifleCarbine
-  parent: [ NFBaseWeaponEnergyRifleFireModes, NFBaseWeaponFrameEnergyRifleNanotrasen ]
-  name: laser carbine
-  suffix: Frontier
-  description: |-
-    A simple civilian grade laser carbine, the workhorse of many private security organizations.
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Battery/laser_gun.rsi
-  - type: Clothing
-    sprite: Objects/Weapons/Guns/Battery/laser_gun.rsi
-
-- type: entity
-  id: NFWeaponEnergyRifleCarbinePractice
-  parent: [ NFBaseWeaponEnergyGunPractice, NFBaseWeaponFrameEnergyRifleNanotrasen ]
-  name: practice laser carbine
-  suffix: Frontier
-  description: |-
-    This modified laser rifle fires nearly harmless beams in the 40-watt range, for target practice.
-  components:
-  - type: Sprite
-    sprite: _NF/Objects/Weapons/Guns/Battery/practice_laser_gun.rsi
-  - type: Clothing
-    sprite: _NF/Objects/Weapons/Guns/Battery/practice_laser_gun.rsi
-
 #region Other
 - type: entity
   name: emp emitter

@@ -189,6 +189,7 @@
   parent: BaseWeaponRecipePractice
   id: WeaponLaserCarbinePractice
   result: WeaponLaserCarbinePractice
+  completetime: 6
   materials:
     Steel: 1800
     Glass: 400

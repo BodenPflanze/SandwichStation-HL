@@ -42304,7 +42304,7 @@ entities:
     - type: Transform
       pos: 16.496824,28.430763
       parent: 1668
-- proto: NFWeaponEnergyPistolLaserMakeshift
+- proto: WeaponMakeshiftLaser
   entities:
   - uid: 2399
     components:
@@ -42321,7 +42321,7 @@ entities:
     - type: Transform
       pos: 10.496824,28.50344
       parent: 1668
-- proto: NFWeaponEnergyPistolLaserSvalinn
+- proto: WeaponLaserSvalinn
   entities:
   - uid: 2405
     components:
@@ -42338,7 +42338,7 @@ entities:
     - type: Transform
       pos: 12.371824,28.456566
       parent: 1668
-- proto: NFWeaponEnergyRifleCarbine
+- proto: WeaponLaserCarbine
   entities:
   - uid: 2390
     components:
@@ -42355,7 +42355,7 @@ entities:
     - type: Transform
       pos: 14.512449,28.453339
       parent: 1668
-- proto: NFWeaponEnergyRifleCarbinePractice
+- proto: WeaponLaserCarbinePractice
   entities:
   - uid: 4179
     components:

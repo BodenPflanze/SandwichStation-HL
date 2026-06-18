@@ -54,7 +54,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: NFWeaponEnergyRifleCarbine # Frontier: WeaponLaserCarbine<NFWeaponEnergyRifleCarbine
+      - id: WeaponLaserCarbine
         amount: 3
 
 - type: entity

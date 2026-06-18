@@ -371,4 +371,4 @@
     rolls: !type:ConstantNumberSelector
       value: 3
     children:
-    - id: NFWeaponEnergyRifleCarbine # Frontier: WeaponLaserCarbine<NFWeaponEnergyRifleCarbine
+    - id: WeaponLaserCarbine

@@ -88,7 +88,7 @@
         - NFWeaponPistolMk58 # Frontier WeaponPistolMk58<NFWeaponPistolMk58
         - NFWeaponRifleAssaultLecter # Frontier: WeaponRifleLecter<NFWeaponRifleAssaultLecter
         - NFWeaponSubMachineGunDrozd # Frontier: WeaponSubMachineGunDrozd<NFWeaponSubMachineGunDrozd
-        - NFWeaponEnergyRifleCarbine # Frontier: WeaponLaserCarbine<NFWeaponEnergyRifleCarbine
+        - WeaponLaserCarbine
         - NFWeaponShotgunKammerer # Frontier: WeaponShotgunKammerer<NFWeaponShotgunKammerer
       chance: 0.95
       offset: 0.0
@@ -115,7 +115,7 @@
         - NFWeaponPistolMk58 # Frontier: WeaponPistolMk58<NFWeaponPistolMk58
         - NFWeaponRifleAssaultLecter # Frontier WeaponRifleAssaultLecter<NFWeaponRifleAssaultLecter
         - NFWeaponSubMachineGunDrozd # Frontier WeaponSubMachineGunDrozd<NFWeaponSubMachineGunDrozd
-        - NFWeaponEnergyRifleCarbine # Frontier: WeaponLaserCarbine<NFWeaponEnergyRifleCarbine
+        - WeaponLaserCarbine
         - NFWeaponShotgunKammerer # Frontier: WeaponShotgunKammerer<NFWeaponShotgunKammerer
       chance: 0.95
       offset: 0.0

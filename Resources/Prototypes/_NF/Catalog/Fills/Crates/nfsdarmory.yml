@@ -54,7 +54,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: NFWeaponEnergyRifleCarbine
+      - id: WeaponLaserCarbine
         amount: 3
 
 - type: entity
@@ -86,7 +86,7 @@
       amount: 4
     - id: NFWeaponShotgunEnforcer
       amount: 5
-    - id: NFWeaponEnergyRifleCarbine
+    - id: WeaponLaserCarbine
       amount: 4
     - id: NFWeaponEnergySubMachineGunDeltaV
       amount: 4

@@ -1,33 +1,6 @@
 # WizDen
 #region Laser
 - type: entity
-  id: NFWeaponEnergyPistolLaserSvalinn
-  parent: [ NFBaseWeaponFrameEnergyPistolNanotrasen, BaseWeaponPowerCellSmall ]
-  name: svalinn
-  description: A cheap and widely used laser pistol.
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Battery/svalinn.rsi
-  - type: Item
-    sprite: Objects/Weapons/Guns/Battery/svalinn.rsi
-
-- type: entity
-  id: NFWeaponEnergyPistolLaserMakeshift
-  parent: [ NFBaseWeaponEnergyPistolHitScan, NFBaseWeaponFrameEnergyPistolFrontierGunsmith ]
-  name: makeshift laser pistol
-  description: Better pray it won't burn your hands off. At least it's legal.
-  components:
-  - type: Sprite
-    sprite: _NF/Objects/Weapons/Guns/Battery/makeshift.rsi
-  - type: Clothing
-    sprite: _NF/Objects/Weapons/Guns/Battery/makeshift.rsi
-  - type: Battery # 14 shots
-    maxCharge: 840
-    startingCharge: 840
-  - type: BatterySelfRecharger # doesn't recharge
-    autoRecharge: false
-
-- type: entity
   categories: [ DoNotMap ]
   id: NFWeaponEnergyPistolLaserAntique
   parent: [ NFBaseWeaponEnergyPistolFireModes, NFBaseWeaponFrameEnergyPistolNanotrasen ]
