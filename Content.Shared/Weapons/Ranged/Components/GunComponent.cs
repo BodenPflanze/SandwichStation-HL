@@ -290,6 +290,12 @@ public sealed partial class GunComponent : Component
     /// </summary>
     [DataField]
     public float Recoil = 0f;
+
+    /// <summary>
+    /// Sandwich-HL: Custom Joule-Description
+    /// </summary>
+    [DataField("energyJouleRating")]
+    public int? EnergyJouleRating = null;
 }
 
 [Flags]

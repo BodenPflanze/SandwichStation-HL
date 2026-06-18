@@ -17,7 +17,8 @@
   # - BlueshieldOfficer
   special: # Goobstation Start - I basically re-did all of deathsquads stuff so. - Sol
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant, FreedomImplant, DeathRattleImplantCentcom ]
+    implants: [ MindShieldImplant, FreedomImplant, BluespaceLifelineImplant, DeathRattleImplantCentcom ] 
+    # we are still missing "RadioImplantCentcomm, NutrimentPumpImplant, StypticStimulatorImplant" from goob but tbh- i did enough.
 
 - type: startingGear
   id: DeathSquadGear
@@ -43,5 +44,6 @@
     - ToolDebug ## Spanish Army Knife - TODO Replace
     - WelderExperimental
     - BlueShieldShieldEvilFilled # Goobstation
+    - DeterrentCaseFilled # Goobstation
   inhand:
-  - NFWeaponEnergyRiflePulse # Frontier: WeaponPulseRifle<NFWeaponEnergyRiflePulse
+  - WeaponPulseRifle

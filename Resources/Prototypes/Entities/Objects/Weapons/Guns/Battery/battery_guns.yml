@@ -349,9 +349,8 @@
     startingCharge: 5000
 
 - type: entity
-  categories: [ HideSpawnMenu ] # Frontier
   name: pulse rifle
-  parent: [BaseWeaponBattery, BaseGunWieldable, BaseC2ContrabandUnredeemable] # Frontier: added BaseC2ContrabandUnredeemable
+  parent: [BaseWeaponBattery, BaseRequiersWieldable, BaseCentcomContraband ] # Sandwich-HL: changed BaseRequiersWieldable 
   id: WeaponPulseRifle
   description: A weapon that is almost as infamous as its users. On the handle is a label that says 'for authorized use only.'
   components:
@@ -372,6 +371,9 @@
     sprite: Objects/Weapons/Guns/Battery/pulse_rifle.rsi
   - type: Gun
     fireRate: 1.5
+    minAngle: 1.7 # Sandwich-HL
+    maxAngle: 3.2 # Sandwich-HL
+    energyJouleRating: 1400 # Sandwich-HL
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
   - type: HitscanBatteryAmmoProvider
@@ -380,6 +382,8 @@
   - type: Battery
     maxCharge: 40000
     startingCharge: 40000
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
 
 - type: entity
   categories: [ HideSpawnMenu ] # Frontier

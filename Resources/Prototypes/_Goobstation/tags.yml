@@ -1,4 +1,7 @@
 - type: Tag
+  id: AutoinjectorCartridge
+
+- type: Tag
   id: Magazine762x39mmSubsonic
 
 - type: Tag

@@ -26,22 +26,6 @@
   - type: Clothing
     sprite: _NF/Objects/Weapons/Guns/Battery/practice_laser_gun.rsi
 
-#region Pulse
-- type: entity
-  id: NFWeaponEnergyRiflePulse
-  parent: [ BaseC2ContrabandUnredeemable, NFBaseWeaponEnergyRifleHitScanPulse, NFBaseWeaponFrameEnergyRifleNanotrasen ]
-  name: pulse rifle
-  description: |-
-    A weapon that is almost as infamous as its users. On the handle is a label that says 'for authorized use only.'
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Battery/pulse_rifle.rsi
-  - type: Clothing
-    sprite: Objects/Weapons/Guns/Battery/pulse_rifle.rsi
-  - type: Battery # 30 shots
-    maxCharge: 3000
-    startingCharge: 3000
-
 #region Other
 - type: entity
   name: emp emitter

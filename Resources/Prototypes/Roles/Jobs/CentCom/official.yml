@@ -29,3 +29,9 @@
     ears: ClothingHeadsetAltCentCom
     pocket1: BoxFolderBlack
     pocket2: PenCentcom
+  # Goobstation - Start
+  storage:
+    back:
+    - DeterrentCaseFilled
+  # Goobstation - End
+
