@@ -54,11 +54,15 @@ public sealed class HideLayerClothingSystem : EntitySystem
         var hideable = user.Comp.HideLayersOnEquip;
         var inSlot = clothing.Comp2.InSlotFlag ?? SlotFlags.NONE;
 
+        var targetSlot = inSlot == SlotFlags.NONE ? clothing.Comp2.Slots : inSlot; // Sandwich-HL (prevent issues with hydeclothing layer)
+
         // This method should only be getting called while the clothing is equipped (though possibly currently in
         // the process of getting unequipped).
+        /* Sandwich-HL (Disabled to prevent crashes during unequip when InSlot is already null; logic is unaffected as it)
         DebugTools.AssertNotNull(clothing.Comp2.InSlot);
         DebugTools.AssertNotNull(clothing.Comp2.InSlotFlag);
         DebugTools.AssertNotEqual(inSlot, SlotFlags.NONE);
+        */
 
         var dirty = false;
 
@@ -71,7 +75,7 @@ public sealed class HideLayerClothingSystem : EntitySystem
 
             // Only update this layer if we are currently equipped to the relevant slot.
             if (validSlots.HasFlag(inSlot))
-                _humanoid.SetLayerVisibility(user!, layer, !hideLayers, inSlot, ref dirty);
+                _humanoid.SetLayerVisibility(user!, layer, !hideLayers, targetSlot, ref dirty); // Sandwich-HL (replaced "inSlot with targetSlot")
         }
 
         // Fallback for obsolete field: assume we want to hide **all** layers, as long as we are equipped to any
@@ -83,7 +87,7 @@ public sealed class HideLayerClothingSystem : EntitySystem
             foreach (var layer in slots)
             {
                 if (hideable.Contains(layer) || layer == HumanoidVisualLayers.Genital)
-                    _humanoid.SetLayerVisibility(user!, layer, !hideLayers, inSlot, ref dirty);
+                    _humanoid.SetLayerVisibility(user!, layer, !hideLayers, targetSlot, ref dirty); // Sandwich-HL (replaced "inSlot with targetSlot")
             }
         }
 
