@@ -59,7 +59,7 @@
       prob: 0.1
     - id: RubberStampCaptain
     - id: SpaceCash1000
-    - id: NFWeaponEnergyPistolDisabler
+    - id: WeaponDisabler
     - id: ClothingEyesGlassesCommand
 
 # Hardsuit table, used for suit storage as well
@@ -95,7 +95,7 @@
         children:
         - !type:NestedSelector
           tableId: HLLockerFillCaptain
-        - id: NFWeaponEnergyPistolLaserAntique
+        - id: WeaponAntiqueLaser
 
 # Hardsuit table, used for suit storage as well
 - type: entity
@@ -111,7 +111,7 @@
           tableId: HLLockerFillCaptain
         - !type:NestedSelector
           tableId: HLFillCaptainHardsuit
-        - id: NFWeaponEnergyPistolLaserAntique
+        - id: WeaponAntiqueLaser
 
 - type: entityTable
   id: HLLockerFillHeadOfPersonnel
@@ -137,7 +137,7 @@
     - id: RubberStampApproved
     - id: RubberStampDenied
     - id: RubberStampHop
-    - id: NFWeaponEnergyPistolDisabler
+    - id: WeaponDisabler
     - id: ClothingEyesHudCommand
 
 - type: entity
@@ -349,7 +349,7 @@
     - id: HoloprojectorSecurity
     - id: RubberStampHos
     - id: CargoRequestSecurityComputerCircuitboard
-    - id: NFWeaponEnergyPistolDisabler
+    - id: WeaponDisabler
     - id: WantedListCartridge
     - id: DrinkHosFlask
     - id: ClothingUniformJumpskirtHoSAlt

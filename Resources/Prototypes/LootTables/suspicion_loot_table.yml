@@ -84,10 +84,10 @@
   - id: NFWeaponEnergyRifleSniperCannon # Frontier: WeaponLaserCannon<NFWeaponEnergyRifleSniperCannon
     amount: 0
     maxAmount: 1
-  - id: NFWeaponEnergyRifleSniperXrayCannon # Frontier: WeaponXrayCannon<NFWeaponEnergyRifleSniperXrayCannon
+  - id: WeaponXrayCannon
     amount: 0
     maxAmount: 2
-  - id: NFWeaponEnergyPistolDisabler # Frontier: WeaponDisabler<NFWeaponEnergyPistolDisabler
+  - id: WeaponDisabler
     amount: 0
     maxAmount: 4
 

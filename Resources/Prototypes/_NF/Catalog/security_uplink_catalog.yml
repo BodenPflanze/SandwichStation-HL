@@ -166,7 +166,7 @@
   id: UplinkSecurityDisabler
   name:  uplink-security-disabler-name
   description: uplink-security-disabler-desc
-  productEntity: NFWeaponEnergyPistolDisabler
+  productEntity: WeaponDisabler
   icon: { sprite: Objects/Weapons/Guns/Battery/disabler.rsi, state: base }
   cost:
     FrontierUplinkCoin: 1
@@ -317,7 +317,7 @@
   id: UplinkSecurityDisablerSMG
   name:  uplink-security-disablersmg-name
   description: uplink-security-disablersmg-desc
-  productEntity: NFWeaponEnergySubMachineGunDisabler
+  productEntity: WeaponDisablerSMG
   icon: { sprite: Objects/Weapons/Guns/Battery/disabler_smg.rsi, state: base }
   cost:
     FrontierUplinkCoin: 6

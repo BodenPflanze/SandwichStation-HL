@@ -14,6 +14,20 @@
 
 # Sandwich-HL: start
 - type: entity
+  id: BaseSMGWieldable
+  abstract: true
+  components:
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: -1
+    maxAngle: -1
+  - type: Gun
+    minAngle: 2.5
+    maxAngle: 4   
+
+
+- type: entity
   id: BaseRequiersWieldable
   abstract: true
   components:

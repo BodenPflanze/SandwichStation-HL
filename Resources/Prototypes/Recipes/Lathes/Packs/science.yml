@@ -52,7 +52,7 @@
 - type: latheRecipePack
   id: ScienceWeapons
   recipes:
-  - NFWeaponPistolCHIMP # Frontier: add NF prefix
+  - WeaponPistolCHIMP
   # - WeaponForceGun # Frontier
   - NFWeaponPka # Frontier: WeaponProtoKineticAccelerator<NFWeaponPka
   - PKAUpgradeDamage

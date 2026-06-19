@@ -40,7 +40,7 @@
         - BoxHandcuff
         - BoxFlashbang
         - TearGasGrenade
-        - NFWeaponEnergyPistolDisabler # Frontier: WeaponDisabler<NFWeaponEnergyPistolDisabler
+        - WeaponDisabler
         - Stunbaton
       rareChance: 0.05
       prototypes:
@@ -84,7 +84,7 @@
         - ClothingOuterArmorRiot
         - ClothingOuterArmorBulletproof
 #        - NFWeaponSubMachineGunWt550 # Frontier: WeaponSubMachineGunWt550<NFWeaponSubMachineGunWt550
-        - NFWeaponEnergyPistolDisabler # Frontier: WeaponDisabler<NFWeaponEnergyPistolDisabler
+        - WeaponDisabler
         - NFWeaponPistolMk58 # Frontier WeaponPistolMk58<NFWeaponPistolMk58
         - NFWeaponRifleAssaultLecter # Frontier: WeaponRifleLecter<NFWeaponRifleAssaultLecter
         - NFWeaponSubMachineGunDrozd # Frontier: WeaponSubMachineGunDrozd<NFWeaponSubMachineGunDrozd
@@ -111,7 +111,7 @@
       rareChance: 0.05
       prototypes:
 #        - NFWeaponSubMachineGunWt550 # Frontier: WeaponSubMachineGunWt550<NFWeaponSubMachineGunWt550
-        - NFWeaponEnergyPistolDisabler # Frontier: WeaponDisabler< NFWeaponEnergyPistolDisabler
+        - WeaponDisabler
         - NFWeaponPistolMk58 # Frontier: WeaponPistolMk58<NFWeaponPistolMk58
         - NFWeaponRifleAssaultLecter # Frontier WeaponRifleAssaultLecter<NFWeaponRifleAssaultLecter
         - NFWeaponSubMachineGunDrozd # Frontier WeaponSubMachineGunDrozd<NFWeaponSubMachineGunDrozd

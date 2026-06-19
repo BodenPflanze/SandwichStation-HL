@@ -16,19 +16,3 @@
   - type: Tag #Hardlight change
     tags:
     - TurretCompatibleWeapon
-    
-- type: entity
-  id: NFWeaponEnergyRifleSniperXrayCannon
-  parent: [ BaseC3Contraband, NFBaseWeaponEnergyRifleSniperHitScanXray, NFBaseWeaponFrameEnergyRifleSniperNanotrasen ]
-  name: x-ray cannon
-  suffix: Frontier
-  description: |-
-    An illegal and experimental weapon that uses concentrated x-ray energy against its target.
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Battery/xray.rsi
-  - type: Clothing
-    sprite: Objects/Weapons/Guns/Battery/xray.rsi
-  - type: Tag #Hardlight change
-    tags:
-    - TurretCompatibleWeapon

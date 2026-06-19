@@ -20715,7 +20715,7 @@ entities:
       parent: 2
     - type: DisableToolUse
       anchoring: True
-- proto: NFWeaponEnergyPistolDisablerPractice
+- proto: WeaponDisablerPractice
   entities:
   - uid: 1772
     components:

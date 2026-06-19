@@ -156,7 +156,7 @@
   tier: 2
   cost: 10000
   recipeUnlocks:
-  - NFWeaponPistolCHIMP # Frontier: add NF prefix
+  - WeaponPistolCHIMP
   - AnomalySynchronizerCircuitboard # Frontier: doesn't make sense for Frontier
   - AnomalyVesselExperimentalCircuitboard
   technologyPrerequisites:

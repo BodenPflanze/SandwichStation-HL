@@ -127,7 +127,7 @@
 - type: entity # Disabler SMG
   parent:
   - WeaponDisablerSMG
-  name: PMC Disabler SMG
+  name: PMC disabler SMG
   id: WeaponDisablerSMGPMC
   description: A disabler SMG that has been properly registered for private security and mercenary use.
   components:

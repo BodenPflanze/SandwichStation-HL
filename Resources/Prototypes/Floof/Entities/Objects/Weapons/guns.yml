@@ -145,6 +145,8 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/energy_shotgun.rsi
   - type: Gun
+    energyJouleRating: 1800 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-disabler-lethal-bolts  # Sandwich-HL
     fireRate: 2
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
@@ -171,6 +173,8 @@
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 100 #HL - 100 < 24, why was it so low
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
 
 - type: entity
   name: energy shotgun

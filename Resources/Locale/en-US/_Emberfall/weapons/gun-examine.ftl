@@ -5,6 +5,10 @@ gun-examine-joules-default-type = It fires [color={$color}]{$joules}-Joules[/col
 gun-examine-joules-pulses = It fires [color={$color}]{$joules}-Joule[/color] energy pulses.
 gun-examine-joules-beams = It fires [color={$color}]{$joules}-Joule[/color] energy beams.
 gun-examine-joules-bolts = It fires [color={$color}]{$joules}-Joule[/color] energy bolts.
+gun-examine-joules-disablerbolts = It fires [color={$color}]{$joules}-Joule disabler bolts[/color].
+gun-examine-joules-disabler-lethal-bolts = It fires [color={$color}]{$joules}-Joule disabler/lethal bolts[/color].
+gun-examine-joules-taserbolts = It fires [color={$color}]{$joules}-Joule taser bolts[/color].
+gun-examine-joules-particles = It fires [color={$color}]{$joules}-Joule[/color] energy particles.
 gun-examine-recoil = - [color={$color}]Recoil[/color]: [color=lightblue]{$value}°[/color] per shot
 gun-examine-stability = - [color={$color}]Stability[/color]: [color=lightblue]{$value}°[/color] per second
 gun-examine-max-angle = - [color={$color}]Maximum spread[/color]: [color=lightblue]{$value}°[/color]

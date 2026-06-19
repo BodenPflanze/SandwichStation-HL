@@ -42263,7 +42263,7 @@ entities:
     - type: Transform
       pos: 34.5,-28.5
       parent: 1668
-- proto: NFWeaponEnergyPistolDisablerPractice
+- proto: WeaponDisablerPractice
   entities:
   - uid: 4180
     components:
@@ -42287,7 +42287,7 @@ entities:
     - type: Transform
       pos: 11.403074,28.425316
       parent: 1668
-- proto: NFWeaponEnergyPistolLaserAdvanced
+- proto: WeaponAdvancedLaser
   entities:
   - uid: 2396
     components:
@@ -42379,7 +42379,7 @@ entities:
     - type: Transform
       pos: 15.528074,28.602638
       parent: 1668
-- proto: NFWeaponEnergySubMachineGunDisabler
+- proto: WeaponDisablerSMG
   entities:
   - uid: 2220
     components:

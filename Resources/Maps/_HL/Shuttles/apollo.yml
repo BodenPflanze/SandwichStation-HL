@@ -5051,7 +5051,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 11.5,19.5
       parent: 1
-- proto: NFWeaponEnergyPistolDisabler
+- proto: WeaponDisabler
   entities:
   - uid: 685
     components:

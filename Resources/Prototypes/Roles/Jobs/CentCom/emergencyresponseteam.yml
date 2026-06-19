@@ -34,7 +34,7 @@
     pocket2: FlashlightSeclite
   storage:
     back:
-    - NFWeaponEnergyPistolDisabler # Frontier: WeaponDisabler<NFWeaponEnergyPistolDisabler
+    - WeaponDisabler
     - MedicatedSuture
     - RegenerativeMesh
     - BoxZiptie
@@ -57,7 +57,7 @@
     pocket2: FlashlightSeclite
   storage:
     back:
-    - NFWeaponEnergyPistolDisabler # Frontier: WeaponDisabler<NFWeaponEnergyPistolDisabler
+    - WeaponDisabler
     - MedicatedSuture
     - RegenerativeMesh
     - BoxZiptie
@@ -83,7 +83,7 @@
   - NFWeaponRifleAssaultLecter # Frontier: WeaponRifleLecter<NFWeaponRifleAssaultLecter
   storage:
     back:
-    - NFWeaponEnergyPistolDisabler # Frontier: WeaponDisabler<NFWeaponEnergyPistolDisabler
+    - WeaponDisabler
     - MedicatedSuture
     - RegenerativeMesh
     - BoxZiptie
@@ -288,7 +288,7 @@
     pocket2: FlashlightSeclite
   storage:
     back:
-    - NFWeaponEnergyPistolDisabler # Frontier: WeaponDisabler<NFWeaponEnergyPistolDisabler
+    - WeaponDisabler
     - MedicatedSuture
     - RegenerativeMesh
     - BoxZiptie
@@ -312,7 +312,7 @@
     pocket2: FlashlightSeclite
   storage:
     back:
-    - NFWeaponEnergyPistolDisabler # Frontier: WeaponDisabler<NFWeaponEnergyPistolDisabler
+    - WeaponDisabler
     - MedicatedSuture
     - RegenerativeMesh
     - BoxZiptie
@@ -338,7 +338,7 @@
     - NFWeaponRifleAssaultLecter # Frontier: WeaponRifleLecter<NFWeaponRifleAssaultLecter
   storage:
     back:
-    - NFWeaponEnergyPistolDisabler # Frontier: WeaponDisabler<NFWeaponEnergyPistolDisabler
+    - WeaponDisabler
     - MedicatedSuture
     - RegenerativeMesh
     - BoxZiptie

@@ -100,8 +100,8 @@
     Glass: 150
 
 - type: latheRecipe
-  id: NFWeaponPistolCHIMP # Frontier: NF prefix (consistency with result)
-  result: NFWeaponPistolCHIMP # Frontier: add NF prefix
+  id: WeaponPistolCHIMP
+  result: WeaponPistolCHIMP
   categories:
   - Tools
   completetime: 5

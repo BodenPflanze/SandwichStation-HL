@@ -385,16 +385,25 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier4
-  - NFWeaponEnergyPistolLaserAdvanced
+  - EnergyPistol
+  - WeaponAdvancedLaser
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponEnergyPistolLaserAdvancedExpedition
+  name: worn advanced laser pistol
 
 - type: entity
   parent:
   - BaseExpeditionWeaponTier4
-  - NFWeaponEnergyPistolLaserAntique
+  - WornEnergyPistol
+  - WeaponAntiqueLaser
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponEnergyPistolLaserAntiqueExpedition
+  name: worn antique laser pistol
+  description: This is an antique laser pistol. All craftsmanship is of the highest quality. It is decorated with a worn mahogany grip and scratched chrome filigree. The object faintly bristles with energy. On the item is an faded image of a clown and a captain.
+  components:
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 10
 
 # region Tier 5
 # Turrets
@@ -440,9 +449,11 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier5
-  - NFWeaponEnergyRifleSniperXrayCannon
+  - WornLaserBaseRequiersWieldable
+  - WeaponXrayCannon
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponEnergyRifleSniperXrayCannonExpedition
+  name: worn x-ray cannon
 
 - type: entity
   parent:
@@ -458,9 +469,11 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier5
-  - NFWeaponEnergyRifleTemperature
+  - WornLaserBaseRequiersWieldable
+  - WeaponTemperatureGun
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponEnergyRifleTemperatureExpedition
+  name: worn temperature gun
 
 - type: entity
   parent:

@@ -28,7 +28,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: NFWeaponEnergyPistolDisabler
+      - id: WeaponDisabler
         amount: 3
       - id: Stunbaton
         amount: 3

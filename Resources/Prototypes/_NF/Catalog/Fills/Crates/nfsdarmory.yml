@@ -101,11 +101,11 @@
   components:
   - type: StorageFill
     contents:
-    - id: NFWeaponEnergyPistolDisabler
+    - id: WeaponDisabler
       amount: 5
     - id: NFWeaponPistolUniversalNfsdLessLethal
       amount: 4
-    - id: NFWeaponEnergySubMachineGunDisabler
+    - id: WeaponDisablerSMG
       amount: 5
     - id: NFWeaponRifleAssaultLecterLessLethal
       amount: 4

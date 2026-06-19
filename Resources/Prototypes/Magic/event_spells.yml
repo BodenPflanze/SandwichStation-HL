@@ -122,15 +122,15 @@
       #   orGroup: Guns # Frontier
       # - id: WeaponXrayCannon # Frontier
       #   orGroup: Guns # Frontier
-      - id: NFWeaponEnergyPistolDisablerPractice # Frontier: WeaponDisablerPractice<WeaponEnergyPistolDisablerPractice
+      - id: WeaponDisablerPractice # Frontier: WeaponDisablerPractice<WeaponEnergyPistolDisablerPractice
         orGroup: Guns
       - id: WeaponDisabler # Frontier: WeaponDisabler<WeaponEnergyPistolDisabler
         orGroup: Guns
-      - id: NFWeaponEnergySubMachineGunDisabler # Frontier: WeaponDisablerSMG<WeaponEnergySubMachineGunDisabler
+      - id: WeaponDisablerSMG
         orGroup: Guns
       # - id: WeaponTaser # Frontier
       #   orGroup: Guns # Frontier
-      - id: NFWeaponEnergyPistolLaserAntique # Frontier: WeaponAntiqueLaser<WeaponEnergyPistolLaserAntique
+      - id: WeaponAntiqueLaser
         orGroup: Guns # Frontier
       # - id: WeaponAdvancedLaser # Frontier
       #   orGroup: Guns # Frontier

@@ -64,20 +64,6 @@
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BoltBase
-  id: BoltTaser
-  name: taser bolt (.75)
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Piercing: 15
-  - type: StunOnCollide
-    stunAmount: 2
-    knockdownAmount: 3
-
-- type: entity
-  categories: [ HideSpawnMenu ]
-  parent: BoltBase
   id: BoltCryogenic
   name: cryogenic bolt (.75)
   components:

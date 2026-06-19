@@ -63,14 +63,6 @@
     proto: CartridgeBoltCorrosive
 
 - type: entity
-  id: Magazine75BoltTaser
-  name: Bolt Magazine (.75 Taser)
-  parent: BaseMagazine75Bolt
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgeBoltTaser
-
-- type: entity
   id: Magazine75BoltCryogenic
   name: Bolt Magazine (.75 Cryogenic)
   parent: BaseMagazine75Bolt

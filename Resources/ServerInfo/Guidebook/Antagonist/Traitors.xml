@@ -77,7 +77,7 @@
   - Stealing the [color=yellow]Captain[/color]'s [bold]ID Card[/bold], [bold]antique laser pistol[/bold], [bold]jetpack[/bold], or [bold]nuclear authentication disk[/bold].
   <Box>
     <GuideEntityEmbed Entity="CaptainIDCard" Caption=""/>
-    <GuideEntityEmbed Entity="NFWeaponEnergyPistolLaserAntique" Caption=""/> <!-- Frontier: WeaponAntiqueLaser<NFWeaponEnergyPistolLaserAntique -->
+    <GuideEntityEmbed Entity="WeaponAntiqueLaser" Caption=""/>
     <GuideEntityEmbed Entity="JetpackCaptainFilled" Caption=""/>
     <GuideEntityEmbed Entity="NukeDisk" Caption=""/>
   </Box>

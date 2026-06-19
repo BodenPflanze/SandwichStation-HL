@@ -31,7 +31,7 @@
     - id: FlashlightSeclite
 #    - id: WeaponDisabler # Frontier
     - id: WeaponEnergyRevolver # HL
-    - id: NFWeaponEnergySubMachineGunDisabler # HL
+    - id: WeaponDisablerSMG
     - id: WeaponEnergyShotgun
     - id: ClothingBeltSecurityFilled
     - id: Flash
@@ -89,7 +89,7 @@
       prob: 0.8
 #    - id: WeaponDisabler # Frontier
     - id: WeaponEnergyRevolver # HL
-    - id: NFWeaponEnergySubMachineGunDisabler # HL
+    - id: WeaponDisablerSMG
     - id: Bola
     - id: ClothingUniformJumpsuitSecGrey
       prob: 0.3
@@ -127,7 +127,7 @@
     - id: ClothingEyesGlassesSecurity
 #    - id: WeaponDisabler # Frontier
     - id: WeaponEnergyRevolver # HL
-    - id: NFWeaponEnergySubMachineGunDisabler # HL
+    - id: WeaponDisablerSMG
     - id: Bola
     - id: TrackingImplanter
     - id: TrackingImplanter
@@ -225,7 +225,7 @@
     rolls: !type:ConstantNumberSelector
       value: 5
     children:
-    - id: NFWeaponEnergySubMachineGunDisabler # HL
+    - id: WeaponDisablerSMG
     
 
 - type: entity

@@ -1,20 +1,3 @@
-#region Pulse
-# WizDen
-- type: entity
-  id: NFWeaponEnergyRifleAssaultPulseCarbine
-  parent: [ BaseC2ContrabandUnredeemable, NFBaseWeaponEnergyRifleAssaultHitScanPulse, NFBaseWeaponFrameEnergyRifleAssaultNanotrasen ]
-  name: pulse carbine
-  description: |-
-    A high tech energy carbine favoured by the NT-ERT operatives. On the handle is a label that says 'for authorized use only.'
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Battery/pulse_carbine.rsi
-  - type: Clothing
-    sprite: Objects/Weapons/Guns/Battery/pulse_carbine.rsi
-  - type: Battery # 40 shots
-    maxCharge: 3200
-    startingCharge: 3200
-
 #region Laser
 # Frontier
 - type: entity

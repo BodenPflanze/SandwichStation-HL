@@ -311,7 +311,7 @@
 
 - type: entity
   name: pulse pistol
-  parent: [BaseWeaponBatterySmall, BaseC2ContrabandUnredeemable] # Frontier: added BaseC2ContrabandUnredeemable
+  parent: [BaseWeaponBatterySmall, BaseCentcomContraband]
   id: WeaponPulsePistol
   description: A state of the art energy pistol favoured as a sidearm by the NT operatives. On the handle is a label that says 'for authorized use only.'
   components:
@@ -331,22 +331,29 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/pulse_pistol.rsi
   - type: Gun
+    minAngle: 3.5 # Sandwich-HL
+    maxAngle: 7 # Sandwich-HL
+    angleIncrease: 0.25 # Sandwich-HL
+    angleDecay: 1 # Sandwich-HL
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
+    energyJouleRating: 1600 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-pulses # Sandwich-HL
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: HitscanBatteryAmmoProvider
-    proto: Pulse # Frontier
+    proto: Pulse
     fireCost: 200
   - type: Battery
     maxCharge: 2000
     startingCharge: 2000
+  - type: NFWeaponDetails # Sandwich-HL
+    class: weapon-details-manufacturer-nanotrasen-munitions  # Sandwich-HL
 
 - type: entity
-  categories: [ HideSpawnMenu ] # Frontier
   name: pulse carbine
-  parent: [BaseWeaponBattery, BaseGunWieldable, BaseC2ContrabandUnredeemable] # Frontier: added BaseC2ContrabandUnredeemable
+  parent: [BaseWeaponBattery, LaserBaseRequiersWieldable, BaseCentcomContraband] # Sandwich-HL: changed LaserBaseRequiersWieldable 
   id: WeaponPulseCarbine
   description: A high tech energy carbine favoured by the NT-ERT operatives. On the handle is a label that says 'for authorized use only.'
   components:
@@ -368,17 +375,21 @@
   - type: Gun
     selectedMode: SemiAuto
     fireRate: 3
+    energyJouleRating: 1600 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-pulses # Sandwich-HL
     availableModes:
     - SemiAuto
     - FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: HitscanBatteryAmmoProvider
-    proto: Pulse # Frontier
+    proto: Pulse
     fireCost: 200
   - type: Battery
     maxCharge: 5000
     startingCharge: 5000
+  - type: NFWeaponDetails # Sandwich-HL
+    class: weapon-details-manufacturer-nanotrasen-munitions  # Sandwich-HL
 
 - type: entity
   name: pulse rifle
@@ -476,6 +487,8 @@
       map: ["enum.GunVisualLayers.Base"]
   - type: Gun
     fireRate: 0.5
+    energyJouleRating: 4000 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-particles # Sandwich-HL
     soundGunshot:
       path: /Audio/Weapons/emitter.ogg
       params:
@@ -486,13 +499,14 @@
   - type: Battery
     maxCharge: 10000
     startingCharge: 10000
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
 
 - type: entity
-  categories: [ HideSpawnMenu ] # Frontier
   name: x-ray cannon
-  parent: [BaseWeaponPowerCell, BaseGunWieldable, BaseC3Contraband] # Frontier: added BaseSecurityContraband<BaseC3Contraband
+  parent: [BaseWeaponBattery, LaserBaseRequiersWieldable, BaseSecurityContraband] # Sandwich-HL: changed LaserBaseRequiersWieldable
   id: WeaponXrayCannon
-  description: An illegal and experimental weapon that uses concentrated x-ray energy against its target.
+  description: An experimental weapon that uses concentrated x-ray energy against its target.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/xray.rsi
@@ -505,19 +519,20 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/xray.rsi
   - type: Gun
+    energyJouleRating: 1150 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-beams # Sandwich-HL
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
   - type: HitscanBatteryAmmoProvider
-    proto: XrayLaser # Frontier
-    fireCost: 200
+    proto: XrayLaser
+    fireCost: 100
   - type: MagazineVisuals
     magState: mag
     steps: 5
     zeroVisible: true
   - type: Appearance
-  - type: Battery
-    maxCharge: 4000
-    startingCharge: 4000
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
 
 - type: entity
   name: practice disabler
@@ -548,11 +563,15 @@
   - type: Gun
     fireRate: 2
     projectileSpeed: 35 # any higher and this causes issues in lag
+    energyJouleRating: 25 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-disablerbolts # Sandwich-HL
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
   - type: ProjectileBatteryAmmoProvider
     proto: BulletDisablerPractice # Frontier
-    fireCost: 50
+    fireCost: 62.5
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
   - type: Tag
     tags:
     - Taser
@@ -560,9 +579,9 @@
 
 - type: entity
   name: disabler
-  parent: [ WeaponDisablerPractice, BaseC1Contraband ] # Frontier: BaseSecurityCommandContraband<BaseC1Contraband
+  parent: [ WeaponDisablerPractice, BaseC2ContrabandUnredeemable ]
   id: WeaponDisabler
-  description: A civilian grade self-defense weapon that exhausts organic targets, weakening them until they collapse.
+  description: A self-defense weapon that exhausts organic targets, weakening them until they collapse. On the handle is a label that says 'for authorized use only.'
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/disabler.rsi
@@ -578,17 +597,21 @@
     slots:
     - suitStorage
     - Belt
+  - type: Gun
+    energyJouleRating: 750 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-disablerbolts # Sandwich-HL
   - type: ProjectileBatteryAmmoProvider
-    proto: BulletDisabler # Frontier
-    fireCost: 50
+    proto: BulletDisabler
+    fireCost: 62.5
   - type: GuideHelp
     guides:
     - Security
-    # - Antagonists # Frontier: removed guidebook entry
+    - Antagonists
+  - type: PacifismAllowedGun
 
 - type: entity
   name: disabler SMG
-  parent: [ BaseWeaponBattery, BaseC2ContrabandUnredeemable ] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
+  parent: [ BaseWeaponBattery, BaseSMGWieldable, BaseC2ContrabandUnredeemable ] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable # Sandwich-HL: BaseSMGWieldable
   id: WeaponDisablerSMG
   description: Advanced weapon that exhausts organic targets, weakening them until they collapse. On the handle is a label that says 'for authorized use only.'
   components:
@@ -611,10 +634,12 @@
     availableModes:
     - SemiAuto
     - FullAuto
+    energyJouleRating: 475 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-disablerbolts # Sandwich-HL
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
   - type: ProjectileBatteryAmmoProvider
-    proto: BulletDisablerSmg # Frontier
+    proto: BulletDisablerSmg
     fireCost: 25
   - type: MagazineVisuals
     magState: mag
@@ -623,6 +648,8 @@
   - type: Appearance
   - type: StaticPrice
     price: 260
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
 
 - type: entity
   name: taser
@@ -649,6 +676,8 @@
     slots:
     - Belt
   - type: Gun
+    energyJouleRating: 800 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-taserbolts # Sandwich-HL
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/taser.ogg
   - type: ProjectileBatteryAmmoProvider
@@ -659,11 +688,12 @@
     steps: 5
     zeroVisible: true
   - type: Appearance
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
 
 - type: entity
-  categories: [ HideSpawnMenu ] # Frontier
   name: antique laser pistol
-  parent: [BaseWeaponBatterySmall, BaseC1Contraband] # Frontier: BaseGrandTheftContraband<BaseC1Contraband
+  parent: [BaseWeaponBatterySmall, EnergyPistol, BaseC2ContrabandUnredeemable] # Sandwich-HL: EnergyPistol
   id: WeaponAntiqueLaser
   description: This is an antique laser pistol. All craftsmanship is of the highest quality. It is decorated with a mahogany grip and chrome filigree. The object menaces with spikes of energy. On the item is an image of a captain and a clown. The clown is dead. The captain is striking a heroic pose.
   components:
@@ -674,14 +704,16 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-unshaded-4
       map: ["enum.GunVisualLayers.MagUnshaded"]
-      shader: unshaded
+      shader: unshade
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/antiquelasergun.rsi
   - type: Gun
+    energyJouleRating: 765 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-beams # Sandwich-HL
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: HitscanBatteryAmmoProvider
-    proto: RedMediumLaser # Frontier
+    proto: RedMediumLaser
     fireCost: 100
   - type: BatterySelfRecharger
     autoRecharge: true
@@ -704,13 +736,14 @@
     flavorKind: station-event-random-sentience-flavor-inanimate
     weight: 0.0002 # 5,000 times less likely than 1 regular animal
     # not putting a BlockMovement component here cause that's funny.
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
 
 - type: entity
-  categories: [ HideSpawnMenu ] # Frontier
   name: advanced laser pistol
-  parent: [ BaseWeaponBatterySmall, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
+  parent: [ BaseWeaponBatterySmall, EnergyPistol, BaseC2ContrabandUnredeemable ] # Sandwich-HL: EnergyPistol
   id: WeaponAdvancedLaser
-  description: An experimental civilian grade high-energy laser pistol with a self-charging nuclear battery.
+  description: An experimental high-energy laser pistol with a self-charging nuclear battery. On the handle is a label that says 'for authorized use only.'
   components:
   - type: Item
     size: Normal  # Intentionally larger than other pistols
@@ -725,10 +758,12 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/advancedlasergun.rsi
   - type: Gun
+    energyJouleRating: 765 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-beams # Sandwich-HL
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: HitscanBatteryAmmoProvider
-    proto: RedMediumLaser # Frontier
+    proto: RedMediumLaser
     fireCost: 100
   - type: BatterySelfRecharger
     autoRecharge: true
@@ -740,6 +775,8 @@
   - type: Appearance
   - type: StaticPrice
     price: 63
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
 
 - type: entity
   name: C.H.I.M.P. handcannon
@@ -766,9 +803,10 @@
   - type: Gun
     projectileSpeed: 10
     fireRate: 1.5
+    energyJouleRating: 300 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-bolts # Sandwich-HL
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
-    # Frontier: moved to NF variants
   - type: ProjectileBatteryAmmoProvider
     proto: AnomalousParticleDeltaStrong
     fireCost: 100
@@ -788,6 +826,8 @@
     node: start
   - type: StaticPrice
     price: 100
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
 
 - type: entity
   name: experimental C.H.I.M.P. handcannon
@@ -796,7 +836,6 @@
   description: This C.H.I.M.P. seems to have a greater punch than is usual...
   components:
   - type: BatteryWeaponFireModes
-    # Frontier: moved to NF variants
     fireModes:
     - proto: AnomalousParticleDeltaStrong
       fireCost: 100
@@ -808,7 +847,6 @@
       fireCost: 100
     - proto: AnomalousParticleSigmaStrong
       fireCost: 100
-    # Frontier: moved to NF variants
 
 - type: entity
   name: eye of a behonker
@@ -826,7 +864,7 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_clown.ogg
   - type: HitscanBatteryAmmoProvider
-    proto: RedLaser # Frontier
+    proto: RedLaser
     fireCost: 100
   - type: BatterySelfRecharger
     autoRecharge: true
@@ -895,9 +933,9 @@
 
 - type: entity
   name: temperature gun
-  parent: [BaseWeaponBattery, BaseGunWieldable]
+  parent: [BaseWeaponBattery, LaserBaseRequiersWieldable, BaseC2ContrabandUnredeemable]
   id: WeaponTemperatureGun
-  description: An advanced gun that shoots body-temperature-changing beams. This probably constitutes as some kind of war crime.
+  description: An advanced gun that shoots body-temperature-changing beams. This probably constitutes as some kind of war crime.  On the handle is a label that says 'for authorized use only.'
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/temp_gun.rsi
@@ -921,7 +959,7 @@
   - type: Gun
     fireRate: 1
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
+      path: /Audio/_DV/Weapons/Guns/Gunshots/laser.ogg # Sandwich-HL: (laser.ogg > taser2.ogg)
   - type: ProjectileBatteryAmmoProvider
     proto: BoltTempgunCold # Frontier
     fireCost: 100
@@ -936,6 +974,8 @@
     startingCharge: 1000
   - type: StaticPrice
     price: 100
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
 
 - type: entity
   name: xenoborg laser gun

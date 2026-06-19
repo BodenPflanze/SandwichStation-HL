@@ -19,7 +19,7 @@ First we have non-lethals a step above simply telling someone to cooperate with 
   <Box>
     <GuideEntityEmbed Entity="Stunbaton"/>
     <GuideEntityEmbed Entity="Handcuffs"/>
-   <GuideEntityEmbed Entity="NFWeaponEnergyPistolDisabler"/> <!-- Frontier: WeaponDisabler < NFWeaponEnergyPistolDisabler -->
+   <GuideEntityEmbed Entity="WeaponDisabler"/>
   </Box>
 
 ## Flashes
