@@ -1,23 +1,25 @@
 # Upstream
 - type: entity
-  id: WeaponSniperMosinNonlethal
+  id: WeaponSniperMosinLesslethal
   parent: WeaponSniperMosin
-  suffix: Non-lethal
+  suffix: Less-lethal # Sandwich-HL: Non-Lethal < Less-Lethal (rubber still hurts)
   components:
   - type: BallisticAmmoProvider # Inherit whitelist, capacity from parent
     proto: Cartridge762x54mmRRubber
 
 # Frontier
 - type: entity
-  name: N2524 Pattern Repeater (.45 magnum)
-  parent: [ BaseC1Contraband, BaseWeaponSniper, BaseGunWieldable ]
+  name: N2524 Pattern Repeater
+  parent: [ BaseC2ContrabandUnredeemable, BaseWeaponSniper, BaseGunWieldable ] # Sandwich-HL: BaseC1Contraband<BaseC2ContrabandUnredeemable
   id: WeaponSniperRepeater
-  description: A civilian grade lever action firearm, favored by space cowboys across the Frontier for its reliability and stopping power. Uses .45 magnum ammo.
+  description: A lever action firearm, favored by space cowboys across the sector for its reliability and stopping power. Uses .45 magnum ammo.
   components:
   - type: Sprite
     sprite: _NF/Objects/Weapons/Guns/Snipers/repeater.rsi
   - type: Clothing
     sprite: _NF/Objects/Weapons/Guns/Snipers/repeater.rsi
+  - type: Gun # Sandwich-HL
+    customCaliber: ".45 Magnum" # Sandwich-HL
   - type: StaticPrice
     price: 500
   - type: BallisticAmmoProvider
@@ -26,3 +28,6 @@
       - Cartridge45_magnumFMJ
     capacity: 7
     proto: Cartridge45_magnumFMJ
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-frontier-gunsmith-consortium # Sandwich-HL
+    class: weapon-details-class-rifle

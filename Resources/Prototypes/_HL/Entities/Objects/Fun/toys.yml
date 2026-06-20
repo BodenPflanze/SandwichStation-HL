@@ -161,6 +161,7 @@
     sprite: _HL/Objects/Fun/foam_revolver.rsi
     # heldPrefix: weapon_revolver_foam
   - type: Gun
+    customCaliber: "foam darts" # Sandwich-HL
     fireRate: 6
     clumsyProof: true
     soundGunshot:
@@ -186,6 +187,9 @@
     tags:
     - Sidearm
     - ToySidearm
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-foam-force-llc # Sandwich-HL
+    class: weapon-details-class-revolver # Sandwich-HL
 
 #Hardlight Special Plushies!
 

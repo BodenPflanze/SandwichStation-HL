@@ -6,9 +6,10 @@
   - type: Tag
     tags:
       - SpeedLoaderRifle
+      - SpeedLoader762x54mmRFMJ
   - type: SpeedLoader
   - type: BallisticAmmoProvider
-    mayTransfer: true
+    #mayTransfer: true # Sandwich-HL: (Why use a speedloader when u turn may transfer on????)
     whitelist:
       tags:
         - Cartridge762x54mmRFMJ

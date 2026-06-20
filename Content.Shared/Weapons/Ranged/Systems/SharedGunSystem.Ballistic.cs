@@ -84,8 +84,57 @@ public abstract partial class SharedGunSystem
         if (_whitelistSystem.IsWhitelistFailOrNull(component.Whitelist, args.Used))
             return;
 
+        // Sandwich-HL start
+        /*
         if (GetBallisticShots(component) >= component.Capacity)
             return;
+        */    
+        var freeSlots = component.Capacity - GetBallisticShots(component);
+        if (freeSlots <= 0)
+            return;
+
+        if (HasComp<SpeedLoaderComponent>(args.Used))
+        {
+            var xformQuery = GetEntityQuery<TransformComponent>();
+            var xform = xformQuery.GetComponent(args.Used);
+            var ammo = new List<(EntityUid? Entity, IShootable Shootable)>(freeSlots);
+
+            var ev = new TakeAmmoEvent(freeSlots, ammo, xform.Coordinates, args.User);
+            RaiseLocalEvent(args.Used, ev);
+
+            // Get bullets out of the speedloader
+            if (ev.Ammo.Count == 0)
+            {
+                Popup(Loc.GetString("gun-speedloader-empty"), uid, args.User);
+                return;
+            }
+
+            // Get bullets load into weapon
+            foreach (var (ent, _) in ev.Ammo)
+            {
+                if (ent == null)
+                    continue;
+
+                // Delete Client-side prediction dummies
+                // to prevent spawning multiple bullets
+                if (IsClientSide(ent.Value))
+                {
+                    Del(ent.Value);
+                    component.UnspawnedCount++;
+                    continue;
+                }
+
+                component.Entities.Add(ent.Value);
+                Containers.Insert(ent.Value, component.Container);
+            }
+
+            Audio.PlayPredicted(component.SoundInsert, uid, args.User);
+            args.Handled = true;
+            UpdateBallisticAppearance(uid, component);
+            Dirty(uid, component);
+            return;
+        }
+        // Sandwich-HL end
 
         component.Entities.Add(args.Used);
         Containers.Insert(args.Used, component.Container);

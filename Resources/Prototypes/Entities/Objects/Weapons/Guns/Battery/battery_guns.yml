@@ -296,7 +296,7 @@
 
 - type: entity
   name: laser carbine
-  parent: [WeaponLaserCarbinePractice, LaserBaseRequiersWieldable, BaseC2Contraband]
+  parent: [WeaponLaserCarbinePractice, LaserBaseRequiersWieldable, BaseC2ContrabandUnredeemable]
   id: WeaponLaserCarbine
   description: Favoured by Nanotrasen Security for being cheap and easy to use.
   components:

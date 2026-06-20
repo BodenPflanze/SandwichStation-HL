@@ -282,16 +282,16 @@
 - type: entity
   parent: WeaponCaseLong
   id: WeaponCaseLongMosinExpedition
-  suffix: Dungeon, Mosin
+  suffix: Dungeon, Kardashev-Mosin
 #  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
     - id: WeaponSniperMosin
       amount: 1
-    - id: Magazine762x54mmRFMJ
+    - id: SpeedLoader762x54mmRFMJ
       amount: 2
-    - id: AmmoBox762x51mmBigFMJ
+    - id: AmmoBox762x54mmRFMJ
       amount: 2
 
 - type: entity

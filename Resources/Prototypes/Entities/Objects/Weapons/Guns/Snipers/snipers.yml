@@ -39,7 +39,7 @@
     price: 500
 
 - type: entity
-  name: Kardashev-Mosin (762x54mmR)
+  name: Kardashev-Mosin
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseGunMelee, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband, added BaseGunMelee
   id: WeaponSniperMosin
   description: A weapon for hunting, or endless trench warfare. Uses 762x54mmR ammo. Equipped with bayonet. # Frontier: bayonet
@@ -50,14 +50,20 @@
   - type: EyeCursorOffset # Frontier
     maxOffset: 1.5 # Frontier
     pvsIncrease: 0.15 # Frontier
+  - type: Gun # Sandwich-HL
+    customCaliber: "762x54mmR" # Sandwich-HL
   - type: AltFireMelee # Frontier
     attackType: Light # Frontier
   - type: BallisticAmmoProvider
     whitelist:
       tags:
       - Cartridge762x54mmRFMJ
+      - SpeedLoader762x54mmRFMJ # Sandwich-HL (why do we have speedloaders for it if it isnt used for)
     capacity: 5
     proto: Cartridge762x54mmRFMJ
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-frontier-gunsmith-consortium # Sandwich-HL
+    class: weapon-details-class-rifle
 
 - type: entity
   name: Hristov (145x114mm)

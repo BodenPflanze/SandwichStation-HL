@@ -11,12 +11,19 @@
     sprite: _Starlight/Objects/Weapons/Guns/Revolvers/makeshift_revolver.rsi
   - type: Clothing
     sprite: _Starlight/Objects/Weapons/Guns/Revolvers/makeshift_revolver.rsi
+  - type: Gun
+    # Sandwich-HL start
+    minAngle: 5.3
+    maxAngle: 14.6
+    angleIncrease: 3
+    angleDecay: 0.3
+    # Sandwich-HL end
   - type: RevolverAmmoProvider
     whitelist:
       tags:
         - Cartridge45Magnum
         - Cartridge45MagnumImprovised
-        - SpeedLoader45Magnum
+        - SpeedLoader45_magnumFMJ # Sandwich-HL fix
         - SpeedLoader45MagnumImprovised
     proto: null
     capacity: 1
@@ -41,6 +48,9 @@
       - id: RifleStock
         launchAngle: 180
         prob: 0.80
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-custom-made # Sandwich-HL
+    class: weapon-details-class-revolver # Sandwich-HL
 
 - type: entity
   name: Improvised Revolver

@@ -1259,6 +1259,9 @@
   id: SpeedLoader45_magnumFMJ
 
 - type: Tag
+  id: SpeedLoader762x54mmRFMJ
+
+- type: Tag
   id: SpeedLoader9x19mmFMJ
 
 - type: Tag
