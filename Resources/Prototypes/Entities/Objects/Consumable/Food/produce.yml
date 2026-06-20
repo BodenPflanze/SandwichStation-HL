@@ -1916,7 +1916,7 @@
     seedId: gatfruit
   - type: Food
     trash:
-    - NFWeaponRevolverRitland45Anom  # Hardlight: A Ritland with no FUCvalue
+    - WeaponRevolverPython
   - type: Tag
     tags:
     - Fruit # It's in the name
@@ -1951,7 +1951,7 @@
     seedId: realCapfruit
   - type: Food
     trash:
-    - NFRevolverCapGun # Frontier: RevolverCapGun<NFRevolverCapGun
+    - RevolverCapGun
   - type: Tag
     tags:
     - Fruit

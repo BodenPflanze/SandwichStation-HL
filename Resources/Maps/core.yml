@@ -122091,7 +122091,7 @@ entities:
     - type: Transform
       pos: -59.55656,-52.640476
       parent: 2
-- proto: NFRevolverCapGun
+- proto: RevolverCapGun
   entities:
   - uid: 16889
     components:

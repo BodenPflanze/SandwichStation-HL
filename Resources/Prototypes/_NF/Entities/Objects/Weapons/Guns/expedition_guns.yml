@@ -132,7 +132,8 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier1
-  - NFWeaponRevolverFaith
+  - WornBaseRevolver # Sandwich-HL (funnies)
+  - WeaponRevolverFaith
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponRevolverFaithExpedition
   name: worn Faith
@@ -140,6 +141,7 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier1
+  - WornBaseRevolver # Sandwich-HL (funnies)
   - WeaponRevolverDeckard
 #  categories: [ HideSpawnMenu ]
   id: WeaponRevolverDeckardExpedition
@@ -148,10 +150,11 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier1Syndicate
-  - NFWeaponRevolverRitland45
+  - WornBaseRevolver # Sandwich-HL (funnies)
+  - WeaponRevolverPython
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponRevolverRitland45Expedition
-  name: worn Ritland .45
+  name: worn Python
 
 ## Rifles
 - type: entity
@@ -177,34 +180,46 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier2
-  - NFWeaponRevolverFitz
+  - WornBaseRevolver # Sandwich-HL (funnies)
+  - WeaponRevolverFitz
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponRevolverFitzExpedition
-  name: worn Fitz
+  name: worn Fitz Special
 
 - type: entity
   parent:
   - BaseExpeditionWeaponTier2
-  - NFWeaponRevolverLucky
+  - WornBaseRevolver # Sandwich-HL (funnies)
+  - WeaponRevolverLucky
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponRevolverLuckyExpedition
-  name: worn Lucky
+  name: worn Lucky 37
 
 - type: entity
   parent:
   - BaseExpeditionWeaponTier2Pirate
-  - NFWeaponRevolverPirate
+  - WeaponRevolverPirate
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponRevolverPirateExpedition
-  name: worn Pirate revolver
+  name: worn pirate revolver
+  components:
+  - type: Gun
+    # Sandwich-HL start
+    minAngle: 4.6
+    maxAngle: 13
+    angleIncrease: 2
+    angleDecay: 0.7
+    # Sandwich-HL end
 
 - type: entity
   parent:
+  - BaseCentcomContraband # Sandwich-HL (Keep it Centcom contra)
   - BaseExpeditionWeaponTier2
-  - NFWeaponRevolverWard45
+  - WornBaseRevolver # Sandwich-HL (funnies)
+  - WeaponRevolverMateba
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponRevolverWard45Expedition
-  name: worn Ward .45
+  name: worn Mateba
 
 ## Shotguns
 - type: entity
@@ -250,6 +265,7 @@
   - NFWeaponEnergyPistolLaser
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponEnergyPistolLaserExpedition
+  name: worn laser pistol
 
 # region Tier 3
 ## Assault Rifles
@@ -376,7 +392,7 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier4
-  - WornLaserBaseRequiersWieldable
+  - WornLaserBaseRequiersWieldable # Sandwich-HL (funnies)
   - WeaponLaserCarbine
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponEnergyRifleCarbineExpedition
@@ -394,7 +410,7 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier4
-  - WornEnergyPistol
+  - WornEnergyPistol # Sandwich-HL (funnies)
   - WeaponAntiqueLaser
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponEnergyPistolLaserAntiqueExpedition
@@ -442,14 +458,16 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier5
-  - NFWeaponEnergySubMachineGunDeltaV
+  - WornBaseSMGWieldable # Sandwich-HL (funnies)
+  - WeaponEnergyGun
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponEnergySubMachineGunDeltaVExpedition
+  name: worn energy gun
 
 - type: entity
   parent:
   - BaseExpeditionWeaponTier5
-  - WornLaserBaseRequiersWieldable
+  - WornLaserBaseRequiersWieldable # Sandwich-HL (funnies)
   - WeaponXrayCannon
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponEnergyRifleSniperXrayCannonExpedition
@@ -461,6 +479,7 @@
   - NFWeaponEnergyRifleSniperCannon
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponEnergyRifleSniperCannonExpedition
+  name: worn beam rifle
   components: #Hardlight change
   - type: Tag
     tags:
@@ -469,7 +488,7 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier5
-  - WornLaserBaseRequiersWieldable
+  - WornLaserBaseRequiersWieldable # Sandwich-HL (funnies)
   - WeaponTemperatureGun
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponEnergyRifleTemperatureExpedition

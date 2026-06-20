@@ -22,6 +22,13 @@ public abstract partial class SharedGunSystem
                     ("color", FireRateExamineColor),
                     ("joules", component.EnergyJouleRating.Value)));
             }
+            
+            else if (!string.IsNullOrEmpty(component.CustomCaliber))
+            {
+                args.PushMarkup(Loc.GetString(component.CustomCaliberTemplate,
+                    ("color", FireRateExamineColor),
+                    ("caliber", component.CustomCaliber)));
+            }
             // Emberfall - Add caliber info // ToDo: Remove this "Emberfall" when all NF weapons are gone
             else if (TryGetGunCaliber(uid, component, out var caliber))
             {

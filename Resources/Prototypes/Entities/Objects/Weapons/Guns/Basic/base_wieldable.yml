@@ -26,6 +26,20 @@
     minAngle: 2.5
     maxAngle: 4   
 
+- type: entity
+  parent: BaseSMGWieldable
+  id: WornBaseSMGWieldable
+  abstract: true
+  components:
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: -0.7
+    maxAngle: -0.7
+  - type: Gun
+    minAngle: 2.7
+    maxAngle: 4.3
+
 
 - type: entity
   id: BaseRequiersWieldable

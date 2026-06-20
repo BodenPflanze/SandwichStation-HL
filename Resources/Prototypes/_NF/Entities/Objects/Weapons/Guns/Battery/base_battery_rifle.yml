@@ -66,49 +66,6 @@
 
 #region chamber
 - type: entity
-  id: NFBaseWeaponEnergyRifleFireModes
-  abstract: true
-  components:
-  - type: Gun
-    examineCaliber: gun-examine-energybolt-high
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
-  - type: ProjectileBatteryAmmoProvider
-    proto: NFBulletLaserHeavy
-    fireCost: 80
-  - type: BatteryWeaponFireModes
-    fireModes:
-    - proto: NFBulletLaserHeavy
-      fireCost: 80
-    - proto: NFBulletDisabler
-      fireCost: 80
-
-- type: entity
-  id: NFBaseWeaponEnergyRifleHitScan
-  suffix: Frontier
-  abstract: true
-  components:
-  - type: Gun
-    examineCaliber: gun-examine-hitscan-high
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
-  - type: HitscanBatteryAmmoProvider
-    proto: NFRedHeavyLaser
-    fireCost: 80
-
-- type: entity
-  id: NFBaseWeaponEnergyRifleHitScanPulse
-  abstract: true
-  components:
-  - type: Gun
-    examineCaliber: gun-examine-pulse-low
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
-  - type: HitscanBatteryAmmoProvider
-    proto: Pulse
-    fireCost: 100
-
-- type: entity
   id: NFBaseWeaponEnergyRifleEmp
   abstract: true
   components:

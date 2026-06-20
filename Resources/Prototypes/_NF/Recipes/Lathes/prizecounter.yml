@@ -238,8 +238,8 @@
   parent: BasePrize15Recipe
 
 - type: latheRecipe
-  id: NFRevolverCapGunRecipe
-  result: NFRevolverCapGun
+  id: RevolverCapGunRecipe
+  result: RevolverCapGun
   parent: BasePrizeRecipe
   materials:
     PrizeTicket: 80

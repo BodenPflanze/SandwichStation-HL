@@ -53,20 +53,6 @@
   - type: NFWeaponDetails
     class: weapon-details-manufacturer-nanotrasen-munitions
 
-- type: entity
-  id: NFBaseWeaponFrameEnergyPistolFrontierGunsmith
-  parent: NFBaseWeaponFrameEnergyPistol
-  abstract: true
-  components:
-  - type: Gun
-    minAngle: 4
-    maxAngle: 8
-    angleIncrease: 0.35
-    angleDecay: 1
-    fireRate: 2
-  - type: NFWeaponDetails
-    class: weapon-details-manufacturer-frontier-gunsmith-consortium
-
 #region chamber
 - type: entity
   id: NFBaseWeaponEnergyPistolFireModes
@@ -83,7 +69,8 @@
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
   - type: Gun
-    examineCaliber: gun-examine-energybolt-low-disabler-pistol
+    energyJouleRating: 450 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-disabler-lethal-bolts # Sandwich-HL
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser.ogg
   - type: ProjectileBatteryAmmoProvider

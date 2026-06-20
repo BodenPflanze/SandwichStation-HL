@@ -386,7 +386,7 @@
         orGroup: Dummy
       - id: MrDips
         orGroup: Giftpool
-      - id: NFRevolverCapGun # Frontier: RevolverCapGun<NFRevolverCapGun
+      - id: RevolverCapGun
       - id: BalloonNT
       - id: VehicleUnicycleFolded
       - id: ClothingShoesClownLarge

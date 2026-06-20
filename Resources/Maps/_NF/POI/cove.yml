@@ -12845,7 +12845,7 @@ entities:
     - type: Transform
       pos: -1.4865301,11.583888
       parent: 1
-- proto: NFWeaponPistolFlintlock
+- proto: WeaponPistolFlintlock
   entities:
   - uid: 1913
     components:
@@ -12857,7 +12857,7 @@ entities:
     - type: Transform
       pos: -14.512359,23.676104
       parent: 1
-- proto: NFWeaponRevolverPirate
+- proto: WeaponRevolverPirate
   entities:
   - uid: 1912
     components:

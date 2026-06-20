@@ -358,7 +358,7 @@
   id: UplinkSecurityEnergyGun
   name:  uplink-security-energygun-name
   description: uplink-security-energygun-desc
-  productEntity: NFWeaponEnergySubMachineGunDeltaV
+  productEntity: WeaponEnergyGun
   icon: { sprite: _DV/Objects/Weapons/Guns/Battery/energygun.rsi, state: icon }
   cost:
     FrontierUplinkCoin: 8
@@ -830,7 +830,7 @@
   id: UplinkSecurityInspector
   name:  uplink-security-inspector-name
   description: uplink-security-inspector-desc
-  productEntity: NFWeaponRevolverInspector
+  productEntity: WeaponRevolverInspector
   icon: { sprite: Objects/Weapons/Guns/Revolvers/inspector.rsi, state: icon }
   cost:
     FrontierUplinkCoin: 1

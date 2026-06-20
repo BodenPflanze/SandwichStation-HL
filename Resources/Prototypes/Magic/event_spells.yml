@@ -154,9 +154,9 @@
         orGroup: Guns
       - id: WeaponWaterBlasterSuper
         orGroup: Guns
-      - id: RevolverCapGun # Frontier: RevolverCapGun<RevolverCapGun
+      - id: RevolverCapGun
         orGroup: Guns
-      - id: RevolverCapGunFake # Frontier: RevolverCapGunFake<NFRevolverCapGunFake
+      - id: RevolverCapGunFake
         orGroup: Guns
       speech: action-speech-spell-summon-guns
 

@@ -11,15 +11,6 @@
     NFWeaponPistolViper: 4294967295
     NFWeaponPistolPollock: 4294967295
   # Revolvers
-    NFWeaponRevolverDeckard: 4294967295
-    NFWeaponRevolverInspector: 4294967295
-    NFWeaponRevolverWard45: 4294967295
-    NFWeaponRevolverRitland45: 4294967295
-    NFWeaponRevolverPirate: 4294967295
-    NFWeaponPistolFlintlock: 4294967295
-    NFWeaponRevolverFitz: 4294967295
-    NFWeaponRevolverFaith: 4294967295
-    NFWeaponRevolverLucky: 4294967295
     NFWeaponRevolverArgenti: 4294967295
   # SMGs
     NFWeaponSubMachineGunAtreides: 4294967295
@@ -52,12 +43,9 @@
     NFWeaponLauncherMail: 4294967295
     NFWeaponLauncherGrenadeNfsd: 4294967295
   # Energy Pistols
-    NFWeaponEnergyPistolLaserX01Multiphase: 4294967295
     NFWeaponEnergyPistolLaserAdvanced: 4294967295
     NFWeaponEnergyPistolLaser: 4294967295
     NFWeaponHoloflareGun: 4294967295
-  # Energy SMGs
-    NFWeaponEnergySubMachineGunDeltaV: 4294967295
   # Energy Rifles
     WeaponEmpEmitter: 4294967295
   # Energy Assault Rifles

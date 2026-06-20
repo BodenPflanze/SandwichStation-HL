@@ -69,22 +69,11 @@
   abstract: true
   components:
   - type: Gun
-    examineCaliber: gun-examine-hitscan-high-p
+    energyJouleRating: 3825 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-beams # Sandwich-HL
     fireRate: 0.6
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: HitscanBatteryAmmoProvider
     proto: NFRedSpecialLaser
     fireCost: 1000
-    
-- type: entity
-  id: NFBaseWeaponEnergyRifleSniperHitScanXray
-  abstract: true
-  components:
-  - type: Gun
-    examineCaliber: gun-examine-hitscan-xray
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
-  - type: HitscanBatteryAmmoProvider
-    proto: NFXrayLaser
-    fireCost: 120

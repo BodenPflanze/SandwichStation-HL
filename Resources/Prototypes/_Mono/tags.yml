@@ -370,3 +370,7 @@
 # makes shuttle AI not target this grid
 - type: Tag
   id: ShuttleAIIgnore
+
+# Sandwich-HL:
+- type: Tag
+  id: Cartridge54_Lead_Ball

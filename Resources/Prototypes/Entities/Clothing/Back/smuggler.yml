@@ -84,11 +84,11 @@
             range: 2, 4 # Frontier: 4, 8 < 2, 4
         - !type:GroupSelector
           children:
-          - id: NFRevolverCapGun # Frontier: RevolverCapGun<NFRevolverCapGun
+          - id: RevolverCapGun
             amount: !type:RangeNumberSelector
               range: 1, 2 # Frontier: 4, 8 < 1, 2
             weight: 95
-          - id: NFRevolverCapGunFake # Frontier: RevolverCapGunFake<NFRevolverCapGunFake
+          - id: RevolverCapGunFake
             amount: !type:RangeNumberSelector
               range: 1, 2 # Frontier: 8<2
             weight: 5

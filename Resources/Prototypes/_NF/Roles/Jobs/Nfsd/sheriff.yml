@@ -51,7 +51,7 @@
   id: SheriffGear
   equipment:
     pocket1: NFWeaponPistolUniversalNfsdLessLethal
-    pocket2: NFWeaponEnergyPistolLaserX01Multiphase
+    pocket2: WeaponEnergyGunMultiphase
   storage:
     back:
     - NfsdTechFabFlatpack

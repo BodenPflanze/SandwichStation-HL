@@ -1793,7 +1793,7 @@
   id: UplinkRevolverCapGun
   name: uplink-revolver-cap-gun-name
   description: uplink-revolver-cap-gun-desc
-  productEntity: NFRevolverCapGun
+  productEntity: RevolverCapGun
   discountCategory: rareDiscounts
   discountDownTo:
     Telecrystal: 2
@@ -2031,7 +2031,7 @@
   id: uplinkRevolverCapGunFake
   name: uplink-revolver-cap-gun-fake-name
   description: uplink-revolver-cap-gun-fake-desc
-  productEntity: NFRevolverCapGunFake # Frontier: NFRevolverCapGunFake<NFRevolverCapGunFake
+  productEntity: RevolverCapGunFake
   discountCategory: rareDiscounts
   discountDownTo:
     Telecrystal: 3

@@ -117,7 +117,7 @@
 - type: entity # Energy Gun
   parent:
   - WeaponEnergyGun
-  name: PMC Energy Gun
+  name: PMC energy gun
   id: WeaponEnergyGunPMC
   description: An energy gun that has been properly registered for private security and mercenary use.
   components:

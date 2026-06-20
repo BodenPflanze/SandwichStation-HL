@@ -581,7 +581,7 @@
         orGroup: GiftPool
       - id: ToySword
         orGroup: GiftPool
-      - id: NFRevolverCapGun # Frontier: RevolverCapGun<NFRevolverCapGun
+      - id: RevolverCapGun
         orGroup: GiftPool
       - id: ToyRubberDuck
         orGroup: GiftPool
@@ -782,7 +782,7 @@
         orGroup: GiftPool
       - id: ToySword
         orGroup: GiftPool
-      - id: NFRevolverCapGun # Frontier: RevolverCapGun<NFRevolverCapGun
+      - id: RevolverCapGun
         orGroup: GiftPool
       - id: ToyRubberDuck
         orGroup: GiftPool
@@ -857,7 +857,7 @@
         orGroup: GiftPool
       - id: ToySword
         orGroup: GiftPool
-      - id: NFRevolverCapGun # Frontier: RevolverCapGun<NFRevolverCapGun
+      - id: RevolverCapGun
         orGroup: GiftPool
       - id: ToyRubberDuck
         orGroup: GiftPool

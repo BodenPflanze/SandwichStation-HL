@@ -1141,7 +1141,7 @@ entities:
     - type: Transform
       pos: 2.5,10.5
       parent: 1
-- proto: NFRevolverCapGun
+- proto: RevolverCapGun
   entities:
   - uid: 40
     components:

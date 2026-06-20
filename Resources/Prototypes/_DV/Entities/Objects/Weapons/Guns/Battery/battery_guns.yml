@@ -1,6 +1,6 @@
 - type: entity
   name: energy gun
-  parent: [BaseWeaponPowerCellSmall, BaseC2ContrabandUnredeemable] # Frontier: added BaseC2ContrabandUnredeemable
+  parent: [BaseWeaponPowerCellSmall, BaseSMGWieldable, BaseC2ContrabandUnredeemable] # Frontier: added BaseC2ContrabandUnredeemable
   id: WeaponEnergyGun
   description: "A basic hybrid energy gun with two settings: disable and kill. On the handle is a label that says 'for authorized use only.'"
   components:
@@ -22,6 +22,8 @@
     - suitStorage # Frontier
     sprite: _DV/Objects/Weapons/Guns/Battery/energygun.rsi
   - type: Gun
+    energyJouleRating: 585 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-disabler-lethal-bolts # Sandwich-HL
     soundGunshot:
       path: /Audio/_DV/Weapons/Guns/Gunshots/laser.ogg
     soundEmpty:
@@ -54,6 +56,8 @@
           Disabler: { state: mode-disabler }
           Lethal: { state: mode-lethal }
           Special: { state: mode-stun } # Unused
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
 
 - type: entity
   name: x-01 multiphase energy gun
@@ -80,6 +84,8 @@
     - suitStorage # Frontier
     sprite: _DV/Objects/Weapons/Guns/Battery/multiphase_energygun.rsi
   - type: Gun
+    energyJouleRating: 900 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-bolts # Sandwich-HL
     soundGunshot:
       path: /Audio/_DV/Weapons/Guns/Gunshots/laser.ogg
     soundEmpty:
@@ -123,3 +129,5 @@
     - Sidearm
   - type: StaticPrice
     price: 750
+  - type: NFWeaponDetails # Sandwich-HL
+    class: weapon-details-manufacturer-nanotrasen-munitions  # Sandwich-HL

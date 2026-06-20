@@ -134,15 +134,15 @@
     attackType: Light # Frontier
 
 - type: entity
-  categories: [ HideSpawnMenu ] # Frontier
   name: flintlock pistol
   parent: [BaseWeaponSniper, BaseC3PirateContraband] # Frontier: BaseMajorContraband<BaseC3PirateContraband
   id: WeaponPistolFlintlock
-  description: A pirate's companion. Yarrr! Uses 145x114mm ammo. An illegal weapon often used by pirates.
+  description: A pirate's companion. Yarrr! Uses .54 lead balls. An illegal weapon often used by pirates.
   components:
   - type: Gun
-    minAngle: 0
-    maxAngle: 30 #miss him entirely because the barrel is smoothbore
+    customCaliber: ".54 lead balls" # Sandwich-HL
+    minAngle: 12 # Sandwich-HL: miss him entirely because the barrel is smoothbore
+    maxAngle: 30 # miss him entirely because the barrel is smoothbore
   - type: Item
     size: Small
     shape:
@@ -159,9 +159,9 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - Cartridge145x114mm
+        - Cartridge54_Lead_Ball # Sandwich-HL
     capacity: 1
-    proto: Cartridge145x114mm
+    proto: Cartridge54_Lead_Ball
   - type: StaticPrice
     price: 0
 

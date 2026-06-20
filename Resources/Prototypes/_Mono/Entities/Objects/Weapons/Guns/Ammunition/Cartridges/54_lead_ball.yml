@@ -1,0 +1,23 @@
+# Sandwich-HL: Extra caliber i added for the funny flintlock so it doesnt use anti-material bullets anymore
+- type: entity
+  parent: [ BaseCartridge, BaseC1Contraband ]
+  id: Cartridge54_Lead_Ball
+  name: bullet (.54 lead ball)
+  description: Just as the founding fathers intended.
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge54_Lead_Ball
+  - type: CartridgeAmmo
+    proto: Bullet54_Lead_Ball
+    deleteOnSpawn: true
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Casings/Cartridge54_Lead_Ball.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 20

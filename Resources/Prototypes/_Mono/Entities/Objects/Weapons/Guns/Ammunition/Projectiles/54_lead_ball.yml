@@ -1,0 +1,21 @@
+# Sandwich-HL: Extra caliber i added for the funny flintlock so it doesnt use anti-material bullets anymore
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: Bullet54_Lead_Ball
+  name: bullet (.54 lead ball)
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: buckshot
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 8
+        Blunt: 40
+        Structural: 60
+    penetrationThreshold: 10
+    penetrationDamageTypeRequirement:
+      - Structural
+  - type: StaminaDamageOnCollide
+    damage: 60

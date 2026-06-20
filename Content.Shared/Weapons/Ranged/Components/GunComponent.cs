@@ -302,6 +302,18 @@ public sealed partial class GunComponent : Component
     /// </summary>
     [DataField("energyProjectileType")]
     public LocId EnergyProjectileType = "gun-examine-joules-default-type";
+
+    /// <summary>
+    /// Sandwich-HL: Custom caliber text string
+    /// </summary>
+    [DataField("customCaliber")]
+    public string? CustomCaliber = null;
+
+    /// <summary>
+    /// Sandwich-HL: Custom caliber FTL template
+    /// </summary>
+    [DataField("customCaliberTemplate")]
+    public LocId CustomCaliberTemplate = "gun-examine-caliber-custom";
 }
 
 [Flags]

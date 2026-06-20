@@ -1398,9 +1398,16 @@
     - Sidearm
     - ToySidearm
   - type: Gun
+    customCaliber: "cap gun cartridge" # Sandwich-HL
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
+    # Sandwich-HL start
+    minAngle: 3.7
+    maxAngle: 11.1
+    angleIncrease: 1.5
+    angleDecay: 0.5
+    # Sandwich-HL end
     fireRate: 2
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/revolver.ogg
@@ -1412,7 +1419,7 @@
       tags:
         - CartridgeCap
         - SpeedLoaderCap
-    proto: CartridgeCap # Frontier
+    proto: CartridgeCap
     capacity: 6
     chambers: [ True, True, True, True, True, True ]
     ammoSlots: [ null, null, null, null, null, null ]
@@ -1421,9 +1428,12 @@
   - type: ContainerContainer
     containers:
       revolver-ammo: !type:Container
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-foam-force-llc # Sandwich-HL
+    class: weapon-details-class-revolver # Sandwich-HL
 
 - type: entity
-  parent: [RevolverCapGun, BaseC3SyndicateContraband] # Frontier: added BaseC3SyndicateContraband
+  parent: [RevolverCapGun] # Sandwich-HL (removed contraband pranents and tag from frontier to prevent meta gaming)
   id: RevolverCapGunFake
   name: cap gun
   suffix: Fake
@@ -1438,8 +1448,6 @@
         - Cartridge45_magnumFMJ
         - SpeedLoader45_magnumFMJ
     proto: Cartridge45_magnumAP
-  - type: Contraband # Frontier
-    hideValues: true # Frontier
 
 - type: entity
   parent: BaseItem

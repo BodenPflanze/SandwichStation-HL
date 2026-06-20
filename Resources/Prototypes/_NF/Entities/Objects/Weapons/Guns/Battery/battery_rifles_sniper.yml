@@ -4,7 +4,7 @@
 - type: entity
   id: NFWeaponEnergyRifleSniperCannon
   parent: [ BaseC3ContrabandUnredeemable, NFBaseWeaponEnergyRifleSniperHitScan, NFBaseWeaponFrameEnergyRifleSniperNanotrasen ]
-  name: Beam Rifle
+  name: beam rifle
   suffix: Frontier
   description: |-
     An extremely powerful weapon that hums with power, perhaps you should be careful with it. 

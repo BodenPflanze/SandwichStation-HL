@@ -123,7 +123,7 @@
 - type: entity
   parent: WeaponCaseShort
   id: WeaponCaseShortRitland45Expedition
-  suffix: Dungeon, Ritland-45
+  suffix: Dungeon, Python
 #  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
@@ -136,7 +136,7 @@
 - type: entity
   parent: WeaponCaseShort
   id: WeaponCaseShortWard45Expedition
-  suffix: Dungeon, Ward-45
+  suffix: Dungeon, Mateba
 #  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill

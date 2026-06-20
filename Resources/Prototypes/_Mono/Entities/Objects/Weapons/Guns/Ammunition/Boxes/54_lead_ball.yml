@@ -1,0 +1,38 @@
+# Sandwich-HL: Extra caliber i added for the funny flintlock so it doesnt use anti-material bullets anymore
+- type: entity
+  abstract: true
+  parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
+  id: BaseAmmoBag54_Lead_Ball
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge54_Lead_Ball
+    proto: Cartridge54_Lead_Ball
+    capacity: 10
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/54_Lead_Ball.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+
+# Boxes
+- type: entity
+  parent: BaseAmmoBag54_Lead_Ball
+  id: AmmoBag54_Lead_Ball
+  name: ammunition bag (.54 lead ball)
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge54_Lead_Ball
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]

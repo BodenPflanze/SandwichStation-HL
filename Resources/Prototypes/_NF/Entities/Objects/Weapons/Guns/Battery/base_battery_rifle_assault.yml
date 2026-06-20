@@ -52,17 +52,6 @@
 
 #region manufacturer
 - type: entity
-  id: NFBaseWeaponFrameEnergyRifleAssaultNanotrasen
-  parent: NFBaseWeaponFrameEnergyRifleAssault
-  abstract: true
-  components:
-  - type: Gun
-    minAngle: 2.1
-    maxAngle: 4
-  - type: NFWeaponDetails
-    manufacturer: weapon-details-manufacturer-nanotrasen-munitions
-
-- type: entity
   id: NFBaseWeaponFrameEnergyRifleAssaultCybersun
   parent: [ BaseC3Contraband, NFBaseWeaponFrameEnergyRifleAssault ]
   abstract: true
@@ -84,7 +73,8 @@
   abstract: true
   components:
   - type: Gun
-    examineCaliber: gun-examine-energybolt-medium
+    energyJouleRating: 675 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-bolts # Sandwich-HL
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: ProjectileBatteryAmmoProvider
@@ -96,15 +86,3 @@
       fireCost: 80
     - proto: NFBulletDisabler
       fireCost: 80
-
-- type: entity
-  id: NFBaseWeaponEnergyRifleAssaultHitScanPulse
-  abstract: true
-  components:
-  - type: Gun
-    examineCaliber: gun-examine-pulse-low
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
-  - type: HitscanBatteryAmmoProvider
-    proto: NFPulse
-    fireCost: 80

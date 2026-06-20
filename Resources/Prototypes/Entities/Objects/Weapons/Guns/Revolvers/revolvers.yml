@@ -2,7 +2,7 @@
   name: BaseWeaponRevolver
   parent: BaseItem
   id: BaseWeaponRevolver
-  description: A rooty tooty point and shooty.
+  #description: A rooty tooty point and shooty.       # Sandwich-HL: description causes issues with worn types
   abstract: true
   components:
   - type: Sprite
@@ -23,7 +23,14 @@
     - Belt
   - type: AmmoCounter
   - type: Gun
+    customCaliber: ".45 Magnum" # Sandwich-HL
     selectedMode: SemiAuto
+    # Sandwich-HL start
+    minAngle: 3.7
+    maxAngle: 11.1
+    angleIncrease: 1.5
+    angleDecay: 0.5
+    # Sandwich-HL end
     fireRate: 1.5
     availableModes:
     - SemiAuto
@@ -50,10 +57,25 @@
       path: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
   - type: StaticPrice
     price: 50
+  - type: NFWeaponDetails # Sandwich-HL
+    class: weapon-details-class-revolver # Sandwich-HL
+
+# Sandwich-HL start
+- type: entity
+  parent: BaseWeaponRevolver
+  id: WornBaseRevolver
+  abstract: true
+  components:
+  - type: Gun
+    minAngle: 4
+    maxAngle: 13
+    angleIncrease: 2.5
+    angleDecay: 1.5
+# Sandwich-HL end
 
 - type: entity
-  name: Deckard (.45 magnum)
-  parent: [BaseWeaponRevolver, BaseC1Contraband] # Frontier: BaseSecurityCommandContraband<BaseC1Contraband
+  name: Deckard
+  parent: [BaseWeaponRevolver, BaseC2ExpeditionContraband]  # Sandwich-HL: BaseC2ExpeditionContraband
   id: WeaponRevolverDeckard
   description: A beautifully machined, custom-built revolver. Used when there is no time for the Voight-Kampff test. Loads 5 rounds of .45 magnum.
   components:
@@ -65,7 +87,6 @@
     - state: mag-unshaded-3
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
-  - type: Gun
     fireRate: 2
   - type: RevolverAmmoProvider
     capacity: 5
@@ -78,12 +99,14 @@
   - type: Appearance
   - type: StaticPrice
     price: 150
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-custom-made # Sandwich-HL
 
 - type: entity
-  name: Inspector (.45 magnum)
+  name: Inspector
   parent: [BaseWeaponRevolver, BaseC2ContrabandUnredeemable] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
   id: WeaponRevolverInspector
-  description: A single-action revolver manufactured by various companies. It is readily available on the civilian market, making it a popular choice among private investigators. You feel lucky just holding it. Loads 6 rounds of .45 magnum.
+  description: A double-action revolver manufactured by various companies. It is readily available on the civilian market, making it a popular choice among private investigators. You feel lucky just holding it. Loads 6 rounds of .45 magnum.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/inspector.rsi
@@ -93,9 +116,11 @@
     capacity: 6
     chambers: [ True, True, True, True, True, True ]
     ammoSlots: [ null, null, null, null, null, null ]
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-frontier-gunsmith-consortium # Sandwich-HL
 
 - type: entity
-  name: Mateba (.45 magnum)
+  name: Mateba
   parent: [BaseWeaponRevolver, BaseCentcomContraband]
   id: WeaponRevolverMateba
   description: A modern revolver used by Nanotrasen’s elite, near mythical ‘Death Squad’ task force. Its unique trigger action and barrel placement enable a high fire rate with minimal muzzle flip. Many have looked down this barrel, but few have lived to tell of it. Loads 6 rounds of .45 magnum.
@@ -108,6 +133,8 @@
     fireRate: 3
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/mateba.ogg
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
 
 - type: entity
   categories: [ HideSpawnMenu ] # Frontier
@@ -119,7 +146,7 @@
     proto: Cartridge45_magnumAP
 
 - type: entity
-  name: Python (.45 magnum)
+  name: Python
   parent: [BaseWeaponRevolver, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
   id: WeaponRevolverPython
   description: A powerful double-action revolver manufactured by the Syndicate. Loud and flashy, perfect for any agent looking to make a statement. Loads 6 rounds of .45 magnum.
@@ -139,6 +166,8 @@
         volume: 2.25
   - type: StaticPrice
     price: 1
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-gorlex-steel-works # Sandwich-HL
 
 - type: entity
   categories: [ HideSpawnMenu ] # Frontier (also removed from uplink)
@@ -155,7 +184,7 @@
 
 
 - type: entity
-  name: pirate revolver (.45 magnum)
+  name: pirate revolver
   parent: [BaseWeaponRevolver, BaseC3PirateContraband] # Frontier: BaseMinorContraband<BaseC3PirateContraband
   id: WeaponRevolverPirate
   description: A crude single-action revolver handmade by a space pirate. Old and covered in rust, it somehow still works. Loads 5 rounds of .45 magnum.
@@ -165,6 +194,13 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Revolvers/pirate_revolver.rsi
   - type: Gun
+    # Sandwich-HL start
+    minAngle: 4.3
+    maxAngle: 12
+    angleIncrease: 1.5
+    angleDecay: 0.5
+    projectileSpeed: 22.5
+    # Sandwich-HL end
     fireRate: 1
   - type: ContainerContainer
     containers:
@@ -173,6 +209,8 @@
     capacity: 5
     chambers: [ True, True, True, True, True ]
     ammoSlots: [ null, null, null, null, null ]
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-custom-made # Sandwich-HL
 
 - type: entity
   name: pirate revolver

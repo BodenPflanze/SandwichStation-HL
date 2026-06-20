@@ -33,13 +33,13 @@
   - id: Stunbaton
     maxAmount: 10
 
-  - id: NFWeaponRevolverDeckard # Frontier: WeaponRevolverDeckard<NFWeaponRevolverDeckard
+  - id: WeaponRevolverDeckard
     amount: 0
     maxAmount: 5
-  - id: NFWeaponRevolverInspector # Frontier: WeaponRevolverInspector<NFWeaponRevolverInspector
+  - id: WeaponRevolverInspector
     amount: 0
     maxAmount: 5
-  - id: NFWeaponRevolverWard45 # Frontier: WeaponRevolverMateba<NFWeaponRevolverWard45
+  - id: WeaponRevolverMateba
     amount: 0
     maxAmount: 5
 

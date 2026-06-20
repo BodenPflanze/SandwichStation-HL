@@ -461,9 +461,6 @@ MagazineBoxRifleUranium: NFAmmunitionBoxRifle20Uranium
 #MagazineShotgunIncendiary: NFMagazineShotgunDrumIncendiary
 #MagazineShotgunSlug: NFMagazineShotgunDrumSlug
 ##Musket: NFWeaponRifleMusket
-#RevolverCapGun: NFRevolverCapGun
-#RevolverCapGunFake: NFRevolverCapGunFake
-#RevolverCapGunFakeGrown: NFRevolverCapGunFakeGrown
 #ShellShotgun: NFShellShotgunBuckshot
 #ShellShotgunBeanbag: NFShellShotgunBeanbag
 #ShellShotgunFlare: NFShellShotgunFlare
@@ -486,8 +483,6 @@ MagazineBoxRifleUranium: NFAmmunitionBoxRifle20Uranium
 #SpeedLoaderPistolPractice: NFSpeedLoaderPistol35Practice
 #SpeedLoaderPistolRubber: NFSpeedLoaderPistol35Rubber
 # WeaponEmpEmitter: ? # not migrated
-#WeaponEnergyGun: NFWeaponEnergySubMachineGunDeltaV
-#WeaponEnergyGunMultiphase: NFWeaponEnergyPistolLaserX01Multiphase
 #WeaponEnergyShotgun: null
 #WeaponLaserGun: NFWeaponEnergyPistolLaser
 #WeaponLaserPistolNF: NFWeaponEnergyPistolLaser
@@ -507,7 +502,6 @@ MagazineBoxRifleUranium: NFAmmunitionBoxRifle20Uranium
 #WeaponParticleDecelerator: null
 #WeaponPistolCobra: NFWeaponPistolCobra
 #WeaponPistolEchis: NFWeaponPistolEchis
-#WeaponPistolFlintlock: NFWeaponPistolFlintlock
 #WeaponPistolMk58: NFWeaponPistolMk58
 #WeaponPistolMk58Nonlethal: NFWeaponPistolUniversalNfsdLessLethal
 #WeaponPistolN1984: NFWeaponPistolN1984
@@ -520,18 +514,6 @@ MagazineBoxRifleUranium: NFAmmunitionBoxRifle20Uranium
 #WeaponProtoKineticAcceleratorSawn: NFWeaponPkaSawn
 #WeaponRevolverArgenti: NFWeaponRevolverArgenti
 #WeaponRevolverArgentiNonlethal: NFWeaponRevolverArgentiLessLethal
-#WeaponRevolverDeckard: NFWeaponRevolverDeckard
-#WeaponRevolverDeckardNonlethal: NFWeaponRevolverDeckard # close enough
-#WeaponRevolverDeckardExpeditionGrifty: NFWeaponRevolverDeckardExpeditionGrifty
-#WeaponRevolverFaith: NFWeaponRevolverFaith
-#WeaponRevolverFitz: NFWeaponRevolverFitz
-#WeaponRevolverInspector: NFWeaponRevolverInspector
-#WeaponRevolverLucky: NFWeaponRevolverLucky
-#WeaponRevolverMateba: NFWeaponRevolverWard45
-#WeaponRevolverMatebaAP: NFWeaponRevolverWard45
-#WeaponRevolverPirate: NFWeaponRevolverPirate
-#WeaponRevolverPython: NFWeaponRevolverRitland45
-#WeaponRevolverPythonAP: NFWeaponRevolverRitland45
 #WeaponRifleAk: NFWeaponRifleAssaultSm
 #WeaponRifleFoam: NFWeaponRifleFoam
 #WeaponRifleGestio: NFWeaponRifleAssaultGestio
