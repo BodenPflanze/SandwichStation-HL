@@ -164411,7 +164411,7 @@ entities:
         amount: 4
         orGroup: null
         prob: 1
-        id: NFWeaponPistolMk58
+        id: WeaponPistolMk58
       - maxAmount: 1
         amount: 8
         orGroup: null

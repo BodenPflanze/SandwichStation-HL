@@ -1,8 +1,8 @@
 - type: entity
-  name: Mk32 "Universal" (9x19mm)
+  name: mk 32
   parent: [BaseWeaponPistol, BaseC2ExpeditionContraband]
   id: WeaponPistolMk32
-  description: A cheap, civilian grade, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Uses 9x19mm ammo.
+  description: The Mark 32 Handgun, produced by NanoTrasen's Small Arms Division. Uses 9x19mm ammo.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/mk32.rsi
@@ -14,6 +14,13 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Pistols/mk32.rsi
   - type: Gun
+    # Sandwich-HL start
+    minAngle: 1
+    maxAngle: 15
+    angleIncrease: 3
+    angleDecay: 7
+    customCaliber: "9x19mm"
+    # Sandwich-HL end
     fireRate: 4 # Frontier: 3<4
     availableModes:
     - SemiAuto
@@ -43,9 +50,11 @@
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
 
 - type: entity
-  name: Pollock (9x19mm)
+  name: Pollock
   parent: [BaseWeaponPistol, BaseC2ExpeditionContraband]
   id: WeaponPistolPollock
   description: A compact and mass-produced combat pistol. Uses 9x19mm ammo.
@@ -55,6 +64,13 @@
   - type: Clothing
     sprite: _DV/Objects/Weapons/Guns/Pistols/pollock.rsi
   - type: Gun
+    # Sandwich-HL start
+    minAngle: 7
+    maxAngle: 21
+    angleIncrease: 1.2
+    angleDecay: 0.5
+    customCaliber: "9x19mm"
+    # Sandwich-HL end
     fireRate: 5
     availableModes:
     - SemiAuto
@@ -84,3 +100,5 @@
       gun_chamber: !type:ContainerSlot
   # - type: StaticPrice # Frontier: use default value
   #   price: 500
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL

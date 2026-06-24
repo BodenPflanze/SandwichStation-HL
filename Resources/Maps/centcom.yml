@@ -42396,7 +42396,7 @@ entities:
     - type: Transform
       pos: 16.49703,20.564053
       parent: 1668
-- proto: NFWeaponPistolN1984
+- proto: WeaponPistolN1984
   entities:
   - uid: 1383
     components:

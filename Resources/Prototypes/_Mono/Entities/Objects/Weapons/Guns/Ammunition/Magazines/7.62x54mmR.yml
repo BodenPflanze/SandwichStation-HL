@@ -1,7 +1,7 @@
 # Empty mags
 - type: entity
   id: BaseMagazine762x54mmR
-  name: "magazine (762x54mmR FMJ)"
+  name: "magazine (7.62x54mmR FMJ)"
   parent: [ BaseItem, BaseC1Contraband, RecyclableItemSteelTiny ] # Frontier: BaseSecurityContraband<BaseC1Contraband added RecyclableItemSteelTiny
   abstract: true
   components:
@@ -36,7 +36,7 @@
 # Magazines
 - type: entity
   id: Magazine762x54mmRFMJ
-  name: "magazine (762x54mmR FMJ)"
+  name: "magazine (7.62x54mmR FMJ)"
   parent: BaseMagazine762x54mmR
   components:
   - type: BallisticAmmoProvider
@@ -50,7 +50,7 @@
 
 - type: entity
   id: Magazine762x54mmREmpty
-  name: "magazine (762x54mmR any)"
+  name: "magazine (7.62x54mmR any)"
   suffix: empty
   parent: Magazine762x54mmRFMJ
   components:
@@ -65,7 +65,7 @@
 
 - type: entity
   id: Magazine762x54mmRPractice
-  name: "magazine (762x54mmR practice)"
+  name: "magazine (7.62x54mmR practice)"
   parent: BaseMagazine762x54mmR
   components:
   - type: BallisticAmmoProvider
@@ -79,7 +79,7 @@
 
 - type: entity
   id: Magazine762x54mmRUranium
-  name: "magazine (762x54mmR uranium)"
+  name: "magazine (7.62x54mmR uranium)"
   parent: BaseMagazine762x54mmR
   components:
   - type: BallisticAmmoProvider
@@ -93,7 +93,7 @@
 
 - type: entity
   id: Magazine762x54mmRIncendiary
-  name: "magazine (762x54mmR incendiary)"
+  name: "magazine (7.62x54mmR incendiary)"
   parent: Magazine762x54mmRFMJ
   components:
   - type: BallisticAmmoProvider
@@ -107,7 +107,7 @@
 
 - type: entity
   id: Magazine762x54mmRRubber
-  name: "magazine (762x54mmR rubber)"
+  name: "magazine (7.62x54mmR rubber)"
   parent: BaseMagazine762x54mmR
   components:
   - type: BallisticAmmoProvider

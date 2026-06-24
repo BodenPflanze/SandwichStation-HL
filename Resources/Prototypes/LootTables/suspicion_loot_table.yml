@@ -11,13 +11,13 @@
   - id: NFWeaponRifleAssaultLecter # Frontier: WeaponRifleLecter<NFWeaponRifleAssaultLecter
     amount: 0
     maxAmount: 5
-  - id: NFWeaponPistolViper # Frontier: WeaponPistolViper<NFWeaponPistolViper
+  - id: WeaponPistolViper
     amount: 0
     maxAmount: 5
-  - id: WeaponPistolCobra # Frontier: WeaponPistolCobra<NFWeaponPistolCobra
+  - id: WeaponPistolCobra
     amount: 0
     maxAmount: 5
-  - id: NFWeaponPistolMk58 # Frontier: WeaponPistolMk58<NFWeaponPistolMk58
+  - id: WeaponPistolMk58
     amount: 0
     maxAmount: 5
   - id: ButchCleaver
@@ -91,11 +91,11 @@
     amount: 0
     maxAmount: 4
 
-  - id: NFWeaponLauncherChinaLake # Frontier: WeaponLauncherChinaLake<NFWeaponLauncherChinaLake
+  - id: WeaponLauncherChinaLake
     prob: 0.30
     maxAmount: 3
 
-  - id: NFWeaponLauncherRocket # Frontier: WeaponLauncherRocket<NFWeaponLauncherRocket
+  - id: WeaponLauncherRocket
     prob: 0.20
     maxAmount: 3
 

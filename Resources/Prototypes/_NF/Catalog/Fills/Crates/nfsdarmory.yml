@@ -65,7 +65,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: NFWeaponPistolMk58
+    - id: WeaponPistolMk58
       amount: 2
     - id: Magazine9x19mmPistolFMJ
       amount: 4
@@ -90,7 +90,7 @@
       amount: 4
     - id: WeaponEnergyGun
       amount: 4
-    - id: NFWeaponPistolMk58
+    - id: WeaponPistolMk58
       amount: 4
 
 - type: entity

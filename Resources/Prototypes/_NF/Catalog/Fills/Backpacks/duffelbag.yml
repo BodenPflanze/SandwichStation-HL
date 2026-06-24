@@ -55,7 +55,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: NFWeaponLauncherGrenadeNfsd
+      - id: WeaponLauncherNfsdLake
       - id: NFBoxDartsTracking
 
 - type: entity

@@ -1,6 +1,7 @@
 - type: entity
   id: BaseCartridge635x40mmCaseless
   name: cartridge (.25 rifle)
+  description: What a cursed caliber... # Sandwich-HL
   parent: [ BaseCartridge, BaseC3SyndicateContrabandNoValue ] # Frontier: BaseSecurityContraband<BaseC3SyndicateContraband
   abstract: true
   components:
@@ -23,7 +24,7 @@
 
 - type: entity
   id: Cartridge635x40mmCaseless
-  name: cartridge (635x40mm Caseless)
+  name: cartridge (6.35x40mm Caseless) # What the hell is this cursed caliber???
   parent: BaseCartridge635x40mmCaseless
   components:
   - type: CartridgeAmmo
@@ -31,7 +32,7 @@
 
 - type: entity
   id: Cartridge635x40mmCaselessRubber
-  name: cartridge (635x40mm Caseless rubber)
+  name: cartridge (6.35x40mm Caseless rubber)
   parent: BaseCartridge635x40mmCaseless
   components:
   - type: CartridgeAmmo
@@ -39,7 +40,7 @@
 
 - type: entity
   id: Cartridge635x40mmCaselessPractice
-  name: cartridge (635x40mm Caseless practice)
+  name: cartridge (6.35x40mm Caseless practice)
   parent: BaseCartridge635x40mmCaseless
   components:
   - type: CartridgeAmmo

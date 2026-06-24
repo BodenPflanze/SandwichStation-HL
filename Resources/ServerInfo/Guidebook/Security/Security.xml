@@ -37,7 +37,7 @@ Should the situation dictate, [color=#cb0000]Security[/color] have access to las
   <Box>
     <GuideEntityEmbed Entity="WeaponLaserCarbine"/>
     <GuideEntityEmbed Entity="NFWeaponShotgunKammerer"/> <!-- Frontier: WeaponShotgunKammerer < NFWeaponShotgunKammerer -->
-    <GuideEntityEmbed Entity="NFWeaponPistolMk58"/> <!-- Frontier: WeaponPistolMk58 < NFWeaponPistolMk58 -->
+    <GuideEntityEmbed Entity="WeaponPistolMk58"/>
     <GuideEntityEmbed Entity="NFWeaponRifleAssaultLecter"/> <!-- Frontier: WeaponRifleLecter < NFWeaponRifleAssaultLecter -->
   </Box>
 </Document>

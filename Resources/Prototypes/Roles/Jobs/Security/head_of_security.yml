@@ -53,7 +53,7 @@
     id: HoSPDA
 #    gloves: ClothingHandsGlovesCombat # HL - Add departmental NF-style loadouts
     ears: ClothingHeadsetAltSecurity
-    pocket1: NFWeaponPistolMk58 # Frontier: use NF version
+    pocket1: WeaponPistolMk58
   storage:
     back:
     - Flash

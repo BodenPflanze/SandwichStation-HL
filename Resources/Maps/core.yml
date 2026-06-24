@@ -118238,7 +118238,7 @@ entities:
     - type: StorageFill
       contents:
       - amount: 4
-        id: NFWeaponPistolMk58
+        id: WeaponPistolMk58
       - amount: 8
         id: Magazine9x19mmPistolFMJ
     - type: EntityStorage

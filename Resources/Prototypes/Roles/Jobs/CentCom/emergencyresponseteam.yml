@@ -284,7 +284,7 @@
     id: ERTSecurityPDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltSecurityFilled
-    pocket1: NFWeaponPistolMk58 # Frontier
+    pocket1: WeaponPistolMk58
     pocket2: FlashlightSeclite
   storage:
     back:
@@ -308,7 +308,7 @@
     id: ERTSecurityPDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltSecurityFilled
-    pocket1: NFWeaponPistolMk58 # Frontier: use NF variant
+    pocket1: WeaponPistolMk58
     pocket2: FlashlightSeclite
   storage:
     back:

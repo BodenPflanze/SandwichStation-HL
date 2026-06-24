@@ -2,7 +2,7 @@
   name: BaseWeaponLauncher
   parent: BaseItem
   id: BaseWeaponLauncher
-  description: A rooty tooty point and shooty.
+  #description: A rooty tooty point and shooty. # Sandwich-HL: Causes issues to worn launcher
   abstract: true
   components:
   - type: Sprite
@@ -15,15 +15,39 @@
     size: Huge
   - type: StaticPrice
     price: 500
+  # Sandwich-HL start
+  - type: Gun
+    minAngle: 2.4
+    maxAngle: 6.2
+    angleIncrease: 6
+    angleDecay: 2
+    customCaliber: "40mm grenades"
+  # Sandwich-HL end
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
+  - type: NFWeaponDetails # Sandwich-HL
+    class: weapon-details-class-launcher # Sandwich-HL
+
+
+# Sandwich-HL start
+- type: entity
+  parent: BaseWeaponLauncher
+  id: WornBaseWeaponLauncher
+  abstract: true
+  components:
+  - type: Gun
+    minAngle: 4
+    maxAngle: 8
+    angleIncrease: 8
+    angleDecay: 4
+# Sandwich-HL end
 
 - type: entity
-  # abstract: true # Frontier: use NF variant
+  # abstract: true
   name: china lake
-  parent: [BaseWeaponLauncher, BaseGunWieldable, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3Contraband
+  parent: [BaseWeaponLauncher, BaseRequiersWieldable, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3Contraband # Sandwich-HL: RequiersWieldable
   id: WeaponLauncherChinaLake
   description: PLOOP.
   components:
@@ -54,6 +78,8 @@
     proto: 40mmGrenadeFragmentation
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-gorlex-steel-works # Sandwich-HL
 
 - type: entity
   # abstract: true # Frontier: create NF variant if we want this
@@ -97,9 +123,9 @@
       path: /Audio/Weapons/Guns/MagIn/sfrifle_magin.ogg
 
 - type: entity
-  # abstract: true # Frontier: use NF variant
+  # abstract:
   name: RPG-7
-  parent: [ BaseWeaponLauncher, BaseC3Contraband ] # Frontier: BaseMajorContraband<BaseC3Contraband
+  parent: [ BaseWeaponLauncher, BaseRequiersWieldable, BaseC3Contraband ] # Frontier: BaseMajorContraband<BaseC3Contraband # Sandwich-HL: RequiersWieldable
   id: WeaponLauncherRocket
   description: A modified ancient rocket-propelled grenade launcher.
   components:
@@ -113,6 +139,7 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Launchers/rocket.rsi
   - type: Gun
+    customCaliber: "PG-7VL"
     fireRate: 0.5
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
@@ -129,6 +156,8 @@
     steps: 2
     zeroVisible: false
   - type: Appearance
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-gorlex-steel-works # Sandwich-HL
 
 - type: entity
   # abstract: true # Frontier: use NF variant

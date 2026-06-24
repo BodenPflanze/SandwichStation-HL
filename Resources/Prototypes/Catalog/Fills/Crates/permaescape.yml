@@ -90,7 +90,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: NFWeaponPistolMk58 # Frontier: WeaponPistolMk58<NFWeaponPistolMk58
+    - id: WeaponPistolMk58
       prob: 0.15
       orGroup: gun
     - id: FoamCrossbow

@@ -107,18 +107,35 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier1
-  - NFWeaponPistolMk58
+  - WeaponPistolMk58
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponPistolMk58Expedition
-  name: worn Mk58
+  name: worn mk 58
+  # Sandwich-HL start
+  components:
+  - type: Gun
+    minAngle: 1
+    maxAngle: 20
+    angleIncrease: 8
+    angleDecay: 9
+  # Sandwich-HL end
 
 - type: entity
   parent:
   - BaseExpeditionWeaponTier1
-  - NFWeaponPistolPollockHighCapacityMag
+  - WeaponPistolPollock
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponPistolPollockExpedition
   name: worn Pollock
+  # Sandwich-HL start
+  components:
+  - type: Gun
+    minAngle: 8
+    maxAngle: 22
+    angleIncrease: 2
+    angleDecay: 0.8
+  # Sandwich-HL end
+
 
 ## Revolvers
 - type: entity
@@ -171,10 +188,18 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier2Syndicate
-  - NFWeaponPistolViper
+  - WeaponPistolViper
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponPistolViperExpedition
-  name: worn Viper
+  name: worn viper
+  # Sandwich-HL start
+  components:
+  - type: Gun
+    minAngle: 10
+    maxAngle: 25
+    angleIncrease: 3
+    angleDecay: 1
+  # Sandwich-HL end
 
 ## Revolvers
 - type: entity
@@ -202,14 +227,14 @@
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponRevolverPirateExpedition
   name: worn pirate revolver
+  # Sandwich-HL start
   components:
   - type: Gun
-    # Sandwich-HL start
     minAngle: 4.6
     maxAngle: 13
     angleIncrease: 2
     angleDecay: 0.7
-    # Sandwich-HL end
+  # Sandwich-HL end
 
 - type: entity
   parent:
@@ -434,16 +459,25 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier5
-  - NFWeaponLauncherRocket
+  - WornBaseWeaponLauncher # Sandwich-HL (funnies)
+  - WeaponLauncherRocket
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponLauncherRocketExpedition
+  name: worn RPG-7
+  # Sandwich-HL start
+  components:
+  - type: Gun
+    customCaliber: "PG-7VL"
+  # Sandwich-HL end
 
 - type: entity
   parent:
   - BaseExpeditionWeaponTier5Syndicate
-  - NFWeaponLauncherChinaLake
+  - WornBaseWeaponLauncher # Sandwich-HL (funnies)
+  - WeaponLauncherChinaLake
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponLauncherChinaLakeExpedition
+  name: worn china lake
 
 # LMGs
 - type: entity

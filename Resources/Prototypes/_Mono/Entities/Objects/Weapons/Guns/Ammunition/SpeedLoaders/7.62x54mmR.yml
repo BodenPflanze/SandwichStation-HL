@@ -1,6 +1,6 @@
 - type: entity
   id: SpeedLoader762x54mmRFMJ
-  name: "speed loader (762x54mmR FMJ)"
+  name: "speed loader (7.62x54mmR FMJ)"
   parent: [ BaseItem, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
   components:
   - type: Tag
@@ -9,7 +9,7 @@
       - SpeedLoader762x54mmRFMJ
   - type: SpeedLoader
   - type: BallisticAmmoProvider
-    #mayTransfer: true # Sandwich-HL: (Why use a speedloader when u turn may transfer on????)
+    mayTransfer: true
     whitelist:
       tags:
         - Cartridge762x54mmRFMJ

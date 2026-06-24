@@ -2,7 +2,7 @@
   id: PickNPackInventory
   startingInventory:
   # Weapons
-    NFWeaponPistolMk58: 6
+    WeaponPistolMk58: 6
     #Hardlight start
     WeaponPistolPollock: 6
     WeaponRifleNovaliteC1: 6
@@ -27,7 +27,6 @@
   id: PickNPackPOIInventory
   startingInventory:
   # Weapons
-    NFWeaponPistolMk58: 4294967295
     # Hardlight start
     WeaponPistolPollock: 4294967295
     WeaponRifleNovaliteC1: 4294967295

@@ -37,7 +37,7 @@
 
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
-      <GuideEntityEmbed Entity="NFWeaponPistolMk58" Caption=""/>
+      <GuideEntityEmbed Entity="WeaponPistolMk58" Caption=""/>
       </Box>
     </ColorBox>
     <ColorBox>
@@ -69,7 +69,7 @@
 
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
-      <GuideEntityEmbed Entity="NFWeaponPistolPollock" Caption=""/>
+      <GuideEntityEmbed Entity="WeaponPistolPollock" Caption=""/>
       </Box>
     </ColorBox>
     <ColorBox>

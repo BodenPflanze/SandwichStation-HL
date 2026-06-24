@@ -28,7 +28,7 @@
   name: throwing N1984
   parent: BaseItem
   id: ThrowingGun
-  description: The sidearm of any- wait, the slide has been welded shut.
+  description:  An exceptionally powerful ‘hand cannon’ desig- wait, the slide has been welded shut.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/N1984.rsi

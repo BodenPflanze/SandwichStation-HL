@@ -85,7 +85,7 @@
         - ClothingOuterArmorBulletproof
 #        - NFWeaponSubMachineGunWt550 # Frontier: WeaponSubMachineGunWt550<NFWeaponSubMachineGunWt550
         - WeaponDisabler
-        - NFWeaponPistolMk58 # Frontier WeaponPistolMk58<NFWeaponPistolMk58
+        - WeaponPistolMk58
         - NFWeaponRifleAssaultLecter # Frontier: WeaponRifleLecter<NFWeaponRifleAssaultLecter
         - NFWeaponSubMachineGunDrozd # Frontier: WeaponSubMachineGunDrozd<NFWeaponSubMachineGunDrozd
         - WeaponLaserCarbine
@@ -112,7 +112,7 @@
       prototypes:
 #        - NFWeaponSubMachineGunWt550 # Frontier: WeaponSubMachineGunWt550<NFWeaponSubMachineGunWt550
         - WeaponDisabler
-        - NFWeaponPistolMk58 # Frontier: WeaponPistolMk58<NFWeaponPistolMk58
+        - WeaponPistolMk58
         - NFWeaponRifleAssaultLecter # Frontier WeaponRifleAssaultLecter<NFWeaponRifleAssaultLecter
         - NFWeaponSubMachineGunDrozd # Frontier WeaponSubMachineGunDrozd<NFWeaponSubMachineGunDrozd
         - WeaponLaserCarbine

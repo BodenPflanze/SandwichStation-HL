@@ -27,7 +27,7 @@
 - type: entity
   parent: BaseAmmoBox762x54mmR
   id: AmmoBox762x54mmRBigFMJ
-  name: ammunition box (762x54mmR FMJ)
+  name: ammunition box (7.62x54mmR FMJ) # Sandwich-HL: We are shooting 7.62mm not 762mm
   suffix: Big
   components:
   - type: BallisticAmmoProvider
@@ -47,7 +47,7 @@
 - type: entity
   parent: BaseAmmoBox762x54mmR
   id: AmmoBox762x54mmRFMJ
-  name: ammunition box (762x54mmR FMJ)
+  name: ammunition box (7.62x54mmR FMJ)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge762x54mmRFMJ
@@ -61,7 +61,7 @@
 - type: entity
   parent: BaseAmmoBox762x54mmR
   id: AmmoBox762x54mmRPractice
-  name: ammunition box (762x54mmR practice)
+  name: ammunition box (7.62x54mmR practice)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge762x54mmRPractice
@@ -76,7 +76,7 @@
 - type: entity
   id: AmmoBox762x54mmRIncendiary
   parent: BaseAmmoBox762x54mmR
-  name: ammunition box (762x54mmR incendiary)
+  name: ammunition box (7.62x54mmR incendiary)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge762x54mmRIncendiary
@@ -106,7 +106,7 @@
 - type: entity
   parent: BaseAmmoBox762x54mmR
   id: AmmoBox762x54mmRRubber
-  name: ammunition box (762x54mmR rubber)
+  name: ammunition box (7.62x54mmR rubber)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge762x54mmRRubber
@@ -122,7 +122,7 @@
 - type: entity
   parent: AmmoBox762x54mmRBigFMJ
   id: AmmoBox762x54mmRRubberBig
-  name: ammunition box (762x54mmR rubber)
+  name: ammunition box (7.62x54mmR rubber)
   suffix: Big
   components:
   - type: BallisticAmmoProvider

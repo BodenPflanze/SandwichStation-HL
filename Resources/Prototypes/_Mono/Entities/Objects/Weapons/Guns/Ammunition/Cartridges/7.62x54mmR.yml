@@ -1,6 +1,6 @@
 - type: entity
   id: BaseCartridge762x54mmR
-  name: cartridge (762x54mmR FMJ)
+  name: cartridge (7.62x54mmR FMJ)
   parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
   abstract: true
   components:
@@ -22,7 +22,7 @@
 
 - type: entity
   id: Cartridge762x54mmRFMJ
-  name: cartridge (762x54mmR FMJ)
+  name: cartridge (7.62x54mmR FMJ)
   parent: BaseCartridge762x54mmR
   components:
   - type: CartridgeAmmo
@@ -30,7 +30,7 @@
 
 - type: entity
   id: Cartridge762x54mmRPractice
-  name: cartridge (762x54mmR practice)
+  name: cartridge (7.62x54mmR practice)
   parent: BaseCartridge762x54mmR
   components:
   - type: CartridgeAmmo
@@ -44,7 +44,7 @@
 
 - type: entity
   id: Cartridge762x54mmRIncendiary
-  name: cartridge (762x54mmR incendiary)
+  name: cartridge (7.62x54mmR incendiary)
   parent: BaseCartridge762x54mmR
   components:
   - type: CartridgeAmmo
@@ -58,7 +58,7 @@
 
 - type: entity
   id: Cartridge762x54mmRUranium
-  name: cartridge (762x54mmR uranium)
+  name: cartridge (7.62x54mmR uranium)
   parent: BaseCartridge762x54mmR
   components:
   - type: CartridgeAmmo
@@ -72,7 +72,7 @@
 
 - type: entity
   id: Cartridge762x54mmRRubber
-  name: cartridge (762x54mmR rubber)
+  name: cartridge (7.62x54mmR rubber)
   parent: BaseCartridge762x54mmR
   components:
   - type: CartridgeAmmo

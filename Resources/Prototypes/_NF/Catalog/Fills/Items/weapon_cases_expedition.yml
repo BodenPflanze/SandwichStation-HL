@@ -3,14 +3,14 @@
 - type: entity
   parent: WeaponCaseShort
   id: WeaponCaseShortMk58Expedition
-  suffix: Dungeon, Mk58
+  suffix: Dungeon, mk 58
 #  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
     - id: NFWeaponPistolMk58Expedition
       amount: 1
-    - id: Magazine9x19mmPistolFMJ
+    - id: Magazine45_ACPPistolFMJ
       amount: 2
 
 - type: entity

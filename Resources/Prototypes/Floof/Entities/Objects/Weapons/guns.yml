@@ -103,7 +103,7 @@
   parent: BaseWeaponBatterySmall
   suffix: Robot, energy based
   id: WeaponborgPistolMk58
-  description: A cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Uses .35 auto ammo.
+  description: The Mark 58 Offensive Handgun, produced by NanoTrasen's Small Arms Division. Uses .45 ACP ammo. # Sandwich-HL: fix
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
@@ -118,7 +118,7 @@
       path: /Audio/Weapons/Guns/Gunshots/mk58.ogg
     # fireOnDropChance: 0.5
   - type: ProjectileBatteryAmmoProvider
-    proto: NFBulletPistol35
+    proto: Bullet45_ACPFMJ # Sandwich-HL: fix
     fireCost: 100
   - type: BatterySelfRecharger
     autoRecharge: true

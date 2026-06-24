@@ -1174,7 +1174,7 @@
   - type: ItemBorgModule
     moduleId: Weapons # Frontier
     items:
-    - NFWeaponPistolEchis # Frontier: WeaponPistolEchis<WeaponPistolEchis
+    - WeaponPistolEchis
     - EnergyDaggerLoud
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: syndicate-weapon-module }

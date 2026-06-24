@@ -553,7 +553,7 @@
 
 - type: entity
   name: Emotional support RPG
-  parent: [BaseClearContraband, NFWeaponLauncherRocket]
+  parent: [BaseClearContraband, WeaponLauncherRocket]
   id: WeaponLauncherRocketToy
   suffix: Toy
   description: A plush toy, this launches foam "grenades". Design by SESWC  # Hardlight
@@ -568,6 +568,7 @@
   - type: Clothing
     sprite: _NF/Objects/Fun/emotional_support_rpg.rsi
   - type: Gun
+    customCaliber: "foam RPG"
     soundGunshot:
       path: /Audio/Effects/thunk.ogg
     soundEmpty:
@@ -591,7 +592,7 @@
 - type: entity
   id: BulletFoamRPG
   description: Looks like the REAL THING... if you squint. I hope your target's wearing face protection.
-  name: foam RPG rocket
+  name: foam RPG # who named this "foam RPG rocket"??? It would then be a "foam rocket propelled grenade rocket"
   parent: BaseItem
   components:
     - type: Tag

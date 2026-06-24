@@ -31,7 +31,7 @@
 - type: latheRecipe
   parent: BaseWeaponRecipe
   id: WeaponPistolPollock
-  result: NFWeaponPistolPollock
+  result: WeaponPistolPollock
   completetime: 3
   materials:
     Steel: 1000

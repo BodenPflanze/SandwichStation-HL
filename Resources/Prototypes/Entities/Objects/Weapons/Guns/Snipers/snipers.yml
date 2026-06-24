@@ -42,7 +42,7 @@
   name: Kardashev-Mosin
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseGunMelee, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband, added BaseGunMelee
   id: WeaponSniperMosin
-  description: A weapon for hunting, or endless trench warfare. Uses 762x54mmR ammo. Equipped with bayonet. # Frontier: bayonet
+  description: A weapon for hunting, or endless trench warfare. Uses 7.62x54mmR ammo. Equipped with bayonet. # Frontier: bayonet
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Snipers/bolt_gun_wood.rsi
@@ -51,7 +51,7 @@
     maxOffset: 1.5 # Frontier
     pvsIncrease: 0.15 # Frontier
   - type: Gun # Sandwich-HL
-    customCaliber: "762x54mmR" # Sandwich-HL
+    customCaliber: "7.62x54mmR" # Sandwich-HL
   - type: AltFireMelee # Frontier
     attackType: Light # Frontier
   - type: BallisticAmmoProvider
