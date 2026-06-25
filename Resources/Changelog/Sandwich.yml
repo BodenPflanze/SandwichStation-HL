@@ -363,3 +363,9 @@ Entries:
       message: Added legion plushie
   id: 34
   time: '2026-06-08T05:22:51.0000000+00:00'
+- author: B3CKDOOR
+  changes:
+    - type: Fix
+      message: Fixed memory crash exploit
+  id: 36
+  time: '2026-06-25T20:15:39.0000000+00:00'
