@@ -7,7 +7,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: NFWeaponRifleAssaultGestio
+      - id: WeaponRifleGestio
         amount: 2
       - id: Magazine762x39mmLowCapacityFMJ
         amount: 6

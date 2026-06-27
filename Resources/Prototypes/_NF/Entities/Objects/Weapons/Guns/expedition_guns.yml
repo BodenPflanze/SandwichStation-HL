@@ -268,7 +268,8 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier2
-  - NFWeaponRifleAssaultNovaliteC1
+  - WornBaseWeaponRifle_RequiersWieldable # Sandwich-HL (funnies)
+  - WeaponRifleNovaliteC1
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponRifleAssaultNovaliteC1Expedition
   name: worn Novalite C1
@@ -276,7 +277,8 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier2
-  - NFWeaponRifleAssaultGestio
+  - WornBaseWeaponRifle_RequiersWieldable # Sandwich-HL (funnies)
+  - WeaponRifleGestio
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponRifleAssaultGestioExpedition
   name: worn Gestio
@@ -297,18 +299,11 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier3
-  - NFWeaponRifleAssaultLecter
+  - WornBaseWeaponRifle_RequiersWieldable # Sandwich-HL (funnies)
+  - WeaponRifleLecter
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponRifleAssaultLecterExpedition
   name: worn Lecter
-
-- type: entity
-  parent:
-  - BaseExpeditionWeaponTier3Syndicate
-  - NFWeaponRifleAssaultM90GrenadeLauncher
-#  categories: [ HideSpawnMenu ]
-  id: NFWeaponRifleAssaultM90GrenadeLauncherExpedition
-  name: worn M90 rifle
 
 - type: entity # HL
   parent:
@@ -330,10 +325,18 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier3Syndicate
-  - WeaponSniperHristov # HL
+  - WeaponSniperHristov
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponRifleSniperHristovExpedition
   name: worn Hristov
+  # Sandwich-HL start
+  components:
+  - type: Gun
+    minAngle: 2.3
+    maxAngle: 6.3
+    angleIncrease: 6
+    angleDecay: 4
+  # Sandwich-HL end
 
 ## SMGs
 - type: entity
@@ -408,10 +411,18 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier4
-  - NFWeaponRifleAssaultVulcan
+  - WeaponRifleVulcan
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponRifleAssaultVulcanExpedition
   name: worn Vulcan
+  # Sandwich-HL start
+  components:
+  - type: Gun
+    minAngle: 2 # Sandwich-HL
+    maxAngle: 6.2 # Sandwich-HL
+    angleIncrease: 1.3 # Sandwich-HL
+    angleDecay: 1.7 # Sandwich-HL
+  # Sandwich-HL end
 
 ## Energy
 - type: entity
@@ -483,10 +494,11 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier5Syndicate
-  - NFWeaponLightMachineGunL6
+  - WornWeaponLightMachineGun # Sandwich-HL (funnies)
+  - WeaponLightMachineGunL6
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponLightMachineGunL6Expedition
-  name: worn L6
+  name: worn L6 SAW
 
 # Energy
 - type: entity
@@ -531,7 +543,15 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier5
-  - NFWeaponRifleAssaultJackdaw
+  - WeaponRifleJackdaw
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponRifleAssaultJackdawExpedition
-  name: worn Jackdaw
+  name: worn CAWS-25 Jackdaw
+  # Sandwich-HL start
+  components:
+  - type: Gun
+    minAngle: 1.5
+    maxAngle: 3.8
+    angleIncrease: 1.1
+    angleDecay: 1.6
+  # Sandwich-HL end

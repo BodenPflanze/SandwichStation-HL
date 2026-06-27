@@ -1,7 +1,7 @@
 # Empty mags
 - type: entity
   id: BaseMagazine762x39mm
-  name: "magazine (762x39mm FMJ)"
+  name: "magazine (7.62x39mm FMJ)"
   parent: [ BaseItem, BaseC1Contraband, RecyclableItemSteelTiny ] # Frontier: BaseSecurityContraband<BaseC1Contraband added RecyclableItemSteelTiny
   abstract: true
   components:
@@ -36,7 +36,7 @@
 # Magazines
 - type: entity
   id: Magazine762x39mmBox
-  name: "L6 SAW magazine box (762x39mm FMJ)"
+  name: "L6 SAW magazine box (7.62x39mm FMJ)"
   parent: BaseMagazine762x39mm
   components:
   - type: Tag
@@ -56,7 +56,7 @@
 
 - type: entity
   id: Magazine762x39mmFMJ
-  name: "magazine (762x39mm FMJ)"
+  name: "magazine (7.62x39mm FMJ)"
   parent: BaseMagazine762x39mm
   components:
   - type: BallisticAmmoProvider
@@ -70,7 +70,7 @@
 
 - type: entity
   id: Magazine762x39mmEmpty
-  name: "magazine (762x39mm any)"
+  name: "magazine (7.62x39mm any)"
   suffix: empty
   parent: Magazine762x39mmFMJ
   components:
@@ -85,7 +85,7 @@
 
 - type: entity
   id: Magazine762x39mmPractice
-  name: "magazine (762x39mm practice)"
+  name: "magazine (7.62x39mm practice)"
   parent: BaseMagazine762x39mm
   components:
   - type: BallisticAmmoProvider
@@ -99,7 +99,7 @@
 
 - type: entity
   id: Magazine762x39mmUranium
-  name: "magazine (762x39mm uranium)"
+  name: "magazine (7.62x39mm uranium)"
   parent: BaseMagazine762x39mm
   components:
   - type: BallisticAmmoProvider
@@ -113,7 +113,7 @@
 
 - type: entity
   id: Magazine762x39mmIncendiary
-  name: "magazine (762x39mm incendiary)"
+  name: "magazine (7.62x39mm incendiary)"
   parent: Magazine762x39mmFMJ
   components:
   - type: BallisticAmmoProvider
@@ -127,7 +127,7 @@
 
 - type: entity
   id: Magazine762x39mmMaxim
-  name: "pan magazine (762x39mm FMJ)"
+  name: "pan magazine (7.62x39mm FMJ)"
   parent: BaseMagazine762x39mm
   components:
   - type: Tag
@@ -141,7 +141,7 @@
 
 - type: entity
   id: Magazine762x39mmPkBox
-  name: "PK munitions box (762x39mm FMJ)"
+  name: "PK munitions box (7.62x39mm FMJ)"
   parent: BaseMagazine762x39mm
   components:
   - type: Tag
@@ -160,7 +160,7 @@
 
 - type: entity
   id: Magazine762x39mmRubber
-  name: "magazine (762x39mm rubber)"
+  name: "magazine (7.62x39mm rubber)"
   parent: Magazine762x39mmFMJ
   components:
   - type: BallisticAmmoProvider
@@ -175,7 +175,7 @@
 
 - type: entity
   id: Magazine762x39mmLowCapacityEmpty
-  name: "low cap magazine (762x39mm any)"
+  name: "low cap magazine (7.62x39mm any)"
   suffix: empty
   parent: Magazine762x39mmLowCapacityFMJ
   components:
@@ -196,7 +196,7 @@
 
 - type: entity
   id: Magazine762x39mmLowCapacityFMJ
-  name: "low cap magazine (762x39mm FMJ)"
+  name: "low cap magazine (7.62x39mm FMJ)"
   parent: Magazine762x39mmFMJ
   components:
   - type: Tag
@@ -216,7 +216,7 @@
 
 - type: entity
   id: Magazine762x39mmLowCapacityPractice
-  name: "low cap magazine (762x39mm practice)"
+  name: "low cap magazine (7.62x39mm practice)"
   parent: Magazine762x39mmLowCapacityFMJ
   components:
   - type: BallisticAmmoProvider
@@ -230,7 +230,7 @@
 
 - type: entity
   id: Magazine762x39mmLowCapacityRubber
-  name: "low cap magazine (762x39mm rubber)"
+  name: "low cap magazine (7.62x39mm rubber)"
   parent: Magazine762x39mmLowCapacityFMJ
   components:
   - type: BallisticAmmoProvider
@@ -244,7 +244,7 @@
 
 - type: entity
   id: Magazine762x39mmLowCapacityUranium
-  name: "low cap magazine (762x39mm uranium)"
+  name: "low cap magazine (7.62x39mm uranium)"
   parent: Magazine762x39mmLowCapacityFMJ
   components:
   - type: BallisticAmmoProvider
@@ -258,7 +258,7 @@
 
 - type: entity
   id: Magazine762x39mmLowCapacityIncendiary
-  name: "low cap magazine (762x39mm incendiary)"
+  name: "low cap magazine (7.62x39mm incendiary)"
   parent: Magazine762x39mmLowCapacityFMJ
   components:
   - type: BallisticAmmoProvider
@@ -272,7 +272,7 @@
 
 - type: entity
   id: Magazine762x39mmSubsonic
-  name: "magazine (762x39mm subsonic)"
+  name: "magazine (7.62x39mm subsonic)"
   parent: BaseMagazine762x39mm
   components:
   - type: Tag

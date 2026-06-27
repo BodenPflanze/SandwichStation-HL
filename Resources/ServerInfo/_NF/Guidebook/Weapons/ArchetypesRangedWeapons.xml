@@ -240,7 +240,7 @@
 
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
-      <GuideEntityEmbed Entity="NFWeaponRifleSniperHristov" Caption=""/>
+      <GuideEntityEmbed Entity="WeaponSniperHristov" Caption=""/>
       </Box>
     </ColorBox>
     <ColorBox>
@@ -273,7 +273,7 @@
 
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
-      <GuideEntityEmbed Entity="NFWeaponLightMachineGunL6" Caption=""/>
+      <GuideEntityEmbed Entity="WeaponLightMachineGunL6" Caption=""/>
       </Box>
     </ColorBox>
     <ColorBox>

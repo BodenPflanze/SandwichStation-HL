@@ -50,7 +50,7 @@
   id: UplinkMercenaryWeaponSurpLecter
   name:  uplink-mercenary-rifle1-name
   description: uplink-mercenary-rifle1-desc
-  productEntity: WeaponRifleSurpLecter
+  productEntity: WeaponRifleLecter
   icon: { sprite: _NF/Objects/Weapons/Guns/Rifles/surplecter.rsi, state: icon }
   cost:
     MercCoin: 8

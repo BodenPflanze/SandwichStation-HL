@@ -1,9 +1,8 @@
 #region WizDen
 - type: entity
-  name: Lecter (556x45mm)
   parent: WeaponRifleLecter
   id: WeaponRifleLecterRubber
-  suffix: Non-lethal
+  suffix: Less-lethal # Sandwich-HL: Non-lethal < Less-Lethal (rubber still hurts)
   components:
   - type: ItemSlots
     slots:
@@ -27,10 +26,10 @@
 
 #Delta-V
 - type: entity
-  name: Vulcan (762x51mm)
+  name: Vulcan
   parent: WeaponRifleVulcan
   id: WeaponRifleVulcanRubber
-  suffix: Non-lethal
+  suffix: Less-lethal # Sandwich-HL: Non-lethal < Less-lethal (rubber still hurts)
   components:
   - type: ItemSlots
     slots:
@@ -55,10 +54,10 @@
 
 # Frontier
 - type: entity
-  name: Gestio (762x39mm)
-  parent: [ BaseWeaponRifle, BaseC1Contraband ]
+  name: Gestio
+  parent: [ BaseWeaponRifle_RequiersWieldable, BaseC2ContrabandUnredeemable ]
   id: WeaponRifleGestio
-  description: An old burst-fire rifle made by Silver Industries that never left trials. Accepts low capacity 762x39mm magazines.
+  description: An old burst-fire rifle made by Silver Industries that never left trials. Accepts low capacity 7.62x39mm magazines.
   components:
   - type: Sprite
     sprite: _NF/Objects/Weapons/Guns/Rifles/gestio.rsi
@@ -111,11 +110,13 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-silver-industries # Sandwich-HL
 
 - type: entity
   parent: WeaponRifleGestio
   id: WeaponRifleGestioRubber
-  suffix: Non-lethal
+  suffix: Less-lethal # Sandwich-HL: Non-lethal < Less-lethal (rubber still hurts) 
   components:
   - type: ItemSlots
     slots:
@@ -138,10 +139,10 @@
             - Cartridge762x39mmFMJ
 
 - type: entity
-  parent: [ BaseWeaponRifle, BaseC1Contraband ]
+  parent: [ BaseWeaponRifle_RequiersWieldable, BaseC1Contraband ]
   id: WeaponRifleNovaliteC1
-  name: Novalite C1 (556x45mm)
-  description: A modification to the Lecter from SW LLC, a civilian grade semi-automatic rifle with an internal magazine. Uses 556x45mm ammo.
+  name: Novalite C1
+  description: A modification to the Lecter from Steelbolt Tool Forge, a semi-automatic rifle with an internal magazine. Uses 5.56x45mm ammo.
   components:
   - type: Sprite
     sprite: _NF/Objects/Weapons/Guns/Rifles/novalitec1.rsi
@@ -153,6 +154,7 @@
   - type: Clothing
     sprite: _NF/Objects/Weapons/Guns/Rifles/novalitec1.rsi
   - type: Gun
+    customCaliber: "5.56x45mm" # Sandwich-HL
     fireRate: 5
     selectedMode: SemiAuto
     availableModes:
@@ -189,11 +191,13 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-steelbolt-tool-forge # Sandwich-HL
 
 - type: entity
   parent: WeaponRifleNovaliteC1
   id: WeaponRifleNovaliteC1Rubber
-  suffix: Non-lethal
+  suffix: Less-lethal # Sandwich-HL: Non-lethal < Less-lethal (rubber still hurts) 
   components:
   - type: ItemSlots
     slots:
@@ -217,9 +221,9 @@
 
 - type: entity
   id: WeaponRifleSVS
-  name: SVT-42 (762x54mmR)
-  parent: [ BaseWeaponRifle, BaseGunMelee, BaseC1Contraband ]
-  description: "Originally designed by SESWC, this old surplus rifle looks like it's seen a few wars. Uses low capacity 10 rounder 762x54mmR magazines. Equipped with bayonet."  #Hardlight
+  name: SVT-42
+  parent: [ BaseWeaponRifle_RequiersWieldable, BaseGunMelee, BaseC1Contraband ]
+  description: "Originally designed by SESWC, this old surplus rifle looks like it's seen a few wars. Uses low capacity 10 rounder 7.62x54mmR magazines. Equipped with bayonet."  #Hardlight
   components:
   - type: Sprite
     sprite: _NF/Objects/Weapons/Guns/Rifles/svs42.rsi
@@ -235,6 +239,7 @@
     - Back
     - suitStorage
   - type: Gun
+    customCaliber: "7.62x54mmR" # Sandwich-HL
     fireRate: 5  # highly underpower so buff  Hardlight
     selectedMode: SemiAuto
     availableModes:

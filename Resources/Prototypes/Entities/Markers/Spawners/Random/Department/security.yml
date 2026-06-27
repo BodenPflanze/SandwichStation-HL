@@ -86,7 +86,7 @@
 #        - NFWeaponSubMachineGunWt550 # Frontier: WeaponSubMachineGunWt550<NFWeaponSubMachineGunWt550
         - WeaponDisabler
         - WeaponPistolMk58
-        - NFWeaponRifleAssaultLecter # Frontier: WeaponRifleLecter<NFWeaponRifleAssaultLecter
+        - WeaponRifleLecter
         - NFWeaponSubMachineGunDrozd # Frontier: WeaponSubMachineGunDrozd<NFWeaponSubMachineGunDrozd
         - WeaponLaserCarbine
         - NFWeaponShotgunKammerer # Frontier: WeaponShotgunKammerer<NFWeaponShotgunKammerer
@@ -113,7 +113,7 @@
 #        - NFWeaponSubMachineGunWt550 # Frontier: WeaponSubMachineGunWt550<NFWeaponSubMachineGunWt550
         - WeaponDisabler
         - WeaponPistolMk58
-        - NFWeaponRifleAssaultLecter # Frontier WeaponRifleAssaultLecter<NFWeaponRifleAssaultLecter
+        - WeaponRifleLecter
         - NFWeaponSubMachineGunDrozd # Frontier WeaponSubMachineGunDrozd<NFWeaponSubMachineGunDrozd
         - WeaponLaserCarbine
         - NFWeaponShotgunKammerer # Frontier: WeaponShotgunKammerer<NFWeaponShotgunKammerer

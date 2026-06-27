@@ -118269,7 +118269,7 @@ entities:
     - type: StorageFill
       contents:
       - amount: 2
-        id: NFWeaponRifleAssaultLecter
+        id: WeaponRifleLecter
       - amount: 4
         id: Magazine556x45mmFMJ
     - type: EntityStorage

@@ -40,7 +40,6 @@
     minAngle: 2.7
     maxAngle: 4.3
 
-
 - type: entity
   id: BaseRequiersWieldable
   abstract: true

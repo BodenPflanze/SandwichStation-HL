@@ -2,7 +2,7 @@
   name: BaseWeaponLightMachineGun
   parent: BaseItem
   id: BaseWeaponLightMachineGun
-  description: A rooty tooty point and shooty.
+  #description: A rooty tooty point and shooty. # Sandwich-HL: Causes issues with worn weapons
   abstract: true
   components:
   - type: Sprite
@@ -22,6 +22,7 @@
     minAngle: -20
     maxAngle: -20
   - type: Gun
+    customCaliber: "7.62x39mm" # Sandwich-HL
     minAngle: 24
     maxAngle: 45
     angleIncrease: 4
@@ -64,12 +65,34 @@
     price: 500
   - type: UseDelay
     delay: 1
+  - type: NFWeaponDetails # Sandwich-HL
+    class: weapon-details-class-light-machine-gun # Sandwich-HL
+
+# Sandwich-HL start
+- type: entity
+  name: WornWeaponLightMachineGun
+  parent: BaseWeaponLightMachineGun
+  id: WornWeaponLightMachineGun
+  abstract: true
+  components:
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunRequiresWield
+  - type: GunWieldBonus
+    minAngle: -0 # Set to 0 because GunRequiresWield
+    maxAngle: -0
+  - type: Gun
+    minAngle: 26
+    maxAngle: 47
+    angleIncrease: 5
+    angleDecay: 17
+# Sandwich-HL end
 
 - type: entity
-  name: L6 SAW (762x39mm)
+  name: L6 SAW
   id: WeaponLightMachineGunL6
-  parent: [BaseWeaponLightMachineGun, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
-  description: A rather traditionally made LMG with a pleasantly lacquered wooden pistol grip. Uses 762x39mm ammo. An illegal firearm often used by Syndicate agents.
+  parent: [BaseWeaponLightMachineGun, BaseRequiersWieldable, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband # Sandwich-HL: BaseRequiersWieldable
+  description: A rather traditionally made LMG with a pleasantly lacquered wooden pistol grip. Uses 7.62x39mm ammo. An illegal firearm often used by Syndicate agents.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/LMGs/l6.rsi
@@ -83,9 +106,11 @@
     steps: 4
     zeroVisible: true
   - type: Appearance
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-gorlex-steel-works # Sandwich-HL
 
 - type: entity
-  name: L6C ROW (762x39mm)
+  name: L6C ROW
   id: WeaponLightMachineGunL6C
   parent: [BaseItem, BaseC3SyndicateContraband] # Frontier: added BaseC3SyndicateContraband
   description: A L6 SAW for use by cyborgs. Creates 762x39mm ammo on the fly from an internal ammo fabricator, which slowly self-charges. An illegal firearm often used by Syndicate agents.
@@ -125,3 +150,5 @@
       autoRecharge: true
       autoRechargeRate: 25
     - type: AmmoCounter
+    - type: NFWeaponDetails # Sandwich-HL
+      manufacturer: weapon-details-manufacturer-gorlex-steel-works # Sandwich-HL

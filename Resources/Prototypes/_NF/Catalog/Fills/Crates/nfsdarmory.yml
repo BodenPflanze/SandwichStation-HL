@@ -78,9 +78,9 @@
   components:
   - type: StorageFill
     contents:
-    - id: NFWeaponRifleAssaultLecter
+    - id: WeaponRifleLecter
       amount: 5
-    - id: NFWeaponRifleAssaultVulcan
+    - id: WeaponRifleVulcan
       amount: 4
     - id: NFWeaponSubMachineGunWt550
       amount: 4
@@ -107,9 +107,9 @@
       amount: 4
     - id: WeaponDisablerSMG
       amount: 5
-    - id: NFWeaponRifleAssaultLecterLessLethal
+    - id: WeaponRifleLecterRubber
       amount: 4
-    - id: NFWeaponRifleAssaultVulcanLessLethal
+    - id: WeaponRifleVulcanRubber
       amount: 4
     - id: NFWeaponShotgunEnforcerLessLethal
       amount: 4

@@ -48,8 +48,6 @@
         orGroup: Guns
       #- id: WeaponRifleAssaultSm # Frontier WeaponRifleAk<WeaponRifleAssaultSm
       #  orGroup: Guns
-      #- id: WeaponRifleAssaultM90GrenadeLauncher # Frontier: WeaponRifleM90GrenadeLauncher<WeaponRifleAssaultM90GrenadeLauncher
-      #  orGroup: Guns
       #- id: WeaponRifleAssaultLecter # Frontier: WeaponRifleLecter<WeaponRifleAssaultLecter
       #  orGroup: Guns
       - id: WeaponShotgunBulldog # Frontier: add  prefix

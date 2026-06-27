@@ -93,7 +93,7 @@ uplink-pistol-magazine-desc = Pistol magazine with 10 catridges. Compatible with
 uplink-pistol-magazine-c20r-name = SMG magazine (9x19mm FMJ)
 uplink-pistol-magazine-c20r-desc = Rifle magazine with 30 catridges. Compatible with C-20r.
 
-uplink-pistol-magazine-caseless-name = Pistol Magazine (635x40mm Caseless)
+uplink-pistol-magazine-caseless-name = Pistol Magazine (6.35x40mm Caseless)
 uplink-pistol-magazine-caseless-desc = Pistol magazine with 10 catridges. Compatible with the Cobra.
 
 uplink-speedloader-45_magnum-name = Speedloader (.45 magnum AP)

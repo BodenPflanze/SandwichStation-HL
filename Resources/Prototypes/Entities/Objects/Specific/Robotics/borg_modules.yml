@@ -1248,7 +1248,7 @@
     - type: ItemBorgModule
       moduleId: L6CROW # Frontier
       items:
-        - WeaponLightMachineGunL6C # Frontier: WeaponLightMachineGunL6C<NFWeaponLightMachineGunL6C
+        - WeaponLightMachineGunL6
         - PinpointerSyndicateNuclear
     - type: BorgModuleIcon
       icon: { sprite: Interface/Actions/actions_borg.rsi, state: syndicate-l6c-module }

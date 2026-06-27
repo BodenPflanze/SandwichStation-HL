@@ -80,7 +80,7 @@
     pocket1: Magazine556x45mmFMJ
     pocket2: Magazine556x45mmFMJ
   inhand:
-  - NFWeaponRifleAssaultLecter # Frontier: WeaponRifleLecter<NFWeaponRifleAssaultLecter
+  - WeaponRifleLecter
   storage:
     back:
     - WeaponDisabler
@@ -335,7 +335,7 @@
     pocket1: Magazine556x45mmFMJ
     pocket2: Magazine556x45mmFMJ
   inhand:
-    - NFWeaponRifleAssaultLecter # Frontier: WeaponRifleLecter<NFWeaponRifleAssaultLecter
+    - WeaponRifleLecter
   storage:
     back:
     - WeaponDisabler

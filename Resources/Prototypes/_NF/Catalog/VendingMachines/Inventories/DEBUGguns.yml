@@ -18,17 +18,6 @@
     WeaponSniperRepeater: 4294967295
   # Assault Rifles
     NFWeaponRifleAssaultSm: 4294967295
-    NFWeaponRifleAssaultM90GrenadeLauncher: 4294967295
-    NFWeaponRifleAssaultLecter: 4294967295
-    NFWeaponRifleAssaultVulcan: 4294967295
-    NFWeaponRifleAssaultJackdaw: 4294967295
-    NFWeaponRifleAssaultGestio: 4294967295
-    NFWeaponRifleAssaultNovaliteC1: 4294967295
-  # Sniper Rifles
-    NFWeaponRifleSniperHristov: 4294967295
-  # LMGs
-    NFWeaponLightMachineGunL6: 4294967295
-    NFWeaponLightMachineGunL6C: 4294967295
   # Launchers
     NFWeaponLauncherMultipleRocket: 4294967295
     WeaponLauncherPirateCannon: 4294967295

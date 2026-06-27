@@ -129,10 +129,10 @@
 
 #Mercenary vulcan
 - type: entity
-  name: FCM-C Vulcan (762x51mm)
+  name: FCM-C Vulcan
   parent: WeaponRifleVulcan
   id: WeaponRifleVulcanCFCM
-  description: The "Vulcan" Civilian Medium combat rifle (Fusil de Combat Moyen Civil) in 762x51mm, this civilian version only has semi-automatic mode and reduced firerate.
+  description: The "Vulcan" Civilian Medium combat rifle (Fusil de Combat Moyen Civil) in 7.62x51mm, this civilian version only has semi-automatic mode and reduced firerate.
   components:
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Rifles/WeaponRifleVulcanCFCM.rsi
@@ -141,14 +141,11 @@
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
-  - type: GunWieldBonus
-    minAngle: -20
-    maxAngle: -50
   - type: Gun
-    minAngle: 21
-    maxAngle: 52
-    angleIncrease: 1.4
-    angleDecay: 24
+    minAngle: 1.2 # Sandwich-HL
+    maxAngle: 3.9 # Sandwich-HL
+    angleIncrease: 0.7 # Sandwich-HL
+    angleDecay: 1.4 # Sandwich-HL
     fireRate: 2.25
     selectedMode: SemiAuto
     availableModes:

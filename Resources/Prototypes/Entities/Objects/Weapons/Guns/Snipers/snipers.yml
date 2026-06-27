@@ -37,6 +37,8 @@
         ents: []
   - type: StaticPrice
     price: 500
+  - type: NFWeaponDetails # Sandwich-HL
+    class: weapon-details-class-sniper # Sandwich-HL
 
 - type: entity
   name: Kardashev-Mosin
@@ -66,10 +68,10 @@
     class: weapon-details-class-rifle
 
 - type: entity
-  name: Hristov (145x114mm)
-  parent: [BaseWeaponSniper, BaseGunWieldable, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
+  name: Hristov
+  parent: [BaseWeaponSniper, BaseRequiersWieldable, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband # Sandwich-HL: BaseRequiersWieldable
   id: WeaponSniperHristov
-  description: A portable anti-material rifle. Fires high velocity 14.5mm shells. Uses 145x114mm ammo.
+  description: A portable anti-material rifle. Fires high velocity 14.5mm shells.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Snipers/hristov.rsi
@@ -77,6 +79,14 @@
     sprite: Objects/Weapons/Guns/Snipers/hristov.rsi
   - type: GunRequiresWield
   - type: Gun
+    customCaliber: "14.5x114mm" # Sandwich-HL
+    # Sandwich-HL start
+    projectileSpeed: 30
+    minAngle: 1.9
+    maxAngle: 5.7
+    angleIncrease: 5
+    angleDecay: 3
+    # Sandwich-HL end
     fireRate: 0.4
     selectedMode: SemiAuto
     availableModes:
@@ -97,6 +107,8 @@
     maxOffset: 3
     pvsIncrease: 0.3
   # type: Telescope
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-cybersun-industries # Sandwich-HL
 
 - type: entity
   categories: [ HideSpawnMenu ] # Frontier

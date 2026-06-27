@@ -27,7 +27,7 @@
 - type: entity
   parent: BaseAmmoBox556x45mm
   id: AmmoBox556x45mmBigFMJ
-  name: ammunition box (556x45mm FMJ)
+  name: ammunition box (5.56x45mm FMJ)
   suffix: Big
   components:
   - type: BallisticAmmoProvider
@@ -48,7 +48,7 @@
 - type: entity
   parent: BaseAmmoBox556x45mm
   id: AmmoBox556x45mmFMJ
-  name: ammunition box (556x45mm FMJ)
+  name: ammunition box (5.56x45mm FMJ)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge556x45mmFMJ

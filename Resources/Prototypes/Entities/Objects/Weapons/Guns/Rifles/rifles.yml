@@ -2,7 +2,7 @@
   name: BaseWeaponRifle
   parent: [BaseItem, BaseGunWieldable]
   id: BaseWeaponRifle
-  description: A rooty tooty point and shooty.
+  #description: A rooty tooty point and shooty. # Sandwich-HL
   abstract: true
   components:
   - type: Sprite
@@ -16,6 +16,11 @@
     - suitStorage
   - type: AmmoCounter
   - type: Gun
+    # Sandwich-HL start
+    customCaliber: "7.62x39mm" # Sandwich-HL
+    angleIncrease: 2.5
+    angleDecay: 3
+    # Sandwich-HL end
     fireRate: 5
     selectedMode: FullAuto
     availableModes:
@@ -50,6 +55,42 @@
       gun_chamber: !type:ContainerSlot
   - type: StaticPrice
     price: 500
+  - type: NFWeaponDetails # Sandwich-HL
+    class: weapon-details-class-assault-rifle # Sandwich-HL
+
+# Sandwich-HL start
+- type: entity
+  name: BaseWeaponRifle_RequiersWieldable 
+  parent: BaseWeaponRifle
+  id: BaseWeaponRifle_RequiersWieldable
+  abstract: true
+  components:
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunRequiresWield
+  - type: GunWieldBonus
+    minAngle: -0 # Set to 0 because GunRequiresWield
+    maxAngle: -0
+  - type: Gun
+    minAngle: 1.2
+    maxAngle: 3.3
+    angleIncrease: 0.7
+    angleDecay: 1.4
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.8
+    sprintModifier: 0.8
+
+- type: entity
+  name: WornBaseWeaponRifle_RequiersWieldable
+  id: WornBaseWeaponRifle_RequiersWieldable
+  abstract: true
+  components:
+  - type: Gun
+    minAngle: 1.5
+    maxAngle: 3.8
+    angleIncrease: 1.1
+    angleDecay: 1.6
+# Sandwich-HL end
 
 - type: entity
   name: AKM (762x39mm)
@@ -104,52 +145,8 @@
     id: AKM # Frontier
 
 - type: entity
-  name: M-90gl (556x45mm)
-  parent: [BaseWeaponRifle, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
-  id: WeaponRifleM90GrenadeLauncher
-  description: An older bullpup carbine model, with an attached underbarrel grenade launcher. Uses 556x45mm ammo. An illegal firearm often used by Syndicate agents.
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Rifles/carbine.rsi
-    layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-0
-        map: ["enum.GunVisualLayers.Mag"]
-  - type: Clothing
-    sprite: Objects/Weapons/Guns/Rifles/carbine.rsi
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: Magazine556x45mmFMJ
-        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - Magazine556x45mmFMJ
-        whitelistFailPopup: gun-magazine-whitelist-fail
-      gun_chamber:
-        name: Chamber
-        startingItem: Cartridge556x45mmFMJ
-        priority: 1
-        whitelist:
-          tags:
-            - Cartridge556x45mmFMJ
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
-  - type: MagazineVisuals
-    magState: mag
-    steps: 1
-    zeroVisible: true
-  - type: Appearance
-
-- type: entity
-  name: Lecter (556x45mm)
-  parent: [BaseWeaponRifle, BaseC2ContrabandUnredeemable] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
+  name: Lecter
+  parent: [BaseWeaponRifle_RequiersWieldable, BaseC2ContrabandUnredeemable] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable # Sandwich-HL: BaseWeaponRifle_RequiersWieldable
   id: WeaponRifleLecter
   description: A high end military grade assault rifle. Uses 556x45mm ammo. On the receiver is a label that says 'for authorized use only.'
   components:
@@ -193,6 +190,8 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
 
 - type: entity
   categories: [ HideSpawnMenu ] # Frontier

@@ -164448,7 +164448,7 @@ entities:
         amount: 2
         orGroup: null
         prob: 1
-        id: NFWeaponRifleAssaultLecter
+        id: WeaponRifleLecter
       - maxAmount: 1
         amount: 4
         orGroup: null

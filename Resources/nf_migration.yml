@@ -489,8 +489,6 @@ MagazineBoxRifleUranium: NFAmmunitionBoxRifle20Uranium
 #WeaponLaserTurboNF: NFWeaponEnergyLightMachineGunTurbo
 #WeaponLauncherMultipleRocket: NFWeaponLauncherMultipleRocket
 #WeaponLauncherPirateCannon: NFWeaponLauncherPirateCannon
-#WeaponLightMachineGunL6: NFWeaponLightMachineGunL6
-#WeaponLightMachineGunL6C: NFWeaponLightMachineGunL6C
 #WeaponMailLake: NFWeaponLauncherMail
 #WeaponMinigun: null
 #WeaponNFLaserPistol: NFWeaponEnergyPistolLaser
@@ -501,14 +499,7 @@ MagazineBoxRifleUranium: NFAmmunitionBoxRifle20Uranium
 #WeaponRevolverArgentiNonlethal: NFWeaponRevolverArgentiLessLethal
 #WeaponRifleAk: NFWeaponRifleAssaultSm
 #WeaponRifleFoam: NFWeaponRifleFoam
-#WeaponRifleGestio: NFWeaponRifleAssaultGestio
-#WeaponRifleJackdaw: NFWeaponRifleAssaultJackdaw
-#WeaponRifleLecter: NFWeaponRifleAssaultLecter
-#WeaponRifleLecterRubber: NFWeaponRifleAssaultLecterLessLethal # ??
-#WeaponRifleM90GrenadeLauncher: NFWeaponRifleAssaultM90GrenadeLauncher
-#WeaponRifleNovaliteC1: NFWeaponRifleAssaultNovaliteC1
 #WeaponRifleSVS: NFWeaponRifleSVS
-#WeaponRifleVulcan: NFWeaponRifleAssaultVulcan
 #WeaponShotgunBlunderbuss: NFWeaponShotgunBlunderbuss
 #WeaponShotgunBulldog: NFWeaponShotgunBulldog
 #WeaponShotgunDoubleBarreled: NFWeaponShotgunDoubleBarreled
@@ -524,7 +515,6 @@ MagazineBoxRifleUranium: NFAmmunitionBoxRifle20Uranium
 #WeaponShotgunSawnEmpty: NFWeaponShotgunSawnEmpty
 #WeaponShotgunSawnNonlethal: NFWeaponShotgunSawnLessLethal
 #WeaponSniperCeremonial: NFWeaponRifleCeremonial
-#WeaponSniperHristov: NFWeaponRifleSniperHristov
 #WeaponSniperMosin: NFWeaponRifleBarlowsBolt
 #WeaponSniperRepeater: NFWeaponRifleRepeater
 #WeaponSubMachineGunAtreides: NFWeaponSubMachineGunAtreides

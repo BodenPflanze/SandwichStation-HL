@@ -27,7 +27,7 @@
 - type: entity
   parent: BaseAmmoBox635x40mmCaseless
   id: AmmoBox635x40mmCaseless
-  name: ammunition box (635x40mm Caseless)
+  name: ammunition box (6.35x40mm Caseless)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge635x40mmCaseless
@@ -41,7 +41,7 @@
 - type: entity
   parent: BaseAmmoBox635x40mmCaseless
   id: AmmoBox635x40mmCaselessPractice
-  name: ammunition box (635x40mm Caseless practice)
+  name: ammunition box (6.35x40mm Caseless practice)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge635x40mmCaselessPractice
@@ -56,7 +56,7 @@
 - type: entity
   parent: BaseAmmoBox635x40mmCaseless
   id: AmmoBox635x40mmCaselessBigRubber
-  name: ammunition box (635x40mm Caseless rubber)
+  name: ammunition box (6.35x40mm Caseless rubber)
   components:
   - type: BallisticAmmoProvider
     capacity: 200
@@ -78,7 +78,7 @@
 - type: entity
   parent: BaseAmmoBox635x40mmCaseless
   id: AmmoBox635x40mmCaselessRubber
-  name: ammunition box (635x40mm Caseless rubber)
+  name: ammunition box (6.35x40mm Caseless rubber)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge635x40mmCaselessRubber
@@ -94,7 +94,7 @@
 - type: entity
   parent: BaseAmmoBox635x40mmCaseless
   id: AmmoBox635x40mmCaselessBig
-  name: ammunition box (635x40mm Caseless)
+  name: ammunition box (6.35x40mm Caseless)
   components:
   - type: BallisticAmmoProvider
     capacity: 200
