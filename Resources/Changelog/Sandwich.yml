@@ -373,3 +373,7 @@ Entries:
       message: Changed backend auth servers to use the new "Universal login"
   id: 35
   time: '2026-06-17T05:15:58.0000000+00:00'
+    - type: Fix
+      message: Fixed memory crash exploit
+  id: 36
+  time: '2026-06-25T20:15:39.0000000+00:00'
