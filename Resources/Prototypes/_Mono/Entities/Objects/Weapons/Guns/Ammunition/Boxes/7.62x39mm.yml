@@ -27,7 +27,7 @@
 - type: entity
   parent: BaseAmmoBox762x39mm
   id: AmmoBox762x39mmBigFMJ
-  name: ammunition box (762x39mm FMJ)
+  name: ammunition box (7.62x39mm FMJ)
   suffix: Big
   components:
   - type: BallisticAmmoProvider
@@ -47,7 +47,7 @@
 - type: entity
   parent: BaseAmmoBox762x39mm
   id: AmmoBox762x39mmFMJ
-  name: ammunition box (762x39mm FMJ)
+  name: ammunition box (7.62x39mm FMJ)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge762x39mmFMJ
@@ -61,7 +61,7 @@
 - type: entity
   parent: BaseAmmoBox762x39mm
   id: AmmoBox762x39mmPractice
-  name: ammunition box (762x39mm practice)
+  name: ammunition box (7.62x39mm practice)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge762x39mmPractice
@@ -76,7 +76,7 @@
 - type: entity
   id: AmmoBox762x39mmIncendiary
   parent: BaseAmmoBox762x39mm
-  name: ammunition box (762x39mm incendiary)
+  name: ammunition box (7.62x39mm incendiary)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge762x39mmIncendiary
@@ -91,7 +91,7 @@
 - type: entity
   parent: BaseAmmoBox762x39mm
   id: AmmoBox762x39mmUranium
-  name: ammunition box (762x39mm uranium)
+  name: ammunition box (7.62x39mm uranium)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge762x39mmUranium
@@ -106,7 +106,7 @@
 - type: entity
   parent: BaseAmmoBox762x39mm
   id: AmmoBox762x39mmRubber
-  name: ammunition box (762x39mm rubber)
+  name: ammunition box (7.62x39mm rubber)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge762x39mmRubber
@@ -122,7 +122,7 @@
 - type: entity
   parent: AmmoBox762x39mmBigFMJ
   id: AmmoBox762x39mmRubberBig
-  name: ammunition box (762x39mm rubber)
+  name: ammunition box (7.62x39mm rubber)
   suffix: Big
   components:
   - type: BallisticAmmoProvider
@@ -139,7 +139,7 @@
 - type: entity
   parent: BaseAmmoBox762x39mm
   id: AmmoBox762x39mmSubsonic
-  name: ammunition box (762x39mm subsonic)
+  name: ammunition box (7.62x39mm subsonic)
   components:
   - type: BallisticAmmoProvider
     capacity: 70

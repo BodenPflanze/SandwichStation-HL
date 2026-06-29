@@ -39,16 +39,6 @@
     CrossbowModernHand: 4294967295
     CrossbowImprovisedHand: 4294967295
     CrossbowBloodCultHand: 4294967295
-  # Shotguns
-    NFWeaponShotgunBulldog: 4294967295
-    NFWeaponShotgunDoubleBarreled: 4294967295
-    NFWeaponShotgunEnforcer: 4294967295
-    NFWeaponShotgunKammerer: 4294967295
-    NFWeaponShotgunSawn: 4294967295
-    NFWeaponShotgunHandmade: 4294967295
-    NFWeaponShotgunBlunderbuss: 4294967295
-    NFWeaponShotgunImprovised: 4294967295
-
 #region Magazines
 - type: vendingMachineInventory
   id: DEBUGVendingMachineInventoryMagazines

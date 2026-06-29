@@ -42447,7 +42447,7 @@ entities:
     - type: Transform
       pos: 10.496737,26.424412
       parent: 1668
-- proto: NFWeaponShotgunEnforcer
+- proto: WeaponShotgunEnforcer
   entities:
   - uid: 2358
     components:
@@ -42469,7 +42469,7 @@ entities:
     - type: Transform
       pos: 15.464579,22.523218
       parent: 1668
-- proto: NFWeaponShotgunKammerer
+- proto: WeaponShotgunKammerer
   entities:
   - uid: 2366
     components:

@@ -319,7 +319,7 @@ uplink-mercenary-rifle1-name = Surplus Lecter
 uplink-mercenary-rifle1-desc = A tried and true surplus automatic rifle. The benchmark.
 
 uplink-mercenary-shotgun1-name = Surplus Kammerer
-uplink-mercenary-shotgun1-desc = Old reliable, rack and shoot. Marked for Surplus.
+uplink-mercenary-shotgun1-desc = Old reliable, rack and shoot.
 
 uplink-mercenary-smg1-name = Surplus Drozd
 uplink-mercenary-smg1-desc = Based on an old design, this SMG is still more than capable of putting rounds down-range.

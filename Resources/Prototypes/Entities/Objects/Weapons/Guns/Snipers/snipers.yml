@@ -182,6 +182,9 @@
     proto: Cartridge54_Lead_Ball
   - type: StaticPrice
     price: 0
+  - type: NFWeaponDetails # Sandwich-HL
+    class: weapon-details-class-pistol # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-custom-made # Sandwich-HL
 
 - type: entity
   name: flintlock pistol

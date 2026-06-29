@@ -10,7 +10,7 @@
               doAfter: 2
 
     - node: shotgunsawn
-      entity: NFWeaponShotgunSawnEmpty
+      entity: WeaponShotgunSawnEmpty
       edges:
         - to: handmadepistol
           steps:

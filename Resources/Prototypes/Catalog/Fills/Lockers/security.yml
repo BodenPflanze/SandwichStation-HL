@@ -308,7 +308,7 @@
     rolls: !type:ConstantNumberSelector
       value: 2
     children:
-    - id: NFWeaponShotgunEnforcer # Frontier: WeaponShotgunEnforcer<NFWeaponShotgunEnforcer
+    - id: WeaponShotgunEnforcer
     - id: AmmoBox12_gaugeBuckshot #HL
     - id: AmmoBox12_gaugeBuckshot #HL
 
@@ -329,7 +329,7 @@
     rolls: !type:ConstantNumberSelector
       value: 2
     children:
-    - id: NFWeaponShotgunKammerer # Frontier: WeaponShotgunKammerer<NFWeaponShotgunKammerer
+    - id: WeaponShotgunKammerer
     - id: AmmoBox12_gaugeBuckshot # HL
 
 - type: entity

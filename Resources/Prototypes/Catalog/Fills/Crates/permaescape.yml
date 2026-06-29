@@ -102,10 +102,10 @@
     - id: WeaponPistolFlintlock
       prob: 0.20
       orGroup: gun
-    - id: NFWeaponShotgunBlunderbuss # Frontier: WeaponShotgunBlunderbuss<NFWeaponShotgunBlunderbuss
+    - id: WeaponShotgunBlunderbuss
       prob: 0.10
       orGroup: gun
-    - id: NFWeaponShotgunBlunderbuss # Frontier: WeaponShotgunBlunderbuss<NFWeaponShotgunBlunderbuss
+    - id: WeaponShotgunBlunderbuss
       prob: 0.15
       orGroup: gun
     - id: WeaponRevolverPirate

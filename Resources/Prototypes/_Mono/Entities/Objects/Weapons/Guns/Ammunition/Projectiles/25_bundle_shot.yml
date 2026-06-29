@@ -1,0 +1,29 @@
+- type: entity
+  id: PelletShotgun_25bundleShot
+  name: pellet (.25 bundle shot)
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: buckshot
+  - type: Tracer
+    color: "#ffffff63"
+    length: 1
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 5
+        Blunt: 16
+        Structural: 5
+
+- type: entity
+  id: PelletShotgun_25bundleShotSpread
+  categories: [ HideSpawnMenu ]
+  parent: PelletShotgun_25bundleShot
+  components:
+  - type: ProjectileSpread
+    proto: PelletShotgun_25bundleShot # Frontier
+    count: 6
+    spread: 25

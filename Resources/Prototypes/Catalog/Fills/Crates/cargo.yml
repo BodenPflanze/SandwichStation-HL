@@ -134,7 +134,7 @@
     - id: NFWeaponEnergyPistolLaser # Frontier: WeaponLaserGun<NFWeaponEnergyPistolLaser
       prob: 0.001
       orGroup: Weapons
-    - id: NFWeaponShotgunHandmade # Frontier: WeaponShotgunHandmade<NFWeaponShotgunHandmade
+    - id: WeaponShotgunHandmade
       prob: 0.01
       orGroup: Weapons
     - id: WeaponFlareGun

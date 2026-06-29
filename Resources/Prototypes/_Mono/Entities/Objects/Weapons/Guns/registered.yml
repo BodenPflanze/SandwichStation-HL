@@ -64,7 +64,7 @@
   parent:
 
   - WeaponShotgunKammerer
-  name: PMC Kammerer (12 gauge)
+  name: PMC Kammerer
   id: WeaponShotgunKammererPMC
   description: A Kammerer that has been properly registered for private security and mercenary use. An old yet faithfully designed shotgun. Is a favorite among Mercenaries on many worlds. Uses 12 gauge shotgun shells.
   components:
@@ -87,7 +87,7 @@
 - type: entity # Enforcer
   parent:
   - WeaponShotgunEnforcer
-  name: PMC Enforcer (12 gauge)
+  name: PMC Enforcer
   id: WeaponShotgunEnforcerPMC
   description: An Enforcer that has been properly registered for private security and mercenary use.
   components:

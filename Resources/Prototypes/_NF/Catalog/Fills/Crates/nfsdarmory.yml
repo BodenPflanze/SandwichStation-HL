@@ -19,7 +19,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: NFWeaponShotgunEnforcer
+      - id: WeaponShotgunEnforcer
         amount: 2
       - id: AmmoBox12_gaugeBuckshot
         amount: 3
@@ -84,7 +84,7 @@
       amount: 4
     - id: NFWeaponSubMachineGunWt550
       amount: 4
-    - id: NFWeaponShotgunEnforcer
+    - id: WeaponShotgunEnforcer
       amount: 5
     - id: WeaponLaserCarbine
       amount: 4
@@ -111,7 +111,7 @@
       amount: 4
     - id: WeaponRifleVulcanRubber
       amount: 4
-    - id: NFWeaponShotgunEnforcerLessLethal
+    - id: WeaponShotgunEnforcerRubber
       amount: 4
     - id: WeaponEnergyGun
       amount: 4

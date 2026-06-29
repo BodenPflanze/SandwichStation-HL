@@ -33,6 +33,17 @@
     # Security and heads only (finally, shotgun traffic controller)
     allowedDepartments: [ Security, Command ]
 
+# Sandwich-HL start
+- type: entity
+  id: BaseC2SecurityBartenderContraband # added this for bartender
+  abstract: true
+  components:
+  - type: Contraband
+    severity: Class2
+    allowedDepartments: [Security, Command ]
+    allowedJobs: [ Bartender ]
+# Sandwich-HL start
+
 - type: entity
   parent: BaseC2ContrabandUnredeemable
   id: BaseC2ExpeditionContraband

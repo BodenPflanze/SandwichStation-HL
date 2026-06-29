@@ -6,7 +6,6 @@
     NFWeaponRevolverArgenti: 6
     #WeaponRevolverFitz: 6
     #WeaponSniperRepeater: 6
-    NFWeaponShotgunDoubleBarreled: 6
     WeaponBrassKnuckles: 6
     #WeaponLaserPistolNF: 6
     WeaponRifleGestio: 6
@@ -73,7 +72,6 @@
     NFWeaponEnergyPistolLaser: 4294967295
     NFWeaponRevolverArgenti: 4294967295
     WeaponSniperRepeater: 4294967295
-    # NFWeaponShotgunDoubleBarreled: 4294967295 replaced for weaponshotgundoublebarreled   Hard Light change
     WeaponBrassKnuckles: 4294967295
     WeaponRifleGestio: 4294967295
     WeaponRifleNovaliteC1: 4294967295

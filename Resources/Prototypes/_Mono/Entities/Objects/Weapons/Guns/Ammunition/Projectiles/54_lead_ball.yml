@@ -7,7 +7,8 @@
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
-    state: buckshot
+    layers:
+    - state: buckshot
   - type: Projectile
     damage:
       types:

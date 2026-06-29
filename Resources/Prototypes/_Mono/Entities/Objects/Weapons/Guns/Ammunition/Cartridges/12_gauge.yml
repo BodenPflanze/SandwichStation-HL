@@ -11,7 +11,6 @@
   - type: CartridgeAmmo
     soundEject:
       collection: ShellEject
-    deleteOnSpawn: true
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
     layers:

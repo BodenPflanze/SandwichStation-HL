@@ -142,7 +142,7 @@
   id: UplinkPirateBlunderbuss
   name:  uplink-pirate-blunderbuss-name
   description: uplink-pirate-blunderbuss-desc
-  productEntity: NFWeaponShotgunBlunderbuss
+  productEntity: WeaponShotgunBlunderbuss
   icon: { sprite: Objects/Weapons/Guns/Shotguns/blunderbuss.rsi, state: icon }
   cost:
     Doubloon: 2

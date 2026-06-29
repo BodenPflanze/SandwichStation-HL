@@ -19,12 +19,15 @@
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
-    minAngle: -20
-    maxAngle: -20
+    minAngle: 0 # Sandwich-HL: -20 < 0 (Set to 0 because GunRequiresWield)
+    maxAngle: 0 # Sandwich-HL: -20 < 0
+  - type: SpeedModifiedOnWield # Sandwich-HL
+    walkModifier: 0.8 # Sandwich-HL
+    sprintModifier: 0.8 # Sandwich-HL
   - type: Gun
     customCaliber: "7.62x39mm" # Sandwich-HL
-    minAngle: 24
-    maxAngle: 45
+    minAngle: 4 # Sandwich-HL: -24 < 4
+    maxAngle: 15 # Sandwich-HL: -45 < 15
     angleIncrease: 4
     angleDecay: 16
     fireRate: 8
@@ -78,12 +81,9 @@
   - type: Wieldable
     unwieldOnUse: false
   - type: GunRequiresWield
-  - type: GunWieldBonus
-    minAngle: -0 # Set to 0 because GunRequiresWield
-    maxAngle: -0
   - type: Gun
-    minAngle: 26
-    maxAngle: 47
+    minAngle: 8
+    maxAngle: 21
     angleIncrease: 5
     angleDecay: 17
 # Sandwich-HL end

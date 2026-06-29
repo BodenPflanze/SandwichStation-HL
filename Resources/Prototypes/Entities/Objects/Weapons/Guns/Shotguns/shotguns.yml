@@ -20,6 +20,11 @@
     - suitStorage
   - type: AmmoCounter
   - type: Gun
+    customCaliber: "12 gauge" # Sandwich-HL
+    minAngle: 0.3 # Sandwich-HL
+    maxAngle: 10.2 # Sandwich-HL
+    angleIncrease: 5 # Sandwich-HL
+    angleDecay: 3 # Sandwich-HL
     fireRate: 2
     selectedMode: SemiAuto
     availableModes:
@@ -42,11 +47,16 @@
         ents: []
   - type: StaticPrice
     price: 500
+  - type: NFWeaponDetails # Sandwich-HL
+    class: weapon-details-class-shotgun # Sandwich-HL
+
+# Sandwich-HL start
+# Sandwich-HL end
 
 - type: entity
-  name: Bulldog (12 gauge)
+  name: Bulldog
   # Don't parent to BaseWeaponShotgun because it differs significantly
-  parent: [BaseItem, BaseGunWieldable, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
+  parent: [BaseItem, BaseRequiersWieldable, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
   id: WeaponShotgunBulldog
   description: An automatic magazine-fed shotgun for close-quarters combat. Kicks like a mule on steroids. Uses 12 gauge shotgun shells.
   components:
@@ -66,8 +76,12 @@
     - Back
     - suitStorage
   - type: AmmoCounter
-  - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
   - type: Gun
+    customCaliber: "12 gauge" # Sandwich-HL
+    minAngle: 0.3 # Sandwich-HL
+    maxAngle: 10.2 # Sandwich-HL
+    angleIncrease: 5 # Sandwich-HL
+    angleDecay: 3 # Sandwich-HL
     fireRate: 2
     selectedMode: FullAuto
     availableModes:
@@ -100,12 +114,15 @@
   - type: Appearance
   - type: StaticPrice
     price: 500
+  - type: NFWeaponDetails # Sandwich-HL
+    class: weapon-details-class-shotgun # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-gorlex-steel-works # Sandwich-HL
 
 - type: entity
-  name: double-barreled shotgun (12 gauge)
-  parent: [BaseWeaponShotgun, BaseGunWieldable, BaseC1Contraband] # Frontier: BaseSecurityBartenderContraband<BaseC1Contraband
+  name: double-barreled shotgun
+  parent: [BaseWeaponShotgun, BaseRequiersWieldable, BaseC2SecurityBartenderContraband] # Frontier: BaseSecurityBartenderContraband<BaseC1Contraband
   id: WeaponShotgunDoubleBarreled
-  description: An immortal classic. A civilian grade shotgun. Uses 12 gauge shotgun shells.
+  description: An immortal classic. Uses 12 gauge shotgun shells.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/db_shotgun.rsi
@@ -114,7 +131,6 @@
     shape:
     - 0,0,4,0
     sprite: Objects/Weapons/Guns/Shotguns/db_shotgun_inhands_64x.rsi
-  - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
   - type: Gun
     fireRate: 3
   - type: BallisticAmmoProvider
@@ -125,20 +141,22 @@
     deconstructionTarget: null
   - type: StaticPrice
     price: 350
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
 
 - type: entity
-  name: double-barreled shotgun (12 gauge)
+  name: double-barreled shotgun
   parent: WeaponShotgunDoubleBarreled
   id: WeaponShotgunDoubleBarreledRubber
   description: An immortal classic. Uses 12 gauge shotgun shells.
-  suffix: Non-Lethal
+  suffix: Less-Lethal # Sandwich-HL: Non-Lethal < Less-Lethal
   components:
   - type: BallisticAmmoProvider
     proto: ShellShotgun12_gaugeBeanbag
 
 - type: entity
-  name: Enforcer (12 gauge)
-  parent: [BaseWeaponShotgun, BaseGunWieldable, BaseC2ContrabandUnredeemable] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
+  name: Enforcer
+  parent: [BaseWeaponShotgun, BaseRequiersWieldable, BaseC2ContrabandUnredeemable] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
   id: WeaponShotgunEnforcer
   description: A premium semi-automatic shotgun, and the pride of all security forces. Uses 12 gauge shotgun shells.
   components: # intend for Enforcer to have wider choke for semi-auto function
@@ -149,22 +167,26 @@
   - type: Item
     sprite: Objects/Weapons/Guns/Shotguns/enforcer_inhands_64x.rsi
   - type: BallisticAmmoProvider
-  - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
+  - type: Gun # Sandwich-HL
+    minAngle: -4.1 # Sandwich-HL
+    maxAngle: 4.2 # Sandwich-HL
   - type: PirateBountyItem # Frontier
     id: Enforcer # Frontier
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
 
 - type: entity
   categories: [ HideSpawnMenu ] # Frontier
   parent: WeaponShotgunEnforcer
   id: WeaponShotgunEnforcerRubber
-  suffix: Non-Lethal
+  suffix: Less-Lethal # Sandwich-HL: Non-Lethal < Less-Lethal
   components:
   - type: BallisticAmmoProvider
     proto: ShellShotgun12_gaugeBeanbag
 
 - type: entity
-  name: Kammerer (12 gauge)
-  parent: [BaseWeaponShotgun, BaseGunWieldable, BaseC2ContrabandUnredeemable] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
+  name: Kammerer
+  parent: [BaseWeaponShotgun, BaseRequiersWieldable, BaseC2ContrabandUnredeemable] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
   id: WeaponShotgunKammerer
   description: An old yet faithful design, and a favorite among irregular forces on many worlds. Uses 12 gauge shotgun shells.
   components: # intend for Kammerer to have tighter choke for slower fire rate and/or manual cycling
@@ -174,21 +196,23 @@
     - 0,0,4,0
     sprite: _NF/Objects/Weapons/Guns/Shotguns/pump_inhands_64x.rsi # Frontier: add _NF prefix
   - type: Sprite
-    sprite: _NF/Objects/Weapons/Guns/Shotguns/pump.rsi # Frontier: add _NF prefix
+    sprite: Objects/Weapons/Guns/Shotguns/pump.rsi
   - type: Clothing
-    sprite: _NF/Objects/Weapons/Guns/Shotguns/pump.rsi # Frontier: add _NF prefix
+    sprite: Objects/Weapons/Guns/Shotguns/pump.rsi
   - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
   - type: Gun
     fireRate: 1.5
   - type: BallisticAmmoProvider
     capacity: 5
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
   - type: Tag
     tags:
     - WeaponShotgunKammerer
 
 - type: entity
-  name: sawn-off shotgun (12 gauge)
-  parent: [ BaseWeaponShotgun, BaseC1Contraband ] # Frontier: BaseSecurityBartenderContraband<BaseC1Contraband
+  name: sawn-off shotgun
+  parent: [ BaseWeaponShotgun, BaseC2ContrabandUnredeemable ] # Frontier: BaseSecurityBartenderContraband<BaseC1Contraband
   id: WeaponShotgunSawn
   description: Groovy! Uses 12 gauge shotgun shells.
   components: # needs to be super inaccurate because you don't need to wield it
@@ -200,6 +224,9 @@
     size: Small
     sprite: _DV/Objects/Weapons/Guns/Shotguns/sawn.rsi # Delta-V: add _DV prefix, sawn_inhands_64x<sawn
   - type: Gun
+    minAngle: 11.7 # Sandwich-HL
+    maxAngle: 32 # Sandwich-HL
+    angleIncrease: 20 # Sandwich-HL
     fireRate: 3
   - type: BallisticAmmoProvider
     capacity: 2
@@ -207,9 +234,11 @@
     graph: ShotgunSawn
     node: shotgunsawn
     deconstructionTarget: null
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-custom-made # Sandwich-HL
 
 - type: entity
-  name: sawn-off shotgun (12 gauge)
+  name: sawn-off shotgun
   parent: WeaponShotgunSawn
   id: WeaponShotgunSawnEmpty
   suffix: Empty
@@ -222,10 +251,10 @@
     deconstructionTarget: null
 
 - type: entity
-  name: handmade pistol (12 gauge)
-  parent: [BaseWeaponShotgun, BaseC1Contraband] # Frontier: BaseMinorContraband<BaseC1Contraband
+  name: handmade pistol
+  parent: [BaseWeaponShotgun, BaseC2ContrabandUnredeemable] # Frontier: BaseMinorContraband<BaseC1Contraband
   id: WeaponShotgunHandmade
-  description: Looks unreliable, but legal. Uses 12 gauge shotgun shells.
+  description: Looks unreliable. Uses 12 gauge shotgun shells.
   components:
   - type: Item
     size: Small
@@ -235,6 +264,9 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Shotguns/hm_pistol.rsi
   - type: Gun
+    minAngle: 15.7 # Sandwich-HL
+    maxAngle: 37.2 # Sandwich-HL
+    angleIncrease: 35 # Sandwich-HL
     fireRate: 4
   - type: BallisticAmmoProvider
     capacity: 1
@@ -244,10 +276,12 @@
     deconstructionTarget: null
   - type: StaticPrice
     price: 0
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-custom-made # Sandwich-HL
 
 - type: entity
-  name: blunderbuss (12 gauge)
-  parent: [BaseWeaponShotgun, BaseGunWieldable, BaseC3PirateContraband] # Frontier: BaseMinorContraband<BaseC3PirateContraband
+  name: blunderbuss
+  parent: [BaseWeaponShotgun, BaseRequiersWieldable, BaseC3PirateContraband] # Frontier: BaseMinorContraband<BaseC3PirateContraband
   id: WeaponShotgunBlunderbuss
   suffix: Pirate
   description: Deadly at close range, an illegal shotgun often found at the side of a pirate.
@@ -260,17 +294,26 @@
     sprite: Objects/Weapons/Guns/Shotguns/blunderbuss.rsi
   - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
   - type: Gun
+    customCaliber: ".25 bundle shot" # Sandwich-HL
     fireRate: 2
   - type: BallisticAmmoProvider
+    whitelist: # Sandwich-HL
+      tags: # Sandwich-HL
+      - ShellShotgun_25bundleShot # Sandwich-HL
     capacity: 1
+    proto: ShellShotgun_25bundleShot # Sandwich-HL
+    soundInsert: # Sandwich-HL
+      path: /Audio/Weapons/Guns/MagIn/lmg_magin.ogg # Sandwich-HL: Kinda sounds like putting in multiple bullets?
   - type: StaticPrice
     price: 0
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-custom-made # Sandwich-HL
 
 - type: entity
-  name: improvised shotgun (12 gauge)
-  parent: [BaseWeaponShotgun, BaseGunWieldable, BaseC1Contraband] # Frontier: BaseMinorContraband<BaseC1Contraband
+  name: improvised shotgun
+  parent: [BaseWeaponShotgun, BaseRequiersWieldable, BaseC2ContrabandUnredeemable] # Frontier: BaseMinorContraband<BaseC1Contraband
   id: WeaponShotgunImprovised
-  description: A shitty, but legal, hand-made shotgun that uses 12 gauge shotgun shells. It can only hold one round in the chamber.
+  description: A shitty hand-made shotgun that uses 12 gauge shotgun shells. It can only hold one round in the chamber.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/improvised_shotgun.rsi
@@ -292,9 +335,11 @@
   #   node: shotgun # Frontier
   - type: StaticPrice
     price: 20
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-custom-made # Sandwich-HL
 
 - type: entity
-  name: improvised shotgun (12 gauge)
+  name: improvised shotgun
   parent: WeaponShotgunImprovised
   suffix: Loaded
   id: WeaponShotgunImprovisedLoaded

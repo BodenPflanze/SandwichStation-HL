@@ -339,7 +339,7 @@
     pocket2: Zipties
   inhand:
   - FlashlightSeclite
-  - NFWeaponShotgunKammerer # Frontier: use NF prefix
+  - WeaponShotgunKammerer
 
 - type: startingGear
   id: VisitorWardenAlt
@@ -358,7 +358,7 @@
     pocket2: Zipties
   inhand:
   - FlashlightSeclite
-  - NFWeaponShotgunKammerer # Frontier: WeaponShotgunKammerer<NFWeaponShotgunKammerer
+  - WeaponShotgunKammerer
 
 # Cargo
 
@@ -932,7 +932,7 @@
     head: ClothingHeadHatTophat
     id: VisitorPDA
     back: ClothingBackpack
-    suitstorage: NFWeaponShotgunDoubleBarreled # Frontier: WeaponShotgunDoubleBarreledRubber<NFWeaponShotgunDoubleBarreled
+    suitstorage: WeaponShotgunDoubleBarreled
     ears: ClothingHeadsetService
     eyes: ClothingEyesGlassesSunglasses
     outerClothing: ClothingOuterArmorBasicSlim
@@ -951,7 +951,7 @@
     ears: ClothingHeadsetService
     eyes: ClothingEyesHudBeer
     outerClothing: ClothingOuterWinterBar
-    pocket1: NFWeaponShotgunSawn # Frontier: use NF prefix
+    pocket1: WeaponShotgunSawn
     pocket2: DrinkTequilaBottleFull
 
 - type: startingGear
@@ -1568,7 +1568,7 @@
     head: ClothingHeadSafari
     id: VisitorPDA
     belt: ClothingBeltStorageWaistbag
-    back: NFWeaponShotgunDoubleBarreled # Frontier: WeaponShotgunDoubleBarreledRubber<NFWeaponShotgunDoubleBarreled
+    back: WeaponShotgunDoubleBarreled
     ears: ClothingHeadsetService
     pocket1: WeaponFlareGun
     pocket2: PillCanisterDylovene
@@ -1858,7 +1858,7 @@
   equipment:
     head: ClothingHeadBandBlack
   inhand:
-    - NFWeaponShotgunBlunderbuss # Frontier: use NF prefix
+    - WeaponShotgunBlunderbuss
 
 - type: startingGear
   id: PirateScoonerAltD

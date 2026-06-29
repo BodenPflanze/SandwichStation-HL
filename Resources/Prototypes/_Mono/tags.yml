@@ -374,3 +374,6 @@
 # Sandwich-HL:
 - type: Tag
   id: Cartridge54_Lead_Ball
+
+- type: Tag
+  id: ShellShotgun_25bundleShot

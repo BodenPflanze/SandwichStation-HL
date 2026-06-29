@@ -6,7 +6,8 @@
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
-    state: slug
+    layers:
+    - state: slug
   - type: Projectile
     damage:
       types:
@@ -19,8 +20,13 @@
   parent: BaseBullet
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
-    state: buckshot
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Projectiles/bullets.rsi
+    layers:
+    - state: pellet
+      color: "#5050f0ff"
+  - type: Tracer
+    color: "#96c8f064"
+    length: 1.5
   - type: Projectile
     damage:
       types:
@@ -36,7 +42,11 @@
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
-    state: buckshot
+    layers:
+    - state: buckshot
+  - type: Tracer
+    color: "#ffb914c8"
+    length: 1
   - type: Projectile
     damage:
       types:
@@ -62,7 +72,11 @@
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
-    state: buckshot-flare
+    layers:
+    - state: buckshot-flare
+  - type: Tracer
+    color: "#ff640ac8"
+    length: 1
   - type: Projectile
     damage:
       types:
@@ -88,8 +102,12 @@
   parent: BaseBulletPractice
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
-    state: buckshot
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Projectiles/bullets.rsi
+    layers:
+    - state: pellet
+      color: "#ffe6e6ff"
+  - type: Tracer
+    color: "#ffffffc8"
   - type: Projectile
     damage:
       types:
@@ -113,7 +131,11 @@
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
-    state: shard
+    layers:
+    - state: shard
+  - type: Tracer
+    color: "#ffb914c8"
+    length: 1
   - type: Projectile
     damage:
       types:
@@ -137,8 +159,12 @@
   parent: BaseBulletPractice
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
-    state: buckshot
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Projectiles/bullets.rsi
+    layers:
+    - state: pellet
+      color: "#00ffe1ff"
+  - type: Tracer
+    color: "#ffb914c8"
   - type: Projectile
     damage:
       types:
@@ -177,7 +203,8 @@
           - BulletImpassable
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
-    state: buckshot-flare
+    layers:
+    - state: buckshot-flare
   - type: IgnitionSource
     ignited: true
     temperature: 1000
@@ -212,7 +239,11 @@
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
-    state: depleted-uranium
+    layers:
+    - state: depleted-uranium
+  - type: Tracer
+    color: "#ffb914c8"
+    length: 1
   - type: Projectile
     damage:
       types:

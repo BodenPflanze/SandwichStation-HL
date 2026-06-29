@@ -1,0 +1,36 @@
+- type: entity
+  id: BaseShellShotgun_25bundleShot
+  name: .25 bundle shot
+  description: "6 individual .25 lead bullets, some of them differ a bit in size..."
+  parent: [ BaseCartridge, BaseC1Contraband ] # Frontier: added BaseC1Contraband
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - ShellShotgun_25bundleShot
+  - type: CartridgeAmmo
+    soundEject:
+      collection: ShellEject
+    deleteOnSpawn: true
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Casings/25bundleShot.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+
+- type: entity
+  id: ShellShotgun_25bundleShot
+  name: .25 bundle shot
+  parent: BaseShellShotgun_25bundleShot # Frontier: remove BaseSecurityContraband
+  components:
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: PelletShotgun_25bundleShotSpread

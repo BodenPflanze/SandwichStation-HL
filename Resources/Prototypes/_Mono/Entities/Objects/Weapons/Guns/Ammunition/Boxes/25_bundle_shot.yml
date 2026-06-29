@@ -1,0 +1,31 @@
+- type: entity
+  parent: [BaseAmmoProvider, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
+  id: AmmoProviderShotgun_25bundleShot
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/25bundleShot.rsi
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+        - ShellShotgun_25bundleShot
+      capacity: 7
+    - type: MagazineVisuals
+      magState: mag
+      steps: 5
+      zeroVisible: false
+    - type: Appearance
+
+- type: entity
+  name: ammunition bag (.25 bundle shot)
+  description: Holds 7 bundle shots, that makes 42 individual pellets in total!
+  parent: AmmoProviderShotgun_25bundleShot
+  id: AmmoBag_25bundleShot
+  components:
+    - type: BallisticAmmoProvider
+      proto: ShellShotgun_25bundleShot
+    - type: Sprite
+      layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]

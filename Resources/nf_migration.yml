@@ -500,20 +500,6 @@ MagazineBoxRifleUranium: NFAmmunitionBoxRifle20Uranium
 #WeaponRifleAk: NFWeaponRifleAssaultSm
 #WeaponRifleFoam: NFWeaponRifleFoam
 #WeaponRifleSVS: NFWeaponRifleSVS
-#WeaponShotgunBlunderbuss: NFWeaponShotgunBlunderbuss
-#WeaponShotgunBulldog: NFWeaponShotgunBulldog
-#WeaponShotgunDoubleBarreled: NFWeaponShotgunDoubleBarreled
-#WeaponShotgunDoubleBarreledRubber: NFWeaponShotgunDoubleBarreled # close enough
-#WeaponShotgunEnforcer: NFWeaponShotgunEnforcer
-#WeaponShotgunEnforcerRubber: NFWeaponShotgunEnforcerLessLethal
-#WeaponShotgunHandmade: NFWeaponShotgunHandmade
-#WeaponShotgunImprovised: NFWeaponShotgunImprovised
-#WeaponShotgunImprovisedLoaded: NFWeaponShotgunImprovised # close enough
-#WeaponShotgunKammerer: NFWeaponShotgunKammerer
-#WeaponShotgunKammererNonlethal: NFWeaponShotgunKammererLessLethal
-#WeaponShotgunSawn: NFWeaponShotgunSawn
-#WeaponShotgunSawnEmpty: NFWeaponShotgunSawnEmpty
-#WeaponShotgunSawnNonlethal: NFWeaponShotgunSawnLessLethal
 #WeaponSniperCeremonial: NFWeaponRifleCeremonial
 #WeaponSniperMosin: NFWeaponRifleBarlowsBolt
 #WeaponSniperRepeater: NFWeaponRifleRepeater

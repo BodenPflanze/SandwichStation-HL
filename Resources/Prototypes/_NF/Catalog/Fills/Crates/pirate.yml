@@ -27,7 +27,7 @@
         amount: 2
       - id: WeaponPistolFlintlock
         amount: 4
-      - id: NFWeaponShotgunBlunderbuss
+      - id: WeaponShotgunBlunderbuss
         amount: 2
       - id: ClothingHeadsetFreelance  # Frontier
         amount: 3  # Frontier

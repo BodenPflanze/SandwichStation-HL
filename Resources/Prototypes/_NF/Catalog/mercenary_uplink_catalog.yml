@@ -51,7 +51,7 @@
   name:  uplink-mercenary-rifle1-name
   description: uplink-mercenary-rifle1-desc
   productEntity: WeaponRifleLecter
-  icon: { sprite: _NF/Objects/Weapons/Guns/Rifles/surplecter.rsi, state: icon }
+  icon: { sprite: Objects/Weapons/Guns/Rifles/lecter.rsi, state: icon }
   cost:
     MercCoin: 8
   categories:
@@ -66,8 +66,8 @@
   id: UplinkMercenarySurpKammerer
   name:  uplink-mercenary-shotgun1-name
   description: uplink-mercenary-shotgun1-desc
-  productEntity: WeaponShotgunSurpKammerer
-  icon: { sprite: _NF/Objects/Weapons/Guns/Shotguns/surppump.rsi, state: icon }
+  productEntity: WeaponShotgunKammerer
+  icon: { sprite: Objects/Weapons/Guns/Shotguns/pump.rsi, state: icon }
   cost:
     MercCoin: 9
   categories:

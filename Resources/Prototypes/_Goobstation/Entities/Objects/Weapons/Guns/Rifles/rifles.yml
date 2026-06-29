@@ -1,8 +1,8 @@
 - type: entity
-  name: Annie (762x39mm)
-  parent: [BaseC3ExpeditionContraband, BaseWeaponRifle] # Mono - C2 contra
+  name: Annie
+  parent: [BaseC3ExpeditionContraband, BaseWeaponRifle_RequiersWieldable] # Mono - C2 contra
   id: WeaponRifleAnnie
-  description: A beast designed to shoulder the weight of impossible missions. Uses 762x39mm ammo.
+  description: A beast designed to shoulder the weight of impossible missions. Uses 7.62x39mm ammo.
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Guns/Rifles/annie.rsi
@@ -57,12 +57,14 @@
   - type: Appearance
   - type: PirateBountyItem # Mono
     id: ExperimentalTSFWeapon
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
 
 - type: entity
-  name: WSPR (762x39mm)
-  parent: [BaseC3PirateContraband, BaseWeaponRifle] # Mono - C3
+  name: WSPR
+  parent: [BaseC3PirateContraband, BaseWeaponRifle_RequiersWieldable] # Mono - C3
   id: WeaponRifleWSPR
-  description: A cutting-edge rifle from Cybersun, versatile, reliable, and Syndicate-approved. Uses 762x39mm subsonic ammo.
+  description: A cutting-edge rifle from Cybersun, versatile, reliable, and Syndicate-approved. Uses 7.62x39mm subsonic ammo.
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Guns/Rifles/wspr.rsi
@@ -74,13 +76,14 @@
   - type: Clothing
     sprite: _Goobstation/Objects/Weapons/Guns/Rifles/wspr.rsi
   - type: Gun
+    customCaliber: "7.62x39mm subsonic" # Sandwich-HL
     availableModes:
     - FullAuto
     - Burst
     selectedMode: Burst
     burstFireRate: 16
     burstCooldown: 0.5
-    projectileSpeed: 40 # Mono
+    projectileSpeed: 20 # Sandwich-HL: Subsonic should be slow (currently most weapons are at 25)
     soundGunshot:
       path: /Audio/_Goobstation/Weapons/Guns/Gunshots/bwuh.ogg
   - type: ItemSlots
@@ -94,7 +97,6 @@
         whitelist:
           tags:
             - Magazine762x39mmSubsonic
-            - Magazine762x39mmFMJ
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
@@ -103,7 +105,6 @@
         whitelist:
           tags:
             - Cartridge762x39mmSubsonic
-            - Cartridge762x39mmFMJ
   - type: MagazineVisuals
     magState: mag
     steps: 1

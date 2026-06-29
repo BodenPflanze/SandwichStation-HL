@@ -71,7 +71,7 @@
     - type: RandomSpawner
       rarePrototypes:
         - ClothingHeadHelmetSwat
-        - NFWeaponShotgunEnforcer # Frontier: WeaponShotgunEnforcer<NFWeaponShotgunEnforcer
+        - WeaponShotgunEnforcer
 #        - NFWeaponRifleAssaultSm # Frontier: Ak<NFWeaponRifleAssaultSm
       rareChance: 0.05
       prototypes:
@@ -89,7 +89,7 @@
         - WeaponRifleLecter
         - NFWeaponSubMachineGunDrozd # Frontier: WeaponSubMachineGunDrozd<NFWeaponSubMachineGunDrozd
         - WeaponLaserCarbine
-        - NFWeaponShotgunKammerer # Frontier: WeaponShotgunKammerer<NFWeaponShotgunKammerer
+        - WeaponShotgunKammerer
       chance: 0.95
       offset: 0.0
 
@@ -106,7 +106,7 @@
           state: icon
     - type: RandomSpawner
       rarePrototypes:
-        - NFWeaponShotgunEnforcer # Frontier: WeaponShotgunEnforcer<NFWeaponShotgunEnforcer
+        - WeaponShotgunEnforcer
 #        - NFWeaponRifleAssaultSm # Frontier: WeaponRifleAk<NFWeaponRifleAssaultSm
       rareChance: 0.05
       prototypes:
@@ -116,7 +116,7 @@
         - WeaponRifleLecter
         - NFWeaponSubMachineGunDrozd # Frontier WeaponSubMachineGunDrozd<NFWeaponSubMachineGunDrozd
         - WeaponLaserCarbine
-        - NFWeaponShotgunKammerer # Frontier: WeaponShotgunKammerer<NFWeaponShotgunKammerer
+        - WeaponShotgunKammerer
       chance: 0.95
       offset: 0.0
 

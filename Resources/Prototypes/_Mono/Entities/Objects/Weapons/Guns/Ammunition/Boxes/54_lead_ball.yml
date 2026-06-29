@@ -27,6 +27,7 @@
 # Boxes
 - type: entity
   parent: BaseAmmoBag54_Lead_Ball
+  description: Holds 10 caliber 52 lead balls.
   id: AmmoBag54_Lead_Ball
   name: ammunition bag (.54 lead ball)
   components:

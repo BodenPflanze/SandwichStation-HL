@@ -1,6 +1,6 @@
 - type: entity
-  name: sawn-off triple-barrel shotgun (12 gauge)
-  parent: [BaseWeaponShotgun, BaseC2ExpeditionContraband]
+  name: sawn-off triple-barrel shotgun
+  parent: [WeaponShotgunSawn, BaseC2ExpeditionContraband]
   id: WeaponShotgunTripleSawn
   description: A doubly modified civilian grade shotgun with a third barrel welded to the top of the mechanism. More is better, right?
   components:
