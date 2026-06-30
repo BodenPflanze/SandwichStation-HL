@@ -18,11 +18,3 @@
   components:
   - type: BallisticAmmoProvider
     proto: NFBulletFoam
-
-- type: entity
-  parent: BoxCartridgeCap
-  id: NFBoxCartridgeCap
-  name: old cap gun cartridge box
-  components:
-  - type: BallisticAmmoProvider
-    proto: NFCartridgeCap

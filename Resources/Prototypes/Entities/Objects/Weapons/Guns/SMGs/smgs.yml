@@ -15,7 +15,16 @@
     - Back
     - suitStorage
   - type: AmmoCounter
+  # Sandwich-HL start
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: -0.5
+    maxAngle: -1.3
+    angleIncrease: -1
+  # Sandwich-HL end
   - type: Gun
+    customCaliber: "9x19mm" # Sandwich-HL
     minAngle: 2
     maxAngle: 16
     fireRate: 8
@@ -57,12 +66,27 @@
       gun_chamber: !type:ContainerSlot
   - type: StaticPrice
     price: 500
+  - type: NFWeaponDetails # Sandwich-HL
+    class: weapon-details-class-submachine-gun # Sandwich-HL
+
+# Sandwich-HL: start
+- type: entity
+  name: WornBaseSMG
+  id: WornBaseSMG
+  abstract: true
+  components:
+  - type: Gun
+    minAngle: 3.4
+    maxAngle: 17.2
+    angleIncrease: 3.6
+# Sandwich-HL: end
+
 
 - type: entity
-  name: Atreides (57x28mm)
+  name: Atreides
   parent: [BaseWeaponSubMachineGun, BaseC3SyndicateContraband] # Frontier: BaseMajorContraband<BaseC3SyndicateContraband
   id: WeaponSubMachineGunAtreides
-  description: Pla-ket-ket-ket-ket! Uses 57x28mm ammo. An illegal firearm often used by Syndicate agents.
+  description: Pla-ket-ket-ket-ket! An illegal firearm often used by Syndicate agents.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/SMGs/atreides.rsi
@@ -72,6 +96,7 @@
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
+    customCaliber: "5.7x28mm" # Sandwich-HL
     fireRate: 10
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/atreides.ogg
@@ -101,12 +126,14 @@
           whitelist:
             tags:
               - Cartridge57x28mmFMJ
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-gorlex-steel-works # Sandwich-HL
 
 - type: entity
-  name: C-20r submachine gun (9x19mm)
+  name: C-20r submachine gun
   parent: [BaseWeaponSubMachineGun, BaseC3SyndicateContraband] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
   id: WeaponSubMachineGunC20r
-  description: An illegal firearm that is often used by the infamous nuclear operatives. Uses 9x19mm ammo.
+  description: An illegal firearm that is often used by the infamous nuclear operatives.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/SMGs/c20r.rsi
@@ -139,22 +166,24 @@
     steps: 6
     zeroVisible: true
   - type: Appearance
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-cybersun-industries # Sandwich-HL
 
 - type: entity
-  name: Drozd (.45 ACP)
+  name: Drozd
   parent: [BaseWeaponSubMachineGun, BaseC2ContrabandUnredeemable] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
   id: WeaponSubMachineGunDrozd
-  description: An excellent fully automatic Heavy SMG. Uses .45 ACP ammo. An illegal firearm often used by Syndicate agents.
+  description: A modern SMG manufactured by Nanotrasen’s Small Arms Division. It features an exceptional rate of fire in burst mode, useful for holding defensive angles or engaging hostiles at longer ranges. Feeds from 9x19mm SMG magazines.
   components:
     - type: Sprite
-      sprite: _NF/Objects/Weapons/Guns/SMGs/drozd.rsi # Frontier: add _NF prefix
+      sprite: Objects/Weapons/Guns/SMGs/drozd.rsi
       layers:
         - state: base
           map: ["enum.GunVisualLayers.Base"]
         - state: mag-0
           map: ["enum.GunVisualLayers.Mag"]
     - type: Clothing
-      sprite: _NF/Objects/Weapons/Guns/SMGs/drozd.rsi # Frontier: add _NF prefix
+      sprite: Objects/Weapons/Guns/SMGs/drozd.rsi
     - type: Wieldable
       unwieldOnUse: false
     - type: GunWieldBonus
@@ -164,7 +193,7 @@
       minAngle: 21
       maxAngle: 32
       fireRate: 6
-      burstFireRate: 12
+      burstFireRate: 18
       soundGunshot:
         path: /Audio/Weapons/Guns/Gunshots/atreides.ogg
       availableModes:
@@ -172,46 +201,39 @@
       - FullAuto
       - SemiAuto
       shotsPerBurst: 3
-      burstCooldown: 0.25
+      burstCooldown: 0.375
     - type: ItemSlots
       slots:
         gun_magazine:
           name: Magazine
-          startingItem: Magazine45_ACPSubMachineGunFMJ
+          startingItem: Magazine9x19mmSubMachineGunFMJ
           insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
           ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
           priority: 2
           whitelist:
             tags:
-              - Magazine45_ACPSubMachineGunFMJ
+              - Magazine9x19mmSubMachineGunFMJ
           whitelistFailPopup: gun-magazine-whitelist-fail
         gun_chamber:
           name: Chamber
-          startingItem: Cartridge45_ACPFMJ
+          startingItem: Cartridge9x19mmFMJ
           priority: 1
           whitelist:
             tags:
-              - Cartridge45_ACPFMJ
+              - Cartridge9x19mmFMJ
     - type: MagazineVisuals
       magState: mag
-      steps: 1
+      steps: 5
       zeroVisible: true
     - type: Appearance
+    - type: NFWeaponDetails # Sandwich-HL
+      manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
 
 - type: entity
-  name: Surplus Drozd (.45 ACP)
-  parent: [WeaponSubMachineGunDrozd] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
-  id: WeaponSubMachineGunSurpDrozd
-  description: An excellent fully automatic Heavy SMG. Uses .45 ACP ammo. An illegal firearm often used by Syndicate agents.
-  components:
-    - type: Sprite
-      sprite: _NF/Objects/Weapons/Guns/SMGs/surpdrozd.rsi # Frontier: add _NF prefix
-
-- type: entity
-  name: WT550 (46x30mm)
+  name: WT550
   parent: [ BaseWeaponSubMachineGun, BaseC2ContrabandUnredeemable ] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
   id: WeaponSubMachineGunWt550
-  description: An excellent SMG, produced by NanoTrasen's Small Arms Division. Uses 46x30mm ammo. On the receiver is a label that says 'for authorized use only.'
+  description: An excellent SMG, produced by NanoTrasen's Small Arms Division. Uses 4.6x30mm ammo. On the receiver is a label that says 'for authorized use only.'
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/SMGs/wt550.rsi
@@ -231,6 +253,7 @@
   - type: ChamberMagazineAmmoProvider
     boltClosed: null
   - type: Gun
+    customCaliber: "4.6x30mm" # Sandwich-HL
     fireRate: 5.5
     minAngle: 1
     maxAngle: 6
@@ -273,4 +296,6 @@
     magState: mag
     steps: 6
     zeroVisible: true
-  - type: Appearance
+  - type: Appearance 
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL

@@ -3383,7 +3383,7 @@ entities:
     - type: Transform
       pos: 13.376327,-0.31619385
       parent: 2
-- proto: NFBoxCartridgeCap
+- proto: BoxCartridgeCap
   entities:
   - uid: 2538
     components:

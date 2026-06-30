@@ -51,7 +51,7 @@
     - WeaponCrusherDagger
     - WeaponCrusher
     - WeaponCrusherGlaive
-    - NFWeaponPka
+    - WeaponProtoKineticAccelerator
     - NFWeaponPkaSawn
     - OreBag
     - RadioHandheldNF
@@ -64,7 +64,7 @@
     chance: 0.9
     offset: 0.0
     rarePrototypes:
-    - NFWeaponPka
+    - WeaponProtoKineticAccelerator
     - OreBagOfHolding
     - HandHeldMassScanner
     - SpawnDungeonLootHardsuitsSalvage

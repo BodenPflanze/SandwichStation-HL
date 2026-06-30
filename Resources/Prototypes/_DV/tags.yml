@@ -36,7 +36,4 @@
   id: SecDogWearable # allows Laika to wear meson goggles (and more later?)
 
 - type: Tag
-  id: SpeedLoaderSpecial
-
-- type: Tag
   id: PreventLabel

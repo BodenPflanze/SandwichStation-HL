@@ -11,15 +11,18 @@
     shape:
     - 0,0,2,1
   - type: GunWieldBonus
-    minAngle: -43
-    maxAngle: -43
+    minAngle: -30 # Sandwich-HL: -43 < -30
+    maxAngle: -30 # Sandwich-HL: -43 < -30
   - type: Wieldable
   - type: Gun
+    energyJouleRating: 1100 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-kineticbolt # Sandwich-HL
     fireRate: 0.5
     selectedMode: SemiAuto
-    angleDecay: 45
-    minAngle: 44
-    maxAngle: 45
+    angleIncrease: 7
+    angleDecay: 5 # Sandwich-HL: 45 < 5
+    minAngle: 34.4 # Sandwich-HL: 44 < 34.4
+    maxAngle: 43.2 # Sandwich-HL: 45 < 43.2
     availableModes:
     - SemiAuto
     soundGunshot:

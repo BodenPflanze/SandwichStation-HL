@@ -36,6 +36,6 @@
   storage:
     back:
     - Flash
-    - NFMagazineHighCapacityPistol35Overpressure
-    - NFMagazineHighCapacityPistol35Rubber
+    - Magazine9x19mmPistolHighCapacityFMJ
+    - Magazine9x19mmPistolHighCapacityRubber
     - FrontierUplinkCoin10

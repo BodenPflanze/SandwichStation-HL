@@ -1,5 +1,6 @@
 <Document>
   # Ammo Color Codes
+  (Colors might differ)
   <Table Columns="5">
     <ColorBox Color="#a88b5e">
       <Box VerticalAlignment="Center">
@@ -29,7 +30,7 @@
 
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      Regular
+      Full Metal Jacket
       </Box>
     </ColorBox>
     <ColorBox Color="#333333">
@@ -38,44 +39,18 @@
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      <GuideEntityEmbed Entity="NFCartridgePistol35" Caption=""/>
+      <GuideEntityEmbed Entity="Cartridge9x19mmFMJ" Caption=""/>
       <GuideEntityEmbed Entity="NFBulletGuidebook" Caption=""/>
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      <GuideEntityEmbed Entity="NFMagazineHighCapacityPistol35" Caption=""/>
+      <GuideEntityEmbed Entity="Magazine9x19mmPistolFMJ" Caption=""/>
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      <GuideEntityEmbed Entity="NFAmmunitionBoxPistol35" Caption=""/>
-      </Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      Overpressure
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#ff8d00">
-      <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      <GuideEntityEmbed Entity="NFCartridgePistol35Overpressure" Caption=""/>
-      <GuideEntityEmbed Entity="NFBulletOverpressureGuidebook" Caption=""/>
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      <GuideEntityEmbed Entity="NFMagazineHighCapacityPistol35Overpressure" Caption=""/>
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      <GuideEntityEmbed Entity="NFAmmunitionBoxPistol35Overpressure" Caption=""/>
+      <GuideEntityEmbed Entity="AmmoBox9x19mmFMJ" Caption=""/>
       </Box>
     </ColorBox>
 
@@ -90,18 +65,18 @@
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      <GuideEntityEmbed Entity="NFCartridgePistol35Incendiary" Caption=""/>
+      <GuideEntityEmbed Entity="Cartridge9x19mmIncendiary" Caption=""/>
       <GuideEntityEmbed Entity="NFBulletIncendiaryGuidebook" Caption=""/>
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      <GuideEntityEmbed Entity="NFMagazineHighCapacityPistol35Incendiary" Caption=""/>
+      <GuideEntityEmbed Entity="Magazine9x19mmPistolIncendiary" Caption=""/>
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      <GuideEntityEmbed Entity="NFAmmunitionBoxPistol35Incendiary" Caption=""/>
+      <GuideEntityEmbed Entity="AmmoBox9x19mmIncendiary" Caption=""/>
       </Box>
     </ColorBox>
 
@@ -116,18 +91,18 @@
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      <GuideEntityEmbed Entity="NFCartridgePistol35Uranium" Caption=""/>
+      <GuideEntityEmbed Entity="Cartridge9x19mmUranium" Caption=""/>
       <GuideEntityEmbed Entity="NFBulletUraniumGuidebook" Caption=""/>
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      <GuideEntityEmbed Entity="NFMagazineHighCapacityPistol35Uranium" Caption=""/>
+      <GuideEntityEmbed Entity="Magazine9x19mmPistolUranium" Caption=""/>
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      <GuideEntityEmbed Entity="NFAmmunitionBoxPistol35Uranium" Caption=""/>
+      <GuideEntityEmbed Entity="AmmoBox9x19mmUranium" Caption=""/>
       </Box>
     </ColorBox>
 
@@ -142,18 +117,18 @@
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      <GuideEntityEmbed Entity="NFCartridgePistol35Practice" Caption=""/>
+      <GuideEntityEmbed Entity="Cartridge9x19mmPractice" Caption=""/>
       <GuideEntityEmbed Entity="NFBulletPracticeGuidebook" Caption=""/>
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      <GuideEntityEmbed Entity="NFMagazineHighCapacityPistol35Practice" Caption=""/>
+      <GuideEntityEmbed Entity="Magazine9x19mmPistolPractice" Caption=""/>
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      <GuideEntityEmbed Entity="NFAmmunitionBoxPistol35Practice" Caption=""/>
+      <GuideEntityEmbed Entity="AmmoBox9x19mmPractice" Caption=""/>
       </Box>
     </ColorBox>
 
@@ -168,18 +143,18 @@
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      <GuideEntityEmbed Entity="NFCartridgePistol35Rubber" Caption=""/>
+      <GuideEntityEmbed Entity="Cartridge9x19mmRubber" Caption=""/>
       <GuideEntityEmbed Entity="NFBulletRubberGuidebook" Caption=""/>
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      <GuideEntityEmbed Entity="NFMagazineHighCapacityPistol35Rubber" Caption=""/>
+      <GuideEntityEmbed Entity="Magazine9x19mmPistolRubber" Caption=""/>
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      <GuideEntityEmbed Entity="NFAmmunitionBoxPistol35Rubber" Caption=""/>
+      <GuideEntityEmbed Entity="AmmoBox9x19mmRubber" Caption=""/>
       </Box>
     </ColorBox>
 
@@ -194,18 +169,18 @@
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      <GuideEntityEmbed Entity="NFCartridgePistol35Emp" Caption=""/>
+      <GuideEntityEmbed Entity="Cartridge9x19mmEmp" Caption=""/>
       <GuideEntityEmbed Entity="NFBulletEmpGuidebook" Caption=""/>
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      <GuideEntityEmbed Entity="NFMagazineHighCapacityPistol35Emp" Caption=""/>
+      <GuideEntityEmbed Entity="PosterContrabandMissingGloves" Caption=""/>
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
-      <GuideEntityEmbed Entity="NFAmmunitionBoxPistol35Emp" Caption=""/>
+      <GuideEntityEmbed Entity="AmmoBox9x19mmEmp" Caption=""/>
       </Box>
     </ColorBox>
   </Table>

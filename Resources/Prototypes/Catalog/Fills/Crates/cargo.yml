@@ -376,7 +376,7 @@
     - id: ClothingHandsGlovesColorYellowBudget
       prob: 0.01
       orGroup: NotUseful
-    - id: NFCartridgeCap # Frontier: CartridgeCap<NFCartridgeCap
+    - id: CartridgeCap
       prob: 0.01
       orGroup: NotUseful
     - id: EncryptionKeyCommon

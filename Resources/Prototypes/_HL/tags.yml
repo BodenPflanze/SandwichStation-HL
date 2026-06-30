@@ -28,9 +28,6 @@
   id: MercDock
 
 - type: Tag
-  id: NFCartridgePistol45
-
-- type: Tag
   id: NFSpeedLoaderPistol45
 
 - type: Tag
@@ -61,25 +58,10 @@
   id: NFCartridgeGrenade40mmEmp
 
 - type: Tag
-  id: NFSpeedLoaderPistol35
-
-- type: Tag
   id: NFMagazineSubMachineGunTopMountedPistol35
 
 - type: Tag
   id: NFMagazineSubMachineGunPistol45
-
-- type: Tag
-  id: SpeedLoaderRifleHeavy
-
-- type: Tag
-  id: NFMagazinePistol35
-
-- type: Tag
-  id: NFMagazineHighCapacityPistol35
-
-- type: Tag
-  id: NFCartridgePistol35
 
 - type: Tag
   id: ShellShotgun

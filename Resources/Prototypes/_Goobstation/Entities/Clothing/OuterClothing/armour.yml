@@ -1,0 +1,32 @@
+# CentralCommand
+
+- type: entity
+  parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing, BaseCentcommContraband]
+  id: ClothingOuterArmourInvisible # I'll be real, this is just invisible armor so it doesn't ruin how fucking AWESOME navy officers look. Bite me.
+  name: bluespace assisted armor
+  description: An armored vest that utilizes bluespace technology, bending light and becoming invisible to the naked eye when worn.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Armor/covert_armor.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Armor/covert_armor.rsi
+  - type: Armor
+    coverage:
+    - Chest
+    modifiers:
+      coefficients: #hello genius this is an ADMEME item do not TOUCH IT during your BALANCE PATCHES
+        Blunt: 0.35
+        Slash: 0.35
+        Piercing: 0.35
+        Heat: 0.35
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  # - type: ModifyDelayedKnockdown             # Sandwich-HL todo: port this at some point... i'm tired boss
+  #   delayDelta: 3
+  #   knockdownTimeDelta: -3
+  - type: StaminaResistance
+    damageCoefficient: 0.5
+  #- type: StripMenuInvisible # No peeking!             # Sandwich-HL todo: port this at some point... i'm tired boss
+  - type: TemperatureProtection
+    heatingCoefficient: 0.8 # Blame it on bluespace.
+    coolingCoefficient: 0.1

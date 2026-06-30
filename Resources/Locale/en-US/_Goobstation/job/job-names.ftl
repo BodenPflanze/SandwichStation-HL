@@ -20,6 +20,7 @@ job-name-exec = Executive Access
 
 job-name-navy-officer = Navy Officer
 job-name-navy-officer-undercover = Undercover Navy Officer
+job-name-special-operations-officer = Special Operations Officer
 job-name-navy-captain = Navy Captain
 job-name-diplomat = Diplomat
 job-name-inspector = Central Command Auditor

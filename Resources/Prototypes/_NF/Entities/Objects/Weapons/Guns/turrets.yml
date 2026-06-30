@@ -194,14 +194,14 @@
 - type: entity # deployed turret
   id: WeaponTurretAsmgtNtDeployed
   name: ASMGT
-  description: An Autonomous Sentry Machine Gun Turret (ASMGT) is a magazine-fed turret with barrels compatible with .20, .25, .30 and .35 cartridges. Use screwdriver to disassemble.
+  description: An Autonomous Sentry Machine Gun Turret (ASMGT) is a magazine-fed turret with barrels compatible with 9x19, .45 ACP, 5.56x45 and 7.56x39 cartridges. Use screwdriver to disassemble.
   suffix: NT
   parent:
   - BaseC2ContrabandUnredeemable
   - BaseWeaponTurretMagazineFed
   components:
   - type: Gun
-    examineCaliber: gun-examine-caliber-asmgt
+    customCaliber: "9x19 / .45 ACP / 5.56x45 / 7.62x39" # Sandwich-HL
   - type: NPCImprintingOnSpawnBehaviour
     whitelist:
       components:

@@ -22,3 +22,6 @@
   - type: ContainerContainer
     containers:
       upgrades: !type:Container
+  - type: NFWeaponDetails # Sandwich-HL
+    class: weapon-details-class-tool # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL

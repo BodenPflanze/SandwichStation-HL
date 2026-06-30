@@ -6,7 +6,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: NFWeaponSubMachineGunWt550
+      - id: WeaponSubMachineGunWt550
         amount: 2
       - id: Magazine46x30mmSubMachineGunTopMountedFMJ
         amount: 4
@@ -82,7 +82,7 @@
       amount: 5
     - id: WeaponRifleVulcan
       amount: 4
-    - id: NFWeaponSubMachineGunWt550
+    - id: WeaponSubMachineGunWt550
       amount: 4
     - id: WeaponShotgunEnforcer
       amount: 5

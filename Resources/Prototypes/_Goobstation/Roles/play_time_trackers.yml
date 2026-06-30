@@ -1,2 +1,8 @@
 - type: playTimeTracker
+  id: JobNavyOfficer
+
+- type: playTimeTracker
+  id: JobSpecialOperationsOfficer
+
+- type: playTimeTracker
   id: JobRadioHost

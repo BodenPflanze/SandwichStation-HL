@@ -259,10 +259,17 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier2Syndicate
-  - NFWeaponSubMachineGunC20r
+  - WeaponSubMachineGunC20r
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponSubMachineGunC20rExpedition
   name: worn C20R
+  # Sandwich-HL start
+  components:
+  - type: Gun
+    minAngle: 25
+    maxAngle: 38
+    angleIncrease: 6
+  # Sandwich-HL end
 
 ## Assault Rifles
 - type: entity
@@ -335,30 +342,44 @@
     minAngle: 2.3
     maxAngle: 6.3
     angleIncrease: 6
-    angleDecay: 4
   # Sandwich-HL end
 
 ## SMGs
 - type: entity
   parent:
   - BaseExpeditionWeaponTier3
-  - NFWeaponSubMachineGunWt550
+  - WeaponSubMachineGunWt550
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponSubMachineGunWt550Expedition
-  name: worn WT-550
+  name: worn WT550
+  # Sandwich-HL start
+  components:
+  - type: Gun
+    minAngle: 3
+    maxAngle: 9
+    angleIncrease: 9
+  # Sandwich-HL end
 
 - type: entity
   parent:
   - BaseExpeditionWeaponTier3
-  - NFWeaponSubMachineGunDrozd
+  - WeaponSubMachineGunDrozd
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponSubMachineGunDrozdExpedition
   name: worn Drozd
+  # Sandwich-HL start
+  components:
+  - type: Gun
+    minAngle: 25
+    maxAngle: 36
+    angleIncrease: 8
+  # Sandwich-HL end
 
 - type: entity
   parent:
   - BaseExpeditionWeaponTier3Syndicate
-  - NFWeaponSubMachineGunAtreides
+  - WornBaseSMG # Sandwich-HL (funnies)
+  - WeaponSubMachineGunAtreides
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponSubMachineGunAtreidesExpedition
   name: worn Atreides
@@ -366,7 +387,7 @@
 - type: entity
   parent:
   - BaseExpeditionWeaponTier3
-  - NFWeaponSubMachineGunTypewriter
+  - WeaponSubMachineGunTypewriter
 #  categories: [ HideSpawnMenu ]
   id: NFWeaponSubMachineGunTypewriterExpedition
   name: worn Typewriter

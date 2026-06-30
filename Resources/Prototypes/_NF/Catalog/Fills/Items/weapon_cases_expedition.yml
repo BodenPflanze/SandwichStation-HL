@@ -104,7 +104,7 @@
     contents:
     - id: NFWeaponRevolverArgentiExpedition
       amount: 1
-    - id: SpeedLoader556x45mmFMJ
+    - id: SpeedLoader9x19mmFMJ
       amount: 2
 
 - type: entity
@@ -323,8 +323,6 @@
       amount: 2
     - id: AmmoBox46x30mmFMJ
       amount: 1
-    # -  id: NFMagazineSubMachineGunTopMounted35 Not needed, improper caliber HL
-     # amount: 3 HL
 
 - type: entity
   parent: WeaponCaseLong
@@ -351,12 +349,10 @@
     contents:
     - id: WeaponSubMachineGunDrozd
       amount: 1
-    - id: Magazine45_ACPSubMachineGunFMJ
+    - id: Magazine9x19mmSubMachineGunFMJ
       amount: 2
-    - id: AmmoBox45_ACPFMJ
+    - id: AmmoBox9x19mmFMJ
       amount: 1
-   # -  id: NFMagazineSubMachineGun35 Not needed, improper caliber  HL
-      # amount: 3 HL
 
 - type: entity
   parent: WeaponCaseLong
@@ -383,9 +379,9 @@
     contents:
     - id: NFWeaponSubMachineGunTypewriterExpedition
       amount: 1
-    - id: Magazine9x19mmSubMachineGunFMJ # HL
+    - id: Magazine45_ACPSubMachineGunFMJ
       amount: 2
-    - id: AmmoBox9x19mmFMJ # HL
+    - id: AmmoBox45_ACPFMJ
       amount: 2
 
 #region Rifles

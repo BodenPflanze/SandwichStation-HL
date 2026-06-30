@@ -2,7 +2,7 @@
   abstract: true
   parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
   id: BaseAmmoBox46x30mm
-  name: ammunition box (46x30mm FMJ)
+  name: ammunition box (4.6x30mm FMJ)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
@@ -28,7 +28,7 @@
 - type: entity # Mono Big Pistol Mags
   parent: BaseAmmoBox46x30mm
   id: AmmoBox46x30mmBig
-  name: ammunition box (46x30mm FMJ)
+  name: ammunition box (4.6x30mm FMJ)
   suffix: Big
   components:
   - type: BallisticAmmoProvider
@@ -49,7 +49,7 @@
 - type: entity
   parent: BaseAmmoBox46x30mm
   id: AmmoBox46x30mmFMJ
-  name: ammunition box (46x30mm FMJ)
+  name: ammunition box (4.6x30mm FMJ)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge46x30mmFMJ
@@ -63,7 +63,7 @@
 - type: entity
   parent: BaseAmmoBox46x30mm
   id: AmmoBox46x30mmPractice
-  name: ammunition box (46x30mm practice)
+  name: ammunition box (4.6x30mm practice)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge46x30mmPractice
@@ -78,7 +78,7 @@
 - type: entity
   parent: BaseAmmoBox46x30mm
   id: AmmoBox46x30mmIncendiary
-  name: ammunition box (46x30mm incendiary)
+  name: ammunition box (4.6x30mm incendiary)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge46x30mmIncendiary
@@ -93,7 +93,7 @@
 - type: entity
   id: AmmoBox46x30mmUranium
   parent: BaseAmmoBox46x30mm
-  name: ammunition box (46x30mm uranium)
+  name: ammunition box (4.6x30mm uranium)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge46x30mmUranium
@@ -109,7 +109,7 @@
 - type: entity
   parent: BaseAmmoBox46x30mm
   id: AmmoBox46x30mmRubber
-  name: ammunition box (46x30mm rubber)
+  name: ammunition box (4.6x30mm rubber)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge46x30mmRubber
@@ -125,7 +125,7 @@
 - type: entity
   parent: BaseAmmoBox46x30mm
   id: AmmoBox46x30mmEmp
-  name: ammunition box (46x30mm emp)
+  name: ammunition box (4.6x30mm emp)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge46x30mmEmp

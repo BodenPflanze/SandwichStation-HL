@@ -54,7 +54,7 @@
   recipes:
   - WeaponPistolCHIMP
   # - WeaponForceGun # Frontier
-  - NFWeaponPka # Frontier: WeaponProtoKineticAccelerator<NFWeaponPka
+  - WeaponProtoKineticAccelerator
   - PKAUpgradeDamage
   - PKAUpgradeRange
   - PKAUpgradeFireRate

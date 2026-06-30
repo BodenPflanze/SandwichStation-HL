@@ -190397,7 +190397,7 @@ entities:
     - type: Transform
       pos: 135.00697,153.7087
       parent: 2
-- proto: NFCartridgeCap
+- proto: CartridgeCap
   entities:
   - uid: 28350
     components:

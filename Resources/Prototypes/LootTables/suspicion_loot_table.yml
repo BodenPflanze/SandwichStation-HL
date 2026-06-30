@@ -59,13 +59,13 @@
     amount: 0
     maxAmount: 5
 
-  - id: NFWeaponSubMachineGunAtreides # Frontier: WeaponSubMachineGunAtreides<NFWeaponSubMachineGunAtreides
+  - id: WeaponSubMachineGunAtreides
     amount: 0
     maxAmount: 5
-  - id: NFWeaponSubMachineGunC20r # Frontier: WeaponSubMachineGunC20r<NFWeaponSubMachineGunC20r
+  - id: WeaponSubMachineGunC20r
     amount: 0
     maxAmount: 5
-  - id: NFWeaponSubMachineGunWt550 # Frontier: WeaponSubMachineGunWt550<NFWeaponSubMachineGunWt550
+  - id: WeaponSubMachineGunWt550
     amount: 0
     maxAmount: 5
 

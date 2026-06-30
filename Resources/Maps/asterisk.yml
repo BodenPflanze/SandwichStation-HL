@@ -58073,18 +58073,6 @@ entities:
     - type: Transform
       pos: -33.5,8.5
       parent: 2
-- proto: SpeedLoaderSpecial
-  entities:
-  - uid: 2666
-    components:
-    - type: Transform
-      pos: -37.787407,4.6658316
-      parent: 2
-  - uid: 2861
-    components:
-    - type: Transform
-      pos: -37.787407,4.6658316
-      parent: 2
 - proto: SprayBottleSpaceCleaner
   entities:
   - uid: 1381

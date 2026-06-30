@@ -294,7 +294,6 @@ FloorWaterDecorativeEntity: FloorWaterEntity
 # 2025-04-04 Guns and Armor Rebalance
 # NOTE: expedition guns not migrated (lookup non-expedition, apply Expedition suffix)
 BoxBeanbag: NFAmmunitionBoxShellShotgunBeanbag
-BoxCartridgeCap: NFBoxCartridgeCap
 BoxDonkSoftBox: NFBoxDonkSoftBox
 BoxLethalshot: NFAmmunitionBoxShellShotgunBuckshot
 BoxMagazineCaselessRifle: null
@@ -306,17 +305,7 @@ BoxMagazineLightRifleRubber: NFBoxMagazineRifle30Rubber
 BoxMagazineMagnumSubMachineGun: null
 BoxMagazineMagnumSubMachineGunPractice: null
 BoxMagazineMagnumSubMachineGunRubber: null
-BoxMagazinePistol: NFMagazinePistol35 # close enough
 BoxMagazinePistolCaselessRifle: null
-BoxMagazinePistolHighCapacity: NFMagazineHighCapacityPistol35 # close enough
-BoxMagazinePistolHighCapacityPractice: NFMagazineHighCapacityPistol35Practice # close enough
-BoxMagazinePistolPractice: NFMagazinePistol35Practice # close enough
-BoxMagazinePistolRubber: NFBoxMagazinePistol35Rubber
-BoxMagazinePistolSubMachineGun: NFMagazineSubMachineGun35 # close enough
-BoxMagazinePistolSubMachineGunEmp: NFMagazineSubMachineGun35Emp # close enough
-BoxMagazinePistolSubMachineGunPractice: NFMagazineSubMachineGun35Practice # close enough
-BoxMagazinePistolSubMachineGunRubber: NFMagazineSubMachineGun35Rubber
-BoxMagazinePistolSubMachineGunTopMounted: NFMagazineSubMachineGunTopMounted35 # close enough
 BoxMagazineRifle: NFMagazineRifle20 # close enough
 BoxMagazineRiflePractice: NFMagazineRifle20Practice # close enough
 #BoxMagazineRifleRubber: NFBoxMagazineRifle20Rubber
@@ -335,7 +324,6 @@ CannonBallEmp: NFCannonBallEmp
 CannonBallGlassshot: NFCannonBallGlassshot
 CannonBallGrapeshot: NFCannonBallGrapeshot
 CartridgeAntiMateriel: NFCartridgeRifle60
-CartridgeCap: NFCartridgeCap
 CartridgeCaselessRifle: NFCartridgeRifle25
 CartridgeCaselessRiflePractice: NFCartridgeRifle25Practice
 CartridgeHeavyRifle: NFCartridgeRifle30
@@ -344,18 +332,7 @@ CartridgeLightRifleIncendiary: NFCartridgeRifle30Incendiary
 CartridgeLightRiflePractice: NFCartridgeRifle30Practice
 CartridgeLightRifleRubber: NFCartridgeRifle30Rubber
 CartridgeLightRifleUranium: NFCartridgeRifle30Uranium
-CartridgeMagnum: NFCartridgePistol45
-CartridgeMagnumAP: NFCartridgePistol45
-CartridgeMagnumIncendiary: NFCartridgePistol45Incendiary
-CartridgeMagnumPractice: NFCartridgePistol45Practice
-CartridgeMagnumRubber: NFCartridgePistol45Rubber
-CartridgeMagnumUranium: NFCartridgePistol45Uranium
 CartridgeMinigun: NFCartridgeRifle10
-CartridgePistol: NFCartridgePistol35
-CartridgePistolIncendiary: NFCartridgePistol35Incendiary
-CartridgePistolPractice: NFCartridgePistol35Practice
-CartridgePistolRubber: NFCartridgePistol35Rubber
-CartridgePistolUranium: NFCartridgePistol35Uranium
 CartridgeRifle: NFCartridgeRifle20
 CartridgeRifleIncendiary: NFCartridgeRifle20Incendiary
 CartridgeRiflePractice: NFCartridgeRifle20Practice
@@ -378,15 +355,6 @@ MagazineBoxLightRifleBig: NFAmmunitionBoxBigRifle30
 MagazineBoxLightRifleIncendiary: NFAmmunitionBoxRifle30Incendiary
 MagazineBoxLightRiflePractice: NFAmmunitionBoxRifle30Practice
 MagazineBoxLightRifleUranium: NFAmmunitionBoxRifle30Uranium
-MagazineBoxMagnum: NFAmmunitionBoxPistol45
-MagazineBoxMagnumAP: NFAmmunitionBoxPistol45
-MagazineBoxMagnumIncendiary: NFAmmunitionBoxPistol45Incendiary
-MagazineBoxMagnumPractice: NFAmmunitionBoxPistol45Practice
-MagazineBoxMagnumUranium: NFAmmunitionBoxPistol45Uranium
-MagazineBoxPistol: NFAmmunitionBoxPistol35
-MagazineBoxPistolEmp: NFAmmunitionBoxPistol35Emp
-MagazineBoxPistolPractice: NFAmmunitionBoxPistol35Practice
-MagazineBoxPistolRubber: NFAmmunitionBoxPistol35Rubber
 MagazineBoxRifle: NFAmmunitionBoxRifle20
 MagazineBoxRifleBig: NFAmmunitionBoxBigRifle20
 MagazineBoxRifleBigRubber: NFAmmunitionBoxBigRifle20Rubber
@@ -431,24 +399,8 @@ MagazineBoxRifleUranium: NFAmmunitionBoxRifle20Uranium
 #MagazineNovaliteC1: NFMagazineClipRifle20
 #MagazineNovaliteC1Empty: NFMagazineClipRifle20Empty
 #MagazineNovaliteC1Rubber: NFMagazineClipRifle20Rubber
-#MagazinePistol: NFMagazinePistol35
 #MagazinePistolCaselessRifle: NFMagazinePistol45 # oddball but .25 currently deprecated
 #MagazinePistolCaselessRiflePractice: NFMagazinePistol45Practice # oddball but .25 currently deprecated
-#MagazinePistolEmpty: NFMagazinePistol35Empty
-#MagazinePistolHighCapacity: NFMagazineHighCapacityPistol35
-#MagazinePistolHighCapacityEmpty: NFMagazineHighCapacityPistol35Empty
-#MagazinePistolHighCapacityPractice: NFMagazineHighCapacityPistol35Practice
-#MagazinePistolIncendiary: NFMagazinePistol35Incendiary
-#MagazinePistolPractice: NFMagazinePistol35Practice
-#MagazinePistolRubber: NFMagazinePistol35Rubber
-#MagazinePistolSubMachineGun: NFMagazineSubMachineGun35
-#MagazinePistolSubMachineGunEmpty: NFMagazineSubMachineGun35Empty
-#MagazinePistolSubMachineGunIncendiary: NFMagazineSubMachineGun35Incendiary
-#MagazinePistolSubMachineGunPractice: NFMagazineSubMachineGun35Practice
-#MagazinePistolSubMachineGunUranium: NFMagazineSubMachineGun35Uranium
-#MagazinePistolSubMachineGunTopMounted: NFMagazineSubMachineGunTopMounted35
-#MagazinePistolSubMachineGunTopMountedEmpty: NFMagazineSubMachineGunTopMounted35Empty
-#MagazinePistolUranium: NFMagazinePistol35Uranium
 #MagazineRifle: NFMagazineRifle20
 #MagazineRifleEmpty: NFMagazineRifle20Empty
 #MagazineRifleIncendiary: NFMagazineRifle20Incendiary
@@ -470,7 +422,6 @@ MagazineBoxRifleUranium: NFAmmunitionBoxRifle20Uranium
 #ShellShotgunSlug: NFShellShotgunSlug
 #ShellTranquilizer: NFShellShotgunTranquilizer
 #ShellShotgunUranium: NFShellShotgunUranium
-#SpeedLoaderCap: NFSpeedLoaderCap
 #SpeedLoaderMagnum: NFSpeedLoaderPistol45
 #SpeedLoaderMagnumAP: NFSpeedLoaderPistol45
 #SpeedLoaderMagnumEmpty: NFSpeedLoaderPistol45Empty
@@ -478,10 +429,6 @@ MagazineBoxRifleUranium: NFAmmunitionBoxRifle20Uranium
 #SpeedLoaderMagnumPractice: NFSpeedLoaderPistol45Practice
 #SpeedLoaderMagnumRubber: NFSpeedLoaderPistol45Rubber
 #SpeedLoaderMagnumUranium: NFSpeedLoaderPistol45Uranium
-#SpeedLoaderPistol: NFSpeedLoaderPistol35
-#SpeedLoaderPistolEmpty: NFSpeedLoaderPistol35Empty
-#SpeedLoaderPistolPractice: NFSpeedLoaderPistol35Practice
-#SpeedLoaderPistolRubber: NFSpeedLoaderPistol35Rubber
 # WeaponEmpEmitter: ? # not migrated
 #WeaponEnergyShotgun: null
 #WeaponLaserGun: NFWeaponEnergyPistolLaser
@@ -493,8 +440,6 @@ MagazineBoxRifleUranium: NFAmmunitionBoxRifle20Uranium
 #WeaponMinigun: null
 #WeaponNFLaserPistol: NFWeaponEnergyPistolLaser
 #WeaponParticleDecelerator: null
-#WeaponProtoKineticAccelerator: NFWeaponPka
-#WeaponProtoKineticAcceleratorSawn: NFWeaponPkaSawn
 #WeaponRevolverArgenti: NFWeaponRevolverArgenti
 #WeaponRevolverArgentiNonlethal: NFWeaponRevolverArgentiLessLethal
 #WeaponRifleAk: NFWeaponRifleAssaultSm
@@ -503,12 +448,6 @@ MagazineBoxRifleUranium: NFAmmunitionBoxRifle20Uranium
 #WeaponSniperCeremonial: NFWeaponRifleCeremonial
 #WeaponSniperMosin: NFWeaponRifleBarlowsBolt
 #WeaponSniperRepeater: NFWeaponRifleRepeater
-#WeaponSubMachineGunAtreides: NFWeaponSubMachineGunAtreides
-#WeaponSubMachineGunC20r: NFWeaponSubMachineGunC20r
-#WeaponSubMachineGunDrozd: NFWeaponSubMachineGunDrozd
-#WeaponSubMachineGunDrozdRubber: NFWeaponSubMachineGunDrozdLessLethal
-#WeaponSubMachineGunTypewriter: NFWeaponSubMachineGunTypewriter
-#WeaponSubMachineGunWt550: NFWeaponSubMachineGunWt550
 
 # 2025-05-16 Syndicate Turret
 #WeaponTurretLaserSyndicateNF: NFWeaponTurretLaserSyndicate

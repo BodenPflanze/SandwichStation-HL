@@ -167,7 +167,7 @@
 
     <ColorBox>
       <Box HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2">
-      <GuideEntityEmbed Entity="NFWeaponSubMachineGunDrozd" Caption=""/>
+      <GuideEntityEmbed Entity="WeaponSubMachineGunDrozd" Caption=""/>
       </Box>
     </ColorBox>
     <ColorBox>

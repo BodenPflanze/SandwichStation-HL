@@ -510,6 +510,14 @@
   - type: AccessReader
     access: [["CentralCommand"]]
 
+- type: entity
+  id: LockableButtonCentcomm
+  suffix: CentComm
+  parent: LockableButton
+  components:
+  - type: AccessReader
+    access: [["CentralCommand"]]
+
 # button frames
 
 - type: entity

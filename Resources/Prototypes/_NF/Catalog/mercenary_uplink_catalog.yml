@@ -82,8 +82,8 @@
   id: UplinkMercenarySurpDrozd
   name:  uplink-mercenary-smg1-name
   description: uplink-mercenary-smg1-desc
-  productEntity: WeaponSubMachineGunSurpDrozd
-  icon: { sprite: _NF/Objects/Weapons/Guns/SMGs/surpdrozd.rsi, state: icon }
+  productEntity: WeaponSubMachineGunDrozd
+  icon: { sprite: Objects/Weapons/Guns/SMGs/drozd.rsi, state: icon }
   cost:
     MercCoin: 6
   categories:

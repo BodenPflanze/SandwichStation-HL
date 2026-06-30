@@ -108,7 +108,6 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Gun
-    examineCaliber: gun-examine-caliber-25
     fireRate: 6
     selectedMode: FullAuto
     availableModes:

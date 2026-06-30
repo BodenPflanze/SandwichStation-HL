@@ -87,7 +87,8 @@
   abstract: true
   components:
   - type: Gun
-    examineCaliber: gun-examine-energybolt-kinetic-high
+    energyJouleRating: 1600 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-kineticbolt # Sandwich-HL
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
   - type: RechargeBasicEntityAmmo
@@ -100,28 +101,12 @@
     count: 1
 
 - type: entity
-  id: NFBaseWeaponPkaChamberKineticMedium
-  abstract: true
-  components:
-  - type: Gun
-    examineCaliber: gun-examine-energybolt-kinetic-medium
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
-  - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 0.85
-    rechargeSound:
-      path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
-  - type: BasicEntityAmmoProvider
-    proto: NFBulletKineticMediumPower
-    capacity: 1
-    count: 1
-
-- type: entity
   id: NFBaseWeaponPkaChamberKineticLow
   abstract: true
   components:
   - type: Gun
-    examineCaliber: gun-examine-energybolt-kinetic-low
+    energyJouleRating: 800 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-kineticbolt # Sandwich-HL
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
   - type: RechargeBasicEntityAmmo
@@ -148,24 +133,6 @@
     sprite: _NF/Objects/Weapons/Guns/Basic/kinetic_accelerator_cannon.rsi
 
 #region Frontier
-- type: entity
-  id: NFWeaponPka
-  parent: [ NFBaseWeaponFramePkaNanotrasen, NFBaseWeaponPkaChamberKineticMedium ]
-  components:
-  - type: Sprite
-    sprite: _NF/Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi
-  - type: Item
-    sprite: _NF/Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi
-    storedSprite:
-      sprite: _NF/Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi
-      state: storage
-  - type: Clothing
-    sprite: _NF/Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi
-  - type: Construction
-    graph: PKASawn
-    node: start
-    deconstructionTarget: null
-
 - type: entity
   id: NFWeaponPkaSawn
   parent: [ NFBaseWeaponEncumbrancePistol, NFBaseWeaponFramePkaCustomMod, NFBaseWeaponPkaChamberKineticLow ]

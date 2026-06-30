@@ -111390,7 +111390,7 @@ entities:
     - type: Transform
       pos: -43.5,-10.5
       parent: 2
-- proto: NFMagazinePistol35
+- proto: Magazine9x19mmPistolFMJ
   entities:
   - uid: 17107
     components:
@@ -111409,7 +111409,7 @@ entities:
     - type: Transform
       pos: -24.246445,1.6150734
       parent: 2
-- proto: NFMagazineSubMachineGunTopMounted35
+- proto: Magazine46x30mmSubMachineGunTopMountedFMJ
   entities:
   - uid: 17110
     components:
@@ -111449,7 +111449,7 @@ entities:
     - type: Transform
       pos: -24.376413,1.5949111
       parent: 2
-- proto: NFWeaponSubMachineGunWt550
+- proto: WeaponSubMachineGunWt550
   entities:
   - uid: 17115
     components:

@@ -2,7 +2,7 @@
   # PATHFINDER-CLASS EXPEDITION SHUTTLE
   <Box>
   <GuideEntityEmbed Entity="ClothingMaskGasExplorer"/>
-  <GuideEntityEmbed Entity="NFWeaponPka"/>
+  <GuideEntityEmbed Entity="WeaponProtoKineticAccelerator"/>
   <GuideEntityEmbed Entity="IngotSilver"/>
   <GuideEntityEmbed Entity="MobRandomCargoCorpse"/>
   </Box>

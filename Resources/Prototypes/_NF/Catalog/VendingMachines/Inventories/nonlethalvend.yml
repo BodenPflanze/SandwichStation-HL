@@ -10,7 +10,6 @@
     AmmoBox9x19mmPractice: 10
     AmmoBox45_magnumPractice: 10
     RevolverCapGun: 2
-    BoxCartridgeCap: 4
     WeaponRifleFoam: 2
     BoxDonkSoftBox: 4
     TargetDartsFlatpack: 2
@@ -19,10 +18,8 @@
     FoamCrossbow: 2
   # Magazines
   # Ammo boxes
-    NFBoxCartridgeCap: 4
+    BoxCartridgeCap: 4
     NFBoxDonkSoftBox: 4
-    NFAmmunitionBoxPistol35Practice: 10
-    NFAmmunitionBoxPistol45Practice: 10
     NFAmmunitionBoxRifle20Practice: 8
     NFAmmunitionBoxRifle25Practice: 10
     NFAmmunitionBoxRifle30Practice: 5

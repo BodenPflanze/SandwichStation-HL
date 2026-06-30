@@ -1,5 +1,5 @@
 - type: entity
-  name: Typewriter (.45 ACP)
+  name: Typewriter
   parent: [BaseWeaponSubMachineGun, BaseGunWieldable, BaseC2ExpeditionContraband] # Frontier: added BaseC2Contraband
   id: WeaponSubMachineGunTypewriter
   description: A modern take on the classic design used by mobsters throughout space and time. Uses .45 ACP ammo.
@@ -17,6 +17,7 @@
     minAngle: -20
     maxAngle: -30
   - type: Gun
+    customCaliber: ".45 ACP" # Sandwich-HL
     minAngle: 21
     maxAngle: 45
     angleIncrease: 5
@@ -49,3 +50,5 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-frontier-gunsmith-consortium # Sandwich-HL

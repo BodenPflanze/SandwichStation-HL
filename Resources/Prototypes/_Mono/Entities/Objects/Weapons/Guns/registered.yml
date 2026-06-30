@@ -16,7 +16,7 @@
   parent:
 
   - WeaponSubMachineGunWt550
-  name: PMC WT-550
+  name: PMC WT550
   id: WeaponSubMachineGunWt550PMC
   description: A WT-550 that has been properly registered for private security and mercenary use.
   components:
@@ -38,7 +38,7 @@
   parent:
 
   - WeaponSubMachineGunC20r
-  name: PMC C-20r
+  name: PMC C-20r submachine gun
   id: WeaponSubMachineGunC20rPMC
   description: A C-20r that has been properly registered for private security and mercenary use.
   components:

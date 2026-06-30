@@ -6,7 +6,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: NFWeaponSubMachineGunWt550 # Frontier: WeaponSubMachineGunWt550<NFWeaponSubMachineGunWt550
+      - id: WeaponSubMachineGunWt550
         amount: 2
       - id: Magazine46x30mmSubMachineGunTopMountedFMJ
         amount: 4

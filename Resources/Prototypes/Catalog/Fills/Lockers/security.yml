@@ -287,7 +287,7 @@
     rolls: !type:ConstantNumberSelector
       value: 2
     children:
-    - id: NFWeaponSubMachineGunDrozd # Frontier: WeaponSubMachineGunDrozd<NFWeaponSubMachineGunDrozd
+    - id: WeaponSubMachineGunDrozd
     - id: Magazine9x19mmSubMachineGunFMJ # HL
     - id: Magazine9x19mmSubMachineGunFMJ # HL
 
@@ -350,7 +350,7 @@
     rolls: !type:ConstantNumberSelector
       value: 2
     children:
-    - id: NFWeaponSubMachineGunWt550 # Frontier: WeaponSubMachineGunWt550<NFWeaponSubMachineGunWt550
+    - id: WeaponSubMachineGunWt550
     - id: Magazine46x30mmSubMachineGunTopMountedFMJ #HL
     - id: Magazine46x30mmSubMachineGunTopMountedFMJ #HL
 

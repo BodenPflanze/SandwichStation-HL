@@ -95,6 +95,48 @@
     # - NanotrasenRepresentative        # We don't have that one
     # - BlueshieldOfficer
 
+# Navy Captain
+
+- type: entity
+  parent: IDCardStandard
+  id: CentcomIDCardNavyCaptain
+  name: Navy Captain's ID card
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/id_cards.rsi
+    layers:
+    - state: ert_security
+  - type: PresetIdCard
+    job: NavyCaptain
+
+# Navy Officer
+
+- type: entity
+  parent: CentcomIDCardNavyCaptain
+  id: CentcomIDCardNavyOfficer
+  name: Navy Officer's ID card
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/id_cards.rsi
+    layers:
+    - state: ert_security
+  - type: PresetIdCard
+    job: NavyOfficer
+
+# Special Operations Officer
+
+- type: entity
+  parent: CentcomIDCardNavyCaptain
+  id: CentcomIDCardSpecialOperationsOfficer
+  name: Special Operations Officer's ID card
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/id_cards.rsi
+    layers:
+    - state: ert_security
+  - type: PresetIdCard
+    job: SpecialOperationsOfficer
+
 # Crew
 - type: entity
   parent: IDCardStandard

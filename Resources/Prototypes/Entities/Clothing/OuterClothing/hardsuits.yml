@@ -1073,6 +1073,8 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitDeathsquad
+  - type: Tag
+    tags: [] # ignore "WhitelistChameleon" tag
 
 #CBURN Hardsuit
 - type: entity

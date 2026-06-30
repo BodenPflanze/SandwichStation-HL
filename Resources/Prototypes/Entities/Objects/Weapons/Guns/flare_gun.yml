@@ -1,5 +1,5 @@
 - type: entity
-  name: flare gun (12 gauge)
+  name: flare gun
   parent: BaseItem
   id: WeaponFlareGun
   description: A compact, single-shot pistol that fires shotgun shells. Comes with a safety feature that prevents the user from fitting lethal shells inside.
@@ -40,6 +40,7 @@
     - suitStorage
   - type: Appearance
   - type: Gun
+    customCaliber: "12 gauge flare" # Sandwich-HL
     fireRate: 8
     selectedMode: SemiAuto
     availableModes:
@@ -65,6 +66,8 @@
   - type: Item
     size: Small
     sprite: Objects/Weapons/Guns/Shotguns/flaregun_security.rsi
+  - type: Gun
+    customCaliber: "12 gauge" # Sandwich-HL
   - type: ItemSlots
     slots:
       gun_chamber:

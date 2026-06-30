@@ -79,7 +79,7 @@
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: NFSpeedLoaderCap # Frontier: SpeedLoaderCap<NFSpeedLoaderCap
+        - id: SpeedLoaderCap
           amount: !type:RangeNumberSelector
             range: 2, 4 # Frontier: 4, 8 < 2, 4
         - !type:GroupSelector

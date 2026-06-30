@@ -338,7 +338,7 @@
   id: UplinkSecurityWT550
   name:  uplink-security-wt550-name
   description: uplink-security-wt550-desc
-  productEntity: NFWeaponSubMachineGunWt550
+  productEntity: WeaponSubMachineGunWt550
   icon: { sprite: Objects/Weapons/Guns/SMGs/wt550.rsi, state: icon }
   cost:
     FrontierUplinkCoin: 4

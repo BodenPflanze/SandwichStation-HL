@@ -245,8 +245,8 @@
     PrizeTicket: 80
 
 - type: latheRecipe
-  id: NFBoxCartridgeCapRecipe
-  result: NFBoxCartridgeCap
+  id: BoxCartridgeCapRecipe
+  result: BoxCartridgeCap
   parent: BasePrize20Recipe
 
 - type: latheRecipe

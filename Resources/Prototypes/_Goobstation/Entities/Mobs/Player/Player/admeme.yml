@@ -1,0 +1,137 @@
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 BloodfiendishOperator <141253729+Diggy0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+## Navy Shit
+
+# Central Command!
+
+- type: randomHumanoidSettings
+  id: CentcommHumanoid
+  speciesBlacklist:
+  - Monkey
+  - Kobold
+  #- Abductor
+  #- Yowie
+  - IPC
+  - Diona
+  - Harpy
+  - Vox # Pasha
+  - Tajaran # Specism.
+  - Resomi # Sprites look shit on them.
+  - Oni # Same as above, plus it fucks over ERTs.
+  #- Gingerbread # Soecusn
+  #- Plasmaman
+  - Reptilian
+  - Moth
+  - Shadowkin # One flash is all it takes...
+  - Arachnid
+  - Vulpkanin
+  - Rodentia
+  - SlimePerson
+  - Dwarf
+  - Feroxi
+  - Chitinid
+  components:
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostTakeoverAvailable
+  - type: MindShield
+  - type: AntagImmune
+  - type: Speech
+    speechVerb: HolierThanThou
+  - type: GhostRole
+    requirements:
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 36000 # Ten Hours
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 108000 # Thirty hours. Fuck you.
+
+# Navy Officer
+
+- type: entity
+  id: RandomHumanoidSpawnerNavyOfficer
+  name: Navy Officer
+  suffix: CentComm
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Centcom/navy_gold.rsi
+    state: icon
+  - type: RandomMetadata
+    nameSegments:
+    - NamesMilitaryFirstLeader
+    - NamesMilitaryLast
+    nameFormat: name-format-standard
+  - type: RandomHumanoidSpawner
+    settings: NavyOfficer
+
+- type: randomHumanoidSettings
+  id: NavyOfficer
+  parent: CentcommHumanoid
+  randomizeName: false
+  components:
+  - type: AutoImplant
+    implants: [ FreedomImplant, BluespaceLifelineImplant, RadioImplantCentcomm, StypticStimulatorImplant]
+  - type: GhostRole
+    name: ghost-role-information-navy-officer-name
+    description: ghost-role-information-navy-officer-description
+    rules: ghost-role-information-navy-officer-rules
+    raffle:
+      settings: short
+  - type: Loadout
+    prototypes: [ NavyOfficerGear ]
+    roleLoadout: [ RoleSurvivalEVA ]
+  - type: RandomMetadata
+    nameSegments:
+    - NamesMilitaryFirstLeader
+    - NamesMilitaryLast
+    nameFormat: name-format-standard
+
+
+# Special Operations Officer
+
+- type: entity
+  id: RandomHumanoidSpawnerSpecialOperationsOfficers
+  name: Special Operations Officer
+  suffix: CentComm
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/Centcom/navy_gold.rsi
+    state: icon
+  - type: RandomMetadata
+    nameSegments:
+    - NamesMilitaryFirstHighRank
+    - NamesMilitaryLast
+    nameFormat: name-format-standard
+  - type: RandomHumanoidSpawner
+    settings: SpecialOperationsOfficer
+
+- type: randomHumanoidSettings
+  id: SpecialOperationsOfficer
+  parent: CentcommHumanoid
+  randomizeName: false
+  components:
+  - type: AutoImplant
+    implants: [ FreedomImplant, BluespaceLifelineImplant, RadioImplantCentcomm, NutrimentPumpImplant, StypticStimulatorImplant]
+  - type: GhostRole
+    name: ghost-role-information-special-operations-officer-name
+    description: ghost-role-information-special-operations-officer-description
+    rules: ghost-role-information-special-operations-officer-rules
+    raffle:
+      settings: short
+  - type: Loadout
+    prototypes: [ SpecialOperationsOfficerGear ]
+    roleLoadout: [ RoleSurvivalEVA ]
+  - type: RandomMetadata
+    nameSegments:
+    - NamesMilitaryFirstHighRank
+    - NamesMilitaryLast
+    nameFormat: name-format-standard

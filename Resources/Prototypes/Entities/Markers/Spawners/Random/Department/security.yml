@@ -83,11 +83,11 @@
         - ClothingOuterArmorBasic
         - ClothingOuterArmorRiot
         - ClothingOuterArmorBulletproof
-#        - NFWeaponSubMachineGunWt550 # Frontier: WeaponSubMachineGunWt550<NFWeaponSubMachineGunWt550
+#        - WeaponSubMachineGunWt550
         - WeaponDisabler
         - WeaponPistolMk58
         - WeaponRifleLecter
-        - NFWeaponSubMachineGunDrozd # Frontier: WeaponSubMachineGunDrozd<NFWeaponSubMachineGunDrozd
+        - WeaponSubMachineGunDrozd
         - WeaponLaserCarbine
         - WeaponShotgunKammerer
       chance: 0.95
@@ -110,11 +110,11 @@
 #        - NFWeaponRifleAssaultSm # Frontier: WeaponRifleAk<NFWeaponRifleAssaultSm
       rareChance: 0.05
       prototypes:
-#        - NFWeaponSubMachineGunWt550 # Frontier: WeaponSubMachineGunWt550<NFWeaponSubMachineGunWt550
+#        - WeaponSubMachineGunWt550
         - WeaponDisabler
         - WeaponPistolMk58
         - WeaponRifleLecter
-        - NFWeaponSubMachineGunDrozd # Frontier WeaponSubMachineGunDrozd<NFWeaponSubMachineGunDrozd
+        - WeaponSubMachineGunDrozd
         - WeaponLaserCarbine
         - WeaponShotgunKammerer
       chance: 0.95

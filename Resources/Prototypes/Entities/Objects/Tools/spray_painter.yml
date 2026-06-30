@@ -26,23 +26,22 @@
       white: '#FFFFFFFF'
       black: '#333333FF'
       # standard atmos pipes
-      # altered for Hardlight colorblindness accessibility
       waste: '#990000'
-      distro: '#0335FC'
+      distro: '#0055cc'
       air: '#03fcd3'
       mix: '#947507'
       external: '#9955cc' # Frontier
-      oxygen: '#00CCCC'
-      nitrogen: '#6666FF'
+      oxygen: '#7fbfff' # Sandwich-HL | color of oxygen not included gas
+      nitrogen: '#cc5249' # Sandwich-HL | color of n2 tanks
       carbon dioxide: '#404040'
-      water vapor: '#AAAAAA'
-      plasma: '#9900CC'
-      tritium: '#00AA00'
-      ammonia: '#A8C600'
-      nitrous oxide: '#CC3399'
-      frezon: '#00AACC'
-      hot loop: '#FF1212'
-      cold loop: '#0055CC'
+      water vapor: '#e8feff' # Sandwich-HL | color of oxygen not included gas
+      plasma: '#d30eb0' # Sandwich-HL | color of plasma sheets
+      tritium: '#13FF4B' # Sandwich-HL | color from our old fork
+      ammonia: '#baa241' # Sandwich-HL | color of oxygen not included gas (another purple for actual ss14 gas colour would not help)
+      nitrous oxide: '#ffbfba' # Sandwich-HL | color of n2o tank 
+      frezon: '#8fe9ff' # Sandwich-HL | Freezon color without looking too much like oxygen pipe
+      hot loop: '#ff3300' # Sandwich-HL | Not the red color
+      cold loop: '#0077ff' # Sandwich-HL | Not distro or blue color
       burn chamber: '#FF9900'
   - type: StaticPrice
     price: 20 # Frontier 40<20

@@ -137,7 +137,7 @@
     pocket1: WeaponDisabler
     pocket2: Magazine46x30mmSubMachineGunTopMountedFMJ
   inhand:
-  - NFWeaponSubMachineGunWt550 # Frontier: use NF prefix
+  - WeaponSubMachineGunWt550
 
 - type: startingGear
   id: VisitorHOSAlt
@@ -155,7 +155,7 @@
     pocket1: WeaponDisabler
     pocket2: Magazine46x30mmSubMachineGunTopMountedFMJ
   inhand:
-  - NFWeaponSubMachineGunWt550 # Frontier: use NF prefix
+  - WeaponSubMachineGunWt550
 
 - type: startingGear
   id: VisitorRD

@@ -11270,7 +11270,7 @@ entities:
     - type: Transform
       pos: 11.895346,-10.413807
       parent: 2
-- proto: NFMagazineSubMachineGun35Practice
+- proto: Magazine9x19mmSubMachineGunPractice
   entities:
   - uid: 1828
     components:

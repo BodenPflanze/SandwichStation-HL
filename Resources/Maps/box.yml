@@ -132204,14 +132204,14 @@ entities:
         - 0
         - 0
         - 0
-- proto: NFMagazinePistol35
+- proto: Magazine9x19mmPistolFMJ
   entities:
   - uid: 19866
     components:
     - type: Transform
       pos: 5.582965,37.72505
       parent: 2
-- proto: NFMagazinePistol35Practice
+- proto: Magazine9x19mmPistolPractice
   entities:
   - uid: 19867
     components:
@@ -132225,7 +132225,7 @@ entities:
     - type: Transform
       pos: 21.46605,36.725
       parent: 2
-- proto: NFMagazineSubMachineGun35Practice
+- proto: Magazine9x19mmSubMachineGunPractice
   entities:
   - uid: 19869
     components:

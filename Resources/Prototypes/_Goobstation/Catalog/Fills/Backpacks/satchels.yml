@@ -1,0 +1,27 @@
+- type: entity
+  parent: ClothingBackpackSatchelLeather
+  id: ClothingBackpackSatchelLeatherFilledNavyOfficer
+  suffix: Filled, Navy Officer
+  components:
+  - type: StorageFill
+    contents:
+    - id: HandheldFaxOfficial
+    - id: WeaponPulsePistol
+    - id: CentralCommandBusinessCard
+    - id: BoxFolderCentCom
+    - id: DeterrentCaseFilled
+
+- type: entity
+  parent: ClothingBackpackSatchelLeather
+  id: ClothingBackpackSatchelLeatherFilledSpecOps
+  suffix: Filled, Spec Ops
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponPulsePistol
+    - id: HandheldFaxOfficial
+    - id: NukeOverride # No need for codes.
+    - id: Magazine762x39mmUranium
+    - id: Magazine762x39mmUranium
+    - id: DeterrentCaseFilled
+    - id: CentralCommandBusinessCard

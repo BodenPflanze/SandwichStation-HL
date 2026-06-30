@@ -52,6 +52,15 @@
   - ERTEngineer
   - DeathSquad # Frontier
   - ERTMailCarrier # Frontier
+  # - BlueshieldOfficer # Goobstation - Start
+  # - NanotrasenRepresentative
+  # - NanotrasenCareerTrainer
+  - NavyOfficer
+  # - NavyCaptain
+  # - NavyOfficerUndercover
+  # - SpecialOperationsOfficer
+  # - Diplomat
+  # - GovernmentMan # Goobstation - End
   editorHidden: true
   weight: 120
 

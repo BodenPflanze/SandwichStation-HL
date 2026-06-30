@@ -915,7 +915,7 @@
 
 #Deathsquad Hardsuit
 - type: entity
-  parent: [ BaseCentcomContraband, ClothingHeadHardsuitBase ]
+  parent: [ BaseCentcomContraband, ClothingHeadHardsuitWithLightBase ]
   id: ClothingHeadHelmetHardsuitDeathsquad
   name: deathsquad hardsuit helmet
   description: A robust helmet for special operations.
@@ -939,6 +939,18 @@
         Heat: 0.80
         Radiation: 0.80
         Caustic: 0.95
+  - type: FlashImmunity # Goobstation
+  - type: PointLight # Goobstation - Light to deathsquad hardsuit
+    enabled: false
+    color: "#567fc4"
+    rotation: 30
+    energy: 10
+    radius: 5
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    netsync: false
+  - type: Tag
+    tags: [] # ignore "WhitelistChameleon" tag
 
 #MISC. HARDSUITS
 #Clown Hardsuit

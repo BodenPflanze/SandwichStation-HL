@@ -102,7 +102,7 @@
 - type: entity
   name: centcomm advanced stimulant
   parent: [ChemicalMedipen, BaseCentcomContraband]
-  id: CentcomStimpack
+  id: CentcommStimpack
   suffix: DO NOT MAP
   description: According to a Nanotrasen funded study, it has zero addictive properties.
   components:
@@ -133,6 +133,63 @@
     injectOnly: true
   - type: StaticPrice
     price: 500
+
+- type: entity
+  name: biohazard medipen
+  parent: ChemicalMedipen
+  id: AmbuzolMedipen
+  suffix: DO NOT MAP
+  description: A safe and effective way to treat infections. Does not prevent re-infection.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: ambuzolpen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: ambuzolpen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: Ambuzol
+          Quantity: 10
+        - ReagentId: Ultravasculine
+          Quantity: 5
+
+- type: entity
+  name: advanced biohazard medipen
+  parent: ChemicalMedipen
+  id: AmbuzolPlusMedipen
+  suffix: DO NOT MAP
+  description: A safer and extremely effective way to treat any infections. Prevents re-infection.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: ambuzolpluspen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: ambuzolpen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 20
+        reagents:
+        - ReagentId: AmbuzolPlus
+          Quantity: 5
+        - ReagentId: Diphenhydramine
+          Quantity: 15
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 20
+    onlyAffectsMobs: false
+    injectOnly: true
 
 - type: entity                            # Sandwich-HL: moved this from medkits.yml to here
   name: advanced combat medipen

@@ -1,0 +1,39 @@
+- type: entity
+  abstract: true
+  parent: ClothingHeadBase
+  id: ClothingHeadHatArmoredCC
+  components:
+  - type: Armor
+    coverage:
+    - Head
+    traumaDeductions:
+      Dismemberment: 0.3
+      OrganDamage: 0.3
+      BoneDamage: 0.3
+      VeinsDamage: 0
+      NerveDamage: 0
+    modifiers:
+      coefficients:
+        Blunt: 0.3
+        Slash: 0.3
+        Piercing: 0.3
+        Heat: 0.3
+        Radiation: 0.75
+        Caustic: 0.75
+  - type: ExplosionResistance
+    damageCoefficient: 0.75
+
+- type: entity
+  parent: [ClothingHeadHatArmoredCC, ClothingHeadBase, BaseCentcommContraband]
+  id: ClothingHeadHatBeretEliteNavyOfficer
+  name: elite navy officer's beret
+  description: A navy blue beret with the silver shield of the Nanotrasen security forces.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Head/Hats/navy_officer_beret.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Head/Hats/navy_officer_beret.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - WhitelistChameleon # We do a little bit of trolling.

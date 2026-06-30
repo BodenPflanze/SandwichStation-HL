@@ -187897,7 +187897,7 @@ entities:
         - 0
         - 0
         - 0
-- proto: NFMagazinePistol35
+- proto: Magazine9x19mmPistolFMJ
   entities:
   - uid: 25307
     components:
