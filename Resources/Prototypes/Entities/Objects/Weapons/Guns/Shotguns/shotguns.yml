@@ -176,13 +176,23 @@
     manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
 
 - type: entity
-  categories: [ HideSpawnMenu ] # Frontier
   parent: WeaponShotgunEnforcer
   id: WeaponShotgunEnforcerRubber
   suffix: Less-Lethal # Sandwich-HL: Non-Lethal < Less-Lethal
   components:
   - type: BallisticAmmoProvider
     proto: ShellShotgun12_gaugeBeanbag
+
+# Sandwich-HL start
+- type: entity
+  parent: WeaponShotgunEnforcer
+  categories: [ HideSpawnMenu ]
+  id: WeaponShotgunEnforcerIncendiary # delete this entity if this weapon gets removed from CBurn
+  suffix: Incendiary
+  components:
+  - type: BallisticAmmoProvider
+    proto: ShellShotgun12_gaugeIncendiary
+# Sandwich-HL end
 
 - type: entity
   name: Kammerer

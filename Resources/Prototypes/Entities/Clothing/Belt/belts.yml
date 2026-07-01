@@ -642,6 +642,21 @@
       - ShellShotgun12_gauge
     capacity: 14
 
+# Sandwich-HL start
+- type: entity
+  parent: ClothingBeltBandolier
+  categories: [ HideSpawnMenu ]
+  id: ClothingBeltBandolierIncendiary # delete this entity if this gets removed from CBurn
+  suffix: Incendiary
+  components:
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - ShellShotgun12_gauge
+    capacity: 14
+    proto: ShellShotgun12_gaugeIncendiary
+# Sandwich-HL end
+
 - type: entity
   parent: ClothingBeltBase
   id: ClothingBeltChampion

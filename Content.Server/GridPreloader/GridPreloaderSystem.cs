@@ -33,20 +33,30 @@ public sealed class GridPreloaderSystem : SharedGridPreloaderSystem
     {
         base.Initialize();
 
-        /* SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundRestart); */
+        SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundRestart);
         SubscribeLocalEvent<PostGameMapLoad>(OnPostGameMapLoad);
 
         Subs.CVar(_cfg, CCVars.PreloadGrids, value => PreloadingEnabled = value, true);
     }
 
-/*     private void OnRoundRestart(RoundRestartCleanupEvent ev)
+    private void OnRoundRestart(RoundRestartCleanupEvent ev)
     {
         var ent = GetPreloaderEntity();
         if (ent == null)
             return;
 
-        Del(ent.Value.Owner);
-    } */
+        // Sandwich-HL start: Fixes server crash on round restart. Calling Del() directly during RoundRestartCleanupEvent causes race conditions with the engine's MapManager. Using MapSystem.DeleteMap() ensures safe deletion.
+        if (TryComp<Robust.Shared.Map.Components.MapComponent>(ent.Value.Owner, out var mapComp))
+        {
+            _map.DeleteMap(mapComp.MapId);
+        }
+        else
+        {
+            QueueDel(ent.Value.Owner);
+        }
+        //Del(ent.Value.Owner);
+        // Sandwich-HL end
+    }
 
     private void OnPostGameMapLoad(PostGameMapLoad ev)
     {

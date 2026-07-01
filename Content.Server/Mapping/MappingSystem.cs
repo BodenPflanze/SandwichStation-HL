@@ -73,10 +73,21 @@ public sealed class MappingSystem : EntitySystem
             }
 
             _currentlyAutosaving[uid] = (CalculateNextTime(), name);
+            /* Sandwich-HL: Replaced System.IO.Path with ResPath '/' operator as Robust's VFS strictly requires forward slashes. (to fix path validation crashes)
             var saveDir = Path.Combine(_cfg.GetCVar(CCVars.AutosaveDirectory), name).Replace(Path.DirectorySeparatorChar, '/');
             _resMan.UserData.CreateDir(new ResPath(saveDir).ToRootedPath());
 
             var path = new ResPath(Path.Combine(saveDir, $"{DateTime.Now:yyyy-M-dd_HH.mm.ss}-AUTO.yml"));
+            */
+            // Sandwich-HL start
+            var dirString = _cfg.GetCVar(CCVars.AutosaveDirectory).Replace('\\', '/');
+            var baseDir = new ResPath(dirString).ToRootedPath();
+
+            var saveDir = baseDir / name;
+            _resMan.UserData.CreateDir(saveDir);
+
+            var path = saveDir / $"{DateTime.Now:yyyy-M-dd_HH.mm.ss}-AUTO.yml";
+            // Sandwich-HL end
             Log.Info($"Autosaving map {name} ({uid}) to {path}. Next save in {ReadableTimeLeft(uid)} seconds.");
 
             if (HasComp<MapComponent>(uid))

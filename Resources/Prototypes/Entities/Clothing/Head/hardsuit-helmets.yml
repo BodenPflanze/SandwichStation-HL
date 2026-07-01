@@ -448,6 +448,17 @@
     lowPressureMultiplier: 1000
   - type: FireProtection
     reduction: 0.2
+  - type: ExplosionResistance
+    damageCoefficient: 0.25
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.4
+        Radiation: 0
+        Caustic: 0.7
 
 #Chief Medical Officer's Hardsuit
 - type: entity
@@ -896,6 +907,7 @@
       - state: equipped-head-unshaded-reptilian
         shader: unshaded
   - type: PointLight
+    radius: 4 # Sandwich-HL: Cburn would like to see past 1m
     color: orange
   - type: PressureProtection
     highPressureMultiplier: 0.08
@@ -909,9 +921,9 @@
         Blunt: 0.9
         Slash: 0.9
         Piercing: 0.9
-        Heat: 0.9
+        Heat: 0.15 # Sandwich-HL: The fire resistant suit should have heat resistance on the head atleast
   - type: ZombificationResistance
-    zombificationResistanceCoefficient: 0.75
+    zombificationResistanceCoefficient: 0.3 # Sandwich-HL: why 0.75?
 
 #Deathsquad Hardsuit
 - type: entity

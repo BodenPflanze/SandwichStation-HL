@@ -74,27 +74,41 @@ public partial class ShipShieldsSystem
         if (!args.IsInDetailsRange)
             return;
 
+        // Sandwich-HL start
+        if (TryComp<ApcPowerReceiverComponent>(uid, out var power) && !power.Powered)
+        {
+            args.PushMarkup(Loc.GetString("shield-emitter-examine-offline"));
+            return;
+        }
+
+        if (component.OverloadAccumulator > 0)
+        {
+            args.PushMarkup(Loc.GetString("shield-emitter-examine-destroyed"));
+            return; 
+        }
+        // Sandwich-HL end
+
         if (component.Damage == 0f)
         {
             args.PushMarkup(Loc.GetString("shield-emitter-examine-undamaged"));
             return;
         }
 
-        var additionalLoad = (float) Math.Clamp(Math.Pow(component.Damage, component.DamageExp), 0f, component.MaxDraw);
-        var ratio = additionalLoad / component.BaseDraw;
-        ratio = (float) Math.Ceiling(ratio * 100);
+        var ratio = component.Damage / component.DamageLimit; // who in their right mind puts ratio as percantage into the description????
+        var percent = Math.Round(ratio * 100, 2); // description fix
 
-        args.PushMarkup(Loc.GetString("shield-emitter-examine-damaged", ("percent", ratio)));
+        args.PushMarkup(Loc.GetString("shield-emitter-examine-damaged", ("percent", percent)));
     }
 
-    private void AdjustEmitterLoad(EntityUid uid, ShipShieldEmitterComponent? emitter = null, ApcPowerReceiverComponent? receiver = null)
-    {
-        if (!Resolve(uid, ref emitter, ref receiver))
-            return;
+    // .2 - 2025. commented out because shields draw a fixed amount of power now
+    // private void AdjustEmitterLoad(EntityUid uid, ShipShieldEmitterComponent? emitter = null, ApcPowerReceiverComponent? receiver = null)
+    // {
+    //     if (!Resolve(uid, ref emitter, ref receiver))
+    //         return;
 
-        /// Raise damage to the power of the growth exponent
-        var additionalLoad = (float) Math.Clamp(Math.Pow(emitter.Damage, emitter.DamageExp), 0f, emitter.MaxDraw);
+    //     /// Raise damage to the power of the growth exponent
+    //     var additionalLoad = (float) Math.Clamp(Math.Pow(emitter.Damage, emitter.DamageExp), 0f, emitter.MaxDraw);
 
-        receiver.Load = emitter.BaseDraw + additionalLoad;
-    }
+    //     receiver.Load = emitter.BaseDraw + additionalLoad;
+    // }
 }

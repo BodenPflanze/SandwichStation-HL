@@ -858,6 +858,7 @@
   id: IonStorm
   components:
   - type: StationEvent
+    #startAnnouncement: station-event-ion-storm-start-announcement # keep it silent to prevent meta?
     weight: 8
     reoccurrenceDelay: 200
     duration: 1

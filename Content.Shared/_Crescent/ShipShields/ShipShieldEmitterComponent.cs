@@ -19,7 +19,7 @@ public sealed partial class ShipShieldEmitterComponent : Component
     /// Higher values make damage more punishing in terms of power consumption.
     /// </summary>
     [DataField]
-    public float DamageExp = 1.1f;
+    public float DamageExp = 1.0f;
 
     /// <summary>
     /// Rate at which the emitter heals/reduces its damage per second when powered.
@@ -36,14 +36,14 @@ public sealed partial class ShipShieldEmitterComponent : Component
     /// <summary>
     /// Maximum power consumption limit for the emitter in watts.
     /// </summary>
-    [DataField]
-    public float MaxDraw = 150000f;
+    // [DataField] //commented because we only have base draw now
+    // public float MaxDraw = 150000f;
 
     /// <summary>
     /// Base power consumption of the emitter when undamaged, in watts.
     /// </summary>
     [DataField]
-    public float BaseDraw = 50000f;
+    public float PowerDraw = 50000f;
 
     [DataField]
     public bool Recharging = false;

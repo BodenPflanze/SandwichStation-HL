@@ -12,9 +12,12 @@
   - AllAccess
   access:
   - CentralCommand
-  special:
+  # Goobstation
+  #- NanotrasenRepresentative # We dont have that
+  #- BlueshieldOfficer # We dont have that
+  special:  # Goobstation
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
+    implants: [ MindShieldImplant, FreedomImplant, BluespaceLifelineImplant, RadioImplantCentcomm, NutrimentPumpImplant, StypticStimulatorImplant, DeathRattleImplantCentcomm ]
 
 - type: startingGear
   id: CBURNGear
@@ -22,19 +25,23 @@
     jumpsuit: ClothingUniformJumpsuitColorBrown
     back: ClothingBackpackDuffelCBURN
     mask: ClothingMaskGasERT
-    eyes: ClothingEyesGlassesSecurity
+    neck: ExecutiveIDCard # Executive Access!
+    eyes: ClothingEyesGlassesMedSec # Better glasses
     ears: ClothingHeadsetAltCentCom
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitCBURN
-    shoes: ClothingShoesBootsCombatFilled
+    shoes: ClothingShoesBootsMagEmergencyResponseTeam # Goobstation
     id: CBURNPDA
-    pocket1: RadioHandheldNF # Frontier: RadioHandheld<RadioHandheldNF
+    pocket1: InfectionScannerCburn # Goob
     pocket2: NFWeaponEnergyPistolLaser # Frontier: WeaponLaserGun<NFWeaponEnergyPistolLaser
-    belt: ClothingBeltBandolier
+    belt: ClothingBeltBandolierIncendiary # Sandwich-HL: If anyone ever removes this, please also delete the entity in shotguns.yml
   storage:
     back:
-    - WeaponShotgunDoubleBarreled
+    - WeaponShotgunEnforcerIncendiary # CBURN desperately needs a good fucking gun, not that dogshit (double barreled). [If anyone ever removes this, please also delete the entity in shotguns.yml]
     - AmmoBox12_gaugeIncendiary
-    - GrenadeFlashBang
-    - PillAmbuzolPlus
-    - PillAmbuzol
+    - AmbuzolPlusMedipen # Injectors are cooler.
+    - AmbuzolMedipen # Injectors are cooler.
+    - AmbuzolMedipen # Injectors are cooler.
+    - MedkitCombatFilled # Ah yes, let's send them in with ZERO meds. Good luck
+    - RadioHandheldNF # Frontier: RadioHandheld<RadioHandheldNF
+    - CburnSpear # SPEAAR

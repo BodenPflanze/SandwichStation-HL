@@ -15,8 +15,29 @@
     maxOccurrences: 1
   - type: RuleGrids
   - type: LoadMapRule
-    gridPath: /Maps/_Goobstation/Shuttles/consul.yml # Sandwich-HL: replace
-    #preloadedGrid: ConsulShuttle # Sandwich-HL: No idea why this not works
+    #gridPath: /Maps/_Goobstation/Shuttles/consul.yml
+    preloadedGrid: ConsulShuttle
+
+# Sandwich-HL: i mean, why not?
+- type: entity
+  parent: BaseUnknownShuttleRule
+  id: SpawnDeathsquadSilent
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-solar-flare-nf-start-announcement # Its just an Solar flare- nothing to see here!
+    endAnnouncement: station-event-solar-flare-nf-end-announcement # See! it was a normal flare!
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    duration: 120 # A short solar flare
+    reoccurrenceDelay: 30
+    maxOccurrences: 1
+  - type: RuleGrids
+  - type: LoadMapRule
+    preloadedGrid: ConsulShuttle
+  - type: SolarFlareRule # Totally not CentCom just blocking the Servers...
+    allChannels: true
+    lightBreakChancePerSecond: 0 # No lights break cuz CC is blocking channels- its not an actual flare
+    doorToggleChancePerSecond: 0 # No doors toggle cuz CC is blocking channels
 
 # # CBURN
 

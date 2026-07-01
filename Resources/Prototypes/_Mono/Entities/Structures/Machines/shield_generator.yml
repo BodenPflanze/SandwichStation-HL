@@ -1,3 +1,16 @@
+# GUIDE:
+# T1 - 7500 HP - 30 SEC COOLDOWN 
+# T2 - 15000 HP - 60 SEC COOLDOWN
+# T3 - 30000 HP - 120 SEC COOLDOWN
+# TODO: DSM-SPECIFIC T0 SHIELD WITH 3500 HP AND 20 SECOND COOLDOWN
+# TODO: SIDEGRADE T1 / T2 SHIELDS WITH LOWER HP BUT 10 SECOND COOLDOWN
+# VULCAN - WEAKNESS, 150 DMG / PROJECTILE, 12 PROJECTILES / SECOND, 1800 DPS - TAKES 10, 20, 40 SECONDS TO DOWN A SHIELD
+# SLUGTHROWER - DU PIERCES SHIELD, HE DEALS 150DMG / HIT
+# SWARMER/LANCER - 1000 DAMAGE / MISSILE
+# 48MM - IGNORES SHIELD
+# 120MM - DU DEALS 1000 DMG / HIT, HE DEALS 150 DAMAGE / HIT
+# 320MM - DEALS 5000 TO SHIELD
+
 # Base
 - type: entity
   id: ShieldGeneratorBase
@@ -83,12 +96,11 @@
   - type: Appearance
   - type: ShipShieldEmitter
     damageLimit: 65000
-    damageOverloadTimePunishment: 40
     healPerSecond: 1750 # Base is 250
     damageExp: 1.15 # Base is 1.1
-    baseDraw: 40000 # Base is 50000
-    maxDraw: 100000 # Base is 150000
+    powerDraw: 40000 # Base is 50000
     unpoweredBonus: 7 # Base is 6
+    damageOverloadTimePunishment: 40
     shieldColor: "#FF3333"
     powerUpSound: !type:SoundPathSpecifier
         path: "/Audio/Effects/teleport_arrival.ogg"
@@ -117,12 +129,11 @@
   suffix: POI ONLY
   components:
   - type: ShipShieldEmitter
+    damageLimit: 150000
     healPerSecond: 10000
     damageExp: 0.5
-    baseDraw: 80000
-    maxDraw: 150000
+    powerDraw: 80000
     unpoweredBonus: 8
-    damageLimit: 150000
     damageOverloadTimePunishment: 30
     shieldColor: "#FF9933"
   - type: Sprite
@@ -195,12 +206,11 @@
   suffix: TSF CAPITAL ONLY
   components:
   - type: ShipShieldEmitter
+    damageLimit: 85000
     healPerSecond: 12000
     damageExp: 0.5
-    baseDraw: 60000
-    maxDraw: 100000
+    powerDraw: 60000
     unpoweredBonus: 8
-    damageLimit: 85000
     damageOverloadTimePunishment: 35
     shieldColor: "#FF0A70"
   - type: Sprite
@@ -278,12 +288,11 @@
   suffix: ADS ONLY, SCI VOUCHER SHIPS ONLY
   components:
   - type: ShipShieldEmitter
+    damageLimit: 40000
     healPerSecond: 1000 # Base is 250
     damageExp: 1.15 # Base is 1.1
-    baseDraw: 30000 # Base is 50000
-    maxDraw: 75000 # Base is 150000
+    powerDraw: 30000 # Base is 50000
     unpoweredBonus: 4 # Base is 6
-    damageLimit: 40000
     damageOverloadTimePunishment: 100
     shieldColor: "#9933FF"
   - type: Sprite
@@ -362,12 +371,11 @@
   name: MS-100 "Sentinel" Shield Generator
   components:
   - type: ShipShieldEmitter
+    damageLimit: 20000 # Mono
     healPerSecond: 300 # Mono
     damageExp: 1.2 # Mono
-    baseDraw: 20000
-    maxDraw: 60000
+    powerDraw: 20000
     unpoweredBonus: 3 # Mono
-    damageLimit: 20000 # Mono
     damageOverloadTimePunishment: 80
     shieldColor: "#3399FF"
   - type: Sprite
