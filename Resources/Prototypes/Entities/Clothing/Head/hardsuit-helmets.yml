@@ -907,7 +907,7 @@
       - state: equipped-head-unshaded-reptilian
         shader: unshaded
   - type: PointLight
-    radius: 4 # Sandwich-HL: Cburn would like to see past 1m
+    radius: 5 # Sandwich-HL: Cburn would like to see past 1m
     color: orange
   - type: PressureProtection
     highPressureMultiplier: 0.08

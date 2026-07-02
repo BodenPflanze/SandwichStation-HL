@@ -5,6 +5,38 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 # This is such a fucking ass way to do this, but who cares.
 - type: entity
+  parent: CandyBowl
+  id: CandyBowlFilledLollypopsMystery
+  suffix: mystery, good
+  # components:
+  # - type: Bin
+  #   initialContents:
+    # - FoodSnackLollypopWrappedMystery # Todo: slowly port Wizden Food system for lollypops at some point...
+    # - FoodSnackLollypopWrappedMystery
+    # - FoodSnackLollypopWrappedMystery
+    # - FoodSnackLollypopWrappedMystery
+    # - FoodSnackLollypopWrappedMystery
+    # - FoodSnackLollypopWrappedMystery
+    # - FoodSnackLollypopWrappedMystery
+    # - FoodSnackLollypopWrappedMystery
+    # - FoodSnackLollypopWrappedMystery
+    # - FoodSnackLollypopWrappedMystery
+    # - FoodSnackLollypopWrappedMystery
+    # - FoodSnackLollypopWrappedMystery
+    # - FoodSnackLollypopWrappedMystery
+    # - FoodSnackLollypopWrappedMystery
+    # - FoodSnackLollypopWrappedMystery
+    # whitelist:
+    #   tags:
+    #   - FoodSnack
+
+- type: entity
+  parent: FoodLollipop
+  id: FoodSnackLollypopWrappedCentCom # Todo: Remove this entity entirely once food system and lollipops are correctly ported
+  name: CentCom lollipop
+  description: Smells of a food system that is not ported since over 1 year.... and now we have this as replacement
+
+- type: entity
   id: DeterrentCaseFilled
   parent: DeterrentCase
   suffix: Filled, CentComm

@@ -39,20 +39,20 @@
     lightBreakChancePerSecond: 0 # No lights break cuz CC is blocking channels- its not an actual flare
     doorToggleChancePerSecond: 0 # No doors toggle cuz CC is blocking channels
 
-# # CBURN
+# CBURN
 
-# - type: entity
-#   parent: BaseUnknownShuttleRule
-#   id: SpawnCBURN
-#   components:
-#   - type: StationEvent
-#     startAnnouncement: station-event-cburn-enroute
-#     startAudio:
-#       path: /Audio/Announcements/attention.ogg
-#     duration: 1
-#     maxOccurrences: 1
-#   - type: LoadMapRule
-#     preloadedGrid: RetortShuttleCBURN
+- type: entity
+  parent: BaseUnknownShuttleRule
+  id: SpawnCBURN
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-cburn-enroute
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    duration: 1
+    maxOccurrences: 1
+  - type: LoadMapRule
+    preloadedGrid: RetortShuttleCBURN
 
 # # ERT
 
