@@ -1,0 +1,17 @@
+# ERT chaplain belt as replacement for the Nullrod from goob (i hate porting over huge ass systems...)
+- type: entity
+  id: ClothingBeltHolsterFilledBlessed
+  parent: ClothingBeltHolster
+  suffix: Filled, Blessed
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponRevolverFaithHoly
+        - id: SpeedLoader45_magnumHoly
+        - id: SpeedLoader45_magnumHoly
+        - id: SpeedLoader45_magnumHoly
+        - id: AmmoBox45_magnumHoly
+        - id: ChaplainHolywaterFlaskFilled
+        - id: CombatMedipen
+        - id: AmbuzolMedipen # Just in case there are unholy creatures from the dead
+        - id: CombatMedipen

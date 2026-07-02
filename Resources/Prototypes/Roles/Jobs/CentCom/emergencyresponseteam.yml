@@ -110,7 +110,7 @@
     components:
     - type: BibleUser #Lets them heal with bibles
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
+     implants: [ MindShieldImplant, FreedomImplant, BluespaceLifelineImplant, RadioImplantCentcomm, NutrimentPumpImplant, StypticStimulatorImplant, DeathRattleImplantCentcomm ]
   whitelisted: true # Frontier
 
 - type: startingGear
@@ -118,22 +118,22 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTChaplain
     back: ClothingBackpackERTChaplain
-    shoes: ClothingShoesLeather
+    shoes: ClothingShoesBootsMagEmergencyResponseTeam # Goobstation
     head: ClothingHeadHatFez
     eyes: ClothingEyesGlasses
     neck: ClothingNeckStoleChaplain
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterArmorBasicSlim
+    outerClothing: ClothingOuterArmourDurathread # Durathread armor is cooler.
     id: ERTChaplainPDA
     ears: ClothingHeadsetAltCentCom
-    belt: ClothingBeltStorageWaistbag
-    pocket1: Flare
+    belt: ClothingBeltHolsterFilledBlessed # Holy weapon... (well, almost)
+    pocket1: WeaponPulsePistol # Literally described as "Favored sidearm of NT ERT operatives".
     pocket2: DrinkWaterBottleFull
   storage:
     back:
     - BoxCandle
     - BoxBodyBag
-    - DrinkWaterMelonJuiceJug
+    # - DrinkWaterMelonJuiceJug # Why...
     - Lantern
     - Lantern
     - Bible
@@ -142,14 +142,15 @@
     - FoodBakedBunHotX
     - FoodBakedBunHotX
     - FoodBakedBunHotX
-    - Lighter
+    - FlippoEngravedLighter # Sandwich-HL - this is better
+    - ExecutiveIDCard # Goobstation - Executive Access!
 
 - type: startingGear
   id: ERTChaplainGearEVA
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTChaplain
     back: ClothingBackpackERTChaplain
-    shoes: ClothingShoesBootsMagAdv
+    shoes: ClothingShoesBootsMagEmergencyResponseTeam # Goobstation
     mask: ClothingMaskGasERT
     eyes: ClothingEyesGlasses
     neck: ClothingNeckStoleChaplain
@@ -157,14 +158,14 @@
     outerClothing: ClothingOuterHardsuitERTChaplain
     id: ERTChaplainPDA
     ears: ClothingHeadsetAltCentCom
-    belt: ClothingBeltStorageWaistbag
-    pocket1: Flare
+    belt: ClothingBeltHolsterFilledBlessed # Holy weapon... (well, almost)
+    pocket1: WeaponPulsePistol # Literally described as "Favored sidearm of NT ERT operatives".
     pocket2: DrinkWaterBottleFull
   storage:
     back:
     - BoxCandle
     - BoxBodyBag
-    - DrinkWaterMelonJuiceJug
+    # - DrinkWaterMelonJuiceJug # Why...
     - Lantern
     - Lantern
     - Bible
@@ -173,7 +174,8 @@
     - FoodBakedBunHotX
     - FoodBakedBunHotX
     - FoodBakedBunHotX
-    - Lighter
+    - FlippoEngravedLighter # Sandwich-HL - this is better
+    - ExecutiveIDCard # Goobstation - Executive Access!
 
 # Engineer
 - type: job
@@ -190,9 +192,9 @@
   - AllAccess
   access:
   - CentralCommand
-  special:
+  special: # Goobstation
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
+    implants: [ MindShieldImplant, FreedomImplant, BluespaceLifelineImplant, RadioImplantCentcomm, NutrimentPumpImplant, StypticStimulatorImplant, DeathRattleImplantCentcomm ]
   whitelisted: true # Frontier
 
 - type: startingGear
@@ -200,35 +202,40 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTEngineer
     back: ClothingBackpackERTEngineer
-    shoes: ClothingShoesBootsWork
+    shoes: ClothingShoesBootsMagEmergencyResponseTeam # Goobstation
     head: ClothingHeadHelmetERTEngineer
+    neck: ExecutiveIDCard # Goobstation - Executive Access!
     eyes: ClothingEyesGlassesMeson
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterArmorBasicSlim
+    outerClothing: ClothingOuterArmourDurathread # Durathread armor is cooler.
     id: ERTEngineerPDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltChiefEngineerFilled
-    pocket1: Flare
-    pocket2: GasAnalyzer
+    pocket1: WeaponPulsePistol # Literally described as "Favored sidearm of NT ERT operatives".
+    pocket2: AirGrenade # Ah yes, put a gas analyuer in their pocket altough its in the CE belt
   storage:
     back:
-    - trayScanner
     - RCD
     - RCDAmmo
     - RCDAmmo
+    - AirGrenade
     - CableMVStack
     - CableHVStack
     - CableApcStack
     - SheetPlasteel
     - SheetSteel
     - SheetGlass
+    - BoxDispenserFlare # Sandwich-HL
+    - NFInflatableWindowStack # Sandwich-HL
+    - NFInflatableWindowStack # Sandwich-HL
 
 - type: startingGear
   id: ERTEngineerGearEVA
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTEngineer
     back: ClothingBackpackERTEngineer
-    shoes: ClothingShoesBootsMagAdv
+    shoes: ClothingShoesBootsMagEmergencyResponseTeam # Goobstation
+    neck: ExecutiveIDCard # Goobstation - Executive Access!
     mask: ClothingMaskGasERT
     eyes: ClothingEyesGlassesMeson
     gloves: ClothingHandsGlovesCombat
@@ -236,20 +243,23 @@
     id: ERTEngineerPDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltChiefEngineerFilled
-    pocket1: Flare
-    pocket2: GasAnalyzer
+    pocket1: WeaponPulsePistol # Literally described as "Favored sidearm of NT ERT operatives".
+    pocket2: AirGrenade # Ah yes, put a gas analyuer in their pocket altough its in the CE belt
   storage:
     back:
-    - trayScanner
     - RCD
     - RCDAmmo
     - RCDAmmo
+    - AirGrenade
     - CableMVStack
     - CableHVStack
     - CableApcStack
     - SheetPlasteel
     - SheetSteel
     - SheetGlass
+    - BoxDispenserFlare # Sandwich-HL
+    - NFInflatableWindowStack # Sandwich-HL
+    - NFInflatableWindowStack # Sandwich-HL
 
 # Security
 - type: job

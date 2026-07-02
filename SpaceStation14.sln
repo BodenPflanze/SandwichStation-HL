@@ -139,6 +139,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content.Goobstation.Maths",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content.ModuleManager", "Content.ModuleManager\Content.ModuleManager.csproj", "{254A9F51-3231-596B-D3C9-007BA2A31B5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content.Goobstation.Server", "Content.Goobstation.Server\Content.Goobstation.Server.csproj", "{389187DF-4FD3-8C1E-69E2-9C888AAC83AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content.Goobstation.Client", "Content.Goobstation.Client\Content.Goobstation.Client.csproj", "{F85B9689-4499-C3D3-B555-493A91685BF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content.Goobstation.Shared", "Content.Goobstation.Shared\Content.Goobstation.Shared.csproj", "{B901D102-4524-226D-A55D-57F857519494}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content.Goobstation.Common", "Content.Goobstation.Common\Content.Goobstation.Common.csproj", "{E2D9DDE4-6478-3B3B-FEAB-E69082D2E24B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -474,6 +482,38 @@ Global
 		{254A9F51-3231-596B-D3C9-007BA2A31B5A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{254A9F51-3231-596B-D3C9-007BA2A31B5A}.Tools|Any CPU.ActiveCfg = Debug|Any CPU
 		{254A9F51-3231-596B-D3C9-007BA2A31B5A}.Tools|Any CPU.Build.0 = Debug|Any CPU
+		{389187DF-4FD3-8C1E-69E2-9C888AAC83AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{389187DF-4FD3-8C1E-69E2-9C888AAC83AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{389187DF-4FD3-8C1E-69E2-9C888AAC83AE}.DebugOpt|Any CPU.ActiveCfg = DebugOpt|Any CPU
+		{389187DF-4FD3-8C1E-69E2-9C888AAC83AE}.DebugOpt|Any CPU.Build.0 = DebugOpt|Any CPU
+		{389187DF-4FD3-8C1E-69E2-9C888AAC83AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{389187DF-4FD3-8C1E-69E2-9C888AAC83AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{389187DF-4FD3-8C1E-69E2-9C888AAC83AE}.Tools|Any CPU.ActiveCfg = Tools|Any CPU
+		{389187DF-4FD3-8C1E-69E2-9C888AAC83AE}.Tools|Any CPU.Build.0 = Tools|Any CPU
+		{F85B9689-4499-C3D3-B555-493A91685BF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F85B9689-4499-C3D3-B555-493A91685BF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F85B9689-4499-C3D3-B555-493A91685BF4}.DebugOpt|Any CPU.ActiveCfg = DebugOpt|Any CPU
+		{F85B9689-4499-C3D3-B555-493A91685BF4}.DebugOpt|Any CPU.Build.0 = DebugOpt|Any CPU
+		{F85B9689-4499-C3D3-B555-493A91685BF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F85B9689-4499-C3D3-B555-493A91685BF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F85B9689-4499-C3D3-B555-493A91685BF4}.Tools|Any CPU.ActiveCfg = Tools|Any CPU
+		{F85B9689-4499-C3D3-B555-493A91685BF4}.Tools|Any CPU.Build.0 = Tools|Any CPU
+		{B901D102-4524-226D-A55D-57F857519494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B901D102-4524-226D-A55D-57F857519494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B901D102-4524-226D-A55D-57F857519494}.DebugOpt|Any CPU.ActiveCfg = DebugOpt|Any CPU
+		{B901D102-4524-226D-A55D-57F857519494}.DebugOpt|Any CPU.Build.0 = DebugOpt|Any CPU
+		{B901D102-4524-226D-A55D-57F857519494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B901D102-4524-226D-A55D-57F857519494}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B901D102-4524-226D-A55D-57F857519494}.Tools|Any CPU.ActiveCfg = Tools|Any CPU
+		{B901D102-4524-226D-A55D-57F857519494}.Tools|Any CPU.Build.0 = Tools|Any CPU
+		{E2D9DDE4-6478-3B3B-FEAB-E69082D2E24B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2D9DDE4-6478-3B3B-FEAB-E69082D2E24B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2D9DDE4-6478-3B3B-FEAB-E69082D2E24B}.DebugOpt|Any CPU.ActiveCfg = DebugOpt|Any CPU
+		{E2D9DDE4-6478-3B3B-FEAB-E69082D2E24B}.DebugOpt|Any CPU.Build.0 = DebugOpt|Any CPU
+		{E2D9DDE4-6478-3B3B-FEAB-E69082D2E24B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2D9DDE4-6478-3B3B-FEAB-E69082D2E24B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2D9DDE4-6478-3B3B-FEAB-E69082D2E24B}.Tools|Any CPU.ActiveCfg = Tools|Any CPU
+		{E2D9DDE4-6478-3B3B-FEAB-E69082D2E24B}.Tools|Any CPU.Build.0 = Tools|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

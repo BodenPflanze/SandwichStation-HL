@@ -1500,7 +1500,7 @@ entities:
       parent: 1
     - type: Fixtures
       fixtures: {}
-- proto: FoodSnackLollypopWrappedCentCom
+- proto: FoodSnackLollypopWrappedCentComm
   entities:
   - uid: 175
     components:
@@ -1985,6 +1985,8 @@ entities:
       pos: -1.5,-7.5
       parent: 1
     - type: PowerSupplier
+      supplyRampRate: 1000
+      supplyRampTolerance: 1000
       supplyRate: 300000
 - proto: GravityGeneratorMini
   entities:

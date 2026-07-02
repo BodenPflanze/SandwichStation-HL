@@ -1,5 +1,6 @@
 using Content.Server.Abilities.Mime;
 using Content.Server.Bible.Components;
+using Content.Goobstation.Common.Religion; // Goobstation
 using Content.Server.Implants;
 using Content.Shared._NF.Implants.Components;
 using Content.Shared.Implants;

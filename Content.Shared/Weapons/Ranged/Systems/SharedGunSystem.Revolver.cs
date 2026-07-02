@@ -548,11 +548,16 @@ public partial class SharedGunSystem
                     args.Ammo.Add((ent.Value, EnsureComp<AmmoComponent>(ent.Value)));
                 }
 
+                /* Sandwich-HL start
                 // Delete the cartridge entity on client
                 if (_netManager.IsClient)
+                */
+                // Delete the cartridge entity on client only if it's a client-side predicted entity
+                if (_netManager.IsClient && IsClientSide(ent.Value))
                 {
                     QueueDel(ent);
                 }
+                // Sandwich-HL end
             }
         }
         else

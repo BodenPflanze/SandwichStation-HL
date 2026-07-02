@@ -5,7 +5,7 @@
         "y": 32
     },
     "license": "CC-BY-SA-3.0",
-    "copyright": "https://github.com/tgstation/tgstation/pull/1684/commits/19e51caef09e78ca1122d26455b539ff5968d334, https://github.com/tgstation/tgstation/blob/master/icons/obj/weapons/guns/ammo.dmi",
+    "copyright": "https://github.com/tgstation/tgstation/pull/1684/commits/19e51caef09e78ca1122d26455b539ff5968d334, https://github.com/tgstation/tgstation/blob/master/icons/obj/weapons/guns/ammo.dmi. Holy & incendiary made by BodenPflanze, uranium modified by BodenPlfanze",
     "states": [
         {
             "name": "base"
@@ -30,6 +30,60 @@
         },
         {
             "name": "base-6"
+        },
+        {
+            "name": "rubber-1"
+        },
+        {
+            "name": "rubber-2"
+        },
+        {
+            "name": "rubber-3"
+        },
+        {
+            "name": "rubber-4"
+        },
+        {
+            "name": "rubber-5"
+        },
+        {
+            "name": "rubber-6"
+        },
+        {
+            "name": "holy-1"
+        },
+        {
+            "name": "holy-2"
+        },
+        {
+            "name": "holy-3"
+        },
+        {
+            "name": "holy-4"
+        },
+        {
+            "name": "holy-5"
+        },
+        {
+            "name": "holy-6"
+        },
+        {
+            "name": "incendiary-1"
+        },
+        {
+            "name": "incendiary-2"
+        },
+        {
+            "name": "incendiary-3"
+        },
+        {
+            "name": "incendiary-4"
+        },
+        {
+            "name": "incendiary-5"
+        },
+        {
+            "name": "incendiary-6"
         },
         {
             "name": "practice-1"

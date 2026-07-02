@@ -32,7 +32,7 @@
 
 - type: entity
   parent: FoodLollipop
-  id: FoodSnackLollypopWrappedCentCom # Todo: Remove this entity entirely once food system and lollipops are correctly ported
+  id: FoodSnackLollypopWrappedCentComm # Todo: Remove this entity entirely once food system and lollipops are correctly ported
   name: CentCom lollipop
   description: Smells of a food system that is not ported since over 1 year.... and now we have this as replacement
 

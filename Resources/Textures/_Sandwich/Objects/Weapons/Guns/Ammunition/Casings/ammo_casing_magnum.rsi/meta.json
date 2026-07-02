@@ -1,0 +1,41 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CC-BY-SA-3.0",
+    "copyright": "https://github.com/tgstation/tgstation/pull/1684/commits/19e51caef09e78ca1122d26455b539ff5968d334, https://github.com/tgstation/tgstation/blob/master/icons/obj/weapons/guns/ammo.dmi. Ammo sprites modifed by BodenPflanze",
+    "states": [
+        {
+            "name": "base"
+        },
+        {
+            "name": "base_improvised"
+        },
+        {
+            "name": "tip_ap"
+        },
+        {
+            "name": "tip_fmj"
+        },
+        {
+            "name": "tip_holy"
+        },
+        {
+            "name": "tip_incendiary"
+        },
+        {
+            "name": "tip_practice"
+        },
+        {
+            "name": "tip_rubber"
+        },
+        {
+            "name": "tip_uranium"
+        },
+        {
+            "name": "base-spent"
+        }
+    ]
+}

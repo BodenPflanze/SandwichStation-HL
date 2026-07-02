@@ -80,3 +80,32 @@
       types:
         Radiation: 15
         Piercing: 20
+
+# Sandwich-HL - ERT Bullet type i made as replacement for the Nullrod from goob (i hate porting over huge ass systems...)
+- type: entity
+  id: Bullet45_magnumHoly
+  name: bullet (.45 magnum blessed)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Projectiles/bullets.rsi
+    layers:
+    - state: bullet
+      color: "#91b1ac"
+      shader: unshaded
+    - state: pellet-trace
+      color: "#ffc803FF"
+      shader: unshaded
+  - type: Tracer
+    color: "#ffc80364"
+    length: 1.5
+  - type: PointLight
+    color: "#FFC803FF"
+    radius: 1.3
+    energy: 20
+  - type: Projectile
+    damage:
+      types:
+        Holy: 15
+        Piercing: 28

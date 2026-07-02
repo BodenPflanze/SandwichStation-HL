@@ -5,6 +5,7 @@ using Content.Shared.Damage;
 using Content.Shared.Revenant.Components;
 using Content.Server.Guardian;
 using Content.Server.Bible.Components;
+using Content.Goobstation.Common.Religion; // Goobstation
 using Content.Server.Popups;
 using Robust.Shared.Player;
 using Robust.Shared.Random;

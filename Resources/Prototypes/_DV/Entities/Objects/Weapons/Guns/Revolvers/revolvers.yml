@@ -35,18 +35,34 @@
     sprite: _DV/Objects/Weapons/Guns/Revolvers/faith.rsi
   - type: Gun
     selectedMode: SemiAuto
+    # Sandwich-HL start
+    minAngle: 4.3
+    maxAngle: 15.2
+    angleIncrease: 1.8
+    # Sandwich-HL end
     fireRate: 1.5
     availableModes:
     - SemiAuto
   - type: RevolverAmmoProvider
     proto: Cartridge45_magnumFMJ
-    capacity: 4
-    chambers: [ True, True, True, True ]
-    ammoSlots: [ null, null, null, null ]
+    capacity: 6 # Sandwich-HL: changed from 4 to 6 since speedloader wouldnt make sense else and i dont want to make a extra speedloader
+    chambers: [ True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null ]
   - type: StaticPrice
     price: 240
   - type: NFWeaponDetails # Sandwich-HL
     manufacturer: weapon-details-manufacturer-frontier-gunsmith-consortium # Sandwich-HL
+
+# Sandwich-HL start: ERT chaplain weapon as replacement for the Nullrod from goob (i hate porting over huge ass systems...)
+- type: entity
+  name: Faith
+  parent: WeaponRevolverFaith
+  id: WeaponRevolverFaithHoly
+  suffix: Filled, Blessed
+  components:
+  - type: RevolverAmmoProvider
+    proto: Cartridge45_magnumHoly
+# Sandwich-HL end
 
 - type: entity
   name: Lucky 37

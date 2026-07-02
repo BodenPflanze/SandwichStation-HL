@@ -13,11 +13,25 @@
       tags:
         - Cartridge45_magnumFMJ
     capacity: 6
-  - type: Sprite
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
+  # Sandwich-HL start: makin speedloader visual better :P
+  - type: Appearance
+  - type: DynamicSpeedloaderVisuals
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
+    layers:
+      - state: base
+        map: [ "enum.SpeedLoaderVisualLayers.Base" ]
+      - map: [ "enum.SpeedLoaderVisualLayers.Chamber1" ]
+      - map: [ "enum.SpeedLoaderVisualLayers.Chamber2" ]
+      - map: [ "enum.SpeedLoaderVisualLayers.Chamber3" ]
+      - map: [ "enum.SpeedLoaderVisualLayers.Chamber4" ]
+      - map: [ "enum.SpeedLoaderVisualLayers.Chamber5" ]
+      - map: [ "enum.SpeedLoaderVisualLayers.Chamber6" ]
+  # Sandwich-HL end
 
 - type: entity
   id: SpeedLoader45_magnumFMJ
@@ -26,18 +40,6 @@
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge45_magnumFMJ
-  - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
-    layers:
-      - state: base
-        map: [ "enum.GunVisualLayers.Base" ]
-      - state: base-6
-        map: [ "enum.GunVisualLayers.Mag" ]
-  - type: MagazineVisuals
-    magState: base
-    steps: 7
-    zeroVisible: false
-  - type: Appearance
 
 - type: entity
   id: SpeedLoader45_magnumEmpty
@@ -46,16 +48,6 @@
   components:
   - type: BallisticAmmoProvider
     proto: null
-  - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
-    layers:
-      - state: base
-        map: [ "enum.GunVisualLayers.Base" ]
-      # TODO: This is actually a issue with all the speed loaders:
-      #       You can mix different ammo types, but it will always
-      #       use the one it was printed for.
-      - state: base-6
-        map: [ "enum.GunVisualLayers.Mag" ]
 
 - type: entity
   id: SpeedLoader45_magnumIncendiary
@@ -72,18 +64,6 @@
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge45_magnumPractice
-  - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
-    layers:
-      - state: base
-        map: [ "enum.GunVisualLayers.Base" ]
-      - state: practice-6
-        map: [ "enum.GunVisualLayers.Mag" ]
-  - type: MagazineVisuals
-    magState: practice
-    steps: 7
-    zeroVisible: false
-  - type: Appearance
 
 - type: entity
   id: SpeedLoader45_magnumAP
@@ -92,18 +72,6 @@
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge45_magnumAP
-  - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
-    layers:
-      - state: base
-        map: [ "enum.GunVisualLayers.Base" ]
-      - state: piercing-6
-        map: [ "enum.GunVisualLayers.Mag" ]
-  - type: MagazineVisuals
-    magState: piercing
-    steps: 7
-    zeroVisible: false
-  - type: Appearance
 
 - type: entity
   id: SpeedLoader45_magnumUranium
@@ -112,18 +80,6 @@
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge45_magnumUranium
-  - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
-    layers:
-      - state: base
-        map: [ "enum.GunVisualLayers.Base" ]
-      - state: uranium-6
-        map: [ "enum.GunVisualLayers.Mag" ]
-  - type: MagazineVisuals
-    magState: uranium
-    steps: 7
-    zeroVisible: false
-  - type: Appearance
 
 - type: entity
   id: SpeedLoader45_magnumRubber
@@ -132,15 +88,12 @@
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge45_magnumRubber
-  - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/45_magnum/45_magnum_rubber_speed_loader.rsi
-    layers:
-      - state: base
-        map: [ "enum.GunVisualLayers.Base" ]
-      - state: rubber-6
-        map: [ "enum.GunVisualLayers.Mag" ]
-  - type: MagazineVisuals
-    magState: rubber
-    steps: 7
-    zeroVisible: false
-  - type: Appearance
+
+# Sandwich-HL - ERT Bullet type i made as replacement for the Nullrod from goob (i hate porting over huge ass systems...)
+- type: entity
+  id: SpeedLoader45_magnumHoly
+  name: "speed loader (.45 magnum blessed)"
+  parent: BaseSpeedLoader45_magnum
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge45_magnumHoly

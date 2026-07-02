@@ -82,18 +82,18 @@
 #   - type: LoadMapRule
 #     preloadedGrid: RetortShuttleMedical
 
-# - type: entity
-#   parent: BaseUnknownShuttleRule
-#   id: SpawnERTEngineering
-#   components:
-#   - type: StationEvent
-#     startAnnouncement: station-event-emergencyresponseteam-engineering-enroute
-#     startAudio:
-#       path: /Audio/Announcements/attention.ogg
-#     duration: 1
-#     maxOccurrences: 1
-#   - type: LoadMapRule
-#     preloadedGrid: RetortShuttleEngineering
+- type: entity
+  parent: BaseUnknownShuttleRule
+  id: SpawnERTEngineering
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-emergencyresponseteam-engineering-enroute
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    duration: 1
+    maxOccurrences: 1
+  - type: LoadMapRule
+    preloadedGrid: RetortShuttleEngineering
 
 # - type: entity
 #   parent: BaseUnknownShuttleRule
@@ -107,3 +107,16 @@
 #     maxOccurrences: 1
 #   - type: LoadMapRule
 #     preloadedGrid: RetortShuttleJanitorial
+
+- type: entity
+  parent: BaseUnknownShuttleRule
+  id: SpawnERTChaplain
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-emergencyresponseteam-chaplain-enroute
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    duration: 1
+    maxOccurrences: 1
+  - type: LoadMapRule
+    preloadedGrid: RetortShuttleChaplain

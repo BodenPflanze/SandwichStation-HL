@@ -15,10 +15,10 @@
 #   path: /Maps/_Goobstation/Shuttles/retort_medical.yml
 #   copies: 1
 
-# - type: preloadedGrid
-#   id: RetortShuttleEngineering
-#   path: /Maps/_Goobstation/Shuttles/retort_engineering.yml
-#   copies: 1
+- type: preloadedGrid
+  id: RetortShuttleEngineering
+  path: /Maps/_Goobstation/Shuttles/retort_engineering.yml
+  copies: 1
 
 # - type: preloadedGrid
 #   id: RetortShuttleJanitorial
@@ -30,4 +30,9 @@
 - type: preloadedGrid
   id: RetortShuttleCBURN
   path: /Maps/_Goobstation/Shuttles/retort_cburn.yml
+  copies: 1
+
+- type: preloadedGrid
+  id: RetortShuttleChaplain
+  path: /Maps/_Goobstation/Shuttles/retort_chaplain.yml
   copies: 1

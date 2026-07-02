@@ -2,6 +2,12 @@
   id: AutoinjectorCartridge
 
 - type: Tag
+  id: BorgModuleScience
+
+- type: Tag
+  id: Cartridge127x99mm
+
+- type: Tag
   id: Magazine762x39mmSubsonic
 
 - type: Tag
@@ -12,8 +18,6 @@
 
 - type: Tag
   id: CartridgeHighCaliber
-
-# Mechs
 
 - type: Tag
   id: ClarkeCentralControlModule
@@ -104,7 +108,6 @@
 
 - type: Tag
   id: CombatMech
-# TODO: Make medical mech, I will.
 
 - type: Tag
   id: SpecialMech
@@ -155,11 +158,7 @@
   id: Stunbaton
 
 - type: Tag
-
-  id: Cartridge127x99mm
-
-- type: Tag
   id: VinylSleeveFit
 
 - type: Tag
-  id: BorgModuleScience
+  id: WeaponPistolCasul
