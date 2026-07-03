@@ -1,0 +1,51 @@
+# Can't port yet because Ent Effects is still in Server (needs upstream merge)
+# - type: reagent
+#   id: Oxandrolone
+#   name: reagent-name-oxandrolone
+#   group: Medicine
+#   desc: reagent-desc-oxandrolone
+#   physicalDesc: reagent-physical-desc-sticky
+#   flavor: medicine
+#   color: "#cac6bf"
+#   plantMetabolism:
+#     - !type:PlantAdjustHealth
+#       amount: -8
+#   metabolisms:
+#     Medicine:
+#       effects:
+#       - !type:HealthChange
+#         damage:
+#           types:
+#             Heat: -4
+#             Shock: -4
+#             Cold: -4
+#             Caustic: -3
+#         conditions:
+#         - !type:TypedDamageThreshold
+#           damage:
+#             groups:
+#               Burn: 25
+#         - !type:ReagentThreshold
+#           max: 25
+#       - !type:HealthChange
+#         damage:
+#           groups:
+#             Burn: -4
+#         conditions:
+#         - !type:TypedDamageThreshold
+#           damage:
+#             groups:
+#               Burn: 25
+#           inverse: true
+#         - !type:ReagentThreshold
+#           max: 25
+#       - !type:HealthChange
+#         damage:
+#           groups:
+#             Burn: 4
+#         conditions:
+#         - !type:ReagentThreshold
+#           min: 25
+#         - !type:OrganType
+#           type: Yowie
+#           shouldHave: false

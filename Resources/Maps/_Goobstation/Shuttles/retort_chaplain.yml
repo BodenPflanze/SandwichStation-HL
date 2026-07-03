@@ -4,8 +4,8 @@ meta:
   engineVersion: 267.3.0
   forkId: ""
   forkVersion: ""
-  time: 07/02/2026 20:53:05
-  entityCount: 439
+  time: 07/03/2026 06:15:39
+  entityCount: 441
 maps: []
 grids:
 - 1
@@ -151,7 +151,7 @@ entities:
         tiles:
           0,0:
             0: 51
-            1: 832
+            1: 576
           0,-1:
             0: 12309
             1: 2048
@@ -164,22 +164,20 @@ entities:
           -2,-3:
             1: 57344
           -1,-2:
-            0: 17520
-            2: 512
-            3: 8192
+            0: 26224
+          -2,-2:
+            1: 32768
           -1,-4:
-            1: 16
-            3: 8192
-            0: 2184
+            1: 18
+            0: 10376
           -1,-3:
-            0: 3686
-            3: 49152
-            4: 8192
+            0: 61030
           -1,-5:
             0: 34816
             1: 1024
           0,-4:
             0: 33586
+            1: 8
           0,-3:
             0: 65484
           0,-2:
@@ -191,6 +189,7 @@ entities:
             1: 16
           1,-2:
             0: 16
+            1: 8192
           1,-1:
             1: 16
           1,-3:
@@ -216,51 +215,6 @@ entities:
           moles:
           - 0
           - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.1467
-          moles:
-          - 3.206799
-          - 12.063677
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.14975
-          moles:
-          - 20.078888
-          - 75.53487
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.14948
-          moles:
-          - 18.472576
-          - 69.49208
           - 0
           - 0
           - 0
@@ -510,6 +464,13 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+- proto: AmmoBox45_magnumIncendiary
+  entities:
+  - uid: 203
+    components:
+    - type: Transform
+      pos: -1.4655347,-10.37412
+      parent: 1
 - proto: APCBasic
   entities:
   - uid: 35
@@ -2061,8 +2022,8 @@ entities:
       pos: -1.5,-7.5
       parent: 1
     - type: PowerSupplier
-      supplyRampRate: 1000
-      supplyRampTolerance: 1000
+      supplyRampRate: 10000
+      supplyRampTolerance: 10000
       supplyRate: 300000
 - proto: GravityGeneratorMini
   entities:
@@ -2185,15 +2146,15 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 14
           - 22
-          - 21
-          - 13
-          - 3
-          - 9
-          - 20
-          - 12
           - 6
+          - 12
+          - 20
+          - 9
+          - 3
+          - 13
+          - 21
+          - 14
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -2227,8 +2188,8 @@ entities:
           showEnts: False
           occludes: True
           ents:
+          - 127
           - 132
-          - 131
           - 130
           - 71
           - 45
@@ -2244,7 +2205,7 @@ entities:
           - 43
           - 121
           - 122
-          - 127
+          - 131
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -3366,6 +3327,15 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+- proto: WeaponSniperRepeater
+  entities:
+  - uid: 202
+    components:
+    - type: MetaData
+      desc: Brother! Aim for the head.	Let me end your torment! Look to your own salvation.
+    - type: Transform
+      pos: -1.5033934,-10.439745
+      parent: 1
 - proto: WeaponTurretDravon
   entities:
   - uid: 435

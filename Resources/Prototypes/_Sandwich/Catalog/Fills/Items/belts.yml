@@ -15,3 +15,14 @@
         - id: CombatMedipen
         - id: AmbuzolMedipen # Just in case there are unholy creatures from the dead
         - id: CombatMedipen
+
+# ERT jani
+- type: entity
+  id: ClothingBeltSecurityWebbingGrenadierFilledCleanades
+  parent: ClothingBeltSecurityWebbingGrenadier
+  suffix: Filled, Cleanades
+  components:
+  - type: StorageFill
+    contents:
+        - id: 40mmGrenadeCleanade
+          amount: 12

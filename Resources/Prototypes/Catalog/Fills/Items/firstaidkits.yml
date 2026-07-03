@@ -82,9 +82,9 @@
   - type: StorageFill
     contents:
       - id: MedicatedSuture
-      - id: RegenerativeMesh
       - id: Bloodpack
         amount: 2
+      - id: RegenerativeMesh
 
 - type: entity
   id: MedkitCombatFilled

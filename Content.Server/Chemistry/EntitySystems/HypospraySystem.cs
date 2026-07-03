@@ -16,7 +16,8 @@ using Content.Server.Body.Components;
 using System.Linq;
 using Robust.Server.Audio;
 using Content.Shared.DoAfter; // Frontier
-using Content.Shared._DV.Chemistry.Components; // Frontier
+using Content.Shared._DV.Chemistry.Components;
+using Content.Shared.Chemistry.EntitySystems.Hypospray; // Frontier
 
 namespace Content.Server.Chemistry.EntitySystems;
 
@@ -224,6 +225,11 @@ public sealed class HypospraySystem : SharedHypospraySystem
 
         var ev = new TransferDnaEvent { Donor = target, Recipient = uid };
         RaiseLocalEvent(target, ref ev);
+
+        // Sandwich: Goob Cartridge fix start (fix because our system old as fuck)
+        var afterinjectev = new AfterHyposprayInjectsEvent { User = user, Target = target }; 
+        RaiseLocalEvent(uid, ref afterinjectev);
+        // Sandwich: Goob Cartridge fix end
 
         // same LogType as syringes...
         _adminLogger.Add(LogType.ForceFeed, $"{EntityManager.ToPrettyString(user):user} injected {EntityManager.ToPrettyString(target):target} with a solution {SharedSolutionContainerSystem.ToPrettyString(removedSolution):removedSolution} using a {EntityManager.ToPrettyString(uid):using}");

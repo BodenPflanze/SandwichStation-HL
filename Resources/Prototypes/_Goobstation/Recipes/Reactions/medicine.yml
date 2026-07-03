@@ -1,0 +1,14 @@
+# Can't port yet cuz Ent System still in Content.Server (needs upstream merge)
+# - type: reaction
+#   id: Oxandrolone
+#   reactants:
+#     SodiumCarbonate:
+#       amount: 1
+#     Dermaline:
+#       amount: 1
+#     Phenol:
+#       amount: 1
+#     Leporazine:
+#       amount: 1
+#   products:
+#     Oxandrolone: 4

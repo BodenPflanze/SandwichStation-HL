@@ -1,0 +1,20 @@
+- type: entity
+  parent: [ ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseCentcommContraband ]
+  id: ClothingBeltSecurityWebbingGrenadier
+  name: ert grenadier chest rig
+  description: "A grenadier chest rig with deep pockets, for use by ERT operatives."
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/securitywebbing.rsi
+  - type: Clothing
+    sprite: Clothing/Belt/securitywebbing.rsi
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,5,3
+    whitelist:
+      tags:
+        - Grenade
+        - Bullet40mmFoamNade
+  - type: ExplosionResistance
+    damageCoefficient: 0.05

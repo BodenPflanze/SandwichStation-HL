@@ -1,3 +1,74 @@
+# SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 a_person <40855173+a-person5660@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 BramvanZijp <56019239+BramvanZijp@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 CometVoid <cometsstrile@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Cartridge Autoinjectors
+
+- type: entity
+  parent: BaseItem
+  id: BaseCartridgeAutoinjector
+  abstract: true
+  components:
+  - type: Item
+    sprite: _Goobstation/Objects/Specific/Medical/autoinjector.rsi
+  - type: Sprite
+    sprite: _Goobstation/Objects/Specific/Medical/autoinjector.rsi
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    fillBaseName: cartridge
+  - type: Appearance
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 10
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+    solutionName: hypospray
+    transferAmount: 10
+    onlyAffectsMobs: false
+    injectOnly: true
+  - type: HyposprayBlockNonMobInjection
+  - type: UseDelay
+    delay: 30
+  - type: ContainerContainer
+    containers:
+      item: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      item:
+        name: Cartridge
+        whitelist:
+          tags:
+          - AutoinjectorCartridge
+
+- type: entity
+  name: medical cartridge autoinjector
+  parent: [ BaseCartridgeAutoinjector , BaseMedicalContraband ]
+  description: Used for rapid administration of medicine. Uses cartridges printable at the medical techfab.
+  id: ParamedHypo
+  components:
+  - type: Sprite
+    layers:
+      - state: medical-base
+      - state: cartridge1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+
 - type: entity # This ones weird.
   name: amnestic spray
   parent: [BaseItem, BaseCentcommContraband]
@@ -61,6 +132,27 @@
     tags:
       - AutoinjectorCartridge
       - SecBeltEquip
+
+#what were they cooking here before, 114 total possible dmg heal was crazyyy
+#~21 dmg healed/dmg type (unless its cold, then its a lil more), doesnt heal caustic all that well
+- type: entity
+  name: emergency autoinjector cartridge
+  parent: [ BaseSecurityMedicalContraband , BaseAutoinjectorCartridge ]
+  description: Contains 10u of Omnizine, used in a cartridge autoinjector. # Contains 10u of atropine, used in a cartridge autoinjector.         # Cannot port any goob chems with this old wizden stuff. Fix this at some point when we are more upstream
+  id: CartridgeAtropine
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+    - state: filling
+      color: "#572757"
+  - type: SolutionCartridge
+    targetSolution: hypospray
+    solution:
+      maxVol: 10
+      reagents:
+      - ReagentId: Omnizine # Atropine         # Cannot port any goob chems with this old wizden stuff. Fix this at some point when we are more upstream
+        Quantity: 10
 
 # Q - Why is this edible?
 # A - Because the dispenser reminded me of a pez dispenser, and it'd be funny if you could eat them.
@@ -222,3 +314,29 @@
     injectOnly: true
   - type: StaticPrice
     price: 500
+
+# Actual hyposprays
+
+- type: entity
+  name: centcomm hypospray
+  parent: [BaseItem, BaseCentcommContraband]
+  description: Reserved for Nanotrasen's top doctors. It utilizes experimental bluespace technology.
+  id: CentCommHypo
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Specific/Medical/centcomm_hypo.rsi
+    state: hypo
+  - type: Item
+    sprite: _Goobstation/Objects/Specific/Medical/centcomm_hypo.rsi
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 50
+  - type: RefillableSolution
+    solution: hypospray
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+    onlyAffectsMobs: false
+  - type: UseDelay
+    delay: 0.2

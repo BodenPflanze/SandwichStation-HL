@@ -63,6 +63,18 @@
 
 - type: Tag
   id: DurandRLeg
+  
+- type: Tag
+  id: EnergySpeedloader
+
+- type: Tag
+  id: EnergySpeedloaderDisabler
+
+- type: Tag
+  id: EnergySpeedloaderLethal
+
+- type: Tag
+  id: EnergySpeedloaderPulse
 
 - type: Tag
   id: FitsInCharger
@@ -147,6 +159,9 @@
 
 - type: Tag
   id: ModsuitPlatingExternal
+
+- type: Tag
+  id: Rifle
 
 - type: Tag
   id: StasisBattery

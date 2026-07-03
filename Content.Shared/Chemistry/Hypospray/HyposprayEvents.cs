@@ -3,7 +3,7 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-namespace Content.Shared._Goobstation.Chemistry.EntitySystems.Hypospray;
+namespace Content.Shared.Chemistry.EntitySystems.Hypospray;
 
 /// <summary>
 /// Raised on a hypospray when it successfully injects.

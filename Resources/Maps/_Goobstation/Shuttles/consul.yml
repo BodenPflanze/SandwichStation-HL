@@ -4,8 +4,8 @@ meta:
   engineVersion: 267.3.0
   forkId: ""
   forkVersion: ""
-  time: 07/01/2026 05:15:54
-  entityCount: 1289
+  time: 07/03/2026 12:59:28
+  entityCount: 1290
 maps: []
 grids:
 - 1
@@ -10106,6 +10106,15 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 4.5,-10.5
       parent: 1
+- proto: SinkWide
+  entities:
+  - uid: 1290
+    components:
+    - type: Transform
+      pos: -5.5,12.5
+      parent: 1
+    - type: Fixtures
+      fixtures: {}
 - proto: SMESAdvanced
   entities:
   - uid: 136

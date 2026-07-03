@@ -935,6 +935,40 @@
     color: blue
     energy: 0.5
 
+# Sandwich-HL start
+- type: entity
+  parent: BaseBulletTrigger
+  id: Bullet40mmGrenadeCleanade
+  name: 40mm cleanade foam round
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: cleanade
+  - type: ActiveTimerTrigger
+    timeRemaining: 0.3
+  - type: SmokeOnTrigger
+    duration: 10 # Sandwich-HL: it really needed more duration
+    spreadAmount: 30
+    smokePrototype: Foam
+    solution:
+      reagents:
+      - ReagentId: SpaceCleaner
+        Quantity: 30
+  - type: SoundOnTrigger
+    sound: /Audio/Items/smoke_grenade_smoke.ogg
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 0.001 # a little pop
+    intensitySlope: 1
+    maxIntensity: 0.001
+    tileBreakScale: 0.001
+
+# Sandwich-HL end
+
+
 - type: entity
   id: BulletCap
   name: cap bullet

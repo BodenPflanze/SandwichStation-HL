@@ -80,14 +80,6 @@
     proto: Bullet40mmGrenadeThermobaric
 
 - type: entity
-  parent: [ NFBaseGrenade40mm, GrenadeCleanade ]
-  id: NFGrenadeCleanade
-  name: cleanade grenade round
-  components:
-  - type: CartridgeAmmo
-    proto: NFBulletGrenadeCleanade
-
-- type: entity
   parent: [ NFBaseGrenade40mm, GrenadeFlash ]
   id: NFGrenadeFlash
   name: flash grenade round

@@ -133,11 +133,6 @@
     tileBreakScale: 0.01
 
 - type: entity
-  parent: BulletGrenadeCleanade
-  id: NFBulletGrenadeCleanade
-  categories: [ HideSpawnMenu ]
-
-- type: entity
   id: NFBulletCannonBallEmp
   name: shockshot
   parent: BaseBulletTrigger

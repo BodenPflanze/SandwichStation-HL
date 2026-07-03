@@ -1,0 +1,44 @@
+- type: entity
+  name: bone multitool
+  id: AdvancedBoneGel
+  parent: BoneGel
+  description: A mechanized bone healer, also serves as bone setter in its powered state.
+  components:
+  - type: Sprite
+    sprite: _Shitmed/Objects/Specific/Medical/Surgery/e-bone-gel.rsi
+    state: e-bone-gel-on
+  - type: Item
+    heldPrefix: bonegel
+  - type: SurgeryTool
+    startSound:
+      path: /Audio/_Shitmed/Medical/Surgery/bone_setter.ogg
+    endSound:
+      path: /Audio/_Shitmed/Medical/Surgery/bone_setter.ogg
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 12
+  - type: PhysicalComposition #Goobstation - Recycle update
+    materialComposition:
+      Steel: 150
+      Glass: 37
+      Plasma: 37
+  - type: BoneGel # should be unlimited when the actual bone gel becomes limited
+    speed: 3
+  - type: ItemSwitch
+    showLabel: true
+    state: bonegel
+    states:
+      bonegel: !type:ItemSwitchState
+        verb: bone gel
+        sprite:
+          sprite: _Shitmed/Objects/Specific/Medical/Surgery/e-bone-gel.rsi
+          state: e-bone-gel
+        components:
+        - type: BoneGel # should be unlimited when the actual bone gel becomes limited
+          speed: 3
+        soundStateActivate:
+          collection: sparks
+          params:
+            variation: 0.125
+            volume: -5

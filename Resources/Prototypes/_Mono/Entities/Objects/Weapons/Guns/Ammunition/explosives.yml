@@ -175,6 +175,30 @@
     state: frag
     suffix: false
 
+# Sandwich-HL start
+- type: entity
+  id: 40mmGrenadeCleanade
+  name: 40mm Cleanade round
+  parent: [ BaseGrenade, BaseC1Contraband ]
+  components:
+  - type: CartridgeAmmo
+    proto: Bullet40mmGrenadeCleanade
+    deleteOnSpawn: true
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    layers:
+    - state: cleanade
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: frag
+    suffix: false
+  - type: Tag
+    tags:
+    - Bullet40mmFoamNade
+# Sandwich-HL end
+
+
 # Cannon Balls
 
 - type: entity

@@ -82,11 +82,11 @@
     manufacturer: weapon-details-manufacturer-gorlex-steel-works # Sandwich-HL
 
 - type: entity
-  # abstract: true # Frontier: create NF variant if we want this
-  parent: [ BaseWeaponLauncher, BaseGunWieldable, BaseC3Contraband ] # Frontier: BaseMajorContraband<BaseC3SyndicateContraband
+  # abstract: true
+  parent: [ BaseWeaponLauncher, BaseRequiersWieldable, BaseCentcomContraband ]
   id: WeaponLauncherHydra
   name: hydra
-  description: PLOOP... FSSSSSS
+  description: PLOOP... FSSSSSS. The Hydra fires 40mm foam rounds. Be careful though since it can break Lights.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Launchers/hydra_launcher.rsi
@@ -101,6 +101,7 @@
   - type: AmmoCounter
   - type: Gun
     fireRate: 1
+    customCaliber: "40mm foam rounds"
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -112,8 +113,8 @@
   - type: RevolverAmmoProvider
     whitelist:
       tags:
-      - Grenade
-    proto: GrenadeCleanade # Frontier: create NF variant if we want this
+      - Bullet40mmFoamNade # Sandwich-HL (only alow foam nades)
+    proto: Bullet40mmGrenadeCleanade
     capacity: 6
     chambers: [ True, True, True, True, True, True ]
     ammoSlots: [ null, null, null, null, null, null ]
@@ -121,6 +122,8 @@
       path: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/sfrifle_magin.ogg
+  - type: NFWeaponDetails # Sandwich-HL
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
 
 - type: entity
   # abstract:

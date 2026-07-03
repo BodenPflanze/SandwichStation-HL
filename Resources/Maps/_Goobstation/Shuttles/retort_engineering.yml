@@ -1942,8 +1942,8 @@ entities:
       pos: -1.5,-7.5
       parent: 1
     - type: PowerSupplier
-      supplyRampRate: 1000
-      supplyRampTolerance: 1000
+      supplyRampRate: 10000
+      supplyRampTolerance: 10000
       supplyRate: 300000
 - proto: GravityGeneratorMini
   entities:

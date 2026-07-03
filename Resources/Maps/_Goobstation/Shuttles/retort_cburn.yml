@@ -4,8 +4,8 @@ meta:
   engineVersion: 267.3.0
   forkId: ""
   forkVersion: ""
-  time: 07/02/2026 11:19:52
-  entityCount: 446
+  time: 07/03/2026 06:10:49
+  entityCount: 449
 maps: []
 grids:
 - 1
@@ -468,6 +468,13 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+- proto: AmmoBox45_magnumFMJ
+  entities:
+  - uid: 318
+    components:
+    - type: Transform
+      pos: -1.491231,-8.374634
+      parent: 1
 - proto: AmmoBox762x39mmIncendiary
   entities:
   - uid: 68
@@ -550,13 +557,6 @@ entities:
     components:
     - type: Transform
       pos: 1.5,-17.5
-      parent: 1
-- proto: BannerNanotrasen
-  entities:
-  - uid: 45
-    components:
-    - type: Transform
-      pos: -1.5,-8.5
       parent: 1
 - proto: BedsheetMedical
   entities:
@@ -1985,8 +1985,8 @@ entities:
       pos: -1.5,-7.5
       parent: 1
     - type: PowerSupplier
-      supplyRampRate: 1000
-      supplyRampTolerance: 1000
+      supplyRampRate: 10000
+      supplyRampTolerance: 10000
       supplyRate: 300000
 - proto: GravityGeneratorMini
   entities:
@@ -2109,16 +2109,16 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 41
           - 43
-          - 40
-          - 42
-          - 13
-          - 6
-          - 3
-          - 9
-          - 14
           - 12
+          - 14
+          - 9
+          - 3
+          - 6
+          - 13
+          - 42
+          - 40
+          - 41
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -2152,20 +2152,20 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 61
-          - 122
-          - 60
-          - 133
-          - 68
-          - 163
-          - 127
-          - 69
-          - 132
-          - 121
-          - 62
-          - 70
-          - 56
           - 55
+          - 56
+          - 122
+          - 70
+          - 62
+          - 121
+          - 132
+          - 69
+          - 127
+          - 163
+          - 68
+          - 133
+          - 60
+          - 61
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -2833,6 +2833,11 @@ entities:
           - 22
 - proto: TableReinforced
   entities:
+  - uid: 45
+    components:
+    - type: Transform
+      pos: -1.5,-8.5
+      parent: 1
   - uid: 230
     components:
     - type: Transform
@@ -2890,6 +2895,13 @@ entities:
     components:
     - type: Transform
       pos: -2.5,-1.5
+      parent: 1
+- proto: TurboItemRecharger
+  entities:
+  - uid: 202
+    components:
+    - type: Transform
+      pos: -3.5,-6.5
       parent: 1
 - proto: VendingMachineMedical
   entities:
@@ -3434,6 +3446,15 @@ entities:
     - type: InsideEntityStorage
     missingComponents:
     - Contraband
+- proto: WeaponSniperRepeater
+  entities:
+  - uid: 203
+    components:
+    - type: MetaData
+      desc: 'Brother! Aim for the head!  	Let me end your torment! '
+    - type: Transform
+      pos: -1.5271108,-8.448538
+      parent: 1
 - proto: WeaponTurretDravon
   entities:
   - uid: 435

@@ -102,13 +102,19 @@
 #   - type: Contraband
 #     allowedDepartments: [ Science ]
 
-# - type: entity
-#   id: BaseMedicalContraband
-#   parent: BaseRestrictedContraband
-#   abstract: true
-#   components:
-#   - type: Contraband
-#     allowedDepartments: [ Medical ]
+- type: entity
+  id: BaseMedicalContraband
+  parent: BaseC2ContrabandUnredeemable # Sandwich-HL: BaseRestrictedContraband<BaseC2ContrabandUnredeemable
+  abstract: true
+  components:
+  - type: Contraband
+    allowedDepartments: [ Medical ]
+
+# Sandwich-HL, goob uses this- but its since BaseMedicalContraband already includes Security and Command i just parent it like this
+- type: entity
+  id: BaseSecurityMedicalContraband
+  parent: BaseMedicalContraband
+  abstract: true
 
 # - type: entity
 #   id: BaseCivilianContraband

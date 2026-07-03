@@ -24,16 +24,6 @@
       - id: OmnimedTool
 
 - type: entity
-  id: ClothingBeltSheathFilledNavyOfficer
-  parent: ClothingBeltSheath
-  suffix: Filled, Navy Officer
-  components:
-  - type: ContainerFill
-    containers:
-      item:
-      - NavyOfficerSabre
-
-- type: entity
   id: ClothingBeltHolsterFilledCentComm
   parent: ClothingBeltHolster
   suffix: Filled, N1984
@@ -47,3 +37,56 @@
     - id: Magazine45_magnumPistolFMJ
     - id: Magazine45_magnumPistolFMJ
     - id: WeaponPistolN1984
+
+- type: entity
+  id: ClothingBeltSecurityWebbingFilledMedical
+  parent: [ClothingBeltSecurityWebbingMedical, BaseCentcommContraband]
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: EnergyScalpel
+    - id: AdvancedRetractor
+    - id: EnergyCautery
+    - id: AdvancedBoneGel
+    - id: MedicatedSuture
+    - id: RegenerativeMesh
+    - id: Bloodpack
+    - id: BruteAutoInjector
+    - id: BurnAutoInjector
+    - id: EmergencyMedipen
+      amount: 3
+
+
+- type: entity
+  id: ClothingBeltSheathFilledNavyOfficer
+  parent: ClothingBeltSheath
+  suffix: Filled, Navy Officer
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - NavyOfficerSabre
+
+- type: entityTable
+  id: BeltAssaultBSOEntityTable
+  table: !type:AllSelector
+    children:
+    - id: Stunbaton
+    - id: HoloprojectorSecurity
+    - id: GrenadeFlashBang
+    - id: GrenadeFlashBang
+    - id: WeaponDisabler
+    - id: Zipties
+    - id: Zipties
+    - id: Zipties
+
+- type: entity
+  id: ClothingBeltAssaultFilled
+  parent: ClothingBeltAssault
+  suffix: Filled, BSO
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: BeltAssaultBSOEntityTable

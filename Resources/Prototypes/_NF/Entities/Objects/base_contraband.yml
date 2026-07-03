@@ -31,7 +31,7 @@
   - type: Contraband
     severity: Class2
     # Security and heads only (finally, shotgun traffic controller)
-    allowedDepartments: [ Security, Command ]
+    allowedDepartments: [ Security, Commandm, CentralCommand ] # Sandwich-HL: why was CC not in here???
 
 # Sandwich-HL start
 - type: entity

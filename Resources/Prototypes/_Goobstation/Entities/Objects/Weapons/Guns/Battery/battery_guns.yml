@@ -1,20 +1,147 @@
+# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Icepick <122653407+Icepicked@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
+# SPDX-FileCopyrightText: 2025 Creatorbot01 <creatorbot02@gmail.com>
+# SPDX-FileCopyrightText: 2025 Creatorbot01 <creatorbot20@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Tim <timfalken@hotmail.com>
+# SPDX-FileCopyrightText: 2025 Tim Falken <tim@sparklingsociety.net>
+# SPDX-FileCopyrightText: 2025 Timfa <timfalken@hotmail.com>
+# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity # literally BaseWeaponPowerCell cuz we can't get rid of components in children HELL YEA
+  id: BaseWeaponCustomCell
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Sprite
+  - type: Item
+    size: Huge
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 2
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser.ogg
+  - type: MagazineAmmoProvider
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: PowerCellSmall
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        whitelist:
+          tags:
+            - PowerCell
+            - PowerCellSmall
+  - type: Appearance
+  - type: StaticPrice
+    price: 500
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+  - type: Cautery # Shitmed
+    speed: 0.9
+  - type: SurgeryTool # Shitmed
+    endSound:
+      path: /Audio/Weapons/Guns/Gunshots/laser.ogg
+  - type: AlwaysHot # Goobstation V
+  - type: MeleeWeapon
+    damage:
+      types:
+       Blunt: 12
+    angle: 0
+    wideAnimationRotation: 90 # -90 if it takes bayonets (hits with muzzle) 90 if not (hits with butt)
+    soundHit:
+      collection: MetalThud # Goobstation ^
+  - type: RestrictGunshotsByUserTag # Goobstation
+    doesntContain:
+    - Oni
+    messages:
+    - oni-cannot-shoot-guns-1
+    - oni-cannot-shoot-guns-2
+    - oni-cannot-shoot-guns-3
+  - type: BatteryDrinkerSource # Goobstation - Energycrit
+    maxAmount: 180
+  # - type: Multishot # Goobstation V                          # We dont have this
+  #   missChance: 0.4
+  #   spreadMultiplier: 3
+  #   spreadAddition: 50 #very hard to hold two of these steady let alone steady while shooting them
+
+- type: entity
+  id: BaseWeaponCustomCellSmall
+  parent: BaseWeaponCustomCell
+  abstract: true
+  components:
+  - type: Item
+    size: Small
+    shape: # Goobstation
+    - 0,0,1,0
+    - 0,1,0,1
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Battery/taser.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: MeleeWeapon # Goobstation V
+    damage:
+      types:
+       Blunt: 8 # pistol whip
+    angle: 0
+    wideAnimationRotation: 90 # -90 if it takes bayonets (hits with muzzle) 90 if not (hits with butt)
+    soundHit:
+      collection: MetalThud # Goobstation ^
+
 - type: entity
   name: EG-4 energy revolver
-  parent: [BaseWeaponBatterySmall, BaseC2ContrabandUnredeemable] # Sandwich- C2 Contra
+  parent: [BaseWeaponCustomCellSmall, BaseC2ContrabandUnredeemable] # Sandwich- C2 Contra
   id: WeaponEnergyRevolver
-  description: A highly advanced energy revolver capable of firing both lethal and disabling bullets.
+  description: In the face of death, everyone is equal. The right arm of the Blueshield corps, the Equalizer is a modular energy revolver platform designed for lethal and non-lethal target neutralization. Takes energy speedloaders.
   components:
+  - type: Item
+    heldPrefix: lethal
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Guns/Battery/erevolver.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mode-disabler
-      shader: unshaded
-      map: [ "Firemode" ]
-    - state: mag-unshaded-4
-      map: ["enum.GunVisualLayers.MagUnshaded"]
-      shader: unshaded
+    - state: mag-unshaded-0
+      map: ["enum.GunVisualLayers.Mag"] # Sandwich-HL
+      shader: unshaded # Sandwich-HL
+  - type: MagazineVisuals
+    magState: mag-unshaded
+    steps: 6
+    zeroVisible: true
+  - type: ItemMapper
+    sprite: _Goobstation/Objects/Weapons/Guns/Battery/erevolver.rsi
+    mapLayers:
+      mode-disabler:
+        whitelist:
+          tags:
+          - EnergySpeedloaderDisabler
   - type: Clothing
     quickEquip: false
     slots:
@@ -23,47 +150,46 @@
     - Back
     sprite: _Goobstation/Objects/Weapons/Guns/Battery/erevolver.rsi
   - type: Gun
-    energyJouleRating: 1100 # Sandwich-HL
-    energyProjectileType: gun-examine-joules-disabler-lethal-bolts # Sandwich-HL
+    customCaliber: "Energy Speedloaders" # Sandwich-HL
     fireRate: 1.5
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
     soundEmpty:
       path: /Audio/_DV/Weapons/Guns/Empty/dry_fire.ogg
-  - type: Battery
-    maxCharge: 1800
-    startingCharge: 1800
-  - type: ProjectileBatteryAmmoProvider
-    proto: BulletDisabler
-    fireCost: 100
-  - type: EnergyGun
-    fireModes:
-    - proto: BulletDisabler
-      fireCost: 100
-      name: disable
-      state: disabler
-    - proto: BulletEnergyGun45_magnum
-      fireCost: 150 # Mono - 150 < 225
-      name: lethal
-      state: lethal
-  - type: MagazineVisuals
-    magState: mag
-    steps: 5
-    zeroVisible: true
-  - type: Appearance
-  - type: GenericVisualizer
-    visuals:
-      enum.EnergyGunFireModeVisuals.State:
-        Firemode:
-          Disabler: { state: mode-disabler }
-          Lethal: { state: mode-lethal }
+  - type: RestrictGunshotsByUserTag # Goobstation
+    doesntContain:
+    - Oni
+    messages:
+    - oni-cannot-shoot-guns-1
+    - oni-cannot-shoot-guns-2
+    - oni-cannot-shoot-guns-3
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: EnergySpeedloaderLethal
+        insertSound: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/revolver_magout.ogg
+        whitelist:
+          tags:
+            - EnergySpeedloader
   - type: Tag
     tags:
     - Sidearm
-  - type: BatterySelfRecharger
-    autoRecharge: true
-    autoRechargeRate: 75 # Mono - 75 < 35
   - type: PirateBountyItem # Mono
     id: TSFLaserWeapon
   - type: NFWeaponDetails # Sandwich-HL
     manufacturer: weapon-details-manufacturer-nanotrasen-munitions # Sandwich-HL
+
+- type: entity
+  name: advanced pulse carbine
+  parent: WeaponPulseCarbine
+  id: WeaponPulseCarbineAdvanced
+  description: A state-of-the-art laser carbine that fires a rapidly pulsing beam. Expensive, though favoured by the Emergency Response corps due to its ability to self-recharge.
+  components:
+  - type: Tag
+    tags:
+    - Rifle
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 80
