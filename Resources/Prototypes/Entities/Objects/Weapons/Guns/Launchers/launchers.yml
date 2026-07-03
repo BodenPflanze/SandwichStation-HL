@@ -75,7 +75,7 @@
         - Grenade
         - NFTrackingDart
     capacity: 3
-    proto: 40mmGrenadeFragmentation
+    proto: GrenadeFrag
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
   - type: NFWeaponDetails # Sandwich-HL
@@ -114,7 +114,7 @@
     whitelist:
       tags:
       - Bullet40mmFoamNade # Sandwich-HL (only alow foam nades)
-    proto: Bullet40mmGrenadeCleanade
+    proto: GrenadeCleanade
     capacity: 6
     chambers: [ True, True, True, True, True, True ]
     ammoSlots: [ null, null, null, null, null, null ]

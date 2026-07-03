@@ -334,23 +334,6 @@
     Plastic: 500
 
 - type: latheRecipe
-  id: Magazine40mmEmpty
-  result: Magazine40mmEmpty
-  completetime: 3
-  materials:
-    Steel: 150
-    Plastic: 50
-
-- type: latheRecipe
-  id: 40mmGrenadeEMP
-  result: 40mmGrenadeEMP
-  completetime: 3
-  materials:
-    Steel: 150
-    Plastic: 100
-    Glass: 20
-
-- type: latheRecipe
   id: 40mmGrenadeThermobaric
   result: 40mmGrenadeThermobaric
   completetime: 3
@@ -358,15 +341,6 @@
     Steel: 450
     Plastic: 300
     Gold: 150
-
-- type: latheRecipe
-  id: 40mmGrenadeFlash
-  result: 40mmGrenadeFlash
-  completetime: 3
-  materials:
-    Steel: 150
-    Plastic: 100
-    Glass: 20
 
 # mono changes end
 

@@ -177,7 +177,7 @@
       prototypes:
         - SyndicateNavalEngineerGearD
     - type: BasicEntityAmmoProvider
-      proto: NFShellShotgunBeanbag
+      proto: ShellShotgun12_gaugeBeanbag
       capacity: 1
       count: 1
 
@@ -390,7 +390,7 @@
       rechargeSound:
         path: /Audio/_NF/Effects/silence.ogg
     - type: BasicEntityAmmoProvider
-      proto: 40mmGrenadeFragmentation
+      proto: GrenadeFrag
       capacity: 1
       count: 1
     - type: Gun
@@ -423,7 +423,7 @@
       prototypes:
         - SyndicateNavalGrenadierGearC
     - type: BasicEntityAmmoProvider
-      proto: 40mmGrenadeBaton
+      proto: GrenadeBaton
       capacity: 1
       count: 1
 
@@ -436,7 +436,7 @@
       prototypes:
         - SyndicateNavalGrenadierGearD
     - type: BasicEntityAmmoProvider
-      proto: 40mmGrenadeFlash
+      proto: GrenadeFlash
       capacity: 2
       count: 2
 

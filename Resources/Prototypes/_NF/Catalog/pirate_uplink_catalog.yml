@@ -292,8 +292,8 @@
   id: UplinkPirateShotgunAmmo
   name:  uplink-pirate-shotgunammo-name
   description: uplink-pirate-shotgunammo-desc
-  productEntity: NFAmmunitionBoxShellShotgunBuckshot
-  icon: { sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi, state: base }
+  productEntity: AmmoBag_25bundleShot
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/25bundleShot.rsi, state: base }
   cost:
     Doubloon: 2
   categories:
@@ -324,8 +324,8 @@
   id: UplinkPirateFlintlockAmmo
   name:  uplink-pirate-flintlockammo-name
   description: uplink-pirate-flintlockammo-desc
-  productEntity: NFAmmunitionBoxRifle60
-  icon: { sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/rifle_big.rsi, state: base }
+  productEntity: AmmoBag54_Lead_Ball
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/54_Lead_Ball.rsi, state: base }
   cost:
     Doubloon: 2
   categories:

@@ -119212,7 +119212,7 @@ entities:
     - type: Transform
       pos: 47.862995,-13.227914
       parent: 2
-- proto: NFAmmunitionBoxShellShotgunBeanbag
+- proto: AmmoBox12_gaugeBeanbag
   entities:
   - uid: 16075
     components:
@@ -119221,7 +119221,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: NFAmmunitionBoxShellShotgunBuckshot
+- proto: AmmoBox12_gaugeBuckshot
   entities:
   - uid: 16076
     components:

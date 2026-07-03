@@ -311,10 +311,10 @@
   - PowerCageRechargerCircuitboard
   - PowerCageSmall
   - PowerCageMedium
-  - Magazine40mmEmpty
-  - 40mmGrenadeFlash
+  - MagazineGrenadeEmpty
+  - GrenadeFlash
   - 40mmGrenadeThermobaric
-  - 40mmGrenadeEMP #Frontier
+  - GrenadeEMP
   - PowerCageHigh #frontier
   - MagRailgun # HL
   #  - ShuttleGunSvalinnMachineGunCircuitboard # Frontier
@@ -391,7 +391,7 @@
 #   tier: 3
 #   cost: 15000
 #   recipeUnlocks:
-#     - 40mmGrenadeEMP
+#     - GrenadeEMP
 #     - PowerCageHigh
 #     - ShuttleGunDusterCircuitboard # Frontier
 #   technologyPrerequisites:

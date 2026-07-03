@@ -27,7 +27,7 @@
 - type: entity
   parent: BaseAmmoBox762x51mm
   id: AmmoBox762x51mmBigFMJ
-  name: ammunition box (762x51mm FMJ)
+  name: ammunition box (7.62x51mm FMJ)
   suffix: Big
   components:
   - type: BallisticAmmoProvider
@@ -47,7 +47,7 @@
 - type: entity
   parent: BaseAmmoBox762x51mm
   id: AmmoBox762x51mmFMJ
-  name: ammunition box (762x51mm FMJ)
+  name: ammunition box (7.62x51mm FMJ)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge762x51mmFMJ
@@ -61,7 +61,7 @@
 - type: entity
   parent: BaseAmmoBox762x51mm
   id: AmmoBox762x51mmPractice
-  name: ammunition box (762x51mm practice)
+  name: ammunition box (7.62x51mm practice)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge762x51mmPractice
@@ -76,7 +76,7 @@
 - type: entity
   id: AmmoBox762x51mmIncendiary
   parent: BaseAmmoBox762x51mm
-  name: ammunition box (762x51mm incendiary)
+  name: ammunition box (7.62x51mm incendiary)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge762x51mmIncendiary
@@ -91,7 +91,7 @@
 - type: entity
   parent: BaseAmmoBox762x51mm
   id: AmmoBox762x51mmUranium
-  name: ammunition box (762x51mm uranium)
+  name: ammunition box (7.62x51mm uranium)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge762x51mmUranium
@@ -106,7 +106,7 @@
 - type: entity
   parent: BaseAmmoBox762x51mm
   id: AmmoBox762x51mmRubber
-  name: ammunition box (762x51mm rubber)
+  name: ammunition box (7.62x51mm rubber)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge762x51mmRubber
@@ -122,7 +122,7 @@
 - type: entity
   parent: AmmoBox762x51mmBigFMJ
   id: AmmoBox762x51mmRubberBig
-  name: ammunition box (762x51mm rubber)
+  name: ammunition box (7.62x51mm rubber)
   suffix: Big
   components:
   - type: BallisticAmmoProvider

@@ -19,7 +19,6 @@
 
 # Shotgun Shells
 - type: entity
-  categories: [ HideSpawnMenu ] # Frontier
   parent: AmmoProviderShotgunShell
   id: AmmoBox12_gaugeBeanbag
   name: shotgun shell box (12 gauge beanbag)

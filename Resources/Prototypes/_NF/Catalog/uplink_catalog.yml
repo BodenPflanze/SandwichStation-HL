@@ -69,17 +69,6 @@
   - UplinkAmmo
 
 - type: listing
-  id: UplinkNFMagazinePistolCaselessRifle
-  name: uplink-pistol-magazine-cobra-name
-  description: uplink-pistol-magazine-cobra-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_pistol_mag.rsi, state: red-icon }
-  productEntity: HLMagazinePistolCaselessRifle
-  cost:
-    Telecrystal: 1
-  categories:
-  - UplinkAmmo
-
-- type: listing
   id: UplinkNFSpeedLoaderMagnum
   name: uplink-speedloader-magnum-non-ap-name
   description: uplink-speedloader-magnum-non-ap-desc # Frontier: uplink-speedloader-magnu-desc<uplink-speedloader-magnum-non-ap-desc

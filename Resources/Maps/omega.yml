@@ -73569,7 +73569,7 @@ entities:
     - type: Transform
       pos: -32.481808,-7.2820773
       parent: 4812
-- proto: NFAmmunitionBoxShellShotgunBeanbag
+- proto: AmmoBox12_gaugeBeanbag
   entities:
   - uid: 1656
     components:

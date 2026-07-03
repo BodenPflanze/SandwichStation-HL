@@ -1,14 +1,5 @@
 #region .25 caseless
 - type: Tag
-  id: HLMagazineCaselessRifle
-
-- type: Tag
-  id: HLMagazineCaselessRifleShort
-
-- type: Tag
-  id: HLMagazinePistolCaselessRifle
-
-- type: Tag
   id: Admin
 
 - type: Tag
@@ -34,28 +25,13 @@
   id: ResinStructures
 
 - type: Tag
-  id: NFMagazineRifle20
-
-- type: Tag
-  id: NFCartridgeRifle25
-
-- type: Tag
   id: MagazinePistolSubMachineGun
 
 - type: Tag
   id: NFMagazinePistol45
 
 - type: Tag
-  id: NFCartridgeGrenade40mm
-
-- type: Tag
-  id: NFCartridgeGrenade40mmFlash
-
-- type: Tag
   id: AIShipWeapon
-
-- type: Tag
-  id: NFCartridgeGrenade40mmEmp
 
 - type: Tag
   id: NFMagazineSubMachineGunTopMountedPistol35
@@ -73,34 +49,10 @@
   id: NFMagazineClipRifle20
 
 - type: Tag
-  id: NFCartridgeRifle20
-
-- type: Tag
-  id: NFMagazineRifle30
-
-- type: Tag
-  id: NFMagazineLowCapacityRifle30
-
-- type: Tag
-  id: NFCartridgeRifle30
-
-- type: Tag
-  id: NFMagazineDrumRifle20
-
-- type: Tag
-  id: NFCartridgeRifle60
-
-- type: Tag
   id: NFMagazineSubMachineGunnTopMountedPistol35
 
 - type: Tag
   id: MagazineShotgun
-
-- type: Tag
-  id: NFMagazineBoxRifle30
-
-- type: Tag
-  id: NFCartridgeRifle10
 
 - type: Tag
   id: NFCartridgeRif25

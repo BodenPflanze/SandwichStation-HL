@@ -7,7 +7,7 @@
 #  - type: StorageFill
 #    contents:
 #      - id: WeaponLauncherChinaLakeEmp
-#      - id: 40mmGrenadeEMP
+#      - id: GrenadeEMP
 #        amount: 8
 
 - type: entity

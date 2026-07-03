@@ -111,10 +111,10 @@
     amount: 0
     maxAmount: 5
 
-  - id: 40mmGrenadeFlash
+  - id: GrenadeFlash
   - id: 40mmGrenadeThermobaric
-  - id: 40mmGrenadeFragmentation
-  - id: 40mmGrenadeBaton
+  - id: GrenadeFrag
+  - id: GrenadeBaton
   - id: SoapSyndie
     amount: 0
     maxAmount: 3
@@ -141,5 +141,5 @@
     maxAmount: 15
   - id: CartridgeRocket
     maxAmount: 15
-  - id: 40mmGrenadeFragmentation
+  - id: GrenadeFrag
     maxAmount: 15

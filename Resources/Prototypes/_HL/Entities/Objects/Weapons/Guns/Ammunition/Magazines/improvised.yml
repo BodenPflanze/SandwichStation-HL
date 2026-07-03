@@ -1,6 +1,6 @@
 - type: entity
   id: Magazine556/762x39Improvised
-  name: improvised rifle magazine (556/762x39)
+  name: improvised rifle magazine (5.56x45/7.62x39)
   parent: [ BaseC1Contraband, RecyclableItemSteelTiny, BaseMagazineLightRifle ]
   components:
   - type: Tag
@@ -16,20 +16,21 @@
     proto: Cartridge556x45mmFMJ
     capacity: 20
   - type: Sprite
-    sprite: _NF/Objects/Weapons/Guns/Ammunition/Magazine/Rifle/rifle30_mag.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/762x39mm/762x39mm_mag.rsi # Todo: A sprite that looks more improvised
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-7
+    - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 8
+    steps: 2
     zeroVisible: false
+  - type: Appearance
 
 - type: entity
   id: Magazine635x44mm/762x54rImprovised
-  name: improvised rifle magazine (635x44mm/762x54r)
+  name: improvised rifle magazine (635x44mm/762x54mmr)
   parent: [ BaseC1Contraband, RecyclableItemSteelTiny, BaseMagazineLightRifle ]
   components:
   - type: Tag
@@ -44,11 +45,14 @@
     proto: Cartridge635x40mmCaseless
     capacity: 10
   - type: Sprite
-    sprite: _NF/Objects/Weapons/Guns/Ammunition/Magazine/Rifle/rifle30_low_cap_mag.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/762x39mm/762x39mm_cap_mag.rsi # Todo: A sprite that looks more improvised
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-6
+    - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
-    steps: 7
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance

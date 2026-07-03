@@ -117,5 +117,5 @@
   components:
   - type: StorageFill
     contents:
-      - id: NFGrenadeEMP
+      - id: GrenadeEMP
         amount: 4

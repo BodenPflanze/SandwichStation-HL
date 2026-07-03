@@ -49314,42 +49314,42 @@ entities:
     - type: Transform
       pos: -5.5,7.5
       parent: 1668
-- proto: NFAmmunitionBoxShellShotgunBuckshot
+- proto: AmmoBox12_gaugeBuckshot
   entities:
   - uid: 1093
     components:
     - type: Transform
       pos: 34.536674,-20.85105
       parent: 1668
-- proto: NFAmmunitionBoxShellShotgunFlare
+- proto: AmmoBox12_gaugeFlare
   entities:
   - uid: 1329
     components:
     - type: Transform
       pos: 34.567924,-22.2573
       parent: 1668
-- proto: NFAmmunitionBoxShellShotgunIncendiary
+- proto: AmmoBox12_gaugeIncendiary
   entities:
   - uid: 1311
     components:
     - type: Transform
       pos: 34.52105,-21.1323
       parent: 1668
-- proto: NFAmmunitionBoxShellShotgunSlug
+- proto: AmmoBox12_gaugeSlug
   entities:
   - uid: 1335
     components:
     - type: Transform
       pos: 34.5523,-21.72605
       parent: 1668
-- proto: NFAmmunitionBoxShellShotgunTranquilizer
+- proto: AmmoBox12_gaugeTranquilizer
   entities:
   - uid: 1323
     components:
     - type: Transform
       pos: 34.536674,-21.41355
       parent: 1668
-- proto: NFAmmunitionBoxShellShotgunUranium
+- proto: AmmoBox12_gaugeUranium
   entities:
   - uid: 1334
     components:

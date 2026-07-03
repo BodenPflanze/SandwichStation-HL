@@ -23,7 +23,7 @@
       - id: ClothingOuterCoatGentle
       - id: Cutlass
         amount: 2
-      - id: NFCannonBall
+      - id: CannonBall
         amount: 2
       - id: WeaponPistolFlintlock
         amount: 4
@@ -40,7 +40,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: NFCannonBall
+      - id: CannonBall
         amount: 6
 
 - type: entity
@@ -51,7 +51,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: NFCannonBallEmp
+      - id: CannonBallEmp
         amount: 6
 
 - type: entity
@@ -62,7 +62,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: NFCannonBallGrapeshot
+      - id: CannonBallGrapeshot
         amount: 6
 
 - type: entity
@@ -73,5 +73,5 @@
   components:
   - type: StorageFill
     contents:
-      - id: NFCannonBallGlassshot
+      - id: CannonBallGlassshot
         amount: 6

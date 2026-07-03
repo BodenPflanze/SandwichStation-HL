@@ -13,7 +13,7 @@
     {
       "name": "base-b"
     },
-	{
+    {
       "name": "mag-0"
     },
     {
@@ -25,52 +25,37 @@
     {
       "name": "mag-3"
     },
-	{
+    {
       "name": "mag-4"
     },
-	{
+    {
       "name": "mag-5"
     },
-	{
+    {
       "name": "decal-01"
     },
-	{
-      "name": "decal-calibre-25"
-    },
-	{
+    {
       "name": "inhand-left"
     },
-	{
+    {
       "name": "mag-60-0"
     },
-	{
-      "name": "decal-calibre-10"
-    },
-	{
+    {
       "name": "mag-60-1"
     },
-	{
-      "name": "decal-calibre-30"
-    },
-	{
+    {
       "name": "mag-60-5"
     },
-	{
+    {
       "name": "inhand-right"
     },
-	{
-      "name": "decal-calibre-20"
-    },
-	{
+    {
       "name": "mag-60-2"
     },
-	{
-      "name": "decal-calibre-60"
-    },
-	{
+    {
       "name": "mag-60-4"
     },
-	{
+    {
       "name": "mag-60-3"
     },
     {
@@ -93,6 +78,9 @@
     },
     {
       "name": "rubber"
+    },
+    {
+      "name": "rubber-b"
     },
     {
       "name": "uranium"

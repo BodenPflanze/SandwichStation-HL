@@ -645,7 +645,7 @@
     contents:
     - id: NFWeaponLauncherRocketExpedition
       amount: 1
-    - id: NFCartridgeRocket
+    - id: CartridgeRocket
       amount: 2
 
 - type: entity
@@ -658,7 +658,7 @@
     contents:
     - id: NFWeaponLauncherChinaLakeExpedition
       amount: 1
-    - id: 40mmGrenadeFragmentation
+    - id: GrenadeFrag
       amount: 2
 
 - type: entity

@@ -6,9 +6,6 @@
   id: BeltSlotNotBelt #not a 'belt'
 
 - type: Tag
-  id: BulletBB
-
-- type: Tag
   id: BionicSyrinxImplant
 
 - type: Tag

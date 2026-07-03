@@ -3371,18 +3371,6 @@ entities:
       parent: 2
     - type: DisableToolUse
       anchoring: True
-- proto: BoxCartridgeBB
-  entities:
-  - uid: 2641
-    components:
-    - type: Transform
-      pos: 13.657577,-0.5453605
-      parent: 2
-  - uid: 3129
-    components:
-    - type: Transform
-      pos: 13.376327,-0.31619385
-      parent: 2
 - proto: BoxCartridgeCap
   entities:
   - uid: 2538
@@ -20738,14 +20726,6 @@ entities:
     components:
     - type: Transform
       pos: 5.5573263,17.669575
-      parent: 2
-- proto: WeaponRifleBB
-  entities:
-  - uid: 2312
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 13.438827,-0.44119385
       parent: 2
 - proto: WeaponWaterBlaster
   entities:

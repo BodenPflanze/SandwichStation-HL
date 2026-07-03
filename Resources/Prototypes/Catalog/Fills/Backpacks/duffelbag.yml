@@ -106,7 +106,7 @@
       - id: WeaponLauncherChinaLake
       - id: 40mmGrenadeThermobaric
         amount: 4
-      - id: 40mmGrenadeFragmentation
+      - id: GrenadeFrag
         amount: 4
 
 - type: entity

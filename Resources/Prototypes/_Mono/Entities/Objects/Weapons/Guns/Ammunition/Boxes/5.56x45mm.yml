@@ -62,7 +62,7 @@
 - type: entity
   parent: BaseAmmoBox556x45mm
   id: AmmoBox556x45mmPractice
-  name: ammunition box (556x45mm practice)
+  name: ammunition box (5.56x45mm practice)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge556x45mmPractice
@@ -75,9 +75,26 @@
     - state: practice
 
 - type: entity
+  parent: AmmoBox556x45mmBigFMJ
+  id: AmmoBox556x45mmBigPractice
+  name: ammunition box (5.56x45mm Practice)
+  suffix: Big
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 200
+    proto: Cartridge556x45mmPractice
+  - type: Sprite
+    layers:
+    - state: base-b
+      map: ["enum.GunVisualLayers.Base"]
+    - state: magb-3
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: practice-b
+
+- type: entity
   id: AmmoBox556x45mmIncendiary
   parent: BaseAmmoBox556x45mm
-  name: ammunition box (556x45mm incendiary)
+  name: ammunition box (5.56x45mm incendiary)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge556x45mmIncendiary
@@ -92,7 +109,7 @@
 - type: entity
   id: AmmoBox556x45mmUranium
   parent: BaseAmmoBox556x45mm
-  name: ammunition box (556x45mm uranium)
+  name: ammunition box (5.56x45mm uranium)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge556x45mmUranium
@@ -107,7 +124,7 @@
 - type: entity
   parent: AmmoBox556x45mmBigFMJ
   id: AmmoBox556x45mmBigRubber
-  name: ammunition box (556x45mm rubber)
+  name: ammunition box (5.56x45mm rubber)
   components:
   - type: BallisticAmmoProvider
     capacity: 200
@@ -119,12 +136,12 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: magb-3
       map: ["enum.GunVisualLayers.Mag"]
-    - state: practice-b
+    - state: rubber-b
 
 - type: entity
   parent: BaseAmmoBox556x45mm
   id: AmmoBox556x45mmRubber
-  name: ammunition box (556x45mm rubber)
+  name: ammunition box (5.56x45mm rubber)
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge556x45mmRubber

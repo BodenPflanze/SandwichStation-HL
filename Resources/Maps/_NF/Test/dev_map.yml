@@ -3785,7 +3785,7 @@ entities:
     - type: Transform
       pos: -6.5,-11.5
       parent: 179
-- proto: NFCannonBall
+- proto: CannonBall
   entities:
   - uid: 954
     components:
@@ -6381,35 +6381,35 @@ entities:
     - type: Transform
       pos: -5.5,10.5
       parent: 179
-- proto: NFMagazineGrenadeBaton
+- proto: MagazineGrenadeBaton
   entities:
   - uid: 1424
     components:
     - type: Transform
       pos: -7.550851,17.250177
       parent: 179
-- proto: NFMagazineGrenadeBlast
+- proto: MagazineGrenadeBlast
   entities:
   - uid: 1425
     components:
     - type: Transform
       pos: -8.571684,16.500177
       parent: 179
-- proto: NFMagazineGrenadeEMP
+- proto: MagazineGrenadeEMP
   entities:
   - uid: 1412
     components:
     - type: Transform
       pos: -9.435917,17.239761
       parent: 179
-- proto: NFMagazineGrenadeFlash
+- proto: MagazineGrenadeFlash
   entities:
   - uid: 1426
     components:
     - type: Transform
       pos: -7.550851,16.448093
       parent: 179
-- proto: NFMagazineGrenadeFrag
+- proto: MagazineGrenadeFrag
   entities:
   - uid: 1427
     components:

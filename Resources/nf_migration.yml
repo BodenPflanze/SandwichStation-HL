@@ -293,97 +293,17 @@ FloorWaterDecorativeEntity: FloorWaterEntity
 
 # 2025-04-04 Guns and Armor Rebalance
 # NOTE: expedition guns not migrated (lookup non-expedition, apply Expedition suffix)
-BoxBeanbag: NFAmmunitionBoxShellShotgunBeanbag
-BoxDonkSoftBox: NFBoxDonkSoftBox
-BoxLethalshot: NFAmmunitionBoxShellShotgunBuckshot
-BoxMagazineCaselessRifle: null
-BoxMagazineCaselessRiflePractice: null
-BoxMagazineCaselessRifleRubber: null
-BoxMagazineLightRifle: NFMagazineRifle30 # close enough
-BoxMagazineLightRiflePractice: NFMagazineRifle30Practice # close enough
-BoxMagazineLightRifleRubber: NFBoxMagazineRifle30Rubber
 BoxMagazineMagnumSubMachineGun: null
 BoxMagazineMagnumSubMachineGunPractice: null
 BoxMagazineMagnumSubMachineGunRubber: null
 BoxMagazinePistolCaselessRifle: null
-BoxMagazineRifle: NFMagazineRifle20 # close enough
-BoxMagazineRiflePractice: NFMagazineRifle20Practice # close enough
 #BoxMagazineRifleRubber: NFBoxMagazineRifle20Rubber
-BoxMagazineShotgun: NFMagazineShotgunDrum # close enough
-BoxMagazineShotgunBeanbag: NFMagazineShotgunDrumBeanbag # close enough
-BoxMagazineShotgunIncendiary: NFMagazineShotgunDrumIncendiary # close enough
-BoxMagazineShotgunSlug: NFMagazineShotgunDrumSlug # close enough
-BoxShellTranquilizer: NFAmmunitionBoxShellShotgunTranquilizer
-BoxShotgunFlare: NFAmmunitionBoxShellShotgunFlare
-BoxShotgunIncendiary: NFAmmunitionBoxShellShotgunIncendiary
-BoxShotgunPractice: NFAmmunitionBoxShellShotgunPractice
-BoxShotgunSlug: NFAmmunitionBoxShellShotgunSlug
-BoxShotgunUranium: NFAmmunitionBoxShellShotgunUranium
-CannonBall: NFCannonBall
-CannonBallEmp: NFCannonBallEmp
-CannonBallGlassshot: NFCannonBallGlassshot
-CannonBallGrapeshot: NFCannonBallGrapeshot
-CartridgeAntiMateriel: NFCartridgeRifle60
-CartridgeCaselessRifle: NFCartridgeRifle25
-CartridgeCaselessRiflePractice: NFCartridgeRifle25Practice
-CartridgeHeavyRifle: NFCartridgeRifle30
-CartridgeLightRifle: NFCartridgeRifle30
-CartridgeLightRifleIncendiary: NFCartridgeRifle30Incendiary
-CartridgeLightRiflePractice: NFCartridgeRifle30Practice
-CartridgeLightRifleRubber: NFCartridgeRifle30Rubber
-CartridgeLightRifleUranium: NFCartridgeRifle30Uranium
-CartridgeMinigun: NFCartridgeRifle10
-CartridgeRifle: NFCartridgeRifle20
-CartridgeRifleIncendiary: NFCartridgeRifle20Incendiary
-CartridgeRiflePractice: NFCartridgeRifle20Practice
-CartridgeRifleRubber: NFCartridgeRifle20Rubber
-CartridgeRifleUranium: NFCartridgeRifle20Uranium
-CartridgeRocket: NFCartridgeRocket
-CartridgeRocketEmp: NFCartridgeRocketEmp
-CartridgeRocketSlow: NFCartridgeRocketSlow
-GrenadeBaton: NFGrenadeBaton
-GrenadeBlast: NFGrenadeBlast
-GrenadeEMP: NFGrenadeEMP
-GrenadeFlash: NFGrenadeFlash
-GrenadeFrag: NFGrenadeFrag
 #Kardashev-MosinNonlethal: NFWeaponRifleBarlowsBoltLessLethal
-MagazineBoxAntiMateriel: NFAmmunitionBoxRifle60
 MagazineBoxCaselessRifle: null
 MagazineBoxCaselessRiflePractice: null
-MagazineBoxLightRifle: NFAmmunitionBoxRifle30
-MagazineBoxLightRifleBig: NFAmmunitionBoxBigRifle30
-MagazineBoxLightRifleIncendiary: NFAmmunitionBoxRifle30Incendiary
-MagazineBoxLightRiflePractice: NFAmmunitionBoxRifle30Practice
-MagazineBoxLightRifleUranium: NFAmmunitionBoxRifle30Uranium
-MagazineBoxRifle: NFAmmunitionBoxRifle20
-MagazineBoxRifleBig: NFAmmunitionBoxBigRifle20
-MagazineBoxRifleBigRubber: NFAmmunitionBoxBigRifle20Rubber
-MagazineBoxRifleIncendiary: NFAmmunitionBoxRifle20Incendiary
-MagazineBoxRiflePractice: NFAmmunitionBoxRifle20Practice
-MagazineBoxRifleRubber: NFAmmunitionBoxRifle20Rubber
-MagazineBoxRifleUranium: NFAmmunitionBoxRifle20Uranium
 # Note: MagazineCaselessRifle* not migrated
-#MagazineFoamBox: NFMagazineBoxFoam
-#MagazineGrenadeBaton: NFMagazineGrenadeBaton
-#MagazineGrenadeBlast: NFMagazineGrenadeBlast
-#MagazineGrenadeEMP: NFMagazineGrenadeEMP
-#MagazineGrenadeEmpty: NFMagazineGrenadeEmpty
-#MagazineGrenadeFlash: NFMagazineGrenadeFlash
-#MagazineGrenadeFrag: NFMagazineGrenadeFrag
-#MagazineLightRifle: NFMagazineRifle30
-#MagazineLightRifleBox: NFMagazineBoxRifle30 # 20??
-#MagazineLightRifleEmpty: NFMagazineRifle30Empty
-#MagazineLightRifleIncendiary: NFMagazineRifle30Incendiary
-#MagazineLightRifleLowCapacity: NFMagazineLowCapacityRifle30
-#MagazineLightRifleLowCapacityEmpty: NFMagazineLowCapacityRifle30Empty
-#MagazineLightRifleLowCapacityPractice: NFMagazineLowCapacityRifle30Practice
-#MagazineLightRifleLowCapacityRubber: NFMagazineLowCapacityRifle30Rubber
-#MagazineLightRifleLowCapacityUranium: NFMagazineLowCapacityRifle30Uranium
 #MagazineLightRiflePkBox: null
 #MagazineLightRifleMaxim: null
-#MagazineLightRiflePractice: NFMagazineRifle30Practice
-#MagazineLightRifleRubber: NFMagazineRifle30Rubber
-#MagazineLightRifleUranium: NFMagazineRifle30Uranium
 #MagazineMagnum: NFMagazinePistol45
 #MagazineMagnumAP: NFMagazinePistol45Overpressure
 #MagazineMagnumEmpty: NFMagazinePistol45Empty
@@ -397,31 +317,10 @@ MagazineBoxRifleUranium: NFAmmunitionBoxRifle20Uranium
 #MagazineMagnumSubMachineGunRubber: NFMagazineSubMachineGun45Rubber
 #MagazineMagnumSubMachineGunUranium: NFMagazineSubMachineGun45Overpressure # close enough
 #MagazineNovaliteC1: NFMagazineClipRifle20
-#MagazineNovaliteC1Empty: NFMagazineClipRifle20Empty
 #MagazineNovaliteC1Rubber: NFMagazineClipRifle20Rubber
 #MagazinePistolCaselessRifle: NFMagazinePistol45 # oddball but .25 currently deprecated
 #MagazinePistolCaselessRiflePractice: NFMagazinePistol45Practice # oddball but .25 currently deprecated
-#MagazineRifle: NFMagazineRifle20
-#MagazineRifleEmpty: NFMagazineRifle20Empty
-#MagazineRifleIncendiary: NFMagazineRifle20Incendiary
-#MagazineRiflePractice: NFMagazineRifle20Practice
-#MagazineRifleRubber: NFMagazineRifle20Rubber
-#MagazineRifleUranium: NFMagazineRifle20Uranium
-#MagazineShotgun: NFMagazineShotgunDrum
-#MagazineShotgunBeanbag: NFMagazineShotgunDrumBeanbag
-#MagazineShotgunEmpty: NFMagazineShotgunDrumEmpty
-#MagazineShotgunIncendiary: NFMagazineShotgunDrumIncendiary
-#MagazineShotgunSlug: NFMagazineShotgunDrumSlug
 ##Musket: NFWeaponRifleMusket
-#ShellShotgun: NFShellShotgunBuckshot
-#ShellShotgunBeanbag: NFShellShotgunBeanbag
-#ShellShotgunFlare: NFShellShotgunFlare
-#ShellShotgunIncendiary: NFShellShotgunIncendiary
-#ShellShotgunImprovised: NFShellShotgunImprovised
-#ShellShotgunPractice: NFShellShotgunPractice
-#ShellShotgunSlug: NFShellShotgunSlug
-#ShellTranquilizer: NFShellShotgunTranquilizer
-#ShellShotgunUranium: NFShellShotgunUranium
 #SpeedLoaderMagnum: NFSpeedLoaderPistol45
 #SpeedLoaderMagnumAP: NFSpeedLoaderPistol45
 #SpeedLoaderMagnumEmpty: NFSpeedLoaderPistol45Empty

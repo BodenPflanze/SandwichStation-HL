@@ -23418,7 +23418,7 @@ entities:
     - type: Transform
       pos: 47.486122,-24.404968
       parent: 5350
-- proto: NFAmmunitionBoxShellShotgunBuckshotoxShellShotgunBuckshot
+- proto: AmmoBox12_gaugeBuckshot
   entities:
   - uid: 3056
     components:

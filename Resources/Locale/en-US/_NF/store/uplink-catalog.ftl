@@ -257,13 +257,13 @@ uplink-pirate-satchel-desc = An inconspicuous satchel filled with pirate goodies
 
 uplink-pirate-flintlock-name = Flintlock Pistol
 uplink-pirate-flintlock-desc = A pirate captain's companion. Yarrr! Uses 145x114mm ammo, somehow.
-uplink-pirate-shotgunammo-name = Blunderbuss Shell Box
-uplink-pirate-shotgunammo-desc = A box of 12 gauge shotgun shells, used in the blunderbuss.
+uplink-pirate-shotgunammo-name = Blunderbuss Ammo bag
+uplink-pirate-shotgunammo-desc = A bag of .25 bundle shots, used in the blunderbuss.
 uplink-pirate-revolverammo-name = Pirate Revolver Ammo Box
 uplink-pirate-revolverammo-desc = A box of .45 pistol rounds, used in the pirate revolver.
 
-uplink-pirate-flintlockammo-name = Flintlock Pistol Ammo Box
-uplink-pirate-flintlockammo-desc = A box of 145x114mm rounds, used in the flintlock pistol.
+uplink-pirate-flintlockammo-name = Flintlock Pistol Ammo bag
+uplink-pirate-flintlockammo-desc = A bag of .54 lead balls, used in the flintlock pistol.
 uplink-pirate-ecutlass-name = Energy Cutlass
 uplink-pirate-ecutlass-desc = An energy cutlass!
 
@@ -407,9 +407,6 @@ uplink-revolver-ritland-name = Ritland-45
 uplink-revolver-ritland-desc = Usually reliable, heavy revolver. Do you feel lucky, punk?
 
 uplink-pistol-cobra45-desc = A rugged, robust operator handgun with inbuilt silencer. Uses .45 pistol ammo.
-
-uplink-pistol-magazine-cobra-name = Cobra .45 pistol magazine
-uplink-pistol-magazine-cobra-desc = A loaded magazine for Cobra .45 pistol.
 
 uplink-speedloader-magnum-non-ap-name = .45 pistol speed loader
 uplink-speedloader-magnum-non-ap-desc = A .45 pistol speed loader with 6 .45 pistol caliber rounds.

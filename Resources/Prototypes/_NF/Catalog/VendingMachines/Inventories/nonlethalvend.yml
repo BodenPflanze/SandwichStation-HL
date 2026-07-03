@@ -4,26 +4,23 @@
     WeaponDisablerPractice: 4
     WeaponLaserCarbinePractice: 4
     AmmoBox12_gaugePractice: 8
-    AmmoBox556x45mmPractice: 8
-    AmmoBox635x40mmCaselessPractice: 10
+    AmmoBox762x54mmRPractice: 5
+    AmmoBox762x51mmPractice: 5
     AmmoBox762x39mmPractice: 5
+    AmmoBox57x28mmPractice: 7
+    AmmoBox556x45mmPractice: 8
     AmmoBox9x19mmPractice: 10
+    AmmoBox45_ACPPractice: 10
     AmmoBox45_magnumPractice: 10
+    # Weapons
     RevolverCapGun: 2
     WeaponRifleFoam: 2
-    BoxDonkSoftBox: 4
-    TargetDartsFlatpack: 2
-    BoxDarts: 4
-  # Weapons
     FoamCrossbow: 2
-  # Magazines
-  # Ammo boxes
+    # Foam/toy magb
     BoxCartridgeCap: 4
     NFBoxDonkSoftBox: 4
-    NFAmmunitionBoxRifle20Practice: 8
-    NFAmmunitionBoxRifle25Practice: 10
-    NFAmmunitionBoxRifle30Practice: 5
-    NFAmmunitionBoxShellShotgunPractice: 8
+    TargetDartsFlatpack: 2
+    BoxDarts: 4
   contrabandInventory:
     SpeedLoader556x45mmPractice: 3
     SpeedLoader9x19mmPractice: 3

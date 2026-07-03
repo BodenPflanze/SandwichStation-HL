@@ -336,7 +336,7 @@
       tags:
         - CannonBall
     capacity: 1
-    proto: NFCannonBall # Frontier: use NF variant
+    proto: CannonBall
     soundInsert:
       path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
   - type: NpcFactionMember # Frontier

@@ -518,7 +518,7 @@
         prob: 0.7
       - id: SpawnDungeonLootMaterialsValuableFull
         prob: 0.7
-      - id: AmmoBox9x19mmBigFMJ # Mono
+      - id: AmmoBox9x19mmIncendiary
       - prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
@@ -527,7 +527,7 @@
         prob: 0.5
       - id: SpawnDungeonLootToolsAdvancedEngineering
         prob: 0.4
-      - id: NFBaseMagazineDrumRifle20
+      - id: AmmoBox9x19mmBigFMJ
         prob: 0.1
       - id: MercCoin1
         prob: 1
@@ -559,7 +559,7 @@
         prob: 0.5
       - id: SpawnDungeonLootToolsAdvancedEngineering
         prob: 0.4
-      - id: NFBaseMagazineDrumRifle20
+      - id: AmmoBox556x45mmBigFMJ
         prob: 0.1
       - id: MercCoin1
         prob: 1

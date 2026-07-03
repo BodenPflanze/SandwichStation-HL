@@ -16,11 +16,8 @@
     SpeedLoader556x45mmRubber: 3
     SpeedLoader9x19mmRubber: 3
     SpeedLoader45_magnumRubber: 3
-    WeaponRifleBBEmpty: 2
-    BoxCartridgeBB: 10
   emaggedInventory:
     ThrowingKnife: 1
-    BoxCartridgeRGBB: 1
 
 - type: vendingMachineInventory
   id: LessLethalVendPOIInventory
@@ -40,8 +37,5 @@
     SpeedLoader556x45mmRubber: 3
     SpeedLoader9x19mmRubber: 3
     SpeedLoader45_magnumRubber: 3
-    WeaponRifleBBEmpty: 2
-    BoxCartridgeBB: 10
   emaggedInventory:
     ThrowingKnife: 1
-    BoxCartridgeRGBB: 1

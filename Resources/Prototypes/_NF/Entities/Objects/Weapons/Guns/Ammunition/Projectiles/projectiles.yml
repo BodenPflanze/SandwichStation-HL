@@ -115,7 +115,7 @@
   - type: ActiveTimerTrigger
     timeRemaining: 0.3
   - type: SmokeOnTrigger
-    duration: 3.5
+    duration: 10 # Sandwich-HL: it really needed more duration
     spreadAmount: 30
     smokePrototype: Foam
     solution:
@@ -127,10 +127,10 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 0.01 # a little pop
+    totalIntensity: 0.001 # a little pop
     intensitySlope: 1
-    maxIntensity: 0.01
-    tileBreakScale: 0.01
+    maxIntensity: 0.001
+    tileBreakScale: 0.001
 
 - type: entity
   id: NFBulletCannonBallEmp

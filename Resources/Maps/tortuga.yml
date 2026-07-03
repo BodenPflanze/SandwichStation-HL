@@ -21985,28 +21985,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -80.4454,20.407574
       parent: 33
-- proto: BoxCartridgeBB
-  entities:
-  - uid: 30615
-    components:
-    - type: Transform
-      pos: -40.60564,54.738106
-      parent: 33
-  - uid: 30616
-    components:
-    - type: Transform
-      pos: -40.532722,54.487934
-      parent: 33
-  - uid: 30617
-    components:
-    - type: Transform
-      pos: -40.303555,54.758953
-      parent: 33
-  - uid: 30618
-    components:
-    - type: Transform
-      pos: -40.220222,54.498356
-      parent: 33
 - proto: BoxCartridgeCap
   entities:
   - uid: 17702
@@ -194734,14 +194712,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -0.5032538,69.58407
-      parent: 33
-- proto: WeaponRifleBB
-  entities:
-  - uid: 30612
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -42.657722,54.602596
       parent: 33
   - uid: 30613
     components:

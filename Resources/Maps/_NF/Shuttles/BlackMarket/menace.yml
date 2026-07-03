@@ -664,7 +664,7 @@ entities:
     - type: Transform
       pos: 6.5,-0.5
       parent: 1
-- proto: NFCannonBall
+- proto: CannonBall
   entities:
   - uid: 101
     components:

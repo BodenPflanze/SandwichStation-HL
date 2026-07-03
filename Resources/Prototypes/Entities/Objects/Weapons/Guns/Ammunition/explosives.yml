@@ -59,14 +59,13 @@
 
 - type: entity
   id: GrenadeBaton
-  name: baton grenade
+  name: 40mm baton grenade
   parent: BaseGrenade
   components:
   - type: CartridgeAmmo
-    proto: Bullet40mmGrenadeBaton # Frontierd
-    deleteOnSpawn: true
+    proto: Bullet40mmGrenadeBaton # Frontier
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     layers:
     - state: baton
       map: ["enum.AmmoVisualLayers.Base"]
@@ -79,6 +78,7 @@
   id: GrenadeBlast
   name: blast grenade
   parent: BaseGrenade
+  categories: [ HideSpawnMenu ] # Sandwich-HL: we use _Mono
   components:
   - type: CartridgeAmmo
     proto: Bullet40mmGrenadeThermobaric # Frontier
@@ -95,14 +95,13 @@
 
 - type: entity
   id: GrenadeFlash
-  name: flash grenade
+  name: 40mm flash grenade
   parent: BaseGrenade
   components:
   - type: CartridgeAmmo
-    proto: Bullet40mmGrenadeFlash # Frontier
-    deleteOnSpawn: true
+    proto: Bullet40mmGrenadeFlash
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     layers:
     - state: flash
       map: ["enum.AmmoVisualLayers.Base"]
@@ -113,14 +112,13 @@
 
 - type: entity
   id: GrenadeFrag
-  name: frag grenade
+  name: 40mm Fragmentation grenade
   parent: BaseGrenade
   components:
   - type: CartridgeAmmo
-    proto: Bullet40mmGrenadeFragmentation # Frontier
-    deleteOnSpawn: true
+    proto: Bullet40mmGrenadeFragmentation
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     layers:
     - state: frag
       map: ["enum.AmmoVisualLayers.Base"]
@@ -132,31 +130,38 @@
 - type: entity
   parent: BaseGrenade
   id: GrenadeCleanade
-  name: cleanade grenade round
+  name: 40mm cleanade
   components:
   - type: CartridgeAmmo
-    proto: NFBulletGrenadeCleanade # Frontier
-    deleteOnSpawn: true
+    proto: BulletGrenadeCleanade
+    deleteOnSpawn: true # Caseless cuz Hydra kinda bulky with wield + revolver
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     layers:
     - state: cleanade
-      map: [ "enum.AmmoVisualLayers.Base" ]
+      map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals
     state: frag
     suffix: false
+  - type: Tag # Sandwich-HL
+    tags:
+    - Bullet40mmFoamNade # Sandwich-HL
+    - Grenade # Sandwich-HL
 
 - type: entity
   id: GrenadeEMP
-  name: EMP grenade
+  name: 40mm EMP grenade
   parent: BaseGrenade
   components:
   - type: CartridgeAmmo
-    proto: Bullet40mmGrenadeEMP # Frontier
-    deleteOnSpawn: true
+    proto: Bullet40mmGrenadeEMP
+  - type: EmpDescription # Sandwich-HL
+    range: 5 # Sandwich-HL
+    energyConsumption: 2700000 # Sandwich-HL
+    disableDuration: 10 # Sandwich-HL
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
     layers:
     - state: emp
       map: ["enum.AmmoVisualLayers.Base"]

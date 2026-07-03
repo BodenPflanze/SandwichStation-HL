@@ -190347,7 +190347,7 @@ entities:
     - type: Transform
       pos: 111.5,27.5
       parent: 2
-- proto: NFAmmunitionBoxShellShotgunBeanbag
+- proto: AmmoBox12_gaugeBeanbag
   entities:
   - uid: 28342
     components:
@@ -190367,7 +190367,7 @@ entities:
       rot: -18.84955592153876 rad
       pos: 110.34818,104.72892
       parent: 2
-- proto: NFAmmunitionBoxShellShotgunPractice
+- proto: AmmoBox12_gaugePractice
   entities:
   - uid: 28345
     components:

@@ -132074,7 +132074,7 @@ entities:
     - type: Transform
       pos: 25.61246,35.490623
       parent: 2
-- proto: NFAmmunitionBoxShellShotgunBeanbag
+- proto: AmmoBox12_gaugeBeanbag
   entities:
   - uid: 19856
     components:
@@ -132083,7 +132083,7 @@ entities:
       parent: 2
     - type: BallisticAmmoProvider
       unspawnedCount: 12
-- proto: NFAmmunitionBoxShellShotgunPractice
+- proto: AmmoBox12_gaugePractice
   entities:
   - uid: 19857
     components:
@@ -132218,7 +132218,7 @@ entities:
     - type: Transform
       pos: 21.65355,36.475
       parent: 2
-- proto: NFMagazineRifle20Practice
+- proto: Magazine556x45mmPractice
   entities:
   - uid: 19868
     components:

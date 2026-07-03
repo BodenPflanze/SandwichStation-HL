@@ -55,42 +55,6 @@
     Steel: 2000
     Gold: 500
 
-# region Grenades
-- type: latheRecipe
-  id: NFMagazineGrenadeEmpty # Frontier: add NF prefix
-  result: NFMagazineGrenadeEmpty # Frontier: add NF prefix
-  completetime: 3
-  materials:
-    Steel: 150
-    Plastic: 50
-
-- type: latheRecipe
-  id: NFGrenadeEMP # Frontier: add NF prefix
-  result: NFGrenadeEMP # Frontier: add NF prefix
-  completetime: 3
-  materials:
-    Steel: 150
-    Plastic: 100
-    Glass: 20
-
-- type: latheRecipe
-  id: NFGrenadeBlast # Frontier: add NF prefix
-  result: NFGrenadeBlast # Frontier: add NF prefix
-  completetime: 3
-  materials:
-    Steel: 450
-    Plastic: 300
-    Gold: 150
-
-- type: latheRecipe
-  id: NFGrenadeFlash
-  result: NFGrenadeFlash
-  completetime: 3
-  materials:
-    Steel: 150
-    Plastic: 100
-    Glass: 20
-
 # region Misc
 - type: latheRecipe
   id: ClothingEyesHudNfsd

@@ -229,7 +229,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: ImplicitRoof
-- proto: 40mmGrenadeCleanade
+- proto: GrenadeCleanade
   entities:
   - uid: 56
     components:

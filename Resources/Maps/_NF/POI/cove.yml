@@ -2263,13 +2263,6 @@ entities:
     - type: Transform
       pos: 0.5249535,4.68744
       parent: 1
-- proto: BoxCartridgeBB
-  entities:
-  - uid: 1748
-    components:
-    - type: Transform
-      pos: 23.40793,24.519094
-      parent: 1
 - proto: BoxDarts
   entities:
   - uid: 1751
@@ -7860,7 +7853,7 @@ entities:
     - type: Transform
       pos: 2.5,10.5
       parent: 1
-- proto: NFAmmunitionBoxBigRifle60
+- proto: AmmoBox145x114mmBig
   entities:
   - uid: 680
     components:
@@ -7881,14 +7874,14 @@ entities:
     - type: Transform
       pos: -14.669516,24.640959
       parent: 1
-- proto: NFAmmunitionBoxBigRifle20
+- proto: AmmoBox556x45mmBigFMJ
   entities:
   - uid: 1193
     components:
     - type: Transform
       pos: -14.395344,25.44221
       parent: 1
-- proto: NFAmmunitionBoxBigRifle20Rubber
+- proto: AmmoBox556x45mmBigRubber
   entities:
   - uid: 2077
     components:
@@ -12868,13 +12861,6 @@ entities:
     components:
     - type: Transform
       pos: -14.335276,21.487083
-      parent: 1
-- proto: WeaponRifleBB
-  entities:
-  - uid: 1695
-    components:
-    - type: Transform
-      pos: 23.56418,24.946178
       parent: 1
 - proto: WeaponShotgunBlunderbuss
   entities:
