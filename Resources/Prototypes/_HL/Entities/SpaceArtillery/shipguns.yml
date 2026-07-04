@@ -269,10 +269,6 @@
   - type: MobState # otherwise NPCs won't attack the entity
   - type: CombatMode
     toggleMouseRotator: false
-  - type: Sprite
-    sprite: _HL/Objects/ShuttleWeapons/t35.rsi
-    layers:
-    - state: space_artillery
   - type: Tag
     tags:
     - AIShipWeapon
@@ -607,7 +603,7 @@
 - type: entity
   id: CVWeaponTurretFang
   name: Civilian Fang heavy 100mm autocannon
-  description: A heavy 100mm autocannon of syndicate design, created during the corporate war. Made for shattering the hulls of NT crusiers. Uses a self loading mechanism similar to the anaconda hangun. Now coming to a backyard near you!zzzzzzzzz
+  description: A heavy 100mm autocannon of syndicate design, created during the corporate war. Made for shattering the hulls of NT crusiers. Uses a self loading mechanism similar to the anaconda hangun. Now coming to a backyard near you!
   parent: [ BaseC2ContrabandUnredeemable, WeaponTurretFang ]
   components:
   - type: Sprite

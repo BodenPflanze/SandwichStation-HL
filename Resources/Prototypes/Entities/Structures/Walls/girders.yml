@@ -17,9 +17,9 @@
           bounds: "-0.45,-0.45,0.45,0.45"
         density: 60
         mask:
-        - TableMask # Frontier - Stop AI Abuse - MachineMask<TableMask
+        - MachineMask
         layer:
-        - TableLayer # Frontier - Stop AI Abuse - GlassAirlockLayer<TableLayer
+        - GlassAirlockLayer
   - type: InteractionOutline
   - type: Construction
     graph: Girder
@@ -54,7 +54,6 @@
           collection: MetalBreak
   - type: StaticPrice
     price: 15 # Frontier: 30<15
-  - type: Climbable # Frontier - Stop AI Abuse
   - type: RCDDeconstructable # Frontier
     cost: 4 # Frontier
     delay: 4 # Frontier

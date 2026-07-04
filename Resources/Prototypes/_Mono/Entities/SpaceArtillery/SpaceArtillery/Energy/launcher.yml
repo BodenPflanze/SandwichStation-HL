@@ -37,6 +37,7 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
+    customCaliber: "recharging plasma bolts" # Sandwich-HL
     fireRate: 0.5
     minAngle: 0
     maxAngle: 0
@@ -110,6 +111,7 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
+    customCaliber: "recharging plasma bolts" # Sandwich-HL
     fireRate: 0.75
     #recoil: 8
     minAngle: 0
@@ -181,6 +183,7 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
+    customCaliber: "recharging plasma pulse" # Sandwich-HL
     fireRate: 7
     minAngle: 0
     maxAngle: 5
@@ -260,6 +263,7 @@
           bounds: "-0.75,-0.75,0.75,0.75"
         density: 1500
   - type: Gun
+    customCaliber: "recharging plasma projectiles" # Sandwich-HL
     projectileSpeed: 70
     fireRate: 5
     minAngle: 0
@@ -330,6 +334,7 @@
     range: 500
   - type: FireControlRotate
   - type: Gun
+    customCaliber: "recharging m25 mining pulses" # Sandwich-HL
     fireRate: 4.0
     projectileSpeed: 55
     minAngle: 0
@@ -400,6 +405,7 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
+    customCaliber: "recharging M220 EMP" # Sandwich-HL
     fireRate: 0.2
     projectileSpeed: 140
     soundGunshot:
@@ -465,6 +471,7 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
+    customCaliber: "recharging plasma pulses" # Sandwich-HL
     projectileSpeed: 185
     minAngle: 0
     maxAngle: 8
@@ -689,6 +696,8 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
+    energyJouleRating: 6350 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-beams # Sandwich-HL
     fireRate: .2
     #recoil: 5
     minAngle: 0
@@ -741,6 +750,8 @@
     layers:
     - state: space_artillery
   - type: Gun
+    energyJouleRating: 70500 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-beams # Sandwich-HL
     fireRate: 0.3
     minAngle: 0
     maxAngle: 0
@@ -880,12 +891,12 @@
   name: Curio-1089 tachyon lance "Reaper"
   parent: [ BallisticArtilleryUnanchorable, BaseC3ExpeditionContraband ]
   suffix: ADS ONLY
-  description: One of the most powerful EMP weapons in sector, its a sign of doom for its targets.
+  description: A terrifying weapon to have aimed at you, the Reaper is an ancient piece of pre-fracture tech capable of shattering the strongest of hulls within one or two blasts.
   components:
   - type: StaticPrice
-    price: 1250000
+    price: 1500000
   - type: Sprite
-    sprite: _Mono/Objects/ShuttleWeapons/harbringer.rsi
+    sprite: _Mono/Objects/ShuttleWeapons/reaper.rsi
     layers:
     - state: space_artillery
   - type: Appearance
@@ -901,21 +912,22 @@
     fireRate: 0.04 # 25s
     minAngle: 0
     maxAngle: 0
+    #shootThermalSignature: 18000000 # ~8.5km after firing
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/leviathan_fire.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 800
+    autoRechargeRate: 350
   - type: SpaceArtillery
     powerChargeRate: 350
     powerUsePassive: 1000
     powerUseActive: 7500
   - type: Actions
-  - type: ProjectileBatteryAmmoProvider
-    proto: ShipIonProjectile
-    fireCost: 4000
+  - type: HitscanBatteryAmmoProvider
+    proto: TachyonLaser
+    fireCost: 500
   - type: Fixtures
     fixtures:
       fix1:
@@ -960,7 +972,7 @@
   - type: StaticPrice
     price: 175000
   - type: Sprite
-    sprite: _Mono/Objects/ShuttleWeapons/tartarus.rsi
+    sprite: _Mono/Objects/ShuttleWeapons/harbringer.rsi
     layers:
     - state: space_artillery
   - type: Appearance
@@ -972,6 +984,7 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
+    customCaliber: "recharging ion blast (EMP)" # Sandwich-HL
     fireRate: 0.025 # 40s
     minAngle: 0
     maxAngle: 0
@@ -990,7 +1003,7 @@
   - type: FireControlRotate
   - type: Actions
   - type: ProjectileBatteryAmmoProvider
-    proto: ShipAntiMatterProjectile
+    proto: ShipIonProjectile
     fireCost: 5000
   - type: Destructible
     thresholds:
@@ -1034,6 +1047,7 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
+    customCaliber: "recharging antimatter projectile" # Sandwich-HL
     fireRate: 0.4
     minAngle: 0
     maxAngle: 4
@@ -1103,6 +1117,8 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
+    energyJouleRating: 16250 # Sandwich-HL
+    energyProjectileType: gun-examine-joules-beams # Sandwich-HL
     fireRate: 1.2
     minAngle: 0
     maxAngle: 4

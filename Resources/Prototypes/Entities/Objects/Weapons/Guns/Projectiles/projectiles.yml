@@ -410,7 +410,7 @@
       types:
         Heat: 14
   # mining laser real
-#  - type: GatheringProjectile # Frontier - if restoring, add MiningGatheringSoft
+#  - type: GatheringProjectile
   - type: Tag
     tags:
     - EmitterBolt
@@ -1376,7 +1376,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: _NF/Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Projectiles/projectiles2.rsi
     layers:
     - state: ball-emp
     - state: ball-emp-unlit
@@ -1391,7 +1391,7 @@
         Shock: 0
   - type: EmpOnTrigger
     range: 4
-    energyConsumption: 50000
+    energyConsumption: 2700000
     disableDuration: 60
 
 # DeltaV projectiles

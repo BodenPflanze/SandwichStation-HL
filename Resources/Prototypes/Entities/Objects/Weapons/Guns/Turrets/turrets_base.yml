@@ -127,7 +127,7 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
   - type: ProjectileBatteryAmmoProvider
-    proto: NFBulletEnergyTurretLaser # Frontier
+    proto: BulletEnergyTurretLaser # Frontier
     fireCost: 100
   - type: Battery
     maxCharge: 2000

@@ -1,6 +1,6 @@
 - type: entity
   id: BabyDragonSpark
-  parent: NFPelletShotgunFlare
+  parent: PelletShotgunFlare
   name: dragon ember spark
   categories: [ HideSpawnMenu ]
   components:

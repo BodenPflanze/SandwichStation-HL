@@ -142,7 +142,7 @@
     rechargeSound:
       path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
   - type: BasicEntityAmmoProvider
-    proto: NFBulletCharge # Frontier: use NF prefix
+    proto: BulletCharge
     capacity: 1
     count: 1
   - type: MeleeWeapon

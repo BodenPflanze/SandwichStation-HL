@@ -73,7 +73,6 @@
     intensitySlope: 30
     totalIntensity: 7000
     maxTileBreak: 0
-  - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
     acceleration: 20
@@ -160,7 +159,6 @@
     radius: 5
     color: orange
     energy: 2
-  - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
     acceleration: 70
@@ -274,7 +272,6 @@
     intensitySlope: 4
     totalIntensity: 1000
     maxTileBreak: 0
-  - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
     acceleration: 20

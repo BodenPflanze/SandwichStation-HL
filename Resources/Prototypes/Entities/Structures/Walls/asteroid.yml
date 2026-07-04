@@ -55,7 +55,6 @@
       - Pickaxe # Frontier
       components: # Frontier
       - MiningGatheringHard # Frontier
-      - MiningGatheringSoft # Frontier
 
 # Ore veins
 - type: entity
@@ -678,7 +677,6 @@
         - Pickaxe
       components: # Frontier
         - MiningGatheringHard # Frontier
-        - MiningGatheringSoft # Frontier
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Metallic

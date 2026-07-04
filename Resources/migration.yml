@@ -288,7 +288,6 @@ BodyBag_Container: BodyBag
 BodyBag_Folded: BodyBagFolded
 
 # 2024-04-26
-# BaseBulletRubber: null # Frontier
 # Bullet9x19mmRubber: Bullet9x19mmFMJ # Frontier
 # Bullet45_magnumRubber: Bullet45_magnumFMJ # Frontier
 # Bullet762x39mmRubber: Bullet762x39mmFMJ # Frontier

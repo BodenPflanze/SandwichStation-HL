@@ -163,20 +163,18 @@
   - type: Emitter
     onState: firing
     powerUseActive: 100
-    # Frontier: use NF prefixes
-    boltType: NFAnomalousParticleDelta
+    boltType: AnomalousParticleDelta
     underpoweredState: underpowered
     selectableTypes:
-    - NFAnomalousParticleDelta
-    - NFAnomalousParticleEpsilon
-    - NFAnomalousParticleZeta
-    - NFAnomalousParticleSigma
+    - AnomalousParticleDelta
+    - AnomalousParticleEpsilon
+    - AnomalousParticleZeta
+    - AnomalousParticleSigma
     setTypePorts:
-      SetParticleDelta: NFAnomalousParticleDelta
-      SetParticleEpsilon: NFAnomalousParticleEpsilon
-      SetParticleZeta: NFAnomalousParticleZeta
-      SetParticleSigma: NFAnomalousParticleSigma
-    # End Frontier: use NF prefixes
+      SetParticleDelta: AnomalousParticleDelta
+      SetParticleEpsilon: AnomalousParticleEpsilon
+      SetParticleZeta: AnomalousParticleZeta
+      SetParticleSigma: AnomalousParticleSigma
     fireBurstSize: 1
     baseFireBurstDelayMin: 2
     baseFireBurstDelayMax: 6

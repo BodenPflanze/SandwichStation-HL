@@ -33,4 +33,9 @@ public sealed partial class TriggerOnCollideComponent : Component
     /// </summary>
     [DataField]
     public EntityWhitelist? Blacklist;
+
+    // Sandwich-HL start
+    [DataField("delay")]
+    public float Delay = 0f;
+    // Sandwich-HL end
 }

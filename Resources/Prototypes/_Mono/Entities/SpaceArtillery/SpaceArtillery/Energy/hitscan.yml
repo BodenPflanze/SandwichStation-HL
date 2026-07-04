@@ -20,8 +20,8 @@
   id: ApolloLaser
   damage:
     types:
-      Heat: 10000
-      Structural: 50000
+      Heat: 1500 # Sandwich-HL: 10k DAMAGE?!?!! ARE YOU CRAZY
+      Structural: 10000 # Sandwich-HL: 50000 DAMAGE?!!?!?! WHAT?!
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: muzzle_beam_heavy2
@@ -31,6 +31,9 @@
   impactFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: impact_beam_heavy2
+  penetrationThreshold: 2500 # Sandwich-HL
+  penetrationDamageTypeRequirement: # Sandwich-HL
+    - Structural # Sandwich-HL
 
 - type: hitscan
   id: PrometheusLaser
@@ -79,6 +82,9 @@
   impactFlash:
     sprite: _Mono/Objects/Weapons/Guns/Projectiles/ship_lasers.rsi
     state: proton_impact
+  penetrationThreshold: 650 # Sandwich-HL
+  penetrationDamageTypeRequirement: # Sandwich-HL
+    - Structural # Sandwich-HL
 
 - type: hitscan
   id: GaussRound

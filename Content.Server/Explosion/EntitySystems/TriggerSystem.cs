@@ -129,6 +129,8 @@ namespace Content.Server.Explosion.EntitySystems
             SubscribeLocalEvent<RattleComponent, TriggerEvent>(HandleRattleTrigger);
 
             SubscribeLocalEvent<TriggerWhitelistComponent, BeforeTriggerEvent>(HandleWhitelist);
+
+            SubscribeLocalEvent<ActiveTimerTriggerComponent, EntityTerminatingEvent>(OnTimerTerminating); // Sandwich-HL
         }
 
         private void HandleWhitelist(Entity<TriggerWhitelistComponent> ent, ref BeforeTriggerEvent args)
@@ -235,6 +237,8 @@ namespace Content.Server.Explosion.EntitySystems
 
         private void HandleExplodeTrigger(EntityUid uid, ExplodeOnTriggerComponent component, TriggerEvent args)
         {
+            EnsureComp<AlreadyExplodedComponent>(uid); // Sandwich-HL
+
             _explosions.TriggerExplosive(uid, user: args.User);
             args.Handled = true;
         }
@@ -343,6 +347,7 @@ namespace Content.Server.Explosion.EntitySystems
 
         private void OnTriggerCollide(EntityUid uid, TriggerOnCollideComponent component, ref StartCollideEvent args)
         {
+            Logger.Info($"[APHE-Debug] TriggerSystem.OnTriggerCollide feuert für {uid}. Delay eingestellt auf: {component.Delay}");
             if (args.OurFixtureId != component.FixtureID)
                 return;
 
@@ -357,7 +362,16 @@ namespace Content.Server.Explosion.EntitySystems
             if (component.Blacklist != null && !_whitelist.IsBlacklistPass(component.Blacklist, args.OtherEntity))
                 return;
 
-            Trigger(uid, args.OtherEntity);
+            // Sandwich-HL start
+            if (component.Delay > 0f)
+            {
+                HandleTimerTrigger(uid, args.OtherEntity, component.Delay, 0f, null, null);
+            }
+            else
+            {
+                Trigger(uid, args.OtherEntity);
+            }
+             // Sandwich-HL end
         }
 
         private void OnSpawnTriggered(EntityUid uid, TriggerOnSpawnComponent component, MapInitEvent args)
@@ -516,11 +530,20 @@ namespace Content.Server.Explosion.EntitySystems
             var query = EntityQueryEnumerator<ActiveTimerTriggerComponent>();
             while (query.MoveNext(out var uid, out var timer))
             {
+                if (HasComp<TriggerOnCollideComponent>(uid))
+                {
+                    Logger.Info($"[APHE-Debug] Trigger-Timer Tick - Proj: {uid}, TimeRemaining: {timer.TimeRemaining}, Pos: {_transformSystem.GetWorldPosition(uid)}");
+                }
                 timer.TimeRemaining -= frameTime;
                 timer.TimeUntilBeep -= frameTime;
 
                 if (timer.TimeRemaining <= 0)
                 {
+                    if (HasComp<TriggerOnCollideComponent>(uid))
+                    {
+                        Logger.Info($"[APHE-Debug] TIMER ABGELAUFEN! Löse reguläre Explosion aus für {uid} bei Pos: {_transformSystem.GetWorldPosition(uid)}");
+                    }
+
                     Trigger(uid, timer.User);
                     toRemove.Add(uid);
                     continue;
@@ -556,5 +579,23 @@ namespace Content.Server.Explosion.EntitySystems
                 Trigger(uid);
             }
         }
+
+        // Sandwich-HL start:
+        private void OnTimerTerminating(EntityUid uid, ActiveTimerTriggerComponent component, ref EntityTerminatingEvent args)
+        {
+            if (HasComp<TriggerOnCollideComponent>(uid))
+            {
+                Logger.Info($"[APHE-Debug] OnTimerTerminating abgefangen für {uid}. Bereits explodiert: {HasComp<AlreadyExplodedComponent>(uid)}, Pos: {_transformSystem.GetWorldPosition(uid)}");
+            }
+
+            if (HasComp<AlreadyExplodedComponent>(uid))
+                return;
+        
+            if (HasComp<ExplodeOnTriggerComponent>(uid))
+            {
+                _explosions.TriggerExplosive(uid, user: component.User);
+            }
+        }
+        // Sandwich-HL: end
     }
-}
+} 

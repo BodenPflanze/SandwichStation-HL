@@ -123,7 +123,7 @@
   parent: BaseCannonBall
   components:
   - type: CartridgeAmmo
-    proto: NFBulletCannonBall # Frontier
+    proto: BulletCannonBall
     deleteOnSpawn: true
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
@@ -136,7 +136,7 @@
   parent: BaseCannonBall
   components:
   - type: CartridgeAmmo
-    proto: NFPelletGrapeshotSpread # Frontier
+    proto: PelletGrapeshotSpread
     deleteOnSpawn: true
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
@@ -149,7 +149,7 @@
   parent: BaseCannonBall
   components:
   - type: CartridgeAmmo
-    proto: NFPelletGlassSpread # Frontier
+    proto: PelletGlassSpread
     deleteOnSpawn: true
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
@@ -187,10 +187,10 @@
   parent: BaseCannonBall
   components:
   - type: CartridgeAmmo
-    proto: NFBulletCannonBallEmp
+    proto: BulletCannonBallEmp
     deleteOnSpawn: true
   - type: Sprite
-    sprite: _NF/Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Projectiles/projectiles2.rsi
     state: ball-emp
   - type: EmpDescription
     range: 4

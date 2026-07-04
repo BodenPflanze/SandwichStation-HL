@@ -4,6 +4,7 @@ using Content.Shared.Weapons.Reflect;
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Content.Shared.FixedPoint; // Sandwich-HL
 
 namespace Content.Shared.Weapons.Ranged;
 
@@ -54,4 +55,18 @@ public sealed partial class HitscanPrototype : IPrototype, IShootable
     /// </summary>
     [DataField("maxLength")]
     public float MaxLength = 60f;
+
+    // Sandwich-HL start: Hitscan Penetration
+    /// <summary>
+    /// The maximum amount of damage the projectile can "absorb" before the beam collapses completely.
+    /// </summary>
+    [DataField("penetrationThreshold")]
+    public FixedPoint2 PenetrationThreshold = FixedPoint2.Zero;
+
+    /// <summary>
+    /// Optional damage type condition (as with projectiles).
+    /// </summary>
+    [DataField("penetrationDamageTypeRequirement")]
+    public List<string>? PenetrationDamageTypeRequirement;
+    // Sandwich-HL end
 }

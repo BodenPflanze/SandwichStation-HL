@@ -51,7 +51,7 @@
     baseWalkSpeed: 5
     baseSprintSpeed: 7
   - type: ProjectileBatteryAmmoProvider
-    proto: NFWatcherBolt # Frontier: use NF variant
+    proto: WatcherBolt
     fireCost: 50
   - type: BatterySelfRecharger
     autoRecharge: true
@@ -127,7 +127,7 @@
     energy: 1
     color: orangered
   - type: ProjectileBatteryAmmoProvider
-    proto: NFWatcherBoltMagmawing # Frontier: use NF variant
+    proto: WatcherBoltMagmawing
     fireCost: 50
 
 - type: entity

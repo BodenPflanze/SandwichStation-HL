@@ -41,7 +41,6 @@
     maxIntensity: 6000
     maxTileBreak: 0
   - type: GatheringProjectile
-  - type: MiningGatheringSoft
   - type: MiningGatheringHard
 
 - type: entity
@@ -104,7 +103,6 @@
     maxIntensity: 11000
     maxTileBreak: 0
   - type: GatheringProjectile
-  - type: MiningGatheringSoft
   - type: MiningGatheringHard
 
 - type: entity

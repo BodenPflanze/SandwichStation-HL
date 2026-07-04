@@ -41,6 +41,7 @@
     ports:
     - Toggle
   - type: Gun
+    customCaliber: "recharging 20mm AP shells" # Sandwich-HL
     fireRate: 8
     projectileSpeed: 160
     minAngle: 0
@@ -118,6 +119,7 @@
     ports:
     - Toggle
   - type: Gun
+    customCaliber: "recharging 30mm AP shells" # Sandwich-HL
     fireRate: 9
     projectileSpeed: 180
     minAngle: 0
@@ -191,6 +193,7 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
+    customCaliber: "recharging 57mm heat shells" # Sandwich-HL
     fireRate: 1.5
     projectileSpeed: 250
     minAngle: 0
@@ -260,6 +263,7 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
+    customCaliber: "recharging 90mm APHE shells" # Sandwich-HL
     fireRate: 2.5
     projectileSpeed: 170
     minAngle: 0
@@ -346,6 +350,7 @@
         layer:
         - MachineLayer
   - type: Gun
+    customCaliber: "recharging 220mm HE shells" # Sandwich-HL
     projectileSpeed: 275
     minAngle: 0
     maxAngle: 1
@@ -432,6 +437,7 @@
         layer:
         - MachineLayer
   - type: Gun
+    customCaliber: "recharging 305mm HE shells" # Sandwich-HL
     projectileSpeed: 350
     minAngle: 0
     maxAngle: 0
@@ -518,6 +524,7 @@
         layer:
         - MachineLayer
   - type: Gun
+    customCaliber: "recharging 140mm HEAT shells" # Sandwich-HL
     projectileSpeed: 290
     minAngle: 0
     maxAngle: 3
@@ -592,6 +599,7 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
+    customCaliber: "recharging mini railgun projectile" # Sandwich-HL
     fireRate: 0.05
     minAngle: 0
     maxAngle: 0
@@ -684,6 +692,7 @@
         layer:
         - MachineLayer
   - type: Gun
+    customCaliber: "recharging 255mm HE shells" # Sandwich-HL
     projectileSpeed: 455
     minAngle: 0
     maxAngle: 1
@@ -766,6 +775,7 @@
         layer:
         - MachineLayer
   - type: Gun
+    customCaliber: "recharging 203mm HE shells" # Sandwich-HL
     projectileSpeed: 255
     minAngle: 0
     maxAngle: 3
@@ -842,6 +852,7 @@
     ports:
     - Toggle
   - type: Gun
+    customCaliber: "recharging 40mm shells" # Sandwich-HL
     fireRate: 0.5
     projectileSpeed: 200
     minAngle: 0
@@ -913,6 +924,7 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
+    customCaliber: "recharging 100mm APHE shells" # Sandwich-HL
     fireRate: 3
     projectileSpeed: 170
     minAngle: 0

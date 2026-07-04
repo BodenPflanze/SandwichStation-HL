@@ -158,7 +158,6 @@
     color: white
     energy: 0.5
   - type: GatheringProjectile
-  - type: MiningGatheringSoft
 
 - type: entity
   id: NFBulletKineticMediumPower

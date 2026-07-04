@@ -23,6 +23,7 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
+    customCaliber: "recharging 150mm EMP shells" # Sandwich-HL
     fireRate: 0.1
     projectileSpeed: 400
     soundGunshot:
@@ -71,6 +72,7 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
+    customCaliber: "150mm shells" # Sandwich-HL
     fireRate: 0.1
     projectileSpeed: 400
     soundGunshot:

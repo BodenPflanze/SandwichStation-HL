@@ -128,10 +128,15 @@ public abstract partial class SharedProjectileSystem : EntitySystem
     private void OnStartCollide(EntityUid uid, ProjectileComponent component, ref StartCollideEvent args)
     {
         // This is so entities that shouldn't get a collision are ignored.
+        /* Sandwich-HL start:
         if (args.OurFixtureId != ProjectileFixture || !args.OtherFixture.Hard
             || component.DamagedEntity || component.ProjectileSpent || component is { Weapon: null, OnlyCollideWhenShot: true })
             return;
-
+        */ 
+        if (args.OurFixtureId != ProjectileFixture || !args.OtherFixture.Hard
+            || component.ProjectileSpent || component is { Weapon: null, OnlyCollideWhenShot: true })
+            return;
+        // Sandwich-HL end
         ProjectileCollide((uid, component, args.OurBody), args.OtherEntity);
     }
 
@@ -143,7 +148,8 @@ public abstract partial class SharedProjectileSystem : EntitySystem
     public virtual DamageSpecifier? ProjectileCollide(Entity<ProjectileComponent, PhysicsComponent> projectile, EntityUid target, MapCoordinates? collisionCoordinates, bool predicted = false)
     {
         var (uid, component, ourBody) = projectile;
-        if (projectile.Comp1.DamagedEntity)
+        //if (projectile.Comp1.DamagedEntity) // Sandwich-HL
+        if (component.ProjectileSpent)        // Sandwich-HL
         {
             if (_net.IsServer && component.DeleteOnCollide)
                 QueueDel(uid);
@@ -225,7 +231,8 @@ public abstract partial class SharedProjectileSystem : EntitySystem
         component.DamagedEntity = true;
         Dirty(uid, component);
 
-        if (!predicted && component.DeleteOnCollide && (_net.IsServer || IsClientSide(uid)))
+        //if (!predicted && component.DeleteOnCollide && (_net.IsServer || IsClientSide(uid))) // Sandwich-HL
+        if (!predicted && component.DeleteOnCollide && component.ProjectileSpent && (_net.IsServer || IsClientSide(uid))) // Sandwich-HL
             QueueDel(uid);
         else if (_net.IsServer && component.DeleteOnCollide)
         {

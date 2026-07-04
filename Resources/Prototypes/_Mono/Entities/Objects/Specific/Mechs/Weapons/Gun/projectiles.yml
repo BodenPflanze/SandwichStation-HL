@@ -152,7 +152,6 @@
     intensitySlope: 20
     maxIntensity: 30
   - type: GatheringProjectile
-  - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
     acceleration: 20

@@ -18,6 +18,10 @@ using Robust.Shared.Physics.Systems;
 using Robust.Shared.Timing;
 using System.Linq;
 using System.Numerics;
+using Content.Shared.Explosion.Components.OnTrigger;
+using Content.Server.Explosion.Components;
+using Content.Shared.Explosion.Components;
+using Content.Server.Explosion.EntitySystems; // Sandwich-HL
 
 namespace Content.Server.Projectiles;
 
@@ -78,7 +82,10 @@ public sealed class ProjectileSystem : SharedProjectileSystem
             return null;
         }
 
-        // Server-specific logic: penetration
+        Logger.Info($"[APHE-Debug] ProjectileCollide aufgerufen für {uid}. Position: {_transformSystem.GetWorldPosition(uid)}, Spent: {component.ProjectileSpent}");
+
+        bool failedToDestroy = false; // Sandwich-HL
+
         if (component.PenetrationThreshold != 0)
         {
             // If a damage type is required, stop the bullet if the hit entity doesn't have that type.
@@ -95,13 +102,17 @@ public sealed class ProjectileSystem : SharedProjectileSystem
                 }
 
                 if (stopPenetration)
+                {
                     component.ProjectileSpent = true;
+                    failedToDestroy = true; // Sandwich-HL
+                }
             }
 
             // If the object won't be destroyed, it "tanks" the penetration hit.
             if (modifiedDamage.GetTotal() < damageRequired)
             {
                 component.ProjectileSpent = true;
+                failedToDestroy = true; // Sandwich-HL
             }
 
             if (!component.ProjectileSpent)
@@ -117,7 +128,42 @@ public sealed class ProjectileSystem : SharedProjectileSystem
         else
         {
             component.ProjectileSpent = true;
+            failedToDestroy = true; // Sandwich-HL
         }
+
+        // Sandwich-HL start
+        if (component.ProjectileSpent)
+        {
+            // FIX: set velocity directly to 0 (only if it has explosion or trigger component), so projectile doesnt glitch through the wall before deletion due to high speed
+            if (HasComp<ExplodeOnTriggerComponent>(uid) || HasComp<TriggerOnCollideComponent>(uid))
+            {
+                Logger.Info($"[APHE-Debug] Kugel {uid} ist SPENT. Setze Velocity auf 0.");
+                _physics.SetLinearVelocity(uid, Vector2.Zero, body: ourBody);
+                _physics.SetAngularVelocity(uid, 0f, body: ourBody);
+
+                if (collisionCoordinates.HasValue)
+                {
+                    _transformSystem.SetMapCoordinates(uid, collisionCoordinates.Value);
+                }
+            }
+        }
+
+        if (component.ProjectileSpent)
+        {
+            bool hasTimerDelay = TryComp<TriggerOnCollideComponent>(uid, out var triggerCollide) && triggerCollide.Delay > 0f;
+
+            if (failedToDestroy || (component.DeleteOnCollide && !hasTimerDelay))
+            {
+                Logger.Info($"[APHE-Debug] Zerstöre Projektil {uid} sofort via QueueDel.");
+                QueueDel(uid);
+            }
+            else
+            {
+                Logger.Info($"[APHE-Debug] Überspringe Löschung für {uid}. Kugel wartet auf Timer-Explosion.");
+            }
+        }
+        Logger.Info($"[APHE-Debug] Vor QueueDel End-Check. spent: {component.ProjectileSpent}, failedToDestroy: {failedToDestroy}, DeleteOnCollide: {component.DeleteOnCollide}, HasActiveTimer: {HasComp<ActiveTimerTriggerComponent>(uid)}");
+        // Sandwich-HL end
 
         return modifiedDamage;
     }
@@ -129,6 +175,12 @@ public sealed class ProjectileSystem : SharedProjectileSystem
         var query = EntityQueryEnumerator<ProjectileComponent, PhysicsComponent, TransformComponent>();
         while (query.MoveNext(out var uid, out var projectileComp, out var physicsComp, out var xform))
         {
+            if (HasComp<TriggerOnCollideComponent>(uid)) // Sandwich-HL start
+            {
+                var currentPos = _transformSystem.GetWorldPosition(xform);
+                Logger.Info($"[APHE-Debug] Update Tick - Proj: {uid}, Pos: {currentPos}, Vel: {physicsComp.LinearVelocity.Length()}, Spent: {projectileComp.ProjectileSpent}");
+            } // Sandwich-HL end
+
             if (projectileComp.ProjectileSpent || TerminatingOrDeleted(uid))
                 continue;
 
@@ -170,10 +222,27 @@ public sealed class ProjectileSystem : SharedProjectileSystem
 
                 // teleport us so we hit it
                 // this is cursed but i don't think there's a better way to force a collision here
+                Logger.Info($"[APHE-Debug] Raycast Hit registriert für {uid} auf Target {closestHit.HitEntity}. Teleportiere zu Target-Pos.");
                 _transformSystem.SetWorldPosition(uid, _transformSystem.GetWorldPosition(closestHit.HitEntity));
+                // Sandwich-HL: start
                 if (projectileComp.RaycastResetVelocity)
-                    _physics.SetLinearVelocity(uid, rayDirection * MinRaycastVelocity * 0.99f);
+                {
+                    var oldVelocity = physicsComp.LinearVelocity.Length();
+                    var newVelocity = MinRaycastVelocity * 0.99f;
 
+                    _physics.SetLinearVelocity(uid, rayDirection * newVelocity);
+
+                    if (TryComp<TriggerOnCollideComponent>(uid, out var triggerCollide) && triggerCollide.Delay > 0f)
+                    {
+                        float requiredTotalTime = (oldVelocity / newVelocity) * triggerCollide.Delay;
+
+                        triggerCollide.Delay = requiredTotalTime;
+
+                        Logger.Info($"[APHE-Debug] Geschwindigkeit reduziert von {oldVelocity} auf {newVelocity}. Prototyp-Delay auf {requiredTotalTime}s erhöht.");
+                    }
+                }
+
+                // Sandwich-HL End
                 continue;
             }
         }

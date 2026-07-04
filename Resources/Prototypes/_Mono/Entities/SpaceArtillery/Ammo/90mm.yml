@@ -19,23 +19,42 @@
     shape: triangle
     visibleFromOtherGrids: true
 
+- type: entity # Sandwich-HL: moved base up here
+  id: 90mmBulletExplosiveBase
+  parent: 90mmBulletBase
+  abstract: true
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+
 - type: entity
   id: 90mmBulletArmorPiercing
+  name: 90mm APHE shell
   parent: 90mmBulletExplosiveBase
   categories: [ HideSpawnMenu ]
   components:
+  - type: TriggerOnCollide # Sandwich-HL (its a APHE shell)
+    fixtureID: projectile # Sandwich-HL
+    delay: 0.02 # Sandwich-HL
   - type: Projectile
     damage:
       types:
         Structural: 875
+        Blunt: 180 # Sandwich-HL
+        Piercing: 360 # Sandwich-HL
+    penetrationThreshold: 900 # Sandwich-HL
+    penetrationDamageTypeRequirement: # Sandwich-HL
+      - Structural # Sandwich-HL
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
     layers:
     - state: base-projectile
   - type: Explosive
-    maxIntensity: 30
+    totalIntensity: 30
     intensitySlope: 2
-    totalIntensity: 4
+    maxIntensity: 4
     maxTileBreak: 0
   - type: PointLight
     color: orange
@@ -74,13 +93,3 @@
     proto: 90mmBulletArmorPiercing
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
-
-- type: entity
-  id: 90mmBulletExplosiveBase
-  parent: 90mmBulletBase
-  abstract: true
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: ExplodeOnTrigger
-  - type: Explosive
-    explosionType: Default

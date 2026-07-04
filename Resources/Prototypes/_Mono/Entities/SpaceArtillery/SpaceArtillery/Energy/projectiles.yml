@@ -23,10 +23,11 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 1250
-        Structural: 4250
+        Radiation: 150 # Sandwich-HL: 1250 damage too much
+        Structural: 750 # Sandwich-HL: 4250 damage is also too much
         Heat: 350
         Ion: 350
+    penetrationThreshold: 750 # Sandwich-HL
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/plasmashot.rsi
     layers:
@@ -47,7 +48,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: DefaultShipGun
-    totalIntensity: 250
+    totalIntensity: 25 # Sandwich-HL: 250 is too much for such a small turret
     intensitySlope: 6
     maxIntensity: 25
     maxTileBreak: 0
@@ -66,6 +67,7 @@
         Radiation: 20
         Structural: 350
         Heat: 80
+    penetrationThreshold: 1000 # Sandwich-HL
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/plasmashot.rsi
     layers:
@@ -113,6 +115,7 @@
         Structural: 900
         Heat: 120
         Ion: 150
+    penetrationThreshold: 900 # Sandwich-HL
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/plasmashot.rsi
     layers:
@@ -184,6 +187,9 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: TriggerOnCollide # Sandwich-HL
+    fixtureID: projectile # Sandwich-HL
+    delay: 0.03 # Sandwich-HL
   - type: Projectile
     damage:
       types:
@@ -191,6 +197,7 @@
         Structural: 4000
         Heat: 5000
         Ion: 500
+    penetrationThreshold: 10000 # Sandwich-HL
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/plasmashot.rsi
     layers:
@@ -249,7 +256,6 @@
   - type: PointLight
     color: "#C92BCC"
   - type: GatheringProjectile
-  - type: MiningGatheringSoft
   - type: MiningGatheringHard
 
 # RUBICON
@@ -263,8 +269,8 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 75
-        Heat: 115
+        Radiation: 15 # Sandwich-HL: 15 < 75
+        Heat: 50 # Sandwich-HL: 50 < 115
         Ion: 375
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
@@ -296,11 +302,15 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: TriggerOnCollide # Sandwich-HL
+    fixtureID: projectile # Sandwich-HL
+    delay: 0.01 # Sandwich-HL
   - type: Projectile
     damage:
       types:
-        Structural: 10000
+        Structural: 8000 # Sandwich-HL: 8000<10000
         Heat: 10000
+    penetrationThreshold: 6000 # Sandwich-HL
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/turbolaser_shot.rsi
     layers:
@@ -326,7 +336,6 @@
     maxIntensity: 55
     maxTileBreak: 0
   - type: GatheringProjectile
-  - type: MiningGatheringSoft
   - type: MiningGatheringHard
 
 # SCYTHE
@@ -422,7 +431,7 @@
     damage:
       types:
         Heat: 200
-        Structural: 500
+        Structural: 1200
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Projectiles/ship_projectiles.rsi
     layers:
@@ -441,8 +450,8 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 120
-    intensitySlope: 5
+    totalIntensity: 250
+    intensitySlope: 6
     maxIntensity: 45
     maxTileBreak: 4
 
@@ -517,6 +526,7 @@
      types:
        Heat: 120
        Structural: 500
+    penetrationThreshold: 500 # Sandwich-HL
   - type: HitscanSpawnEntity
     spawnedEntity: PrometheusExplosion
   - type: HitscanBasicRaycast
@@ -546,6 +556,7 @@
      types:
       Heat: 30000
       Structural: 100000
+    penetrationThreshold: 3000 # Sandwich-HL
   - type: HitscanSpawnEntity
     spawnedEntity: TachyonExplosion
   - type: HitscanBasicRaycast
@@ -619,9 +630,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HardBombShipGun
-    totalIntensity: 120
-    intensitySlope: 50
-    maxIntensity: 100
+    totalIntensity: 25
+    intensitySlope: 50 # Sandwich-HL
+    maxIntensity: 12
     maxTileBreak: 0
 
 - type: entity
@@ -632,9 +643,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HardBombShipGun
-    totalIntensity: 7000
+    totalIntensity: 6000 # Sandwich-HL 6000<7000
     intensitySlope: 100
-    maxIntensity: 2400
+    maxIntensity: 3200 # Sandwich-HL 3200<4200
     maxTileBreak: 0
 
 - type: entity
@@ -645,9 +656,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HardBombShipGun
-    totalIntensity: 22
-    intensitySlope: 2
-    maxIntensity: 5
+    totalIntensity: 5 # Sandwich-HL
+    intensitySlope: 85 # Sandwich-HL
+    maxIntensity: 2 # Sandwich-HL
     maxTileBreak: 0
 
 - type: entity
@@ -661,3 +672,4 @@
     totalIntensity: 50
     intensitySlope: 10
     maxIntensity: 25
+    maxTileBreak: 0

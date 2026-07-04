@@ -922,7 +922,7 @@
   - type: Stamina
     critThreshold: 600
   - type: ProjectileBatteryAmmoProvider
-    proto: NFTeslaGunBullet
+    proto: TeslaGunBullet
     fireCost: 100
   - type: BatterySelfRecharger
     autoRecharge: true

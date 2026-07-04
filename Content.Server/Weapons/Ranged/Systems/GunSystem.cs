@@ -78,6 +78,8 @@ using Content.Shared.Interaction; // Frontier
 using Content.Shared.Examine; // Frontier
 using Content.Shared.Hands.Components;
 using Content.Shared.Power;
+using Content.Shared.FixedPoint; // Sandwich-HL
+using Content.Shared.Damage.Prototypes;  // Sandwich-HL
 
 namespace Content.Server.Weapons.Ranged.Systems;
 
@@ -90,6 +92,8 @@ public sealed partial class GunSystem : SharedGunSystem
     [Dependency] private readonly StaminaSystem _stamina = default!;
     [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly SharedMapSystem _map = default!;
+
+    [Dependency] private readonly Content.Server.Destructible.DestructibleSystem _destructibleSystem = default!; // Sandwich-HL
 
     private const float DamagePitchVariation = 0.05f;
 
@@ -221,6 +225,7 @@ public sealed partial class GunSystem : SharedGunSystem
                     //in the situation when user == null, means that the cannon fires on its own (via signals). And we need the gun to not fire by itself in this case
                     var lastUser = user ?? gunUid;
 
+                    /* (Vanilla Upstream Code start) - Sandwich-HL edit
                     if (hitscan.Reflective != ReflectType.None)
                     {
                         for (var reflectAttempt = 0; reflectAttempt < 3; reflectAttempt++)
@@ -310,6 +315,202 @@ public sealed partial class GunSystem : SharedGunSystem
                     {
                         FireEffects(fromEffect, hitscan.MaxLength, dir.ToAngle(), hitscan, null, user);
                     }
+                    Vanilla Upstream Code end */
+                    
+                    // Sandwich-HL start
+                    // Check if the gun entity possesses the custom penetration component
+                    if (hitscan.PenetrationThreshold > FixedPoint2.Zero)
+                    {
+                        var ray = new CollisionRay(from.Position, dir, hitscan.CollisionMask);
+                        var rayCastResults = Physics.IntersectRay(from.MapId, ray, hitscan.MaxLength, lastUser, false).ToList();
+                        rayCastResults.Sort((a, b) => a.Distance.CompareTo(b.Distance));
+
+                        var currentPenetrationAmount = FixedPoint2.Zero;
+                        var budget = hitscan.PenetrationThreshold;
+                        EntityUid? actualLastHit = null;
+                        float finalDistance = hitscan.MaxLength;
+
+                        var destructibleSys = EntityManager.System<Content.Server.Destructible.DestructibleSystem>();
+
+                        foreach (var result in rayCastResults)
+                        {
+                            if (!_container.IsEntityOrParentInContainer(lastUser))
+                            {
+                                if (result.HitEntity != gun.Target &&
+                                    CompOrNull<RequireProjectileTargetComponent>(result.HitEntity)?.Active == true)
+                                {
+                                    continue;
+                                }
+                            }
+
+                            var hitEntity = result.HitEntity;
+                            actualLastHit = hitEntity;
+                            finalDistance = result.Distance;
+
+                            if (hitscan.StaminaDamage > 0f)
+                                _stamina.TakeStaminaDamage(hitEntity, hitscan.StaminaDamage, source: user);
+
+                            var dmg = hitscan.Damage;
+                            var damageRequired = FixedPoint2.Zero;
+                            bool isDamageTypeValid = true;
+
+                            if (TryComp<DamageableComponent>(hitEntity, out var damageableComponent))
+                            {
+                                damageRequired = destructibleSys.DestroyedAt(hitEntity);
+                                damageRequired -= damageableComponent.TotalDamage;
+                                damageRequired = FixedPoint2.Max(damageRequired, FixedPoint2.Zero);
+
+                                if (hitscan.PenetrationDamageTypeRequirement != null && hitscan.PenetrationDamageTypeRequirement.Count > 0)
+                                {
+                                    isDamageTypeValid = false;
+                                    
+                                    foreach (var requiredType in hitscan.PenetrationDamageTypeRequirement)
+                                    {
+                                        if (damageableComponent.Damage.DamageDict.ContainsKey(requiredType))
+                                        {
+                                            isDamageTypeValid = true;
+                                            break;
+                                        }
+                                    }
+                                }
+
+                                if (dmg != null)
+                                    dmg = Damageable.TryChangeDamage(hitEntity, dmg * Damageable.UniversalHitscanDamageModifier, origin: user);
+
+                                if (dmg != null)
+                                {
+                                    if (!Deleted(hitEntity))
+                                    {
+                                        if (dmg.AnyPositive())
+                                        {
+                                            _color.RaiseEffect(Color.Red, new List<EntityUid>() { hitEntity }, Filter.Pvs(hitEntity, entityManager: EntityManager));
+                                        }
+
+                                        PlayImpactSound(hitEntity, dmg, hitscan.Sound, hitscan.ForceSound);
+                                    }
+
+                                    var hitName = ToPrettyString(hitEntity);
+                                    if (user != null)
+                                    {
+                                        Logs.Add(LogType.HitScanHit,
+                                            $"{ToPrettyString(user.Value):user} hit {hitName:target} using hitscan and dealt {dmg.GetTotal():damage} damage");
+                                    }
+                                    else
+                                    {
+                                        Logs.Add(LogType.HitScanHit,
+                                            $"{hitName:target} hit by hitscan dealing {dmg.GetTotal():damage} damage");
+                                    }
+
+                                    if (dmg.GetTotal() < damageRequired)
+                                    {
+                                        break;
+                                    }
+                                }
+
+                                if (isDamageTypeValid)
+                                {
+                                    currentPenetrationAmount += damageRequired;
+                                    if (currentPenetrationAmount >= budget)
+                                    {
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                        
+                        FireEffects(fromEffect, finalDistance, dir.ToAngle(), hitscan, actualLastHit, user);
+                        lastHit = actualLastHit;
+                    }
+                    else
+                    {
+                        // Fallback implementation mirroring vanilla loop for standard laser weapons
+                        if (hitscan.Reflective != ReflectType.None)
+                        {
+                            for (var reflectAttempt = 0; reflectAttempt < 3; reflectAttempt++)
+                            {
+                                var ray = new CollisionRay(from.Position, dir, hitscan.CollisionMask);
+                                var rayCastResults =
+                                    Physics.IntersectRay(from.MapId, ray, hitscan.MaxLength, lastUser, false).ToList();
+                                if (!rayCastResults.Any())
+                                    break;
+
+                                var result = rayCastResults[0];
+
+                                if (!_container.IsEntityOrParentInContainer(lastUser))
+                                {
+                                    foreach (var collide in rayCastResults)
+                                    {
+                                        if (collide.HitEntity != gun.Target &&
+                                            CompOrNull<RequireProjectileTargetComponent>(collide.HitEntity)?.Active == true)
+                                        {
+                                            continue;
+                                        }
+
+                                        result = collide;
+                                        break;
+                                    }
+                                }
+
+                                var hit = result.HitEntity;
+                                lastHit = hit;
+
+                                FireEffects(fromEffect, result.Distance, dir.Normalized().ToAngle(), hitscan, hit, user);
+
+                                var ev = new HitScanReflectAttemptEvent(user, gunUid, hitscan.Reflective, dir, false, hitscan.Damage);
+                                RaiseLocalEvent(hit, ref ev);
+
+                                if (!ev.Reflected)
+                                    break;
+
+                                fromEffect = Transform(hit).Coordinates;
+                                from = TransformSystem.ToMapCoordinates(fromEffect);
+                                dir = ev.Direction;
+                                lastUser = hit;
+                            }
+                        }
+
+                        if (lastHit != null)
+                        {
+                            var hitEntity = lastHit.Value;
+                            if (hitscan.StaminaDamage > 0f)
+                                _stamina.TakeStaminaDamage(hitEntity, hitscan.StaminaDamage, source: user);
+
+                            var dmg = hitscan.Damage;
+
+                            var hitName = ToPrettyString(hitEntity);
+                            if (dmg != null)
+                                dmg = Damageable.TryChangeDamage(hitEntity, dmg * Damageable.UniversalHitscanDamageModifier, origin: user);
+
+                            if (dmg != null)
+                            {
+                                if (!Deleted(hitEntity))
+                                {
+                                    if (dmg.AnyPositive())
+                                    {
+                                        _color.RaiseEffect(Color.Red, new List<EntityUid>() { hitEntity }, Filter.Pvs(hitEntity, entityManager: EntityManager));
+                                    }
+
+                                    PlayImpactSound(hitEntity, dmg, hitscan.Sound, hitscan.ForceSound);
+                                }
+
+                                if (user != null)
+                                {
+                                    Logs.Add(LogType.HitScanHit,
+                                        $"{ToPrettyString(user.Value):user} hit {hitName:target} using hitscan and dealt {dmg.GetTotal():damage} damage");
+                                }
+                                else
+                                {
+                                    Logs.Add(LogType.HitScanHit,
+                                        $"{hitName:target} hit by hitscan dealing {dmg.GetTotal():damage} damage");
+                                }
+                            }
+                        }
+                        else
+                        {
+                            FireEffects(fromEffect, hitscan.MaxLength, dir.ToAngle(), hitscan, null, user);
+                        }
+                    }
+                    // Sandwich-HL end
 
                     // Notify listeners about hitscan raycast result (e.g., to spawn effects/entities on hit)
                     var firedEv = new HitscanRaycastFiredEvent(lastHit, user, gunUid);
